@@ -32,16 +32,4 @@ public class BaseResponseBodyUtiil {
                 HttpStatus.OK
         );
     }
-
-    public static ResponseEntity<BaseResponseBody> BaseResponseBodyForbidden() {
-        return new ResponseEntity<>(
-                BaseResponseBody.builder()
-                        .message("Access denied")
-                        .httpStatus(HttpStatus.FORBIDDEN)
-                        .statusCode(HttpStatus.FORBIDDEN.value())
-                        .timestamp(ZonedDateTime.now(ZoneId.of("Z")))
-                        .build(),
-                HttpStatus.FORBIDDEN
-        );
-    }
 }

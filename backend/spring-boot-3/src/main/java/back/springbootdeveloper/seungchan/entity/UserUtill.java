@@ -7,7 +7,6 @@ import lombok.*;
 @Getter
 @Table(name = "user_utill")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@ToString
 public class UserUtill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

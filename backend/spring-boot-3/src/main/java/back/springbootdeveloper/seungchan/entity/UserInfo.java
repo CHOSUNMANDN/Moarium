@@ -15,7 +15,6 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-@ToString
 @Table(name = "user_info")
 public class UserInfo implements UserDetails {
     @Id // id 필드를 기본키로 지정
@@ -144,29 +143,6 @@ public class UserInfo implements UserDetails {
         this.yearOfRegistration = DayUtill.getYear();
         this.regularMember = true;
     }
-
-    public static UserInfo getUserFromTempUser(TempUser tempUser) {
-        return UserInfo.builder()
-                .name(tempUser.getName())
-                .phoneNum(tempUser.getPhoneNum())
-                .major(tempUser.getMajor())
-                .gpa(tempUser.getGpa())
-                .address(tempUser.getAddress())
-                .specialtySkill(tempUser.getSpecialtySkill())
-                .hobby(tempUser.getHobby())
-                .mbti(tempUser.getMbti())
-                .studentId(tempUser.getStudentId())
-                .birthDate(tempUser.getBirthDate())
-                .advantages(tempUser.getAdvantages())
-                .disadvantage(tempUser.getDisadvantage())
-                .selfIntroduction(tempUser.getSelfIntroduction())
-                .photo(tempUser.getPhoto())
-                .isOb(tempUser.isOb())
-                .email(tempUser.getEmail())
-                .password(tempUser.getPassword())
-                .build();
-    }
-
     public void update(UserInfo user) {
         this.id = user.getId();
         this.name = user.getName();
