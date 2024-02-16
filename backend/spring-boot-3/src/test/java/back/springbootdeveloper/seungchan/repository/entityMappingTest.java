@@ -19,9 +19,12 @@ class entityMappingTest {
     private final ClubArticleRepository clubArticleRepository;
     private final AttendanceNumberRepository attendanceNumberRepository;
     private final ClubControlRepository clubControlRepository;
+    private final AttendanceWeekDateRepository attendanceWeekDateRepository;
+    private final AttendanceSateRepository attendanceSateRepository;
+    private final VacationTokenRepository vacationTokenRepository;
 
     @Autowired
-    entityMappingTest(MemberRepository memberRepository, ClubMemberRepository clubMemberRepository, ClubRepository clubRepository, ClubIntroduceImageRepository clubIntroduceImageRepository, ClubGradeRepository clubGradeRepository, ClubArticleRepository clubArticleRepository, AttendanceNumberRepository attendanceNumberRepository, ClubControlRepository clubControlRepository) {
+    entityMappingTest(MemberRepository memberRepository, ClubMemberRepository clubMemberRepository, ClubRepository clubRepository, ClubIntroduceImageRepository clubIntroduceImageRepository, ClubGradeRepository clubGradeRepository, ClubArticleRepository clubArticleRepository, AttendanceNumberRepository attendanceNumberRepository, ClubControlRepository clubControlRepository, AttendanceWeekDateRepository attendanceWeekDateRepository, AttendanceSateRepository attendanceSateRepository, VacationTokenRepository vacationTokenRepository) {
         this.memberRepository = memberRepository;
         this.clubMemberRepository = clubMemberRepository;
         this.clubRepository = clubRepository;
@@ -30,6 +33,9 @@ class entityMappingTest {
         this.clubArticleRepository = clubArticleRepository;
         this.attendanceNumberRepository = attendanceNumberRepository;
         this.clubControlRepository = clubControlRepository;
+        this.attendanceWeekDateRepository = attendanceWeekDateRepository;
+        this.attendanceSateRepository = attendanceSateRepository;
+        this.vacationTokenRepository = vacationTokenRepository;
     }
 
     @BeforeEach
@@ -39,6 +45,9 @@ class entityMappingTest {
         this.attendanceNumberRepository.deleteAll();
         this.clubRepository.deleteAll();
         this.clubArticleRepository.deleteAll();
+        this.clubControlRepository.deleteAll();
+        this.attendanceWeekDateRepository.deleteAll();
+        this.attendanceSateRepository.deleteAll();
         this.clubControlRepository.deleteAll();
     }
 
@@ -52,6 +61,13 @@ class entityMappingTest {
         // 1:1
         applyAttendanceNumber_mapping_Club_AttendanceNumber(entityClub_0, new AttendanceNumber());
         // ============================================ 출석 AttendanceNumber 등록 완료 ============================
+
+        // ==================================  AttendanceSate  매핑 시작 ============================
+        // ==================================        |                  ============================
+        // =====================  AttendanceWeekDate - VacationToken -VacationToken ============================
+        AttendanceSate attendanceSate = mapping_AttendanceSate_AttendanceCheckTime_AttendanceWeekDate_VacationToken();
+        // ==================================  AttendanceSate 매핑 완료 ============================
+
 
         // ================================ ClubControl - VacationTokenControl - AttendanceWeek 등록 ============================
         // 1:1
@@ -90,6 +106,39 @@ class entityMappingTest {
         // ========================================= Member와 Club와 ClubArticle의 관계 설정 시작 ========================
         entityClubMember = Mapping_Member_Club(entityClubMember, entityClubArticle_suggestion);
         // ========================================= Member와 Club와 ClubArticle의 관계 설정 완료 ========================
+
+        // ==================================  ClubMember - AttendanceState 매핑 시작 ============================
+        entityClubMember = mapping_AttendanceState_ClubMember(entityClubMember, attendanceSate);
+        // ==================================  ClubMember - AttendanceState 매핑 완료 ============================
+
+        // ==================================  ClubMember - ClubMemberInformation 매핑 시작 ============================
+        entityClubMember = mapping_ClubMemberInformation_ClubMember(entityClubMember);
+        // ==================================  ClubMember - AttendanceState 매핑 완료 ============================
+    }
+
+    private ClubMember mapping_ClubMemberInformation_ClubMember(ClubMember entityClubMember) {
+        ClubMemberInformation clubMemberInformation = TestMakeEntity.createSampleClubMemberInformation(0);
+        entityClubMember.setClubMemberInformation(clubMemberInformation);
+        return clubMemberRepository.save(entityClubMember);
+    }
+
+    private ClubMember mapping_AttendanceState_ClubMember(ClubMember entityClubMember, AttendanceSate attendanceSate) {
+        entityClubMember.setAttendanceSate(attendanceSate);
+
+        return clubMemberRepository.save(entityClubMember);
+    }
+
+    private AttendanceSate mapping_AttendanceSate_AttendanceCheckTime_AttendanceWeekDate_VacationToken() {
+        AttendanceSate attendanceSate = new AttendanceSate();
+        AttendanceCheckTime attendanceCheckTime = new AttendanceCheckTime();
+        AttendanceWeekDate attendanceWeekDate = new AttendanceWeekDate();
+        VacationToken vacationToken = new VacationToken();
+
+        attendanceSate.setAttendanceCheckTime(attendanceCheckTime);
+        attendanceSate.setAttendanceWeekDate(attendanceWeekDate);
+        attendanceSate.setVacationToken(vacationToken);
+
+        return attendanceSateRepository.save(attendanceSate);
     }
 
     private Club mappring_Club_ClubControl(Club entityClub_0, ClubControl clubControl_0) {

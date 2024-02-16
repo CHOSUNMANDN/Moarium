@@ -27,6 +27,9 @@ public class VacationToken extends BaseEntity {
     @Column(name = "vacation_token_date", length = 15, nullable = false)
     private String vacationTokenDate;
 
+    @OneToOne(mappedBy = "vacationToken")
+    private AttendanceSate attendanceSate;
+
     @Builder
     public VacationToken(Integer vacationCount) {
         this.vacationToken = vacationCount;
@@ -58,5 +61,13 @@ public class VacationToken extends BaseEntity {
 
     public void addVacationCount(Integer number) {
         this.vacationToken = this.vacationToken + number;
+    }
+
+    public void setAttendanceSate(final AttendanceSate attendanceSate) {
+        this.attendanceSate = attendanceSate;
+
+        if (attendanceSate.getVacationToken() != this) { // null 체크 추가
+            attendanceSate.setVacationToken(this);
+        }
     }
 }

@@ -58,6 +58,9 @@ public class AttendanceWeekDate extends BaseEntity {
     @Column(name = "sunday_date", nullable = false)
     private LocalDate sundayDate;
 
+    @OneToOne(mappedBy = "attendanceWeekDate")
+    private AttendanceSate attendanceSate;
+
     @Builder
     public AttendanceWeekDate(ATTENDANCE_STATE monday, ATTENDANCE_STATE tuesday, ATTENDANCE_STATE wednesday, ATTENDANCE_STATE thursday, ATTENDANCE_STATE friday, ATTENDANCE_STATE saturday, ATTENDANCE_STATE sunday) {
         this.monday = monday;
@@ -179,6 +182,14 @@ public class AttendanceWeekDate extends BaseEntity {
                 break;
             default:
                 break;
+        }
+    }
+
+    public void setAttendanceSate(final AttendanceSate attendanceSate) {
+        this.attendanceSate = attendanceSate;
+
+        if (attendanceSate.getAttendanceWeekDate() != this) { // null 체크 추가
+            attendanceSate.setAttendanceWeekDate(this);
         }
     }
 }

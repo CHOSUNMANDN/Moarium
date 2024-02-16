@@ -55,4 +55,10 @@ public class TestMakeEntity {
                 .classification(classification)
                 .build();
     }
+
+    public static ClubMemberInformation createSampleClubMemberInformation(Integer number) {
+        return ClubMemberInformation.builder()
+                .introduce("테스트_클럽_지원_자기소개_" + number)
+                .build();
+    }
 }

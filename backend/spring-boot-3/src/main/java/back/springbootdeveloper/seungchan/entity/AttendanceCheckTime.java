@@ -53,6 +53,9 @@ public class AttendanceCheckTime extends BaseEntity {
     @Column(name = "long_vacation", length = 15, nullable = false)
     private LONG_VACATION longVacation;
 
+    @OneToOne(mappedBy = "attendanceCheckTime")
+    private AttendanceSate attendanceSate;
+
     @Builder
     public AttendanceCheckTime(ATTENDANCE_TIME monday, ATTENDANCE_TIME tuesday, ATTENDANCE_TIME wednesday, ATTENDANCE_TIME thursday, ATTENDANCE_TIME friday, ATTENDANCE_TIME saturday, ATTENDANCE_TIME sunday, LONG_VACATION longVacation) {
         this.monday = monday;
@@ -107,5 +110,13 @@ public class AttendanceCheckTime extends BaseEntity {
 
     public void updateLongVacation(LONG_VACATION longVacation) {
         this.longVacation = longVacation;
+    }
+
+    public void setAttendanceSate(final AttendanceSate attendanceSate) {
+        this.attendanceSate = attendanceSate;
+
+        if (attendanceSate.getAttendanceCheckTime() != this) { // null 체크 추가
+            attendanceSate.setAttendanceCheckTime(this);
+        }
     }
 }
