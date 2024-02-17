@@ -24,7 +24,7 @@ interface userDataPropsTypeOne {
   memberName: string;
 }
 
-export default function Main() {
+export default function Club() {
   const router = useRouter();
   const [token, setToken] = useRecoilState(userToken);
   const [type, setType] = useState(0);
