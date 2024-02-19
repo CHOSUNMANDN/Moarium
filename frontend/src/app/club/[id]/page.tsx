@@ -9,6 +9,7 @@ import CurrentMember from '@/atoms/molecule/current-member';
 import { useRouter } from 'next/navigation';
 import LongThickButton from '../../../atoms/atom/longThickButton';
 import AttendanceModal from '../../../atoms/molecule/attendance-modal';
+import MemberInformationModal from '@/atoms/molecule/member-infromation-modal';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context';
 import NavigationFooter from '@/atoms/molecule/navigation-footer';
 import { usePathname } from 'next/navigation';
@@ -76,6 +77,7 @@ export default function Club() {
   return (
     <main>
       {isAttendanceModalOpen ? <AttendanceModal setIsAttendanceModalOpen={setIsAttendanceModalOpen} setAllertModalStatus={setAllertModalStatus} /> : null}
+      {isMemberInfoOpen !== 0 ? <MemberInformationModal userId={isMemberInfoOpen} setIsMemberInfoOpen={setIsMemberInfoOpen} isKing={isKing} type={type} /> : null}
       <header>
         <Header isVisible={false} />
       </header>
