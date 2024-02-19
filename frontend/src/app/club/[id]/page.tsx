@@ -7,7 +7,7 @@ import { userToken, isNuriKing } from '../../../states/index';
 import Graduater from '@/atoms/atom/graduater';
 import CurrentMember from '@/atoms/molecule/current-member';
 import { useRouter } from 'next/navigation';
-import Button from '../../../atoms/atom/large-button';
+import LongThickButton from '../../../atoms/atom/longThickButton';
 import AttendanceModal from '../../../atoms/molecule/attendance-modal';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context';
 import NavigationFooter from '@/atoms/molecule/navigation-footer';
@@ -120,12 +120,12 @@ export default function Club() {
         )}
       </section>
       {type === 0 ? (
-        <div className="fixed inset-x-[3rem] bottom-[3rem]">
+        <div className="fixed inset-x-[0rem] bottom-[4rem] mx-auto w-max">
           {isTodayAttendance ? (
-            <Button text={'출석완료'} addClass="text-2xl bg-grey" />
+            <LongThickButton text={'출석완료'} addClass="text-2xl bg-grey" />
           ) : (
             <div onClick={() => setIsAttendanceModalOpen(true)}>
-              <Button text={'출석하기'} addClass="text-2xl mb-3" />
+              <LongThickButton text={'출석하기'} addClass="text-2xl mb-3" />
             </div>
           )}
         </div>
