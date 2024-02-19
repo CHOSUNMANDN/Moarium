@@ -7,7 +7,7 @@ import { userToken, isNuriKing } from '../../../states/index';
 import Graduater from '@/atoms/atom/graduater';
 import CurrentMember from '@/atoms/molecule/current-member';
 import { useRouter } from 'next/navigation';
-import LongThickButton from '../../../atoms/atom/longThickButton';
+import LongThickButton from '../../../atoms/atom/LongThickButton';
 import AttendanceModal from '../../../atoms/molecule/attendance-modal';
 import MemberInformationModal from '@/atoms/molecule/member-infromation-modal';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context';
