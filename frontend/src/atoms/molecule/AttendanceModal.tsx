@@ -1,5 +1,5 @@
 import { axAuth } from '@/apis/axiosinstance';
-import Button from '../atom/small-button';
+import MiddleButton from '../atom/MiddleButton';
 import { useRecoilState } from 'recoil';
 import { userToken } from '../../states/index';
 import { useState } from 'react';
@@ -49,7 +49,7 @@ export default function AttendanceModal(props: AttendanceModalProps) {
         <div className="font-bold text-xl">오늘의 번호를 입력해주세요</div>
         <input className="border-b-2 w-[50%] my-3" type="text" onChange={inputNumber} />
         <div onClick={setAttendance}>
-          <Button text="출석" addClass="text-xl" />
+          <MiddleButton text="출석" addClass="text-xl" />
         </div>
       </div>
     </div>
