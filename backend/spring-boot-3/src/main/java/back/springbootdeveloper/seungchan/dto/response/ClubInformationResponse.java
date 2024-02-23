@@ -21,4 +21,5 @@ public class ClubInformationResponse {
         this.clubIntroduction = club.getClubIntroduce();
         this.clubInformationImages = club.getClubIntroduceImages();
     }
+
 }
