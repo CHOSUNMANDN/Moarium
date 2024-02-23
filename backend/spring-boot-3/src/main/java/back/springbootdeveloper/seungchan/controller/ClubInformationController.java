@@ -23,4 +23,5 @@ public class ClubInformationController {
         return ResponseEntity.ok()
                 .body(new ClubInformationResponse(club));
     }
+
 }

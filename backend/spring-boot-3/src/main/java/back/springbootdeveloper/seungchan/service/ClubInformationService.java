@@ -18,4 +18,5 @@ public class ClubInformationService {
         return clubRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Club not found"));
     }
+
 }
