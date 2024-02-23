@@ -1,6 +1,6 @@
 'use client';
 import { axAuth } from '@/apis/axiosinstance';
-import Header from '../../../atoms/molecule/header';
+import Header from '../../../atoms/molecule/Header';
 import { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { userToken, isNuriKing } from '../../../states/index';
@@ -35,6 +35,7 @@ export default function Club() {
   const [AllertModalstatus, setAllertModalStatus] = useState(0);
   const [isTodayAttendance, setIsTodayAttendance] = useState(false);
   const [isMemberInfoOpen, setIsMemberInfoOpen] = useState(0);
+  const [isClubName, setIsClubName] = useState('');
   const pathName: string = usePathname();
   let id: string | undefined;
 
@@ -53,6 +54,7 @@ export default function Club() {
       })
         .then(res => {
           setUserList(res.data.result.clubMembers);
+          setIsClubName(res.data.clubName);
         })
         .catch(err => {
           console.log(err);
@@ -79,7 +81,7 @@ export default function Club() {
       {isAttendanceModalOpen ? <AttendanceModal setIsAttendanceModalOpen={setIsAttendanceModalOpen} setAllertModalStatus={setAllertModalStatus} /> : null}
       {isMemberInfoOpen !== 0 ? <MemberInformationModal userId={isMemberInfoOpen} setIsMemberInfoOpen={setIsMemberInfoOpen} isKing={isKing} type={type} /> : null}
       <header>
-        <Header isVisible={false} />
+        <Header clubName={isClubName} />
       </header>
       <section>
         <div className="mx-[7.5%] grid grid-cols-2 mb-[2rem]">
