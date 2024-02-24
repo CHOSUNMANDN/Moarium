@@ -21,7 +21,6 @@
 //
 //    @Autowired
 //    private TokenProvider tokenProvider;
-//
 //    @Autowired
 //    private UserRepository userRepository;
 //
@@ -79,7 +78,6 @@
 //        // 에서 1000을 빼 이미 만료된 토큰을 생성한다.
 //        JwtFactory jwtFactory = new JwtFactory(new Date(new Date().getTime() - Duration.ofDays(7).toMillis()));
 //        String token = jwtFactory.createToken(jwtProperties);
-//
 //        // when
 //        // 토큰 제공자의 validToken()메서드를 호출해 유효한 토큰인지 검증한 뒤 결과를 반환
 //        boolean result = tokenProvider.validToken(token);

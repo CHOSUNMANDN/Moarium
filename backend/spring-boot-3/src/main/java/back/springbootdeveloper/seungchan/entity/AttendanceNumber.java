@@ -3,7 +3,6 @@ package back.springbootdeveloper.seungchan.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -20,7 +19,7 @@ import java.time.format.DateTimeFormatter;
 @NoArgsConstructor
 @Entity
 @Table(name = "attendance_number")
-public class AttendanceNumber {
+public class AttendanceNumber extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "attendance_number_id")
@@ -32,6 +31,10 @@ public class AttendanceNumber {
     @Temporal(TemporalType.DATE)
     @Column(name = "attendance_date", nullable = false)
     private LocalDate attendanceDate;
+
+    @ManyToOne()
+    @JoinColumn(name = "club_id")
+    private Club club;
 
     public String getAttendanceDate() {
         return attendanceDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
@@ -47,5 +50,13 @@ public class AttendanceNumber {
         // 1부터 9까지 랜덤한 4자리 숫자 생성
         int randomAttendanceNumber = (int) (Math.random() * 9_000) + 1_000;
         this.attendanceNumber = String.valueOf(randomAttendanceNumber);
+    }
+
+    public void setClub(final Club club) {
+        this.club = club;
+
+        if (!club.getAttendanceNumbers().contains(club)) { // null 체크 추가
+            club.addAttendanceNumber(this);
+        }
     }
 }

@@ -122,6 +122,14 @@ dependencies {
 
     // 이메일 체크를 위한 의존성 주입
     implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+    // WebClient: 내부 HTTP 요청을 위한 객체
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    // Gradle 프로젝트에서 Google Guava 라이브러리에 대한 의존성을 추가
+    // 다양한 형식의 문자열 표현을 다른 형식으로 변환하는 데 사용
+    implementation 'com.google.guava:guava:30.1.1-jre'
+
 }
 
 test {

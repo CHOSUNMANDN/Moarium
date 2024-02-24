@@ -16,7 +16,7 @@ public class UserLoginResponse {
     public UserLoginResponse(String accessToken, UserInfo user, UserUtill userUtill) {
         this.accessToken = accessToken;
         this.name = user.getName();
-        this.userId = user.getId();
+        this.userId = user.getUserInfoId();
         this.isNuriKing = userUtill.isNuriKing();
     }
 }

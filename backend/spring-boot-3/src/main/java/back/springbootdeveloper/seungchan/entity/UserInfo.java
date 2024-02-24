@@ -19,8 +19,8 @@ import java.util.List;
 public class UserInfo implements UserDetails {
     @Id // id 필드를 기본키로 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 기본키 자동으로 1씩 증가
-    @Column(name = "id", updatable = false)
-    private Long id;
+    @Column(name = "user_info_id", updatable = false)
+    private Long userInfoId;
 
     @Column(name = "name", length = 10, nullable = false) // 'title'이라는 not null 컴럼과 매핑
     private String name;
@@ -143,8 +143,9 @@ public class UserInfo implements UserDetails {
         this.yearOfRegistration = DayUtill.getYear();
         this.regularMember = true;
     }
+
     public void update(UserInfo user) {
-        this.id = user.getId();
+        this.userInfoId = user.getUserInfoId();
         this.name = user.getName();
         this.phoneNum = user.getPhoneNum();
         this.major = user.getMajor();

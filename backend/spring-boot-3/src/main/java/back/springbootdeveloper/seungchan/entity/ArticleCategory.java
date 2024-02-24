@@ -11,7 +11,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Entity
 @Table(name = "article_category")
-public class ArticleCategory {
+public class ArticleCategory extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "article_category_id")
