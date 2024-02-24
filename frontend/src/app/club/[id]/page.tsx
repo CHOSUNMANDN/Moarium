@@ -3,7 +3,7 @@ import { axAuth } from '@/apis/axiosinstance';
 import Header from '../../../atoms/molecule/Header';
 import { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
-import { userToken, myClubGrade } from '../../../states/index';
+import { userToken, myClubGrade, myClubMemberId } from '../../../states/index';
 import Graduater from '@/atoms/atom/graduater';
 import CurrentMember from '@/atoms/molecule/current-member';
 import { useRouter } from 'next/navigation';
@@ -36,6 +36,7 @@ export default function Club() {
   const [isTodayAttendance, setIsTodayAttendance] = useState(false);
   const [isMemberInfoOpen, setIsMemberInfoOpen] = useState(0);
   const [isMemberToken, setIsMemberToken] = useState('');
+  const [isMyClubMemberId, setIsMyClubMemberId] = useRecoilState(myClubMemberId);
   const [isClubName, setIsClubName] = useState('');
   const pathName: string = usePathname();
   let id: string | undefined;
@@ -57,6 +58,7 @@ export default function Club() {
           setUserList(res.data.result.clubMembers);
           setIsClubName(res.data.clubName);
           setIsMyClubGrade(res.data.result.myClubGrade);
+          setIsMyClubMemberId(res.data.result.myClubMemberId);
         })
         .catch(err => {
           console.log(err);

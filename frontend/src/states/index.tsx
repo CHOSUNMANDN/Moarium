@@ -14,6 +14,12 @@ export const userToken = atom({
   effects_UNSTABLE: [persistAtom],
 });
 
+export const myClubMemberId = atom({
+  key: 'userMemberId',
+  default: 0,
+  effects_UNSTABLE: [persistAtom],
+});
+
 export const myClubGrade = atom({
   key: 'iNuriKing',
   default: '',
