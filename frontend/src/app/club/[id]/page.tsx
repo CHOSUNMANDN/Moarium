@@ -56,6 +56,7 @@ export default function Club() {
         .then(res => {
           setUserList(res.data.result.clubMembers);
           setIsClubName(res.data.clubName);
+          setIsKing(res.data.result.myClubGrade);
         })
         .catch(err => {
           console.log(err);
