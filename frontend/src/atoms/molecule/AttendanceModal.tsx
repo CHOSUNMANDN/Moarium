@@ -45,7 +45,7 @@ export default function AttendanceModal(props: AttendanceModalProps) {
   };
   return (
     <div className="absolute z-10 w-[100vw] h-[100vh] bg-black/60 flex justify-center items-center" onClick={handleModal}>
-      <div className="bg-white w-[80%] h-[20%] rounded-[7%] flex flex-col justify-center items-center" onClick={e => e.stopPropagation()}>
+      <div className="bg-white w-[18.750rem] h-[9.375rem] rounded-[7%] flex flex-col justify-center items-center" onClick={e => e.stopPropagation()}>
         <div className="font-bold text-xl">오늘의 번호를 입력해주세요</div>
         <input className="border-b-2 w-[50%] my-3" type="text" onChange={inputNumber} />
         <div onClick={setAttendance}>
