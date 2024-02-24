@@ -43,13 +43,15 @@ public class ClubDetailPageService {
     /**
      * 특정 클럽의 특정 회원에 대한 클럽 회원 상세 정보를 반환합니다.
      *
-     * @param clubId   클럽의 ID
-     * @param memberId 회원의 ID
+     * @param clubId      클럽의 ID
+     * @param memberId    회원의 ID
+     * @param myClubGrade 나의 클럽에서의 등급
      * @return 클럽 회원 상세 정보를 담은 ClubMemberDetailResDto 객체
      * @throws EntityNotFoundException 클럽이나 회원을 찾을 수 없는 경우
      */
-    public ClubMemberDetailResDto getClubMemberResponse(Long clubId, Long memberId) {
-        List<ClubMember> clubMembers = clubMemberRepository.findAllByClubIdAndClubGradeId(clubId, CLUB_GRADE.MEMBER.getId());
+    public ClubMemberDetailResDto getClubMemberResponse(Long clubId, Long memberId, CLUB_GRADE myClubGrade) {
+        List<ClubMember> clubMembers = clubMemberRepository.findAllByClubIdExcludeDormant(clubId, CLUB_GRADE.DORMANT.getId());
+        // ClubMemberResponse 리스트 생성
         List<ClubMemberResponse> clubMemberResponses = getClubMemberResponsesFromClubMembers(clubMembers);
         Club club = clubRepository.findById(clubId).orElseThrow(EntityNotFoundException::new);
         ClubMember clubMember = clubMemberRepository.findByMemberId(memberId).orElseThrow(EntityNotFoundException::new);
@@ -57,6 +59,7 @@ public class ClubDetailPageService {
         return ClubMemberDetailResDto.builder()
                 .clubName(club.getClubName())
                 .myClubMemberId(clubMember.getMemberId())
+                .myClubGrade(myClubGrade.getGrade())
                 .clubMembers(clubMemberResponses)
                 .build();
     }
@@ -93,6 +96,7 @@ public class ClubDetailPageService {
     private List<ClubMemberResponse> getClubMemberResponsesFromClubMembers(List<ClubMember> clubMembers) {
         List<ClubMemberResponse> clubMemberResponses = new ArrayList<>();
 
+        // 모든 클럽멤버들의 정보를 이용해 Response을 생성
         for (ClubMember clubMember : clubMembers) {
             Member member = memberRepository.findById(clubMember.getMemberId()).orElseThrow(EntityNotFoundException::new);
             AttendanceState attendanceState = attendanceStateRepository.findById(clubMember.getAttendanceStateId()).orElseThrow(EntityNotFoundException::new);

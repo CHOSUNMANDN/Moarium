@@ -38,4 +38,8 @@ public class ClubMember {
         this.attendanceStateId = attendanceSateId;
         this.clubMemberInformationId = clubMemberInformationId;
     }
+
+    public void updateClubGradeId(Long clubGradeId) {
+        this.clubGradeId = clubGradeId;
+    }
 }

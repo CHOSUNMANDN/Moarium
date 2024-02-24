@@ -14,5 +14,6 @@ import java.util.List;
 public class ClubMemberDetailResDto {
     private String clubName;
     private Long myClubMemberId;
+    private String myClubGrade;
     private List<ClubMemberResponse> clubMembers;
 }

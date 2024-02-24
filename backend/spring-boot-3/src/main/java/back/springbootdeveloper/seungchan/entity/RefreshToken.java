@@ -16,8 +16,8 @@ public class RefreshToken extends BaseEntity {
     @Column(name = "refresh_token_id", updatable = false)
     private Long refresh_token_id;
 
-    @Column(name = "user_id", nullable = false, unique = true)
-    private Long userId;
+    @Column(name = "member_id", nullable = false, unique = true)
+    private Long memberId;
 
     @Column(name = "refresh_token", nullable = false)
     private String refreshToken;
@@ -25,11 +25,11 @@ public class RefreshToken extends BaseEntity {
     /**
      * 생성자
      *
-     * @param userId       사용자 ID
+     * @param memberId       사용자 ID
      * @param refreshToken 리프레시 토큰
      */
-    public RefreshToken(Long userId, String refreshToken) {
-        this.userId = userId;
+    public RefreshToken(Long memberId, String refreshToken) {
+        this.memberId = memberId;
         this.refreshToken = refreshToken;
     }
 

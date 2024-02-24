@@ -14,4 +14,9 @@ public class RefreshTokenService {
         return refreshTokenRepository.findByRefreshToken(refreshToken)
                 .orElseThrow(() -> new IllegalArgumentException("Unexpected token"));
     }
+
+    // TODO : Error Handling
+    public RefreshToken findByMemberId(Long memberId){
+        return refreshTokenRepository.findByMemberId(memberId).orElseThrow(() -> new IllegalArgumentException("Token does not exist"));
+    }
 }

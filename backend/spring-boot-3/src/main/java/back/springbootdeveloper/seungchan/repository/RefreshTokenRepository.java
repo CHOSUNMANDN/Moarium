@@ -8,7 +8,7 @@ import java.util.Optional;
 
 @Repository
 public interface RefreshTokenRepository extends JpaRepository<RefreshToken, Long> {
-    Optional<RefreshToken> findByUserId(Long userId);
+    Optional<RefreshToken> findByMemberId(Long memberId);
 
     Optional<RefreshToken> findByRefreshToken(String refreshToken);
 }

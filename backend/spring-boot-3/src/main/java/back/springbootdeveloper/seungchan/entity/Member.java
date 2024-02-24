@@ -21,25 +21,25 @@ public class Member extends BaseEntity {
     @Column(name = "member_id")
     private Long memberId;
 
-    @Column(name = "first_name", length = 10, nullable = false)
+    @Column(name = "first_name", length = 10)
     private String firstName;
 
-    @Column(name = "last_name", length = 20, nullable = false)
+    @Column(name = "last_name", length = 20)
     private String lastName;
 
-    @Column(name = "nick_name", length = 30, nullable = false)
+    @Column(name = "nick_name", length = 30)
     private String nickName;
 
     @Column(name = "email", length = 40, nullable = false, unique = true)
     private String email;
 
-    @Column(name = "major", length = 20, nullable = false)
+    @Column(name = "major", length = 20)
     private String major;
 
-    @Column(name = "student_id", length = 15, nullable = false)
+    @Column(name = "student_id", length = 15)
     private String studentId;
 
-    @Column(name = "registration", length = 10, nullable = false)
+    @Column(name = "registration", length = 10)
     private String registration;
 
     @Builder
@@ -50,6 +50,11 @@ public class Member extends BaseEntity {
         this.email = email;
         this.major = major;
         this.studentId = studentId;
+    }
+
+    @Builder
+    public Member(String email){
+        this.email = email;
     }
 
     @PrePersist
