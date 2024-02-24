@@ -6,11 +6,13 @@ type data = {
   week: string[];
   userId: number;
   setIsMemberInfoOpen: (state: number) => void;
+  setIsMemberToken: (state: string) => void;
 };
 
-export default function CurrentMember({ name, token, week, userId, setIsMemberInfoOpen }: data) {
+export default function CurrentMember({ name, token, week, userId, setIsMemberInfoOpen, setIsMemberToken }: data) {
   const openMemberInfo = () => {
     setIsMemberInfoOpen(userId);
+    setIsMemberToken(token);
   };
 
   return (
