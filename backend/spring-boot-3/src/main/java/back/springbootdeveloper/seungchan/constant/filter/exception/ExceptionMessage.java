@@ -9,8 +9,10 @@ public enum ExceptionMessage {
     EMAIL_SAME_MATCH("입력하신 이메일 주소가 서로 일치합니다. 다시 확인해 주세요."),
     PASSWORD_MISS_MATCH("입력하신 비밀번호와 기존 비밀번호가 일치하지 않습니다."),
     ENTITY_NOT_FOUND("데이터를 찾지 못했습니다."),
-    INVALID_SELECTION_CLASSIFICATION("적절한 분류를 선택해주세요");
+    INVALID_SELECTION_CLASSIFICATION("적절한 분류를 선택해주세요"),
 
+    EXTERNAL_SERVICE_BAD_REQUEST("외부 API 요청에 문제가 생겼습니다."),
+    EXTERNAL_SERVICE_UNAVAILABLE("외부 API server에 문제가 생겼습니다.");
 
     private final String message;
 

@@ -5,6 +5,8 @@ import back.springbootdeveloper.seungchan.constant.filter.CustomHttpStatus;
 import back.springbootdeveloper.seungchan.constant.filter.exception.ExceptionMessage;
 import back.springbootdeveloper.seungchan.filter.exception.ApiException;
 import back.springbootdeveloper.seungchan.filter.exception.EmailSameMatchException;
+import back.springbootdeveloper.seungchan.filter.exception.external.DefaultExternalApiClientErrorException;
+import back.springbootdeveloper.seungchan.filter.exception.external.DefaultExternalApiServerErrorException;
 import back.springbootdeveloper.seungchan.filter.exception.judgment.*;
 import back.springbootdeveloper.seungchan.filter.exception.user.NewUserRegistrationException;
 import back.springbootdeveloper.seungchan.filter.exception.user.UserNotExistException;
@@ -173,5 +175,33 @@ public class ApiExceptionHandler {
         );
 
         return new ResponseEntity<>(apiException, httpStatus);
+    }
+
+
+
+    // 외부 API 4xx 응답시 발생하는 기본 Exception
+    @ExceptionHandler(value = {DefaultExternalApiClientErrorException.class})
+    public ResponseEntity<Object> handleDefaultExternalApiClientErrorException(DefaultExternalApiClientErrorException e){
+        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+        ApiException apiException = new ApiException(
+                ExceptionMessage.EXTERNAL_SERVICE_BAD_REQUEST.get(),
+                httpStatus,
+                httpStatus.value(),
+                ZonedDateTime.now(ZoneId.of("Z"))
+        );
+        return new ResponseEntity<>(apiException, httpStatus);
+    }
+
+    // 외부 API 5xx 응답시 발생하는 기본 Exception
+    @ExceptionHandler(value = {DefaultExternalApiServerErrorException.class})
+    public ResponseEntity<Object> handleDefaultExternalApiServerErrorException(DefaultExternalApiServerErrorException e){
+        HttpStatus httpStatus = HttpStatus.SERVICE_UNAVAILABLE;
+        ApiException apiException = new ApiException(
+                ExceptionMessage.EXTERNAL_SERVICE_UNAVAILABLE.get(),
+                httpStatus,
+                httpStatus.value(),
+                ZonedDateTime.now(ZoneId.of("Z"))
+        );
+        return new ResponseEntity<>(apiException,httpStatus);
     }
 }

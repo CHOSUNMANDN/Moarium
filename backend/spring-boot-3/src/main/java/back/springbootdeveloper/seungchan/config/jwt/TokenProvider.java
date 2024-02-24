@@ -1,8 +1,7 @@
 package back.springbootdeveloper.seungchan.config.jwt;
 
-import back.springbootdeveloper.seungchan.entity.UserInfo;
-import back.springbootdeveloper.seungchan.entity.UserUtill;
-import back.springbootdeveloper.seungchan.service.UserUtillService;
+import back.springbootdeveloper.seungchan.entity.Member;
+import back.springbootdeveloper.seungchan.service.MemberService;
 import io.jsonwebtoken.Header;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -10,7 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.util.Collections;
@@ -20,20 +19,21 @@ import java.util.Set;
 import io.jsonwebtoken.Claims;
 
 @RequiredArgsConstructor
-@Service
+@Component
 public class TokenProvider {
     // 토큰을 생성하고 올바른 토큰인지 유효성 검사를 하고
     // 토큰에서 필요한 정보를 가져오는 클래스를 작성
 
+    // application-oauth에 등록한 키값 가져온다.
     private final JwtProperties jwtProperties;
-    private final UserUtillService userUtillService;
+    private final MemberService memberService;
 
     // 토큰 생성을 한다. user의 정보와 원하는 유효기간을 매개 변수로 받는다.
-    public String generateToken(UserInfo user, Duration expiredAt) {
-        UserUtill userUtill = userUtillService.findUserByUserId(user.getUserInfoId());
+
+    public String generateToken(Member member, Duration expiredAt) {
         Date now = new Date();
         // 현제 시간 + 원하는 유효기간을 토대로 토큰을 만든다.
-        return makeToken(new Date(now.getTime() + expiredAt.toMillis()), user, userUtill);
+        return makeToken(new Date(now.getTime() + expiredAt.toMillis()),member);
     }
 
     // 1. JWT 토큰 객체 생성 메서드
@@ -42,7 +42,7 @@ public class TokenProvider {
     // 헤더는 typ(타입),
     // 내용 iss(발급자), iat(발급일시), exp(만료일시), sub(토큰 제목)이, 클레임에는 유저 ID를 지정
     // 토큰을 만들 때는 프로퍼티즈 파일에 선언해둔 비밀값과 함께 HS256 방식으로 암호화한다.
-    private String makeToken(Date expiry, UserInfo user, UserUtill userUtill) {
+    private String makeToken(Date expiry, Member member) {
         Date now = new Date();
 
         // 헤더 : 타입, alg | 내용 : 키, 값 | 서명
@@ -53,9 +53,10 @@ public class TokenProvider {
                 .setIssuer(jwtProperties.getIssuer()) // 내용 iss : ajufresh@gmail.com
                 .setIssuedAt(now) // 내용 iat : 현재 시간
                 .setExpiration(expiry) // 내용 exp : expiry 멤버 변숫 값 / 토큰 만료기간 / 현제 + 만료 기간
-                .setSubject(user.getEmail()) // 내용 sub : 유저의 이메일
-                .claim("id", user.getUserInfoId()) // 클레임 id : 유저 ID
-                .claim("isNuriKing", userUtill.isNuriKing())
+
+                .setSubject(member.getEmail()) // 내용 sub : 유저의 이메일
+                .claim("MemberId", member.getMemberId()) // 클레임 id : 유저 ID
+//                .claim("isMoariumKing",) // TODO: Moarium 전체 관리자에 대한 상의가 필요
                 // 서명 : 비밀값과 함께 해시값을 HS256 방식으로 암호화
                 .signWith(SignatureAlgorithm.HS256, jwtProperties.getSecretKey())
                 .compact();
@@ -86,13 +87,13 @@ public class TokenProvider {
     // 클레임 정보를 반환받고 클레임에서 id 킬로 저장된 값을 가져와 반환합니다.
     public Long getUserId(String token) {
         Claims claims = getClaims(token); // 토큰의 정보를 가져오는 claims 만들기
-        return claims.get("id", Long.class); // 토큰 기반으로 유저 id 가져오기
+        return claims.get("MemberId", Long.class); // 토큰 기반으로 유저 id 가져오기
     }
 
-    // TODO: 8/8/23  nuriking을 가져온다.
+    // TODO: 8/8/23  MoariumKing을 가져온다.
     public Boolean getIsNuriKing(String token) {
         Claims claims = getClaims(token); // 토큰의 정보를 가져오는 claims 만들기
-        return claims.get("isNuriKing", Boolean.class); // 토큰 기반으로 유저 id 가져오기
+        return claims.get("isMoariumKing", Boolean.class); // 토큰 기반으로 유저 id 가져오기
     }
 
     // 토큰 기반의 claims 가져오기

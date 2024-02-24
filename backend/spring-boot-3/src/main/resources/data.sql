@@ -1310,6 +1310,28 @@ VALUES (4, '2024-02-17 17:06:46.245979', '2024-02-17 17:06:46.245953', '2024-02-
 INSERT INTO attendance_number (attendance_number_id, create_date, update_date, attendance_date, attendance_number,
                                club_id)
 VALUES (5, '2024-02-17 17:06:46.340458', '2024-02-17 17:06:46.340439', '2024-02-17', '1712', 5);
+INSERT INTO attendance_number (attendance_number_id, create_date, update_date, attendance_date, attendance_number,
+                               club_id)
+VALUES (6, '2024-02-19 17:06:45.012475', '2024-02-19 17:06:45.011020', '2024-02-19', '1234', 1);
+INSERT INTO attendance_number (attendance_number_id, create_date, update_date, attendance_date, attendance_number,
+                               club_id)
+VALUES (7, '2024-02-20 17:06:45.012475', '2024-02-20 17:06:45.011020', '2024-02-20', '6234', 1);
+INSERT INTO attendance_number (attendance_number_id, create_date, update_date, attendance_date, attendance_number,
+                               club_id)
+VALUES (8, '2024-02-21 17:06:45.012475', '2024-02-21 17:06:45.011020', '2024-02-21', '3451', 1);
+INSERT INTO attendance_number (attendance_number_id, create_date, update_date, attendance_date, attendance_number,
+                               club_id)
+VALUES (9, '2024-02-22 17:06:45.012475', '2024-02-22 17:06:45.011020', '2024-02-22', '4354', 1);
+INSERT INTO attendance_number (attendance_number_id, create_date, update_date, attendance_date, attendance_number,
+                               club_id)
+VALUES (10, '2024-02-23 17:06:45.012475', '2024-02-23 17:06:45.011020', '2024-02-23', '1784', 1);
+INSERT INTO attendance_number (attendance_number_id, create_date, update_date, attendance_date, attendance_number,
+                               club_id)
+VALUES (11, '2024-02-23 17:30:45.012475', '2024-02-23 17:06:45.011020', '2024-02-23', '9342', 1);
+INSERT INTO attendance_number (attendance_number_id, create_date, update_date, attendance_date, attendance_number,
+                               club_id)
+VALUES (12, '2024-02-23 18:00:45.012475', '2024-02-23 17:06:45.011020', '2024-02-23', '1234', 1);
+
 
 -- club_introduce_image
 INSERT INTO club_introduce_image (club_introduce_image_id, create_date, update_date, club_introduce_image, club_id)

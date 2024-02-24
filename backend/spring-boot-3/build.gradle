@@ -83,7 +83,6 @@ dependencies {
 
     //  스프링 데이터 JPA
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-
     implementation 'mysql:mysql-connector-java:8.0.27'
 
     // str <==> json parsing method
@@ -92,13 +91,13 @@ dependencies {
     // 8장 추가 스프링 시큐리티를 사용하기 위한 추가
     // 스프링 시큐리티를 사용하기 위한 스타터 추가
     implementation 'org.springframework.boot:spring-boot-starter-security:3.0.2'
-
+    // OAuth를 위한 의존성 추가
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
     // 스프링 시큐리티를 테스트하기 위한 의존성 추가
     testImplementation 'org.springframework.security:spring-security-test'
 
     // test용 lombok 의존성 추가
     testImplementation 'org.projectlombok:lombok'
-
 
     //프로젝트에 jwt 라이브러리를 추가하여 JSON Web Token(JWT)을 생성하고
     // 처리하는 기능을 사용할 수 있도록 해줍니다.
@@ -106,6 +105,7 @@ dependencies {
     // jjwt는 JWT를 쉽게 생성하고 구문 분석하고 검증할 수 있는 Java 라이브러리입니다
     implementation 'io.jsonwebtoken:jjwt:0.9.1' // // 자바 JWT 라이브러리
     implementation 'javax.xml.bind:jaxb-api:2.3.1' // XML 문서와 Java 객체 간 매핑을 자동화
+
 
     // swagger 설정
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
