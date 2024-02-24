@@ -35,6 +35,7 @@ export default function Club() {
   const [AllertModalstatus, setAllertModalStatus] = useState(0);
   const [isTodayAttendance, setIsTodayAttendance] = useState(false);
   const [isMemberInfoOpen, setIsMemberInfoOpen] = useState(0);
+  const [isMemberToken, setIsMemberToken] = useState('');
   const [isClubName, setIsClubName] = useState('');
   const pathName: string = usePathname();
   let id: string | undefined;
@@ -79,7 +80,9 @@ export default function Club() {
   return (
     <main>
       {isAttendanceModalOpen ? <AttendanceModal setIsAttendanceModalOpen={setIsAttendanceModalOpen} setAllertModalStatus={setAllertModalStatus} /> : null}
-      {isMemberInfoOpen !== 0 ? <MemberInformationModal userId={isMemberInfoOpen} setIsMemberInfoOpen={setIsMemberInfoOpen} isKing={isKing} type={type} /> : null}
+      {isMemberInfoOpen !== 0 ? (
+        <MemberInformationModal clubId={id} clubMemberId={isMemberInfoOpen} vacationToken={isMemberToken} setIsMemberInfoOpen={setIsMemberInfoOpen} isKing={isKing} type={type} />
+      ) : null}
       <header>
         <Header clubName={isClubName} />
       </header>
@@ -110,7 +113,15 @@ export default function Club() {
             <div className="border border-light-grey mb-[0.5rem]"></div>
             {userList &&
               userList.map((item: userDataPropsTypeZero, idx) => (
-                <CurrentMember key={idx} name={item.memberName} token={item.vacationToken} week={item.attendanceStatus} userId={item.clubMemberId} setIsMemberInfoOpen={setIsMemberInfoOpen} />
+                <CurrentMember
+                  key={idx}
+                  name={item.memberName}
+                  token={item.vacationToken}
+                  week={item.attendanceStatus}
+                  userId={item.clubMemberId}
+                  setIsMemberInfoOpen={setIsMemberInfoOpen}
+                  setIsMemberToken={setIsMemberToken}
+                />
               ))}
           </article>
         ) : (
