@@ -14,8 +14,8 @@ export const userToken = atom({
   effects_UNSTABLE: [persistAtom],
 });
 
-export const isNuriKing = atom({
+export const myClubGrade = atom({
   key: 'iNuriKing',
-  default: false,
+  default: '',
   effects_UNSTABLE: [persistAtom],
 });

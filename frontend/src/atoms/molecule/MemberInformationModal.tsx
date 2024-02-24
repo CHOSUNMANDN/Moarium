@@ -11,7 +11,7 @@ type props = {
   clubMemberId: number;
   vacationToken: string;
   setIsMemberInfoOpen: (isOpen: number) => void;
-  isKing: boolean;
+  isMyClubGrade: string;
   type: number;
 };
 
@@ -22,7 +22,7 @@ type data = {
   selfIntroduction: string;
 };
 
-export default function MemberInformationModal({ clubId, clubMemberId, vacationToken, setIsMemberInfoOpen, isKing, type }: props) {
+export default function MemberInformationModal({ clubId, clubMemberId, vacationToken, setIsMemberInfoOpen, isMyClubGrade, type }: props) {
   const [token, setToken] = useRecoilState(userToken);
   const [userInfo, setUserInfo] = useState<data>();
   const [vacationCount, setVacationCount] = useState(0);
@@ -99,7 +99,7 @@ export default function MemberInformationModal({ clubId, clubMemberId, vacationT
           <>
             <div className="flex items-center font-bold text-left mb-[1rem]">
               <div className="text-xl mr-[3rem]">{userInfo.name}</div>
-              {isKing && type == 0 ? (
+              {isMyClubGrade === 'LEADER' && type == 0 ? (
                 <>
                   <div className="mr-[1rem]" onClick={giveExpulsion}>
                     <ShortButton text="추방하기" addClass="bg-red"></ShortButton>
@@ -118,7 +118,7 @@ export default function MemberInformationModal({ clubId, clubMemberId, vacationT
             <div className="w-[17.81rem] h-[9.69rem] border border-grey rounded-[0.63rem] p-[0.5rem] mb-[1rem]">
               <span className="font-semibold text-base">{userInfo.selfIntroduction}</span>
             </div>
-            {isKing && type == 0 ? (
+            {isMyClubGrade === 'LEADER' && type == 0 ? (
               <>
                 <div>
                   <div className="font-semibold text-base">남은 휴가 : {vacationToken}일</div>

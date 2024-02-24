@@ -3,7 +3,7 @@ import { axAuth } from '@/apis/axiosinstance';
 import Header from '../../../atoms/molecule/Header';
 import { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
-import { userToken, isNuriKing } from '../../../states/index';
+import { userToken, myClubGrade } from '../../../states/index';
 import Graduater from '@/atoms/atom/graduater';
 import CurrentMember from '@/atoms/molecule/current-member';
 import { useRouter } from 'next/navigation';
@@ -30,7 +30,7 @@ export default function Club() {
   const [token, setToken] = useRecoilState(userToken);
   const [type, setType] = useState(0);
   const [userList, setUserList] = useState([]);
-  const [isKing, setIsKing] = useRecoilState(isNuriKing);
+  const [isMyClubGrade, setIsMyClubGrade] = useRecoilState(myClubGrade);
   const [isAttendanceModalOpen, setIsAttendanceModalOpen] = useState(false);
   const [AllertModalstatus, setAllertModalStatus] = useState(0);
   const [isTodayAttendance, setIsTodayAttendance] = useState(false);
@@ -56,7 +56,7 @@ export default function Club() {
         .then(res => {
           setUserList(res.data.result.clubMembers);
           setIsClubName(res.data.clubName);
-          setIsKing(res.data.result.myClubGrade);
+          setIsMyClubGrade(res.data.result.myClubGrade);
         })
         .catch(err => {
           console.log(err);
@@ -82,7 +82,7 @@ export default function Club() {
     <main>
       {isAttendanceModalOpen ? <AttendanceModal setIsAttendanceModalOpen={setIsAttendanceModalOpen} setAllertModalStatus={setAllertModalStatus} /> : null}
       {isMemberInfoOpen !== 0 ? (
-        <MemberInformationModal clubId={id} clubMemberId={isMemberInfoOpen} vacationToken={isMemberToken} setIsMemberInfoOpen={setIsMemberInfoOpen} isKing={isKing} type={type} />
+        <MemberInformationModal clubId={id} clubMemberId={isMemberInfoOpen} vacationToken={isMemberToken} setIsMemberInfoOpen={setIsMemberInfoOpen} isMyClubGrade={isMyClubGrade} type={type} />
       ) : null}
       <header>
         <Header clubName={isClubName} />
@@ -148,7 +148,7 @@ export default function Club() {
       ) : (
         <div></div>
       )}
-      <NavigationFooter isKing={isKing}></NavigationFooter>
+      <NavigationFooter isMyClubGrade={isMyClubGrade}></NavigationFooter>
     </main>
   );
 }
