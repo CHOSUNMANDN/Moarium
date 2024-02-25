@@ -7,8 +7,6 @@ import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import back.springbootdeveloper.seungchan.dto.request.AttendanceNumberReqDto;
 import back.springbootdeveloper.seungchan.dto.request.GiveVacationTokenReqDto;
 import back.springbootdeveloper.seungchan.dto.response.*;
-import back.springbootdeveloper.seungchan.entity.AttendanceCheckTime;
-import back.springbootdeveloper.seungchan.entity.AttendanceWeekDate;
 import back.springbootdeveloper.seungchan.entity.ClubGrade;
 import back.springbootdeveloper.seungchan.entity.Member;
 import back.springbootdeveloper.seungchan.service.*;
@@ -115,7 +113,7 @@ public class ClubDetailPageController {
         Long memberId = 1L;
         Member member = memberService.findByMemberId(memberId);
         // 휴면 멤버 여부
-        Boolean alreadyDormant = clubGradeService.isDormantMemberStatus(clubMemberId);
+        Boolean alreadyDormant = clubGradeService.isMemberStatus(clubMemberId, CLUB_GRADE.DORMANT);
         if (alreadyDormant) {
             return BaseResponseBodyUtiil.BaseResponseBodyFailure(RESPONSE_MESSAGE_VALUE.ALREADY_DORMANT_MEMBER(member.getFullName()));
         }

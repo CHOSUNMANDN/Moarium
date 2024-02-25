@@ -24,4 +24,8 @@ public class RESPONSE_MESSAGE_VALUE {
     public static String ALREADY_DORMANT_MEMBER(String memberName) {
         return memberName + "님은 휴면 회원입니다.";
     }
+
+    public static String SUCCESS_QUIT_CLUB(String clubName) {
+        return clubName + "에서 탈퇴되었습니다.";
+    }
 }
