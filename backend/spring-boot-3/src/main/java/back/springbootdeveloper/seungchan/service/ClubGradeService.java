@@ -27,11 +27,13 @@ public class ClubGradeService {
      * 주어진 클럽 멤버의 상태가 휴면 상태인지 확인합니다.
      *
      * @param clubMemberId 확인할 클럽 멤버의 ID
-     * @return 클럽 멤버의 휴면 상태 여부를 나타내는 Boolean 값
+     * @param dormant      휴면 상태를 나타내는 CLUB_GRADE enum 값
+     * @return 클럽 멤버의 휴면 상태 여부를 나타내는 Boolean 값. 휴면 상태일 경우 true를 반환하고, 아닐 경우 false를 반환합니다.
+     * @throws EntityNotFoundException 지정된 멤버를 찾을 수 없을 때 발생하는 예외
      */
-    public Boolean isDormantMemberStatus(Long clubMemberId) {
+    public Boolean isMemberStatus(Long clubMemberId, CLUB_GRADE dormant) {
         ClubMember clubMember = clubMemberRepository.findById(clubMemberId).orElseThrow(EntityNotFoundException::new);
-        return isSame(CLUB_GRADE.DORMANT.getId(), clubMember.getClubGradeId());
+        return isSame(dormant.getId(), clubMember.getClubGradeId());
     }
 
     /**
@@ -48,6 +50,44 @@ public class ClubGradeService {
         ClubMember updateClubMember = clubMemberRepository.save(clubMember);
 
         return isSame(clubGrade.getId(), updateClubMember.getClubGradeId());
+    }
+
+    /**
+     * 클럽 멤버의 상태를 토글하고, 이전 상태와 현재 상태가 다른지 여부를 반환합니다.
+     *
+     * @param clubMemberId 클럽 멤버의 고유 식별자
+     * @return 이전 상태와 현재 상태가 다른지 여부를 나타내는 Boolean 값
+     * @throws EntityNotFoundException 지정된 멤버를 찾을 수 없을 때 발생하는 예외
+     */
+    @Transactional
+    public Boolean toggleMemberAndDormantOfClubGrade(Long clubMemberId) {
+        ClubMember clubMember = clubMemberRepository.findById(clubMemberId).orElseThrow(EntityNotFoundException::new);
+        Long beforeClubGradeId = clubMember.getClubGradeId();
+
+        // 토글기능, Member <=> Dormant
+        toggleMemberAndDormant(clubMember);
+        // 업데이트 적용 및 확인
+        ClubMember updateClubMember = clubMemberRepository.save(clubMember);
+        // 이전 상태와 현재 상태가 다른지 여부를 반환합니다.
+        return isNotSame(beforeClubGradeId, updateClubMember.getClubGradeId());
+    }
+
+    /**
+     * 클럽 멤버의 상태를 토글합니다.
+     *
+     * @param clubMember 상태를 변경할 클럽 멤버
+     */
+    private void toggleMemberAndDormant(ClubMember clubMember) {
+        // 클럽 멤버의 현재 상태를 확인하고, MEMBER 상태일 경우 DORMANT로 변경하고, 그렇지 않으면 MEMBER로 변경합니다.
+        if (isSame(CLUB_GRADE.MEMBER.getId(), clubMember.getClubGradeId())) {
+            clubMember.updateClubGradeId(Long.valueOf(CLUB_GRADE.DORMANT.getId()));
+        } else {
+            clubMember.updateClubGradeId(Long.valueOf(CLUB_GRADE.MEMBER.getId()));
+        }
+    }
+
+    private boolean isNotSame(Long longNumber_1, Long longNumber_2) {
+        return longNumber_1 != longNumber_2;
     }
 
     private boolean isSame(Integer clubGradeId, Long updateClubMemberGetClubGradeId) {

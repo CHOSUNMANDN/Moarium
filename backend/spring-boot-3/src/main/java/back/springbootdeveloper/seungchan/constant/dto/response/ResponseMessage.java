@@ -8,13 +8,17 @@ public enum ResponseMessage {
     REGISTRATION_TIMETABLE_COMPLETE("시간표 등록이 완료 되었습니다."),
     OAUTH_LOGIN_SUCCESS("3rd 파티 로그인을 성공했습니다."),
     PASS_TODAY_ATTENDANCE("출석이 성공적으로 완료되었습니다."),
-    BAD_TODAY_ATTENDANCE("출석에 실패했습니다.");
+    BAD_TODAY_ATTENDANCE("출석에 실패했습니다."),
+    SUCCESS_TOGLE_MEMBER_GRADE("활동회원으로 전환되었습니다."),
+    SUCCESS_TOGLE_DORMANT_GRADE("휴면회원으로 전환되었습니다."),
+    BAD_TOGLE_GRADE("등급 전환에 실패했습니다.");
 
     private final String message;
 
     ResponseMessage(String message) {
         this.message = message;
     }
+
 
     public String get() {
         return message;
