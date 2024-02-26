@@ -49,6 +49,7 @@ public class ClubArticle extends BaseEntity {
     @Column(name = "club_article_date", nullable = false)
     private LocalDate ClubArticleDate;
 
+
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "clubArticle")
     private List<ClubArticleComment> clubArticleComments = new ArrayList<>();
 
@@ -106,5 +107,9 @@ public class ClubArticle extends BaseEntity {
         if (clubArticleComment.getClubArticle() != this) { // 무한루프에 빠지지 않도록 체크
             clubArticleComment.setClubArticle(this);
         }
+    }
+
+    public String getClubArticleDate() {
+        return String.valueOf(ClubArticleDate);
     }
 }
