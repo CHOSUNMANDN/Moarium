@@ -12,6 +12,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Collections;
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
@@ -32,7 +35,10 @@ public class AttendanceWeekDateService {
 
         ClubMember clubMember = clubMemberRepository.findById(clubMemberId).orElseThrow(EntityNotFoundException::new);
         AttendanceState attendanceState = attendanceStateRepository.findById(clubMember.getAttendanceStateId()).orElseThrow(EntityNotFoundException::new);
-        AttendanceWeekDate attendanceWeekDate = attendanceState.getAttendanceWeekDate();
+        // 역정렬해서 하나 가져오기
+        List<AttendanceWeekDate> attendanceWeekDates = attendanceState.getAttendanceWeekDates();
+        Collections.reverse(attendanceWeekDates);
+        AttendanceWeekDate attendanceWeekDate = attendanceWeekDates.get(0);
 
         // 원하는 출석 상태에 의해 변경
         updateAttendanceStateWithAttendanceEnum(attendanceEnum, attendanceWeekDate);

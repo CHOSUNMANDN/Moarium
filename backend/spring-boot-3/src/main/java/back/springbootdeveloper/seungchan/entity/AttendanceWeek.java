@@ -10,6 +10,8 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 import jakarta.persistence.*;
 
+import java.time.DayOfWeek;
+
 @Getter
 @NoArgsConstructor
 @Entity
@@ -91,5 +93,27 @@ public class AttendanceWeek extends BaseEntity {
         if (clubControl.getAttendanceWeek() != this) { // null 체크 추가
             clubControl.setAttendanceWeek(this);
         }
+    }
+
+    public String getStatusForDay(DayOfWeek dayOfWeek) {
+        switch (dayOfWeek) {
+            case MONDAY:
+                return this.monday.getStatus();
+            case TUESDAY:
+                return this.tuesday.getStatus();
+            case WEDNESDAY:
+                return this.wednesday.getStatus();
+            case THURSDAY:
+                return this.thursday.getStatus();
+            case FRIDAY:
+                return this.friday.getStatus();
+            case SATURDAY:
+                return this.saturday.getStatus();
+            case SUNDAY:
+                return this.sunday.getStatus();
+            default:
+                break;
+        }
+        return "";
     }
 }

@@ -1,10 +1,7 @@
 package back.springbootdeveloper.seungchan.service;
 
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
-import back.springbootdeveloper.seungchan.dto.response.AttendanceStates;
-import back.springbootdeveloper.seungchan.dto.response.ClubMemberDetailResDto;
-import back.springbootdeveloper.seungchan.dto.response.ClubMemberInformationResDto;
-import back.springbootdeveloper.seungchan.dto.response.ClubMemberResponse;
+import back.springbootdeveloper.seungchan.dto.response.*;
 import back.springbootdeveloper.seungchan.entity.*;
 import back.springbootdeveloper.seungchan.filter.exception.judgment.EntityNotFoundException;
 import back.springbootdeveloper.seungchan.repository.*;
@@ -13,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -26,6 +24,7 @@ public class ClubDetailPageService {
     private final AttendanceWeekDateRepository attendanceWeekDateRepository;
     private final ClubRepository clubRepository;
     private final ClubMemberInformationRepository clubMemberInformationRepository;
+    private final AttendanceWeekRepository attendanceWeekRepository;
 
     /**
      * 주어진 클럽의 휴면 회원들의 전체 이름을 가져와서 반환합니다.
@@ -54,11 +53,14 @@ public class ClubDetailPageService {
         // ClubMemberResponse 리스트 생성
         List<ClubMemberResponse> clubMemberResponses = getClubMemberResponsesFromClubMembers(clubMembers);
         Club club = clubRepository.findById(clubId).orElseThrow(EntityNotFoundException::new);
-        ClubMember clubMember = clubMemberRepository.findByMemberId(memberId).orElseThrow(EntityNotFoundException::new);
+        ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId).orElseThrow(EntityNotFoundException::new);
+        ClubControl clubControl = club.getClubControl();
+        ClubMemberAttendanceCheckDate clubMemberAttendanceCheckDate = new ClubMemberAttendanceCheckDate(clubControl.getAttendanceWeek());
 
         return ClubMemberDetailResDto.builder()
                 .clubName(club.getClubName())
                 .myClubMemberId(clubMember.getMemberId())
+                .clubMemberAttendanceCheckDate(clubMemberAttendanceCheckDate)
                 .myClubGrade(myClubGrade.getGrade())
                 .clubMembers(clubMemberResponses)
                 .build();
@@ -100,7 +102,10 @@ public class ClubDetailPageService {
         for (ClubMember clubMember : clubMembers) {
             Member member = memberRepository.findById(clubMember.getMemberId()).orElseThrow(EntityNotFoundException::new);
             AttendanceState attendanceState = attendanceStateRepository.findById(clubMember.getAttendanceStateId()).orElseThrow(EntityNotFoundException::new);
-            AttendanceStates attendanceStates = new AttendanceStates(attendanceState.getAttendanceWeekDate());
+            // 역정렬을 해서 최근정보 가져오기.
+            List<AttendanceWeekDate> attendanceWeekDates = attendanceState.getAttendanceWeekDates();
+            Collections.reverse(attendanceWeekDates);
+            AttendanceStates attendanceStates = new AttendanceStates(attendanceWeekDates.get(0));
 
             clubMemberResponses.add(
                     ClubMemberResponse.builder()

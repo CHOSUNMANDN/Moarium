@@ -6,6 +6,9 @@ import back.springbootdeveloper.seungchan.entity.ClubGrade;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface ClubArticleRepository extends JpaRepository<ClubArticle, Long> {
+    List<ClubArticle> findAllByClubMemberId(Long clubMemberId);
 }

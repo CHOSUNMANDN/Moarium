@@ -57,8 +57,9 @@ public class AttendanceWeekDate extends BaseEntity {
     @Column(name = "sunday_date", nullable = false)
     private LocalDate sundayDate;
 
-    @OneToOne(mappedBy = "attendanceWeekDate")
-    private AttendanceState attendanceSate;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "attendance_state_id")
+    private AttendanceState attendanceState;
 
     @Builder
     public AttendanceWeekDate(ATTENDANCE_STATE monday, ATTENDANCE_STATE tuesday, ATTENDANCE_STATE wednesday, ATTENDANCE_STATE thursday, ATTENDANCE_STATE friday, ATTENDANCE_STATE saturday, ATTENDANCE_STATE sunday) {
@@ -184,11 +185,33 @@ public class AttendanceWeekDate extends BaseEntity {
         }
     }
 
-    public void setAttendanceSate(final AttendanceState attendanceSate) {
-        this.attendanceSate = attendanceSate;
+    public void setAttendanceState(final AttendanceState attendanceSate) {
+        this.attendanceState = attendanceSate;
 
-        if (attendanceSate.getAttendanceWeekDate() != this) { // null 체크 추가
-            attendanceSate.setAttendanceWeekDate(this);
+        if (!attendanceSate.getAttendanceWeekDates().contains(this)) { // null 체크 추가
+            attendanceSate.addAttendanceWeekDates(this);
         }
+    }
+
+    public ATTENDANCE_STATE getAttendanceStateForDay(DayOfWeek dayOfWeek) {
+        switch (dayOfWeek) {
+            case MONDAY:
+                return this.monday;
+            case TUESDAY:
+                return this.tuesday;
+            case WEDNESDAY:
+                return this.wednesday;
+            case THURSDAY:
+                return this.thursday;
+            case FRIDAY:
+                return this.friday;
+            case SATURDAY:
+                return this.saturday;
+            case SUNDAY:
+                return this.sunday;
+            default:
+                break;
+        }
+        return null;
     }
 }

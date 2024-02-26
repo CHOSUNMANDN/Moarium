@@ -4,6 +4,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @NoArgsConstructor
 @Entity
@@ -14,9 +17,8 @@ public class AttendanceState {
     @Column(name = "attendance_state_id")
     private Long attendanceStateId;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "attendance_week_date_id")
-    private AttendanceWeekDate attendanceWeekDate;
+    @OneToMany(mappedBy = "attendanceState", cascade = CascadeType.ALL)
+    private List<AttendanceWeekDate> attendanceWeekDates = new ArrayList<>();
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "vacation_token_id")
@@ -26,11 +28,11 @@ public class AttendanceState {
     @JoinColumn(name = "attendance_check_time_id")
     private AttendanceCheckTime attendanceCheckTime;
 
-    public void setAttendanceWeekDate(final AttendanceWeekDate attendanceWeekDate) {
-        this.attendanceWeekDate = attendanceWeekDate;
+    public void addAttendanceWeekDates(final AttendanceWeekDate attendanceWeekDate) {
+        this.attendanceWeekDates.add(attendanceWeekDate);
 
-        if (attendanceWeekDate.getAttendanceSate() != this) { // null 체크 추가
-            attendanceWeekDate.setAttendanceSate(this);
+        if (attendanceWeekDate.getAttendanceState() != this) { // null 체크 추가
+            attendanceWeekDate.setAttendanceState(this);
         }
     }
 

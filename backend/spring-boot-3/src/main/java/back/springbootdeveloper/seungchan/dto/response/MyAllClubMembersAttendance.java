@@ -1,20 +1,18 @@
 package back.springbootdeveloper.seungchan.dto.response;
 
+import back.springbootdeveloper.seungchan.entity.AttendanceState;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class ClubMemberDetailResDto {
+public class MyAllClubMembersAttendance {
     private String clubName;
-    private ClubMemberAttendanceCheckDate clubMemberAttendanceCheckDate;
-    private Long myClubMemberId;
-    private String myClubGrade;
-    private List<ClubMemberResponse> clubMembers;
+    private Integer vacationToken;
+    private MyAttendanceState myAttendanceState;
+    private MyAttendanceCount myAttendanceCount;
 }

@@ -5,10 +5,10 @@ import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import back.springbootdeveloper.seungchan.entity.*;
 import back.springbootdeveloper.seungchan.repository.*;
 import back.springbootdeveloper.seungchan.testutills.TestMakeEntity;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,16 +48,6 @@ class entityMappingTest {
         this.clubMemberInformationRepository = clubMemberInformationRepository;
     }
 
-    @BeforeEach
-    void setUp() {
-        this.clubMemberRepository.deleteAll();
-        this.memberRepository.deleteAll();
-        this.clubRepository.deleteAll();
-        this.clubArticleRepository.deleteAll();
-        this.attendanceSateRepository.deleteAll();
-        this.clubMemberInformationRepository.deleteAll();
-        this.clubGradeRepository.deleteAll();
-    }
 
     @Test
     void 매핑_저장_학습_테스트_1() throws Exception {
@@ -206,6 +196,7 @@ class entityMappingTest {
      * @return
      */
     private AttendanceState mapping_AttendanceSate___AttendanceCheckTime_AttendanceWeekDate_VacationToken() {
+//        AttendanceState attendanceSate = attendanceSateRepository.save(new AttendanceState());
         AttendanceState attendanceSate = new AttendanceState();
         AttendanceCheckTime attendanceCheckTime = new AttendanceCheckTime();
         AttendanceWeekDate attendanceWeekDate = new AttendanceWeekDate();
@@ -214,7 +205,7 @@ class entityMappingTest {
         attendanceSate.setAttendanceCheckTime(attendanceCheckTime);
 
 
-        attendanceSate.setAttendanceWeekDate(attendanceWeekDate);
+        attendanceSate.addAttendanceWeekDates(attendanceWeekDate);
         attendanceSate.setVacationToken(vacationToken);
 
         return attendanceSateRepository.save(attendanceSate);

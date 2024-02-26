@@ -111,7 +111,7 @@ public class EntityApplyService {
         // attendanceSate - attendanceCheckTime
         attendanceSate.setAttendanceCheckTime(attendanceCheckTime);
         // attendanceSate - attendanceWeekDate
-        attendanceSate.setAttendanceWeekDate(attendanceWeekDate);
+        attendanceSate.addAttendanceWeekDates(attendanceWeekDate);
         // attendanceSate - vacationToken
         attendanceSate.setVacationToken(vacationToken);
 
