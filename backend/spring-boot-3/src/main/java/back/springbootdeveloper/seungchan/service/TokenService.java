@@ -48,7 +48,7 @@ public class TokenService {
         String refreshToken = tokenProvider.generateToken(user, REFRESH_TOKEN_DURATION);
 
         // 리프레쉬 토큰을 db에 저장한다.
-        saveRefreshToken(user.getId(), refreshToken);
+        saveRefreshToken(user.getUserInfoId(), refreshToken);
 
         // 리프레쉬 토큰을 쿠키에 추가한다.
         addRefreshTokenToCookie(request, response, refreshToken);

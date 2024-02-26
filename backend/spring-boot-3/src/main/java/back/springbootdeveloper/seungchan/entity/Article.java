@@ -4,10 +4,7 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.DynamicInsert;
-import org.hibernate.annotations.DynamicUpdate;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -18,9 +15,7 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @Entity
 @Table(name = "article")
-@DynamicInsert // @ColumnDefault 사용 필수insert할시 Null 배제
-@DynamicUpdate // update할시 Null 배재
-public class Article {
+public class Article extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "article_id")
@@ -36,13 +31,11 @@ public class Article {
     @Column(name = "article_date", nullable = false)
     private LocalDate articleDate;
 
-    @ColumnDefault(value = "0")
     @Column(name = "declaration_count")
-    private Integer declarationCount;
+    private Integer declarationCount = 0;
 
-    @ColumnDefault(value = "0")
     @Column(name = "like_count")
-    private Integer likeCount;
+    private Integer likeCount = 0;
 
     @Builder
     public Article(String title, String content) {

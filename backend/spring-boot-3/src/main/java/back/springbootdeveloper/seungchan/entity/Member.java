@@ -4,17 +4,18 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @NoArgsConstructor
 @Entity
 @Table(name = "member")
-public class Member {
+public class Member extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "member_id")
@@ -42,14 +43,13 @@ public class Member {
     private String registration;
 
     @Builder
-    public Member(String firstName, String lastName, String nickName, String email, String major, String studentId, String registration) {
+    public Member(String firstName, String lastName, String nickName, String email, String major, String studentId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.nickName = nickName;
         this.email = email;
         this.major = major;
         this.studentId = studentId;
-        this.registration = registration;
     }
 
     @PrePersist
@@ -58,6 +58,10 @@ public class Member {
         LocalDateTime dateTime = LocalDateTime.now();
         ZonedDateTime zonedDateTime = ZonedDateTime.of(dateTime, ZoneId.of("Asia/Seoul"));
         this.registration = String.valueOf(zonedDateTime.toLocalDate().getYear());
+    }
+
+    public String getFullName() {
+        return this.firstName + this.lastName;
     }
 
     public void updateFirstName(String firstName) {
@@ -83,4 +87,5 @@ public class Member {
     public void updateStudentId(String studentId) {
         this.studentId = studentId;
     }
+
 }

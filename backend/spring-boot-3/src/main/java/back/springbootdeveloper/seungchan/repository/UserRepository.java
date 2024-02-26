@@ -14,14 +14,14 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<UserInfo, Long> {
     @Transactional
     @Modifying
-    @Query("UPDATE UserInfo u SET u.name = :#{#user.name}, u.phoneNum = :#{#user.phoneNum}, u.major = :#{#user.major}, u.gpa = :#{#user.gpa}, u.address = :#{#user.address}, u.specialtySkill = :#{#user.specialtySkill}, u.hobby = :#{#user.hobby}, u.mbti = :#{#user.mbti}, u.studentId = :#{#user.studentId}, u.birthDate = :#{#user.birthDate}, u.advantages = :#{#user.advantages}, u.disadvantage = :#{#user.disadvantage}, u.selfIntroduction = :#{#user.selfIntroduction}, u.photo = :#{#user.photo}, u.email = :#{#user.email} WHERE u.id = :userId")
+    @Query("UPDATE UserInfo u SET u.name = :#{#user.name}, u.phoneNum = :#{#user.phoneNum}, u.major = :#{#user.major}, u.gpa = :#{#user.gpa}, u.address = :#{#user.address}, u.specialtySkill = :#{#user.specialtySkill}, u.hobby = :#{#user.hobby}, u.mbti = :#{#user.mbti}, u.studentId = :#{#user.studentId}, u.birthDate = :#{#user.birthDate}, u.advantages = :#{#user.advantages}, u.disadvantage = :#{#user.disadvantage}, u.selfIntroduction = :#{#user.selfIntroduction}, u.photo = :#{#user.photo}, u.email = :#{#user.email} WHERE u.userInfoId = :userId")
     void updateUser(Long userId, UserInfo user);
 
     Optional<UserInfo> findByEmail(String email);
 
     @Transactional
     @Modifying
-    @Query("UPDATE UserInfo u SET  u.id = :#{#id} WHERE u.id = :userId")
+    @Query("UPDATE UserInfo u SET  u.userInfoId = :#{#id} WHERE u.userInfoId = :userId")
     void updateId(Long userId, Long id);
 
     Boolean existsByEmailAndName(String email, String name);
@@ -33,7 +33,7 @@ public interface UserRepository extends JpaRepository<UserInfo, Long> {
 
     @Modifying
     @Transactional
-    @Query("UPDATE UserInfo u SET u.email = :updateEmail WHERE u.id = :id")
+    @Query("UPDATE UserInfo u SET u.email = :updateEmail WHERE u.userInfoId = :id")
     Integer updateEmailById(@Param("id") Long id, @Param("updateEmail") String updateEmail);
 
     boolean existsByNameAndPhoneNum(String name, String phoneNum);

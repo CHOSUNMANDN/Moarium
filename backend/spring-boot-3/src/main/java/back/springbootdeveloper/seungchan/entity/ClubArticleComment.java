@@ -4,10 +4,7 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.DynamicInsert;
-import org.hibernate.annotations.DynamicUpdate;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -18,14 +15,12 @@ import java.time.format.DateTimeFormatter;
 @Getter
 @NoArgsConstructor
 @Entity
-@Table(name = "team_article_comment")
-@DynamicInsert // @ColumnDefault 사용 필수insert할시 Null 배제
-@DynamicUpdate // update할시 Null 배재
-public class TeamArticleComment {
+@Table(name = "club_article_comment")
+public class ClubArticleComment extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "team_article_comment_id")
-    private Long teamArticleCommentId;
+    @Column(name = "club_article_comment_id")
+    private Long clubArticleCommentId;
 
     @Column(name = "content", length = 255, nullable = false)
     private String content;
@@ -34,21 +29,19 @@ public class TeamArticleComment {
     @Column(name = "comment_date", nullable = false)
     private LocalDate commentDate;
 
-    @ColumnDefault(value = "0")
     @Column(name = "like_count")
-    private Integer likeCount;
+    private Integer likeCount = 0;
 
-    @ColumnDefault(value = "0")
     @Column(name = "declaration_count")
-    private Integer declarationCount;
+    private Integer declarationCount = 0;
 
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "team_article_id")
-    private TeamArticle teamArticle;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "club_article_id")
+    private ClubArticle clubArticle;
 
     @Builder
-    public TeamArticleComment(String content) {
+    public ClubArticleComment(String content) {
         this.content = content;
     }
 
@@ -89,15 +82,15 @@ public class TeamArticleComment {
     }
 
 
-    public TeamArticle getTeamArticle() {
-        return teamArticle;
+    public ClubArticle getClubArticle() {
+        return clubArticle;
     }
 
-    public void setTeamArticle(final TeamArticle teamArticle) {
-        this.teamArticle = teamArticle;
+    public void setClubArticle(final ClubArticle clubArticle) {
+        this.clubArticle = clubArticle;
         // 무한루프에 빠지지 않도록 체크
-        if (!teamArticle.getTeamArticleComments().contains(this)) {
-            teamArticle.getTeamArticleComments().add(this);
+        if (!clubArticle.getClubArticleComments().contains(this)) {
+            clubArticle.getClubArticleComments().add(this);
         }
     }
 }

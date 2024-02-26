@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -16,7 +15,7 @@ import java.time.format.DateTimeFormatter;
 @NoArgsConstructor
 @Entity
 @Table(name = "attendance_week_date")
-public class AttendanceWeekDate {
+public class AttendanceWeekDate extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "attendance_week_date_id")
@@ -57,6 +56,9 @@ public class AttendanceWeekDate {
     @Temporal(TemporalType.DATE)
     @Column(name = "sunday_date", nullable = false)
     private LocalDate sundayDate;
+
+    @OneToOne(mappedBy = "attendanceWeekDate")
+    private AttendanceState attendanceSate;
 
     @Builder
     public AttendanceWeekDate(ATTENDANCE_STATE monday, ATTENDANCE_STATE tuesday, ATTENDANCE_STATE wednesday, ATTENDANCE_STATE thursday, ATTENDANCE_STATE friday, ATTENDANCE_STATE saturday, ATTENDANCE_STATE sunday) {
@@ -179,6 +181,14 @@ public class AttendanceWeekDate {
                 break;
             default:
                 break;
+        }
+    }
+
+    public void setAttendanceSate(final AttendanceState attendanceSate) {
+        this.attendanceSate = attendanceSate;
+
+        if (attendanceSate.getAttendanceWeekDate() != this) { // null 체크 추가
+            attendanceSate.setAttendanceWeekDate(this);
         }
     }
 }
