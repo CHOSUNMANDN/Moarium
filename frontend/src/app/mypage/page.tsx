@@ -13,6 +13,7 @@ import Navigation from '../../atoms/template/navigation';
 import { hasNotToken } from '@/utils/validate/ExistenceChecker';
 import { replaceRouterInitialize, replaceRouterPassword } from '@/utils/RouteHandling';
 import NavigationFooter from '@/atoms/molecule/navigation-footer';
+import { log } from 'console';
 
 export default function SignUp() {
   const router = useRouter();
@@ -55,9 +56,10 @@ export default function SignUp() {
   useEffect(() => {
     axAuth(token)({
       method: 'get',
-      url: '/mypage',
+      url: '/personal-info/1/attendances',
     }).then(res => {   // 성공했을 시, then 이하 실행 / catch는 실패했을 시
       const data = res.data;
+      console.log(data);
       setMember_id(data);
       setUserData(data);
     })
