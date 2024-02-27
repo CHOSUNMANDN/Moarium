@@ -1,47 +1,45 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Header from '../../../../atoms/molecule/header';
-import SubmitButton from '../../../../atoms/atom/large-button';
+import Header from '@/atoms/molecule/header';
 import MyPageButton from '@/atoms/atom/mypage_list';
 
 // 박승찬 추가
 import { axAuth } from '@/apis/axiosinstance';
- import { userToken, isNuriKing } from '../../../../states/index';
+import { userToken, isNuriKing } from '@/states/index';
 import { useRouter } from 'next/navigation';
 import { useRecoilState } from 'recoil';
-import Navigation from '../../../../atoms/template/navigation';
+// import Navigation from '@/atoms/template/navigation';     일단 네이게이션바 빼고 구현(02월27일 기준)
 import { hasNotToken } from '@/utils/validate/ExistenceChecker';
 import { replaceRouterInitialize, replaceRouterPassword } from '@/utils/RouteHandling';
 import NavigationFooter from '@/atoms/molecule/navigation-footer';
 import { log } from 'console';
 
-export default function SignUp() {
+export default function ClubMypage() {
   const router = useRouter();
   const [token, setToken] = useRecoilState(userToken);
   const [isKing, setISKing] = useRecoilState(isNuriKing);
   const [member_id, setMember_id] = useState({
-    id : '3'
+    member_id : 'number'
   });
-
   const [userData, setUserData] = useState({
-    message: '',
-    httpStatus: '',
-    stateCode: '',
-    timestamp: '',
+    message: 'string',
+    httpStatus: 'string',
+    stateCode: 'number',
+    timestamp: 'string',
     result : {
-        userProfile : '',
-        userName : '이한빈',
-        userStudentId : '18학번',
-        userClub : '누리고시원',
-        userStatusMessage : '작성된 글이 없습니다.' 
+        memberProfile : 'string',
+        memberName : '이한빈',
+        memberStudentId : '18학번',
+        clubName : '누리고시원',
+        memberStatusMessage : '작성된 글이 없습니다.' 
     }
   });
 
   const [NoUserData, setNoUserData] = useState({
-    message: '',
-    httpStatus: '',
-    stateCode: '',
-    timestamp: '',
+    message: 'string',
+    httpStatus: 'string',
+    stateCode: 'number',
+    timestamp: 'string'
   });
 
   useEffect(() => {
@@ -56,16 +54,13 @@ export default function SignUp() {
   useEffect(() => {
     axAuth(token)({
       method: 'get',
-      url: '/personal-info/1/attendances',
+      url: '/clubs/personal-info/{club_member_id}',
     }).then(res => {   // 성공했을 시, then 이하 실행 / catch는 실패했을 시
       const data = res.data;
       console.log(data);
       setMember_id(data);
       setUserData(data);
     })
-    // .catch(){
-    //   setNoUserData(data);
-    // })
   }, []);
 
   const isLoginAndSignupButton = false;
@@ -83,20 +78,20 @@ export default function SignUp() {
                 {/* <img src="Images/emptyprofile.png" alt=""></img> */}
                 <div className="text-navy w-[5rem] ml-[8rem]">소속 동아리</div>
                 <div className="border-grey border bg-lightest-grey ml-[7.65rem] w-[12.7rem] h-[1.75rem] align-left rounded-lg">
-                  <div className="text-black font-regular mt-[0.05rem] w-[5rem] ml-[0.45rem]">{userData.result.userClub}</div>
+                  <div className="text-black font-regular mt-[0.05rem] w-[5rem] ml-[0.45rem]">{userData.result.clubName}</div>
                 </div>                
                   <div className="text-navy w-[5rem] mt-2 ml-[8rem]">상태메세지</div>
                 <div className="border-grey border bg-lightest-grey ml-[7.65rem] w-[12.7rem] h-[7rem] align-left rounded-lg">
-                  <div className='text-grey font-regular mt-[0.1rem] ml-[0.4rem]'>{userData.result.userStatusMessage}</div>
+                  <div className='text-grey font-regular mt-[0.1rem] ml-[0.4rem]'>{userData.result.memberStatusMessage}</div>
                 </div>
               </div>
               </div>
               
               <div className="text-black font-bold text-2xl mt-[0.3rem] w-[4.5rem] h-[1.6rem] ml-6">
-                  {userData.result.userName}
+                  {userData.result.memberName}
                 </div>
                 <div className="text-dark-grey font-bold mt-[0.1rem] text-l w-[3rem] ml-8">
-                  {userData.result.userStudentId}
+                  {userData.result.memberStudentId}
                 </div>
           </div>
           <div>
