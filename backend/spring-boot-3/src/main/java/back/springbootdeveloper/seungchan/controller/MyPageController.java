@@ -106,4 +106,17 @@ public class MyPageController {
                 .myAllClubMembersAttendances(myAllClubMembersAttendances)
                 .build());
     }
+
+    // TODO: 2/26/24 향후 디비 수정 
+    @Operation(summary = "마이 페이지", description = "현제 회원 MyPage")
+    @GetMapping(value = "")
+    @ResponseBody
+    public BaseResultDTO<MyPageClubMemberInformationResDto> findMyPageClubMemberInformation(
+            @PathVariable(value = "club_member_id") Long clubMemberId) {
+        // TODO: 2/24/24 token으로 memberId 얻기
+        Long memberId = 1L;
+        MyPageClubMemberInformationResDto myPageClubMemberInformationResDto = myPageService.getMyPageClubMemberInformationResDto(clubMemberId);
+
+        return BaseResultDTO.ofSuccess(myPageClubMemberInformationResDto);
+    }
 }

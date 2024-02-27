@@ -259,13 +259,14 @@ class entityMappingTest {
     }
 
     private ClubArticle applyClubArticleCommentToClubArticle(CLUB_ARTICLE_CLASSIFICATION classification, Integer number, ClubMember clubMember) {
+        Member member = memberRepository.findById(clubMember.getClubMemberId()).get();
         // ClubArticle
         ClubArticle clubArticle = TestMakeEntity.createSampleClubArticle(classification, number, clubMember);
 
         // ClubArticleComment
-        ClubArticleComment clubArticleComment_0 = TestMakeEntity.createSampleClubArticleComment(0);
-        ClubArticleComment clubArticleComment_1 = TestMakeEntity.createSampleClubArticleComment(1);
-        ClubArticleComment clubArticleComment_2 = TestMakeEntity.createSampleClubArticleComment(2);
+        ClubArticleComment clubArticleComment_0 = TestMakeEntity.createSampleClubArticleComment(0, member);
+        ClubArticleComment clubArticleComment_1 = TestMakeEntity.createSampleClubArticleComment(1, member);
+        ClubArticleComment clubArticleComment_2 = TestMakeEntity.createSampleClubArticleComment(2, member);
 
         // ClubArticle - ClubArticleComment
         clubArticle.addClubArticleComment(clubArticleComment_0);

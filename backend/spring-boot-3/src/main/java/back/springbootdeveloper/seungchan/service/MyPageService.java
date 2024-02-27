@@ -5,6 +5,7 @@ import back.springbootdeveloper.seungchan.constant.entity.POSSIBLE_STATUS;
 import back.springbootdeveloper.seungchan.dto.response.MyAllClubMembersAttendance;
 import back.springbootdeveloper.seungchan.dto.response.MyAttendanceCount;
 import back.springbootdeveloper.seungchan.dto.response.MyAttendanceState;
+import back.springbootdeveloper.seungchan.dto.response.MyPageClubMemberInformationResDto;
 import back.springbootdeveloper.seungchan.entity.*;
 import back.springbootdeveloper.seungchan.filter.exception.judgment.EntityNotFoundException;
 import back.springbootdeveloper.seungchan.repository.*;
@@ -28,6 +29,7 @@ public class MyPageService {
     private final AttendanceWeekDateRepository attendanceWeekDateRepository;
     private final AttendanceWeekRepository attendanceWeekRepository;
     private final ClubControlRepository clubControlRepository;
+    private final MemberRepository memberRepository;
 
 
     /**
@@ -73,6 +75,22 @@ public class MyPageService {
         }
 
         return myAllClubMembersAttendances;
+    }
+
+    public MyPageClubMemberInformationResDto getMyPageClubMemberInformationResDto(Long clubMemberId) {
+        ClubMember clubMember = clubMemberRepository.findById(clubMemberId).orElseThrow(EntityNotFoundException::new);
+        Club club = clubRepository.findById(clubMember.getClubId()).orElseThrow(EntityNotFoundException::new);
+        Member member = memberRepository.findById(clubMember.getMemberId()).orElseThrow(EntityNotFoundException::new);
+
+        return MyPageClubMemberInformationResDto.builder()
+                // TODO: 2/26/24 향후 디비수정
+                .memberProfile("향후 디비수정 ")
+                .memberName(member.getFullName())
+                .memberStudentId(member.getStudentId())
+                .ClubName(club.getClubName())
+                // TODO: 2/26/24 향후 디비수정
+                .memberStatusMessage("향후 디비수정")
+                .build();
     }
 
     private MyAttendanceCount getMyAttendanceCount(Club club, List<AttendanceWeekDate> attendanceWeekDates) {

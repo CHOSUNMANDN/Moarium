@@ -37,6 +37,20 @@ public class ClubGradeService {
     }
 
     /**
+     * 주어진 클럽 멤버의 상태가 휴면 상태인지 확인합니다.
+     *
+     * @param clubId   확인할 클럽의 ID
+     * @param memberId 확인할 멤버의 ID
+     * @param dormant  휴면 상태를 나타내는 CLUB_GRADE enum 값
+     * @return 클럽 멤버의 휴면 상태 여부를 나타내는 Boolean 값. 휴면 상태일 경우 true를 반환하고, 아닐 경우 false를 반환합니다.
+     * @throws EntityNotFoundException 지정된 멤버를 찾을 수 없을 때 발생하는 예외
+     */
+    public Boolean isMemberStatus(Long clubId, Long memberId, CLUB_GRADE dormant) {
+        ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId).orElseThrow(EntityNotFoundException::new);
+        return isSame(dormant.getId(), clubMember.getClubGradeId());
+    }
+
+    /**
      * 클럽 멤버의 클럽 등급을 업데이트합니다.
      *
      * @param clubMemberId 업데이트할 클럽 멤버의 ID

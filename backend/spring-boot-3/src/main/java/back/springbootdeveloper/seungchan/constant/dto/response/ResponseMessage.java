@@ -11,7 +11,17 @@ public enum ResponseMessage {
     BAD_TODAY_ATTENDANCE("출석에 실패했습니다."),
     SUCCESS_TOGLE_MEMBER_GRADE("활동회원으로 전환되었습니다."),
     SUCCESS_TOGLE_DORMANT_GRADE("휴면회원으로 전환되었습니다."),
-    BAD_TOGLE_GRADE("등급 전환에 실패했습니다.");
+    BAD_TOGLE_GRADE("등급 전환에 실패했습니다."),
+    UPDATE_CLUB_ARTICLE("게시글 수정 되었습니다."),
+    BAD_UPDATE_CLUB_ARTICLE("게시글 수정에 실패 하였습니다."),
+    SUCCESS_DELETE_CLUB_ARTICLE("글이 삭제되었습니다."),
+    BAD_DELETE_CLUB_ARTICLE("삭제에 실패하였습니다."),
+    BAD_REPORT_CLUB_ARTICLE("신고에 실패하였습니다."),
+    BAD_ALREADY_REPORT_CLUB_ARTICLE("신고에 실패하였습니다."),
+    SUCCESS_REPORT_CLUB_ARTICLE("신고 접수 되었습니다.."),
+    SUCCESS_SUGGESTION_ANSWER("답변이 완료 되었습니다."),
+    BAD_SUGGESTION_ANSWER("답변이 실패 되었습니다.");
+
 
     private final String message;
 
