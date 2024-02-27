@@ -1,5 +1,7 @@
 package back.springbootdeveloper.seungchan.entity;
 
+import back.springbootdeveloper.seungchan.constant.entity.ANONYMITY;
+import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -35,14 +37,22 @@ public class ClubArticleComment extends BaseEntity {
     @Column(name = "declaration_count")
     private Integer declarationCount = 0;
 
+    @Column(name = "member_id", nullable = false)
+    private Long memberId;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "anonymous", length = 15, nullable = false)
+    private ANONYMITY anonymity = ANONYMITY.REAL_NAME;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "club_article_id")
     private ClubArticle clubArticle;
 
     @Builder
-    public ClubArticleComment(String content) {
+    public ClubArticleComment(String content, Long memberId, ANONYMITY anonymity) {
         this.content = content;
+        this.memberId = memberId;
+        this.anonymity = anonymity;
     }
 
     @PrePersist
@@ -55,6 +65,10 @@ public class ClubArticleComment extends BaseEntity {
 
     public void updateContent(String content) {
         this.content = content;
+    }
+
+    public void updateAnonymity(ANONYMITY anonymity) {
+        this.anonymity = anonymity;
     }
 
     public void subtractLike() {
