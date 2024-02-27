@@ -13,4 +13,8 @@ public enum CLUB_ARTICLE_CLASSIFICATION {
     CLUB_ARTICLE_CLASSIFICATION(String sort) {
         this.sort = sort;
     }
+
+    public boolean is(String classification) {
+        return this.sort.equals(classification);
+    }
 }
