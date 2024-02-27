@@ -20,7 +20,8 @@ public enum ResponseMessage {
     BAD_ALREADY_REPORT_CLUB_ARTICLE("신고에 실패하였습니다."),
     SUCCESS_REPORT_CLUB_ARTICLE("신고 접수 되었습니다.."),
     SUCCESS_SUGGESTION_ANSWER("답변이 완료 되었습니다."),
-    BAD_SUGGESTION_ANSWER("답변이 실패 되었습니다.");
+    BAD_SUGGESTION_ANSWER("답변이 실패 되었습니다."),
+    BAD_ALREADY_TODAY_UPDATE_ATTENDANCE_STATE("이미 결석, 휴가를 하였 습니다.");
 
 
     private final String message;

@@ -138,6 +138,11 @@ public class ClubDetailPageController {
         Member member = memberService.findByMemberId(memberId);
         // 출석번호 확인
         Boolean isPassTodayAttendance = attendanceNumberService.checkAttendanceNumber(clubId, attendanceNumberReqDto.getNumOfAttendance());
+        Boolean isPossibleAttendance = attendanceWeekDateService.isPossibleUpdateAttendanceState(clubId, memberId);
+
+        if (!isPossibleAttendance) {
+            return BaseResponseBodyUtiil.BaseResponseBodyFailure(ResponseMessage.BAD_ALREADY_TODAY_UPDATE_ATTENDANCE_STATE.get());
+        }
 
         if (isPassTodayAttendance) {
             // 출석 상태 전환
