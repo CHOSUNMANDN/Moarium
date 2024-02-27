@@ -1,15 +1,15 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Header from '../../atoms/molecule/header';
-import SubmitButton from '../../atoms/atom/large-button';
+import Header from '../../../../atoms/molecule/header';
+import SubmitButton from '../../../../atoms/atom/large-button';
 import MyPageButton from '@/atoms/atom/mypage_list';
 
 // 박승찬 추가
 import { axAuth } from '@/apis/axiosinstance';
- import { userToken, isNuriKing } from '../../states/index';
+ import { userToken, isNuriKing } from '../../../../states/index';
 import { useRouter } from 'next/navigation';
 import { useRecoilState } from 'recoil';
-import Navigation from '../../atoms/template/navigation';
+import Navigation from '../../../../atoms/template/navigation';
 import { hasNotToken } from '@/utils/validate/ExistenceChecker';
 import { replaceRouterInitialize, replaceRouterPassword } from '@/utils/RouteHandling';
 import NavigationFooter from '@/atoms/molecule/navigation-footer';
