@@ -1,5 +1,6 @@
 package back.springbootdeveloper.seungchan.database;
 
+import back.springbootdeveloper.seungchan.constant.entity.ANONYMITY;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import back.springbootdeveloper.seungchan.entity.*;
@@ -260,8 +261,13 @@ class entityMappingTest {
 
     private ClubArticle applyClubArticleCommentToClubArticle(CLUB_ARTICLE_CLASSIFICATION classification, Integer number, ClubMember clubMember) {
         Member member = memberRepository.findById(clubMember.getClubMemberId()).get();
+        ClubArticle clubArticle;
         // ClubArticle
-        ClubArticle clubArticle = TestMakeEntity.createSampleClubArticle(classification, number, clubMember);
+        if (classification == CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL) {
+            clubArticle = TestMakeEntity.createSampleClubArticle(classification, number, clubMember, ANONYMITY.ANONYMOUS);
+        } else {
+            clubArticle = TestMakeEntity.createSampleClubArticle(classification, number, clubMember, ANONYMITY.REAL_NAME);
+        }
 
         // ClubArticleComment
         ClubArticleComment clubArticleComment_0 = TestMakeEntity.createSampleClubArticleComment(0, member);

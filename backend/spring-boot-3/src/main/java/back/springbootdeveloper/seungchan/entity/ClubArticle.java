@@ -1,5 +1,6 @@
 package back.springbootdeveloper.seungchan.entity;
 
+import back.springbootdeveloper.seungchan.constant.entity.ANONYMITY;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_SUGGESTION_CHECK;
 import jakarta.persistence.*;
@@ -56,12 +57,17 @@ public class ClubArticle extends BaseEntity {
     @Column(name = "club_member_id", nullable = false)
     private Long clubMemberId;
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "anonymous", length = 15, nullable = false)
+    private ANONYMITY anonymity = ANONYMITY.REAL_NAME;
+
     @Builder
-    public ClubArticle(String title, String content, CLUB_ARTICLE_CLASSIFICATION classification, Long clubMemberId) {
+    public ClubArticle(String title, String content, CLUB_ARTICLE_CLASSIFICATION classification, Long clubMemberId, ANONYMITY anonymity) {
         this.title = title;
         this.content = content;
         this.classification = classification;
         this.clubMemberId = clubMemberId;
+        this.anonymity = anonymity;
     }
 
 

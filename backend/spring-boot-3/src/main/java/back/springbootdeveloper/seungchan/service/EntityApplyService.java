@@ -39,17 +39,44 @@ public class EntityApplyService {
 
 
     /**
-     * ClubArticle 생성, 저장.
+     * 기밀 클럽 게시글을 적용합니다.
      *
-     * @param title          ClubArticle 제목
-     * @param content        ClubArticle 내용
-     * @param classification ClubArticle 분류
-     * @param clubMemberId   ClubArticle 작성한 클럽 멤버의 ID
-     * @return 생성된 클럽 게시글
+     * @param title        게시글 제목
+     * @param content      게시글 내용
+     * @param clubMemberId 클럽 회원 ID
+     * @param anonymity    익명성 (ANONYMITY.ANONYMOUS 또는 ANONYMITY.REAL_NAME)
+     * @return 새로운 클럽 게시글이 저장된 Optional 객체
      */
     @Transactional
-    public Optional<ClubArticle> applyClubArticle(String title, String content, CLUB_ARTICLE_CLASSIFICATION classification, Long clubMemberId) {
-        return Optional.of(clubArticleRepository.save(createClubArticle(title, content, classification, clubMemberId)));
+    public Optional<ClubArticle> applyClubArticleConfidential(String title, String content, Long clubMemberId, String anonymity) {
+        // 주어진 익명성에 따라 클럽 게시글 생성
+        if (ANONYMITY.ANONYMOUS.is(anonymity)) {
+            return Optional.of(clubArticleRepository.save(createClubArticle(title, content, CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL, clubMemberId, ANONYMITY.ANONYMOUS)));
+        } else {
+            return Optional.of(clubArticleRepository.save(createClubArticle(title, content, CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL, clubMemberId, ANONYMITY.REAL_NAME)));
+        }
+    }
+
+    /**
+     * 자유 게시글 또는 제안 게시글을 적용합니다.
+     *
+     * @param title          게시글 제목
+     * @param content        게시글 내용
+     * @param clubMemberId   클럽 회원 ID
+     * @param classification 게시글 분류 (CLUB_ARTICLE_CLASSIFICATION.SUGGESTION 또는 CLUB_ARTICLE_CLASSIFICATION.FREEDOM)
+     * @return 새로운 클럽 게시글이 저장된 Optional 객체
+     */
+    @Transactional
+    public Optional<ClubArticle> applyClubArticleFreeAndSuggestion(String title, String content, Long clubMemberId, String classification) {
+        // 주어진 익명성에 따라 클럽 게시글 생성
+        if (CLUB_ARTICLE_CLASSIFICATION.SUGGESTION.is(classification)) {
+            return Optional.of(clubArticleRepository.save(createClubArticle(title, content, CLUB_ARTICLE_CLASSIFICATION.SUGGESTION, clubMemberId, ANONYMITY.REAL_NAME)));
+        }
+        if (CLUB_ARTICLE_CLASSIFICATION.FREEDOM.is(classification)) {
+            return Optional.of(clubArticleRepository.save(createClubArticle(title, content, CLUB_ARTICLE_CLASSIFICATION.FREEDOM, clubMemberId, ANONYMITY.REAL_NAME)));
+        }
+
+        return null;
     }
 
     /**
@@ -139,7 +166,7 @@ public class EntityApplyService {
         } else {
             anonymity = ANONYMITY.ANONYMOUS;
         }
-        
+
         return anonymity;
     }
 
@@ -229,12 +256,13 @@ public class EntityApplyService {
      * @param clubMemberId   ClubArticle 작성한 ClubMember ID
      * @return 생성된 ClubArticle 객체 반환
      */
-    private ClubArticle createClubArticle(String title, String content, CLUB_ARTICLE_CLASSIFICATION classification, Long clubMemberId) {
+    private ClubArticle createClubArticle(String title, String content, CLUB_ARTICLE_CLASSIFICATION classification, Long clubMemberId, ANONYMITY anonymity) {
         return ClubArticle.builder()
                 .title(title)
                 .content(content)
                 .classification(classification)
                 .clubMemberId(clubMemberId)
+                .anonymity(anonymity)
                 .build();
     }
 }
