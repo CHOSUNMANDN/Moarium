@@ -92,6 +92,9 @@ public class AttendanceWeekDate extends BaseEntity {
         this.sunday = ATTENDANCE_STATE.UNDECIDED;
     }
 
+    /**
+     * 오늘의 출석 상태를 업데이트합니다.
+     */
     public void updateAttendanceAtToday() {
         ZonedDateTime now = ZonedDateTime.now();
         DayOfWeek currentDayOfWeek = now.getDayOfWeek();
@@ -123,6 +126,9 @@ public class AttendanceWeekDate extends BaseEntity {
         }
     }
 
+    /**
+     * 오늘의 결석을 업데이트합니다.
+     */
     public void updateAbsenceAtToday() {
         ZonedDateTime now = ZonedDateTime.now();
         DayOfWeek currentDayOfWeek = now.getDayOfWeek();
@@ -154,6 +160,9 @@ public class AttendanceWeekDate extends BaseEntity {
         }
     }
 
+    /**
+     * 오늘의 휴가를 업데이트합니다.
+     */
     public void updateVacationAtToday() {
         ZonedDateTime now = ZonedDateTime.now();
         DayOfWeek currentDayOfWeek = now.getDayOfWeek();
@@ -193,6 +202,12 @@ public class AttendanceWeekDate extends BaseEntity {
         }
     }
 
+    /**
+     * 요일에 따른 출석 상태를 반환합니다.
+     *
+     * @param dayOfWeek 요일
+     * @return 해당 요일의 출석 상태
+     */
     public ATTENDANCE_STATE getAttendanceStateForDay(DayOfWeek dayOfWeek) {
         switch (dayOfWeek) {
             case MONDAY:
@@ -213,5 +228,28 @@ public class AttendanceWeekDate extends BaseEntity {
                 break;
         }
         return null;
+    }
+
+    public Boolean isPossibleUpdateAttendanceState() {
+        ZonedDateTime now = ZonedDateTime.now();
+        DayOfWeek currentDayOfWeek = now.getDayOfWeek();
+
+        switch (currentDayOfWeek) {
+            case MONDAY:
+                return this.monday.is(ATTENDANCE_STATE.UNDECIDED);
+            case TUESDAY:
+                return this.tuesday.is(ATTENDANCE_STATE.UNDECIDED);
+            case WEDNESDAY:
+                return this.wednesday.is(ATTENDANCE_STATE.UNDECIDED);
+            case THURSDAY:
+                return this.thursday.is(ATTENDANCE_STATE.UNDECIDED);
+            case FRIDAY:
+                return this.friday.is(ATTENDANCE_STATE.UNDECIDED);
+            case SATURDAY:
+                return this.saturday.is(ATTENDANCE_STATE.UNDECIDED);
+            case SUNDAY:
+                return this.sunday.is(ATTENDANCE_STATE.UNDECIDED);
+        }
+        return false;
     }
 }

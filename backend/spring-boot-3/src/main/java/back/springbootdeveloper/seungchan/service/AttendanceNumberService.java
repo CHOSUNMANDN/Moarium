@@ -30,13 +30,24 @@ public class AttendanceNumberService {
      */
     public Boolean checkAttendanceNumber(Long clubId, String numOfAttendance) {
         Club club = clubRepository.findById(clubId).orElseThrow(EntityNotFoundException::new);
+        AttendanceNumber firstAttendanceNumber = getFirstAttendanceNumber(club);
+
+        return isSame(numOfAttendance, firstAttendanceNumber);
+    }
+
+    /**
+     * 클럽에서 첫 번째 출석 번호를 가져옵니다.
+     *
+     * @param club 출석 번호를 가져올 클럽
+     * @return 첫 번째 출석 번호
+     */
+    private AttendanceNumber getFirstAttendanceNumber(Club club) {
         // attendanceNumbers 목록을 역정렬합니다.
         Collections.sort(club.getAttendanceNumbers(), Comparator.comparing(AttendanceNumber::getCreateDate).reversed());
 
         // 첫 번째 요소를 가져옵니다.
         AttendanceNumber firstAttendanceNumber = club.getAttendanceNumbers().get(0);
-
-        return isSame(numOfAttendance, firstAttendanceNumber);
+        return firstAttendanceNumber;
     }
 
     private boolean isSame(String numOfAttendance, AttendanceNumber firstAttendanceNumber) {

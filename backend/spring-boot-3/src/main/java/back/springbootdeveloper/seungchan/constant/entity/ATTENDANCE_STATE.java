@@ -14,4 +14,8 @@ public enum ATTENDANCE_STATE {
     ATTENDANCE_STATE(String state) {
         this.state = state;
     }
+
+    public boolean is(ATTENDANCE_STATE attendanceState) {
+        return this.state.equals(attendanceState.getState());
+    }
 }
