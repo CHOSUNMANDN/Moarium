@@ -1,5 +1,5 @@
 'use client';
-import Header from '@/atoms/molecule/header';
+import Header from '@/atoms/molecule/Header';
 import NavigationFooter from '@/atoms/molecule/navigation-footer';
 import { useRecoilState } from 'recoil';
 import { userToken, isNuriKing } from '../../../states/index';

@@ -1,6 +1,6 @@
 'use client';
 import { axAuth } from '@/apis/axiosinstance';
-import Header from '../../../atoms/molecule/header';
+import Header from '../../../atoms/molecule/Header';
 import { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { userToken, isNuriKing } from '../../../states/index';

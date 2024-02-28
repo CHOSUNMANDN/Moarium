@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Header from '../../atoms/molecule/header';
+import Header from '../../atoms/molecule/Header';
 import SubmitButton from '../../atoms/atom/large-button';
 
 // 박승찬 추가
