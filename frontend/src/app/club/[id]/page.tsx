@@ -75,9 +75,6 @@ export default function Club() {
           console.log(err);
         });
     }
-    const today = new Date().getDay() - 1;
-    if (today < 7 && today) {
-    }
   }, [type, isAttendanceModalOpen]);
 
   return (
@@ -87,7 +84,7 @@ export default function Club() {
         <MemberInformationModal clubId={id} clubMemberId={isMemberInfoOpen} vacationToken={isMemberToken} setIsMemberInfoOpen={setIsMemberInfoOpen} isMyClubGrade={isMyClubGrade} type={type} />
       ) : null}
       <header>
-        <Header clubName={isClubName} />
+        <SmallHeader clubName={isClubName} />
       </header>
       <section>
         <div className="mx-[7.5%] grid grid-cols-2 mb-[2rem]">
