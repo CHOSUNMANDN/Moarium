@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Header from '../../atoms/molecule/header';
+import SmallHeader from '../../atoms/molecule/SmallHeader';
 import Button from '../../atoms/atom/middle-button';
 import { axBase } from '../../apis/axiosinstance';
 import Link from 'next/link';

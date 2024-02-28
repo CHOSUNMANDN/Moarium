@@ -4,7 +4,7 @@ interface data {
   clubName: string;
 }
 
-export default function Header({ clubName }: data) {
+export default function SmallHeader({ clubName }: data) {
   return (
     <>
       <div className="flex items-center justify-between py-[1.3rem] ml-[7.5%]">

@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Header from '../../../atoms/molecule/Header';
+import SmallHeader from '../../../atoms/molecule/SmallHeader';
 import Input from '../../../atoms/atom/input-form-value';
 import Textarea from '../../../atoms/atom/text-area-form-value';
 import SubmitButton from '../../../atoms/atom/large-button';
