@@ -1,7 +1,7 @@
 'use client';
 import { axBase } from '@/apis/axiosinstance';
 import React, { useState, useEffect } from 'react';
-import SmallHeader from '../../atoms/molecule/SmallHeader';
+import Header from '../../atoms/molecule/header';
 import Input from '../../atoms/atom/input-form';
 import Textarea from '../../atoms/atom/text-area-form';
 import SubmitButton from '../../atoms/atom/large-button';

@@ -1,5 +1,5 @@
 'use client';
-import SmallHeader from '../atoms/molecule/SmallHeader';
+import Header from '../atoms/molecule/header';
 import MainCarousel from '../atoms/template/main-carousel';
 import { useEffect } from 'react';
 import { userToken } from '../states/index';

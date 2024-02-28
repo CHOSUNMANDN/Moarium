@@ -1,5 +1,5 @@
 'use client';
-import SmallHeader from '@/atoms/molecule/SmallHeader';
+import Header from '@/atoms/molecule/header';
 import { MODAL_TITLE_DANGER, MODAL_TITLE_SUCCESS } from '@/utils/constans/modalTitle';
 
 import React, { useState, useEffect } from 'react';

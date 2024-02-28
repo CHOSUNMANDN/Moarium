@@ -1,5 +1,5 @@
 'use client';
-import SmallHeader from '@/atoms/molecule/SmallHeader';
+import Header from '@/atoms/molecule/header';
 import React, { useState, useEffect } from 'react';
 import Button from '../../../../atoms/atom/middle-button';
 import Modal from '../../../../atoms/atom/allert-modal';
