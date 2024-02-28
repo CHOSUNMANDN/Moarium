@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -16,7 +15,7 @@ import java.time.format.DateTimeFormatter;
 @NoArgsConstructor
 @Entity
 @Table(name = "attendance_week_date")
-public class AttendanceWeekDate {
+public class AttendanceWeekDate extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "attendance_week_date_id")
@@ -58,6 +57,10 @@ public class AttendanceWeekDate {
     @Column(name = "sunday_date", nullable = false)
     private LocalDate sundayDate;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "attendance_state_id")
+    private AttendanceState attendanceState;
+
     @Builder
     public AttendanceWeekDate(ATTENDANCE_STATE monday, ATTENDANCE_STATE tuesday, ATTENDANCE_STATE wednesday, ATTENDANCE_STATE thursday, ATTENDANCE_STATE friday, ATTENDANCE_STATE saturday, ATTENDANCE_STATE sunday) {
         this.monday = monday;
@@ -89,6 +92,9 @@ public class AttendanceWeekDate {
         this.sunday = ATTENDANCE_STATE.UNDECIDED;
     }
 
+    /**
+     * 오늘의 출석 상태를 업데이트합니다.
+     */
     public void updateAttendanceAtToday() {
         ZonedDateTime now = ZonedDateTime.now();
         DayOfWeek currentDayOfWeek = now.getDayOfWeek();
@@ -120,6 +126,9 @@ public class AttendanceWeekDate {
         }
     }
 
+    /**
+     * 오늘의 결석을 업데이트합니다.
+     */
     public void updateAbsenceAtToday() {
         ZonedDateTime now = ZonedDateTime.now();
         DayOfWeek currentDayOfWeek = now.getDayOfWeek();
@@ -151,6 +160,9 @@ public class AttendanceWeekDate {
         }
     }
 
+    /**
+     * 오늘의 휴가를 업데이트합니다.
+     */
     public void updateVacationAtToday() {
         ZonedDateTime now = ZonedDateTime.now();
         DayOfWeek currentDayOfWeek = now.getDayOfWeek();
@@ -180,5 +192,64 @@ public class AttendanceWeekDate {
             default:
                 break;
         }
+    }
+
+    public void setAttendanceState(final AttendanceState attendanceSate) {
+        this.attendanceState = attendanceSate;
+
+        if (!attendanceSate.getAttendanceWeekDates().contains(this)) { // null 체크 추가
+            attendanceSate.addAttendanceWeekDates(this);
+        }
+    }
+
+    /**
+     * 요일에 따른 출석 상태를 반환합니다.
+     *
+     * @param dayOfWeek 요일
+     * @return 해당 요일의 출석 상태
+     */
+    public ATTENDANCE_STATE getAttendanceStateForDay(DayOfWeek dayOfWeek) {
+        switch (dayOfWeek) {
+            case MONDAY:
+                return this.monday;
+            case TUESDAY:
+                return this.tuesday;
+            case WEDNESDAY:
+                return this.wednesday;
+            case THURSDAY:
+                return this.thursday;
+            case FRIDAY:
+                return this.friday;
+            case SATURDAY:
+                return this.saturday;
+            case SUNDAY:
+                return this.sunday;
+            default:
+                break;
+        }
+        return null;
+    }
+
+    public Boolean isPossibleUpdateAttendanceState() {
+        ZonedDateTime now = ZonedDateTime.now();
+        DayOfWeek currentDayOfWeek = now.getDayOfWeek();
+
+        switch (currentDayOfWeek) {
+            case MONDAY:
+                return this.monday.is(ATTENDANCE_STATE.UNDECIDED);
+            case TUESDAY:
+                return this.tuesday.is(ATTENDANCE_STATE.UNDECIDED);
+            case WEDNESDAY:
+                return this.wednesday.is(ATTENDANCE_STATE.UNDECIDED);
+            case THURSDAY:
+                return this.thursday.is(ATTENDANCE_STATE.UNDECIDED);
+            case FRIDAY:
+                return this.friday.is(ATTENDANCE_STATE.UNDECIDED);
+            case SATURDAY:
+                return this.saturday.is(ATTENDANCE_STATE.UNDECIDED);
+            case SUNDAY:
+                return this.sunday.is(ATTENDANCE_STATE.UNDECIDED);
+        }
+        return false;
     }
 }

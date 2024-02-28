@@ -7,6 +7,8 @@ import { useRouter } from 'next/navigation';
 import { useRecoilState } from 'recoil';
 import { replaceRouterMain } from '@/utils/RouteHandling';
 import { hasToken } from '@/utils/validate/ExistenceChecker';
+import GoogleLoginButton from '@/apis/GoogleLogin';
+import Image from 'next/image';
 
 export default function Home() {
   const [token, setToken] = useRecoilState(userToken);
@@ -26,7 +28,8 @@ export default function Home() {
       </header>
       <main>
         <article>
-          <MainCarousel />
+          <Image src="/home-introduction.png" alt="" priority={true} width={0} height={0} sizes="100vw" className="w-full relative"></Image>
+          <GoogleLoginButton></GoogleLoginButton>
         </article>
       </main>
     </>

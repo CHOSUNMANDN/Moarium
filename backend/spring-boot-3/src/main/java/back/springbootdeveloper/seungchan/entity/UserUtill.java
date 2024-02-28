@@ -10,8 +10,8 @@ import lombok.*;
 public class UserUtill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", updatable = false)
-    private Long id;
+    @Column(name = "user_utill_id", updatable = false)
+    private Long userUtillId;
 
     @Column(name = "user_id", nullable = false, updatable = false, unique = true)
     private Long userId;

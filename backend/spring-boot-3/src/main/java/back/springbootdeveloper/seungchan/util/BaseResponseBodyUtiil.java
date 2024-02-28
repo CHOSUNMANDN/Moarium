@@ -32,4 +32,29 @@ public class BaseResponseBodyUtiil {
                 HttpStatus.OK
         );
     }
+
+    public static ResponseEntity<BaseResponseBody> BaseResponseBodyFailure(String message) {
+        return new ResponseEntity<>(
+                BaseResponseBody.builder()
+                        .message(message)
+                        .httpStatus(HttpStatus.BAD_REQUEST)
+                        .statusCode(HttpStatus.BAD_REQUEST.value())
+                        .timestamp(ZonedDateTime.now(ZoneId.of("Z")))
+                        .build(),
+                HttpStatus.OK
+        );
+    }
+
+    public static ResponseEntity<BaseResponseBody> BaseResponseBodyFailure() {
+        return new ResponseEntity<>(
+                BaseResponseBody.builder()
+                        .message("FAIL")
+                        .httpStatus(HttpStatus.BAD_REQUEST)
+                        .statusCode(HttpStatus.BAD_REQUEST.value())
+                        .timestamp(ZonedDateTime.now(ZoneId.of("Z")))
+                        .build(),
+                HttpStatus.OK
+        );
+    }
+
 }

@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     colors: {
       blue: '#4B8ACC',
+      'lightest-grey': '#F6F6F6',
       'light-grey': '#D7D7D7',
       grey: '#A7A7A7',
       'dark-grey': '#5E5E5E',
@@ -11,6 +12,8 @@ module.exports = {
       black: '#000000',
       red: '#FF0000',
       orange: '#FF9431',
+      lightgrey: '#F6F6F6',
+      navy: '#0B3A81',
     },
     extend: {
       backgroundImage: {

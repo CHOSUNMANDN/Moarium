@@ -4,52 +4,57 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @NoArgsConstructor
 @Entity
 @Table(name = "member")
-public class Member {
+public class Member extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "member_id")
     private Long memberId;
 
-    @Column(name = "first_name", length = 10, nullable = false)
+    @Column(name = "first_name", length = 10)
     private String firstName;
 
-    @Column(name = "last_name", length = 20, nullable = false)
+    @Column(name = "last_name", length = 20)
     private String lastName;
 
-    @Column(name = "nick_name", length = 30, nullable = false)
+    @Column(name = "nick_name", length = 30)
     private String nickName;
 
     @Column(name = "email", length = 40, nullable = false, unique = true)
     private String email;
 
-    @Column(name = "major", length = 20, nullable = false)
+    @Column(name = "major", length = 20)
     private String major;
 
-    @Column(name = "student_id", length = 15, nullable = false)
+    @Column(name = "student_id", length = 15)
     private String studentId;
 
-    @Column(name = "registration", length = 10, nullable = false)
+    @Column(name = "registration", length = 10)
     private String registration;
 
     @Builder
-    public Member(String firstName, String lastName, String nickName, String email, String major, String studentId, String registration) {
+    public Member(String firstName, String lastName, String nickName, String email, String major, String studentId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.nickName = nickName;
         this.email = email;
         this.major = major;
         this.studentId = studentId;
-        this.registration = registration;
+    }
+
+    @Builder
+    public Member(String email){
+        this.email = email;
     }
 
     @PrePersist
@@ -58,6 +63,10 @@ public class Member {
         LocalDateTime dateTime = LocalDateTime.now();
         ZonedDateTime zonedDateTime = ZonedDateTime.of(dateTime, ZoneId.of("Asia/Seoul"));
         this.registration = String.valueOf(zonedDateTime.toLocalDate().getYear());
+    }
+
+    public String getFullName() {
+        return this.firstName + this.lastName;
     }
 
     public void updateFirstName(String firstName) {
@@ -83,4 +92,5 @@ public class Member {
     public void updateStudentId(String studentId) {
         this.studentId = studentId;
     }
+
 }

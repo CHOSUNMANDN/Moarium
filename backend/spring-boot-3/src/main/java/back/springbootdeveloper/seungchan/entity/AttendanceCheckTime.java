@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 /**
  * 회원들의 출석시간을 월, 화, 수 목, 금, 토, 일요일에 지정할 수 있다.
@@ -15,7 +14,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @Entity
 @Table(name = "attendance_check_time")
-public class AttendanceCheckTime {
+public class AttendanceCheckTime extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "attendance_check_time_id")
@@ -52,6 +51,9 @@ public class AttendanceCheckTime {
     @Enumerated(EnumType.STRING)
     @Column(name = "long_vacation", length = 15, nullable = false)
     private LONG_VACATION longVacation;
+
+    @OneToOne(mappedBy = "attendanceCheckTime")
+    private AttendanceState attendanceSate;
 
     @Builder
     public AttendanceCheckTime(ATTENDANCE_TIME monday, ATTENDANCE_TIME tuesday, ATTENDANCE_TIME wednesday, ATTENDANCE_TIME thursday, ATTENDANCE_TIME friday, ATTENDANCE_TIME saturday, ATTENDANCE_TIME sunday, LONG_VACATION longVacation) {
@@ -107,5 +109,13 @@ public class AttendanceCheckTime {
 
     public void updateLongVacation(LONG_VACATION longVacation) {
         this.longVacation = longVacation;
+    }
+
+    public void setAttendanceSate(final AttendanceState attendanceSate) {
+        this.attendanceSate = attendanceSate;
+
+        if (attendanceSate.getAttendanceCheckTime() != this) { // null 체크 추가
+            attendanceSate.setAttendanceCheckTime(this);
+        }
     }
 }

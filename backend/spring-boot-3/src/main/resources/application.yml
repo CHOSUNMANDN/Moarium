@@ -17,6 +17,10 @@ spring:
         web-allow-others: true
   jpa:
     defer-datasource-initialization: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
 
 # 스웨그 설정
 springdoc:
@@ -34,3 +38,6 @@ server:
       charset: UTF-8
       enabled: true
       force: true
+
+
+image-dir: /Users/seungchan/program_project/intellij-workspace/Moarium/backend/spring-boot-3/images/
