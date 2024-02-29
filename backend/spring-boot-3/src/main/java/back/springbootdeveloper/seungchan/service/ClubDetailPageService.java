@@ -69,14 +69,12 @@ public class ClubDetailPageService {
     /**
      * 특정 클럽의 특정 회원에 대한 클럽 회원 정보를 반환합니다.
      *
-     * @param memberId     회원의 ID
-     * @param clubMemberId
      * @return 클럽 회원 정보를 담은 ClubMemberInformationResDto 객체
      * @throws EntityNotFoundException 클럽, 회원 또는 회원 정보를 찾을 수 없는 경우
      */
-    public ClubMemberInformationResDto getClubMemberInformationResDto(Long memberId, Long clubMemberId) {
-        Member member = memberRepository.findById(memberId).orElseThrow(EntityNotFoundException::new);
+    public ClubMemberInformationResDto getClubMemberInformationResDto(Long clubMemberId) {
         ClubMember clubMember = clubMemberRepository.findById(clubMemberId).orElseThrow(EntityNotFoundException::new);
+        Member member = memberRepository.findById(clubMember.getClubMemberId()).orElseThrow(EntityNotFoundException::new);
         ClubMemberInformation clubMemberInformation = clubMemberInformationRepository.findById(clubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
 
         return ClubMemberInformationResDto.builder()

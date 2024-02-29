@@ -23,26 +23,27 @@ public class ClubGradeService {
         return clubGradeRepository.findById(clubMember.getClubGradeId()).orElseThrow(EntityNotFoundException::new);
     }
 
+
     /**
-     * 주어진 클럽 멤버의 상태가 휴면 상태인지 확인합니다.
+     * 주어진 클럽 멤버의 무슨 직위 상태인지 확인합니다.
      *
      * @param clubMemberId 확인할 클럽 멤버의 ID
-     * @param dormant      휴면 상태를 나타내는 CLUB_GRADE enum 값
-     * @return 클럽 멤버의 휴면 상태 여부를 나타내는 Boolean 값. 휴면 상태일 경우 true를 반환하고, 아닐 경우 false를 반환합니다.
+     * @param clubGrade    직위 상태를 나타내는 CLUB_GRADE enum 값
+     * @return 클럽 멤버의  상태 여부를 나타내는 Boolean 값. 추측 상태일 경우 true를 반환하고, 아닐 경우 false를 반환합니다.
      * @throws EntityNotFoundException 지정된 멤버를 찾을 수 없을 때 발생하는 예외
      */
-    public Boolean isMemberStatus(Long clubMemberId, CLUB_GRADE dormant) {
+    public Boolean isMemberStatus(Long clubMemberId, CLUB_GRADE clubGrade) {
         ClubMember clubMember = clubMemberRepository.findById(clubMemberId).orElseThrow(EntityNotFoundException::new);
-        return isSame(dormant.getId(), clubMember.getClubGradeId());
+        return isSame(clubGrade.getId(), clubMember.getClubGradeId());
     }
 
     /**
-     * 주어진 클럽 멤버의 상태가 휴면 상태인지 확인합니다.
+     * 주어진 클럽 멤버의 무슨 직위 상태인지 확인합니다.
      *
      * @param clubId   확인할 클럽의 ID
      * @param memberId 확인할 멤버의 ID
-     * @param dormant  휴면 상태를 나타내는 CLUB_GRADE enum 값
-     * @return 클럽 멤버의 휴면 상태 여부를 나타내는 Boolean 값. 휴면 상태일 경우 true를 반환하고, 아닐 경우 false를 반환합니다.
+     * @param dormant  직위 상태를 나타내는 CLUB_GRADE enum 값
+     * @return 클럽 멤버의  상태 여부를 나타내는 Boolean 값. 추측 상태일 경우 true를 반환하고, 아닐 경우 false를 반환합니다.
      * @throws EntityNotFoundException 지정된 멤버를 찾을 수 없을 때 발생하는 예외
      */
     public Boolean isMemberStatus(Long clubId, Long memberId, CLUB_GRADE dormant) {

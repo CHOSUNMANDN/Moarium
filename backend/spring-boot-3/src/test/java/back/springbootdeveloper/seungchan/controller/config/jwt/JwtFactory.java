@@ -1,55 +1,51 @@
 package back.springbootdeveloper.seungchan.controller.config.jwt;
 
+import back.springbootdeveloper.seungchan.entity.Member;
+import back.springbootdeveloper.seungchan.repository.MemberRepository;
 import io.jsonwebtoken.Header;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import lombok.Builder;
 import lombok.Getter;
 import back.springbootdeveloper.seungchan.config.jwt.JwtProperties;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.util.Date;
-import java.util.Map;
-
-import static java.util.Collections.emptyMap;
 
 @Getter
 @NoArgsConstructor
+@Component
 public class JwtFactory {
-    private String subject = "test@email.com";
+    @Autowired
+    private JwtProperties jwtProperties;
+    @Autowired
+    private MemberRepository memberRepository;
 
-    private Date issuedAt = new Date();
+    /**
+     * 회원에 대한 토큰을 생성합니다.
+     *
+     * @param memberId 회원 정보 Id
+     * @return 생성된 토큰
+     */
+    public String createToken(long memberId) {
+        Member member = memberRepository.findById(memberId).get();
 
-    private Date expiration = new Date(new Date().getTime() + Duration.ofDays(14).toMillis());
-
-    private Map<String, Object> claims = emptyMap();
-
-    // 매개 변수 있으면 사용, 없으면 매개 변수
-    @Builder
-    public JwtFactory(String subject, Date issuedAt, Date expiration,
-                      Map<String, Object> claims) {
-        this.subject = subject != null ? subject : this.subject;
-        this.issuedAt = issuedAt != null ? issuedAt : this.issuedAt;
-        this.expiration = expiration != null ? expiration : this.expiration;
-        this.claims = claims != null ? claims : this.claims;
-    }
-
-    @Builder
-    public JwtFactory(Date expiration) {
-        this.expiration = expiration;
-    }
-
-    // jjwt 라이브러리를 사용해 JWT 토큰 생성
-    public String createToken(JwtProperties jwtProperties) {
+        Date now = new Date();
         // 토큰을 만들어 반환을 한다.
         return Jwts.builder()
-                .setSubject(subject)
-                .setHeaderParam(Header.TYPE, Header.JWT_TYPE)
-                .setIssuer(jwtProperties.getIssuer())
-                .setIssuedAt(issuedAt)
-                .setExpiration(expiration)
-                .addClaims(claims)
+                // JWT 헤더
+                .setHeaderParam(Header.TYPE, Header.JWT_TYPE) // 헤더 typ : JWT
+                // JWT 내용
+                .setIssuer(jwtProperties.getIssuer()) // 내용 iss : ajufresh@gmail.com
+                .setIssuedAt(now) // 내용 iat : 현재 시간
+                .setExpiration(new Date(now.getTime() + Duration.ofDays(14).toMillis())) // 내용 exp : expiry 멤버 변숫 값 / 토큰 만료기간 / 현제 + 만료 기간
+
+                .setSubject(member.getEmail()) // 내용 sub : 유저의 이메일
+                .claim("MemberId", member.getMemberId()) // 클레임 id : 유저 ID
+//                .claim("isMoariumKing",) // TODO: Moarium 전체 관리자에 대한 상의가 필요
+                // 서명 : 비밀값과 함께 해시값을 HS256 방식으로 암호화
                 .signWith(SignatureAlgorithm.HS256, jwtProperties.getSecretKey())
                 .compact();
     }

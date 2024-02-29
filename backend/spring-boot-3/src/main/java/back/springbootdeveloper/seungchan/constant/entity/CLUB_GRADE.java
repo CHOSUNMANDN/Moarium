@@ -14,4 +14,8 @@ public enum CLUB_GRADE {
         this.id = id;
         this.grade = grade;
     }
+
+    public boolean is(CLUB_GRADE targetClubGrade) {
+        return this.grade.equals(targetClubGrade.getGrade());
+    }
 }
