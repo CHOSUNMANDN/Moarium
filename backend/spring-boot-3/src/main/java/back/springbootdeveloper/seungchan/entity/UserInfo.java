@@ -1,7 +1,7 @@
 package back.springbootdeveloper.seungchan.entity;
 
 
-import back.springbootdeveloper.seungchan.util.DayUtill;
+import back.springbootdeveloper.seungchan.util.DayUtil;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
@@ -96,7 +96,7 @@ public class UserInfo implements UserDetails {
         this.selfIntroduction = selfIntroduction;
         this.photo = photo;
         this.isOb = isOb;
-        this.yearOfRegistration = DayUtill.getYear();
+        this.yearOfRegistration = DayUtil.getYear();
         this.email = email;
         this.password = password;
         this.regularMember = true;
@@ -118,7 +118,7 @@ public class UserInfo implements UserDetails {
         this.disadvantage = disadvantage;
         this.selfIntroduction = selfIntroduction;
         this.photo = photo;
-        this.yearOfRegistration = DayUtill.getYear();
+        this.yearOfRegistration = DayUtil.getYear();
         this.email = email;
         this.password = password;
         this.regularMember = true;
@@ -140,7 +140,7 @@ public class UserInfo implements UserDetails {
         this.disadvantage = disadvantage;
         this.selfIntroduction = selfIntroduction;
         this.photo = photo;
-        this.yearOfRegistration = DayUtill.getYear();
+        this.yearOfRegistration = DayUtil.getYear();
         this.regularMember = true;
     }
 

@@ -116,4 +116,31 @@ public class AttendanceWeek extends BaseEntity {
         }
         return "";
     }
+
+    /**
+     * 특정 요일의 가능한 상태를 업데이트합니다.
+     *
+     * @param dayOfWeek      업데이트할 요일
+     * @param possibleStatus 업데이트할 가능한 상태
+     */
+    public void updateStatusForDay(DayOfWeek dayOfWeek, POSSIBLE_STATUS possibleStatus) {
+        switch (dayOfWeek) {
+            case MONDAY:
+                this.monday = possibleStatus;
+            case TUESDAY:
+                this.tuesday = possibleStatus;
+            case WEDNESDAY:
+                this.wednesday = possibleStatus;
+            case THURSDAY:
+                this.thursday = possibleStatus;
+            case FRIDAY:
+                this.friday = possibleStatus;
+            case SATURDAY:
+                this.saturday = possibleStatus;
+            case SUNDAY:
+                this.sunday = possibleStatus;
+            default:
+                break;
+        }
+    }
 }

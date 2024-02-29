@@ -142,7 +142,7 @@ public class MyPageService {
             for (DayOfWeek dayOfWeek : DayOfWeek.values()) {
                 // 주어진 요일에 대한 출석 상태 및 가능한 출석 상태 비교
                 if (attendanceWeekDate.getAttendanceStateForDay(dayOfWeek) == attendanceState &&
-                        POSSIBLE_STATUS.POSSIBLE.isSame(attendanceWeek.getStatusForDay(dayOfWeek))) {
+                        POSSIBLE_STATUS.POSSIBLE.is(attendanceWeek.getStatusForDay(dayOfWeek))) {
                     count++;
                 }
             }

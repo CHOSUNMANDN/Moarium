@@ -42,4 +42,8 @@ public class ClubMember {
     public void updateClubGradeId(Long clubGradeId) {
         this.clubGradeId = clubGradeId;
     }
+
+    public void updateClubGradeId(Integer clubGradeId) {
+        this.clubGradeId = Long.valueOf(clubGradeId);
+    }
 }

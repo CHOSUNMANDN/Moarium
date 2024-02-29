@@ -37,8 +37,15 @@ public class MyPageController {
     @Operation(summary = "마이페이지 - 동아리 탈퇴하기", description = "클럽 인원이 클럽을 탈퇴한다.")
     @PostMapping(value = "/quit")
     public ResponseEntity<BaseResponseBody> quitClubMember(
-            @PathVariable(value = "club_member_id") Long clubMemberId,
-            HttpServletRequest request) {
+            HttpServletRequest request,
+            @PathVariable(value = "club_member_id") Long clubMemberId) {
+
+        // 대상이 실장확인
+        Boolean isTargetLeaderClub = clubGradeService.isMemberStatus(clubMemberId, CLUB_GRADE.LEADER);
+        if (isTargetLeaderClub) {
+            return BaseResponseBodyUtiil.BaseResponseBodyFailure(ResponseMessage.BAD_TARGET_LEADER_MEMBER.get());
+        }
+        
         // 클럽 이름
         String clubName = clubService.getClubName(clubMemberId);
         // 멤버 추방
@@ -50,9 +57,15 @@ public class MyPageController {
     @Operation(summary = "마이페이지 - 휴면/활동 전환", description = "해당 클럽 인원이 마이페이지 휴면/활동 전환 기능")
     @PostMapping(value = "/transform")
     public ResponseEntity<BaseResponseBody> togleMemberAndDormancyClubMember(
+            HttpServletRequest request,
             @PathVariable(value = "club_member_id") Long clubMemberId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+
+        // 대상이 실장확인
+        Boolean isTargetLeaderClub = clubGradeService.isMemberStatus(clubMemberId, CLUB_GRADE.LEADER);
+        if (isTargetLeaderClub) {
+            return BaseResponseBodyUtiil.BaseResponseBodyFailure(ResponseMessage.BAD_TARGET_LEADER_MEMBER.get());
+        }
+
 
         // 휴면 등급 업데이트
         Boolean updateSuccess = clubGradeService.toggleMemberAndDormantOfClubGrade(clubMemberId);
@@ -72,9 +85,8 @@ public class MyPageController {
     @GetMapping(value = "/comments")
     @ResponseBody
     public BaseResultDTO<ClubMemberCommentsResDto> findAllClubMemberComments(
+            HttpServletRequest request,
             @PathVariable(value = "club_member_id") Long clubMemberId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
 
         ClubMemberCommentsResDto clubMemberCommentsResDto = clubArticleCommentService.getClubMemberCommentsResDto(clubMemberId);
 
@@ -85,9 +97,8 @@ public class MyPageController {
     @GetMapping(value = "/articles")
     @ResponseBody
     public BaseResultDTO<ClubMemberArticlesResDto> findAllClubMemberArticles(
+            HttpServletRequest request,
             @PathVariable(value = "club_member_id") Long clubMemberId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
         ClubMemberArticlesResDto clubMemberCommentsResDto = clubArticleService.getClubMemberArticlesResDto(clubMemberId);
 
         return BaseResultDTO.ofSuccess(clubMemberCommentsResDto);
@@ -97,9 +108,10 @@ public class MyPageController {
     @GetMapping(value = "/attendances")
     @ResponseBody
     public BaseResultDTO<MyAllClubMembersInformationsResDto> findAllClubMemberAttendanceInformation(
+            HttpServletRequest request,
             @PathVariable(value = "club_member_id") Long clubMemberId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
+
         List<MyAllClubMembersAttendance> myAllClubMembersAttendances = myPageService.getMyAllClubMembersAttendance(memberId, clubMemberId);
 
         return BaseResultDTO.ofSuccess(MyAllClubMembersInformationsResDto.builder()
@@ -112,9 +124,8 @@ public class MyPageController {
     @GetMapping(value = "")
     @ResponseBody
     public BaseResultDTO<MyPageClubMemberInformationResDto> findMyPageClubMemberInformation(
+            HttpServletRequest request,
             @PathVariable(value = "club_member_id") Long clubMemberId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
         MyPageClubMemberInformationResDto myPageClubMemberInformationResDto = myPageService.getMyPageClubMemberInformationResDto(clubMemberId);
 
         return BaseResultDTO.ofSuccess(myPageClubMemberInformationResDto);
