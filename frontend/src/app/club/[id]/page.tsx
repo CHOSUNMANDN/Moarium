@@ -136,7 +136,12 @@ export default function Club() {
           {isTodayAttendance ? (
             <LongThickButton text={'출석완료'} addClass="text-2xl bg-grey" />
           ) : (
-            <div onClick={() => setIsAttendanceModalOpen(true)}>
+            <div
+              onClick={() => {
+                setIsAttendanceModalOpen(true);
+                window.scrollTo(0, 0);
+              }}
+            >
               <LongThickButton text={'출석하기'} addClass="text-2xl mb-3" />
             </div>
           )}

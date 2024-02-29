@@ -13,6 +13,7 @@ export default function CurrentMember({ name, token, week, userId, setIsMemberIn
   const daysOrder = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 
   const openMemberInfo = () => {
+    window.scrollTo(0, 0);
     setIsMemberInfoOpen(userId);
     setIsMemberToken(token);
   };
