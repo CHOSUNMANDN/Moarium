@@ -21,15 +21,12 @@ interface userDataPropsTypeZero {
   vacationToken: string;
 }
 
-interface userDataPropsTypeOne {
-  memberName: string;
-}
-
 export default function Club() {
   const router = useRouter();
   const [token, setToken] = useRecoilState(userToken);
   const [type, setType] = useState(0);
   const [userList, setUserList] = useState([]);
+  const [dormantUserList, setDormantUserList] = useState([]);
   const [isMyClubGrade, setIsMyClubGrade] = useRecoilState(myClubGrade);
   const [isAttendanceModalOpen, setIsAttendanceModalOpen] = useState(false);
   const [AllertModalstatus, setAllertModalStatus] = useState(0);
@@ -69,7 +66,7 @@ export default function Club() {
         url: '/clubs/informations/' + id + '/details/dormancys',
       })
         .then(res => {
-          setUserList(res.data.result.dormancyMembers);
+          setDormantUserList(res.data.result.dormancyMembers);
         })
         .catch(err => {
           console.log(err);
@@ -92,7 +89,7 @@ export default function Club() {
             현재 인원
           </div>
           <div className={`text-center font-bold text-[1.5rem] ${type === 1 ? 'text-black' : 'text-grey'}`} onClick={() => setType(1)}>
-            휴먼 인원
+            휴면 인원
           </div>
           <div className={`border-t-2 mt-[1rem] ${type === 0 ? 'border-black' : 'border-grey'}`}></div>
           <div className={`border-t-2 mt-[1rem] ${type === 1 ? 'border-black' : 'border-light-grey'}`}></div>
@@ -128,8 +125,8 @@ export default function Club() {
           <article className="mx-[7.5%]">
             <div className="flex h-[1.5rem]"></div>
             <div className="border border-light-grey mb-[0.5rem]"></div>
-            {userList.map((item: userDataPropsTypeOne, idx) => (
-              <Graduater key={idx} name={item.memberName} />
+            {dormantUserList.map((memberName: string, idx) => (
+              <Graduater key={idx} name={memberName} />
             ))}
           </article>
         )}
