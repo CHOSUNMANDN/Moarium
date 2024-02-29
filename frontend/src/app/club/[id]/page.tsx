@@ -17,7 +17,7 @@ import { usePathname } from 'next/navigation';
 interface userDataPropsTypeZero {
   clubMemberId: number;
   memberName: string;
-  attendanceStatus: string[];
+  attendanceStatus: { [key: string]: string };
   vacationToken: string;
 }
 
@@ -56,7 +56,7 @@ export default function Club() {
       })
         .then(res => {
           setUserList(res.data.result.clubMembers);
-          setIsClubName(res.data.clubName);
+          setIsClubName(res.data.result.clubName);
           setIsMyClubGrade(res.data.result.myClubGrade);
           setIsMyClubMemberId(res.data.result.myClubMemberId);
         })
@@ -69,7 +69,7 @@ export default function Club() {
         url: '/clubs/informations/' + id + '/details/dormancys',
       })
         .then(res => {
-          setUserList(res.data.result.dormancys);
+          setUserList(res.data.result.dormancyMembers);
         })
         .catch(err => {
           console.log(err);
