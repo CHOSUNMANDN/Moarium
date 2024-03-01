@@ -12,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -77,11 +76,39 @@ public class AttendanceWeekDateService {
         final ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId).orElseThrow(EntityNotFoundException::new);
         final AttendanceState attendanceState = attendanceStateRepository.findById(clubMember.getAttendanceStateId()).orElseThrow(EntityNotFoundException::new);
 
-        // 리스트의 마지막 요소의 인덱스를 계산합니다
-        List<AttendanceWeekDate> attendanceWeekDates = attendanceState.getAttendanceWeekDates();
-        int lastIndex = attendanceWeekDates.size() - 1; // 리스트의 마지막 요소의 인덱스를 계산합니다
-        AttendanceWeekDate attendanceWeekDate = attendanceWeekDates.get(lastIndex); // 리스트의 마지막 요소를 가져옵니다
+        // 리스트의 마지막 요소을 반환
+
+        AttendanceWeekDate attendanceWeekDate = getLastAttendanceWeekDate(attendanceState);
 
         return attendanceWeekDate.isPossibleUpdateAttendanceState();
+    }
+
+    /**
+     * 특정 클럽 멤버의 최근 출석 주간 날짜를 반환합니다.
+     *
+     * @param clubId   클럽 식별자
+     * @param memberId 멤버 식별자
+     * @return 특정 클럽 멤버의 최근 출석 주간 날짜
+     * @throws EntityNotFoundException 만약 주어진 clubId 또는 memberId에 해당하는 클럽 멤버가 존재하지 않을 경우 발생합니다.
+     */
+    public AttendanceWeekDate getLast(Long clubId, Long memberId) {
+        final ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId).orElseThrow(EntityNotFoundException::new);
+        final AttendanceState attendanceState = attendanceStateRepository.findById(clubMember.getAttendanceStateId()).orElseThrow(EntityNotFoundException::new);
+
+
+        return getLastAttendanceWeekDate(attendanceState);
+    }
+
+    /**
+     * 주어진 출석 주간 날짜 목록에서 마지막 주간 날짜를 반환합니다.
+     *
+     * @param attendanceState 출석 주간 날짜 목록
+     * @return 마지막 주간 날짜
+     */
+    private AttendanceWeekDate getLastAttendanceWeekDate(AttendanceState attendanceState) {
+        List<AttendanceWeekDate> attendanceWeekDates = attendanceState.getAttendanceWeekDates();
+        int lastIndex = attendanceWeekDates.size() - 1; // 리스트의 마지막 요소의 인덱스를 계산합니다
+
+        return attendanceWeekDates.get(lastIndex); // 리스트의 마지막 요소를 가져옵니다
     }
 }

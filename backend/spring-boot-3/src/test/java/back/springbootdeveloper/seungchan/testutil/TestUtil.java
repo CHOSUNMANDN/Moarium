@@ -1,5 +1,7 @@
-package back.springbootdeveloper.seungchan.testutills;
+package back.springbootdeveloper.seungchan.testutil;
 
+import back.springbootdeveloper.seungchan.controller.config.jwt.JwtFactory;
+import back.springbootdeveloper.seungchan.entity.Member;
 import com.fasterxml.jackson.core.type.TypeReference;
 
 import java.io.IOException;
@@ -14,7 +16,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-public class TestUtills {
+public class TestUtil {
     private static final String HTTP_STATUS = "httpStatus";
     private static final String HTTP_STATUS_CODE = "stateCode";
     private static final String MESSAGE = "message";

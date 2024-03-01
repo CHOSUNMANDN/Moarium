@@ -53,7 +53,7 @@ public class Member extends BaseEntity {
     }
 
     @Builder
-    public Member(String email){
+    public Member(String email) {
         this.email = email;
     }
 
@@ -93,4 +93,14 @@ public class Member extends BaseEntity {
         this.studentId = studentId;
     }
 
+    /**
+     * 두 개의 식별자가 동일한지 여부를 확인합니다.
+     *
+     * @param targetId target 식별자
+     * @return 두 식별자가 동일하면 true, 그렇지 않으면 false를 반환합니다.
+     */
+    public Boolean isSame(Long targetId) {
+        // 두 개의 식별자가 동일한지 비교하여 결과를 반환합니다.
+        return memberId.equals(targetId);
+    }
 }

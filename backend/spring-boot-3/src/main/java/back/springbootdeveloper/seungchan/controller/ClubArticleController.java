@@ -13,14 +13,12 @@ import back.springbootdeveloper.seungchan.entity.ClubArticle;
 import back.springbootdeveloper.seungchan.entity.ClubArticleComment;
 import back.springbootdeveloper.seungchan.entity.ClubGrade;
 import back.springbootdeveloper.seungchan.filter.exception.judgment.EntityNotFoundException;
-import back.springbootdeveloper.seungchan.service.ClubArticleCommentService;
-import back.springbootdeveloper.seungchan.service.ClubArticleService;
-import back.springbootdeveloper.seungchan.service.ClubGradeService;
-import back.springbootdeveloper.seungchan.service.EntityApplyService;
+import back.springbootdeveloper.seungchan.service.*;
 import back.springbootdeveloper.seungchan.util.BaseResponseBodyUtiil;
 import back.springbootdeveloper.seungchan.util.BaseResultDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -36,15 +34,17 @@ public class ClubArticleController {
     private final ClubGradeService clubGradeService;
     private final EntityApplyService entityApplyService;
     private final ClubArticleCommentService clubArticleCommentService;
+    private final TokenService tokenService;
 
     @Operation(summary = "팀 게시판 - 수정 API", description = "글 작성자의 게시물을 업데이트한다.")
     @PutMapping(value = "/{article_id}")
     public ResponseEntity<BaseResponseBody> updateClubArticle(
+            HttpServletRequest request,
             @RequestBody @Valid UpdateClubArticlePutDto updateClubArticlePutDto,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "article_id") Long articleId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
+
         if (clubArticleService.isAuthor(memberId, clubId, articleId)) {
             clubArticleService.updateClubArticle(clubId, memberId, articleId, updateClubArticlePutDto);
 
@@ -56,10 +56,11 @@ public class ClubArticleController {
     @Operation(summary = "팀 게시판 - 삭제 API", description = "글 작성자의 게시물을 삭제 한다.")
     @DeleteMapping(value = "/{article_id}")
     public ResponseEntity<BaseResponseBody> deleteClubArticle(
+            HttpServletRequest request,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "article_id") Long articleId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
+
         if (clubArticleService.isAuthor(memberId, clubId, articleId)) {
             clubArticleService.deleteClubArticle(clubId, memberId, articleId);
 
@@ -71,10 +72,11 @@ public class ClubArticleController {
     @Operation(summary = "팀 게시판 - 상세 페이지 - 조회", description = "해당 club 게시판의 상세 페이지 조회")
     @GetMapping(value = "/{article_id}")
     public BaseResultDTO<ClubArticleDetailResDto> findClubArticleDetail(
+            HttpServletRequest request,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "article_id") Long articleId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
+
         final ClubArticleDetailResDto clubArticleDetailResDto = clubArticleService.getClubArticleDetailResDto(clubId, articleId, memberId);
 
         return BaseResultDTO.ofSuccess(clubArticleDetailResDto);
@@ -83,10 +85,10 @@ public class ClubArticleController {
     @Operation(summary = "팀 게시판 - 상세 페이지 - 좋아요", description = "해당 club 게시판의 좋아요 표기")
     @PostMapping(value = "/{article_id}/like")
     public ResponseEntity<BaseResponseBody> addClubArticleLikeCount(
+            HttpServletRequest request,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "article_id") Long articleId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+
         if (clubArticleService.addLikeCountClubArticle(articleId)) {
             return BaseResponseBodyUtiil.BaseResponseBodySuccess();
         }
@@ -96,9 +98,10 @@ public class ClubArticleController {
     @Operation(summary = "팀 건의 게시판 - 전체 조회", description = "팀 건 게시판 전체 조회")
     @GetMapping(value = "/suggestions")
     public BaseResultDTO<ClubArticleSimpleInformationResDto> findAllSuggestionClubArticle(
+            HttpServletRequest request,
             @PathVariable(value = "club_id") Long clubId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
+
         ClubArticleSimpleInformationResDto clubMemberSimpleInformationResDto = clubArticleService.getClubMemberSimpleInformationResDto(clubId, memberId, CLUB_ARTICLE_CLASSIFICATION.SUGGESTION);
 
         return BaseResultDTO.ofSuccess(clubMemberSimpleInformationResDto);
@@ -107,9 +110,10 @@ public class ClubArticleController {
     @Operation(summary = "팀 비밀 게시판 - 전체 조회", description = "팀 비밀 게시판 전체 조회")
     @GetMapping(value = "/confidentials")
     public BaseResultDTO<ClubArticleSimpleInformationResDto> findAllConfidentialClubArticle(
+            HttpServletRequest request,
             @PathVariable(value = "club_id") Long clubId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
+
         ClubArticleSimpleInformationResDto clubMemberSimpleInformationResDto =
                 clubArticleService.getClubMemberSimpleInformationResDto(clubId, memberId, CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL);
 
@@ -119,9 +123,10 @@ public class ClubArticleController {
     @Operation(summary = "팀 자유 게시판 - 전체 조회", description = "팀 자유 게시판 전체 조회")
     @GetMapping(value = "/frees")
     public BaseResultDTO<ClubArticleSimpleInformationResDto> findSuggestionAnswerClubArticle(
+            HttpServletRequest request,
             @PathVariable(value = "club_id") Long clubId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
+
         ClubArticleSimpleInformationResDto clubMemberSimpleInformationResDto =
                 clubArticleService.getClubMemberSimpleInformationResDto(clubId, memberId, CLUB_ARTICLE_CLASSIFICATION.FREEDOM);
 
@@ -132,10 +137,11 @@ public class ClubArticleController {
     @Operation(summary = "팀 건의 게시판 답변 조회", description = "팀 건의 게시판 답변 조회")
     @GetMapping(value = "/{article_id}/answer")
     public BaseResultDTO<ClubArticleAnswerResDto> findSuggestionAnswerClubArticle(
+            HttpServletRequest request,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "article_id") Long articleId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
+
         ClubArticleAnswerResDto clubArticleAnswerResDto =
                 clubArticleService.getClubArticleAnswerResDto(clubId, memberId, articleId);
 
@@ -146,11 +152,12 @@ public class ClubArticleController {
     @Operation(summary = "팀 건의 게시판 - 상세 페이지 - 답변 쓰기", description = "팀 건의 게시판 답변 쓰기")
     @PostMapping(value = "/{article_id}/answer/write")
     public ResponseEntity<BaseResponseBody> writeSuggestionAnswerClubArticle(
+            HttpServletRequest request,
             @RequestBody @Valid WriteSuggestionAnswerReqDto writeSuggestionAnswerReqDto,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "article_id") Long articleId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
+
         Boolean isClubLeader = clubGradeService.isMemberStatus(clubId, memberId, CLUB_GRADE.LEADER);
         Boolean isClubDeputyLeader = clubGradeService.isMemberStatus(clubId, memberId, CLUB_GRADE.DEPUTY_LEADER);
 
@@ -167,11 +174,11 @@ public class ClubArticleController {
     @Operation(summary = "팀 게시판 - 상세 페이지 - 댓글 쓰기", description = "팀 게시판 - 상세 페이지 - 댓글 쓰기")
     @PostMapping(value = "/{article_id}/comment/write")
     public ResponseEntity<BaseResponseBody> writeClubArticleComment(
+            HttpServletRequest request,
             @RequestBody @Valid WriteClubArticleCommentReqDto writeClubArticleCommentReqDto,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "article_id") Long articleId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
 
         String clubArticleCommentContent = writeClubArticleCommentReqDto.getClubArticleCommentContent();
         String anonymity = writeClubArticleCommentReqDto.getAnonymity();
@@ -184,11 +191,11 @@ public class ClubArticleController {
     @Operation(summary = "팀 게시판 - 상세 페이지 - 댓글 삭제", description = "팀 게시판 - 상세 페이지 - 댓글 삭제")
     @DeleteMapping(value = "/{article_id}/comment/{comment_id}")
     public ResponseEntity<BaseResponseBody> deleteClubArticleComment(
+            HttpServletRequest request,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "article_id") Long articleId,
             @PathVariable(value = "comment_id") Long commentId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
 
         final Boolean isAuthorClubArticleComment = clubArticleCommentService.isAuthor(memberId, commentId);
         if (isAuthorClubArticleComment) {
@@ -202,11 +209,10 @@ public class ClubArticleController {
     @Operation(summary = "팀 비밀 게시판 - 생성 API", description = "팀 비밀 게시판 - 생성 API")
     @PostMapping(value = "/{club_member_id}/save/confidential")
     public ResponseEntity<BaseResponseBody> saveClubArticleConfidential(
+            HttpServletRequest request,
             @RequestBody @Valid SaveClubArticleConfidential saveClubArticleConfidential,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "club_member_id") Long clubMemberId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
 
         String title = saveClubArticleConfidential.getClubArticleTitle();
         String content = saveClubArticleConfidential.getClubArticleContent();
@@ -219,11 +225,11 @@ public class ClubArticleController {
     @Operation(summary = "팀 건의, 자유 게시판 - 생성 API", description = "팀 건의, 자유 게시판 - 생성 API")
     @PostMapping(value = "/{club_member_id}/save")
     public ResponseEntity<BaseResponseBody> saveClubArticleFreeAndSuggestion(
+            HttpServletRequest request,
             @RequestBody @Valid SaveClubArticleFreeAndSuggestion saveClubArticleFreeAndSuggestion,
             @PathVariable(value = "club_id") Long clubId,
             @PathVariable(value = "club_member_id") Long clubMemberId) {
-        // TODO: 2/24/24 token으로 memberId 얻기
-        Long memberId = 1L;
+        Long memberId = tokenService.getMemberIdFromToken(request);
 
         String title = saveClubArticleFreeAndSuggestion.getClubArticleTitle();
         String content = saveClubArticleFreeAndSuggestion.getClubArticleContent();

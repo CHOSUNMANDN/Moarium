@@ -1,82 +1,49 @@
-package back.springbootdeveloper.seungchan.database;
+package back.springbootdeveloper.seungchan.testutil;
 
 import back.springbootdeveloper.seungchan.constant.entity.ANONYMITY;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import back.springbootdeveloper.seungchan.entity.*;
 import back.springbootdeveloper.seungchan.repository.*;
-import back.springbootdeveloper.seungchan.testutil.TestMakeEntity;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@SpringBootTest()
-class entityMappingTest {
-    private final MemberRepository memberRepository;
-    private final ClubMemberRepository clubMemberRepository;
-    private final ClubRepository clubRepository;
-    private final ClubIntroduceImageRepository clubIntroduceImageRepository;
-    private final ClubGradeRepository clubGradeRepository;
-    private final ClubArticleRepository clubArticleRepository;
-    private final AttendanceNumberRepository attendanceNumberRepository;
-    private final ClubControlRepository clubControlRepository;
-    private final AttendanceWeekDateRepository attendanceWeekDateRepository;
-    private final AttendanceStateRepository attendanceSateRepository;
-    private final VacationTokenRepository vacationTokenRepository;
-    private final ClubMemberInformationRepository clubMemberInformationRepository;
-
+@Component
+public class TestSaveEntity {
     CLUB_ARTICLE_CLASSIFICATION SUGGESTION = CLUB_ARTICLE_CLASSIFICATION.SUGGESTION;
     CLUB_ARTICLE_CLASSIFICATION FREEDOM = CLUB_ARTICLE_CLASSIFICATION.FREEDOM;
     CLUB_ARTICLE_CLASSIFICATION CONFIDENTIAL = CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL;
-
     @Autowired
-    entityMappingTest(MemberRepository memberRepository, ClubMemberRepository clubMemberRepository, ClubRepository clubRepository, ClubIntroduceImageRepository clubIntroduceImageRepository, ClubGradeRepository clubGradeRepository, ClubArticleRepository clubArticleRepository, AttendanceNumberRepository attendanceNumberRepository, ClubControlRepository clubControlRepository, AttendanceWeekDateRepository attendanceWeekDateRepository, AttendanceStateRepository attendanceSateRepository, VacationTokenRepository vacationTokenRepository, ClubMemberInformationRepository clubMemberInformationRepository) {
-        this.memberRepository = memberRepository;
-        this.clubMemberRepository = clubMemberRepository;
-        this.clubRepository = clubRepository;
-        this.clubIntroduceImageRepository = clubIntroduceImageRepository;
-        this.clubGradeRepository = clubGradeRepository;
-        this.clubArticleRepository = clubArticleRepository;
-        this.attendanceNumberRepository = attendanceNumberRepository;
-        this.clubControlRepository = clubControlRepository;
-        this.attendanceWeekDateRepository = attendanceWeekDateRepository;
-        this.attendanceSateRepository = attendanceSateRepository;
-        this.vacationTokenRepository = vacationTokenRepository;
-        this.clubMemberInformationRepository = clubMemberInformationRepository;
-    }
+    private MemberRepository memberRepository;
+    @Autowired
+    private ClubMemberRepository clubMemberRepository;
+    @Autowired
+    private ClubRepository clubRepository;
+    @Autowired
+    private ClubGradeRepository clubGradeRepository;
+    @Autowired
+    private ClubArticleRepository clubArticleRepository;
+    @Autowired
+    private ClubControlRepository clubControlRepository;
+    @Autowired
+    private AttendanceStateRepository attendanceSateRepository;
+    @Autowired
+    private ClubMemberInformationRepository clubMemberInformationRepository;
 
-
-    @Test
-    @Disabled
-    void 매핑_저장_학습_테스트_1() throws Exception {
+    public void creatEntityTest() throws Exception {
         this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.LEADER));
         this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.DEPUTY_LEADER));
         this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.MEMBER));
         this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.DORMANT));
 
         데베_저장_팀이름_시작멤버수_끝멤버수_휴면멤버수_테스트(
-                0, 0, 29, 10);
+                1, 0, 4, 2);
         데베_저장_팀이름_시작멤버수_끝멤버수_휴면멤버수_테스트(
-                1, 30, 49, 5);
-        데베_저장_팀이름_시작멤버수_끝멤버수_휴면멤버수_테스트(
-                2, 50, 79, 15);
-        데베_저장_팀이름_시작멤버수_끝멤버수_휴면멤버수_테스트(
-                3, 80, 89, 3);
-        데베_저장_팀이름_시작멤버수_끝멤버수_휴면멤버수_테스트(
-                4, 90, 99, 4);
-    }
-
-    @Test
-    @Disabled
-    void 매핑_저장_학습_테스트() throws Exception {
-        this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.LEADER));
-        this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.DEPUTY_LEADER));
-        this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.MEMBER));
-        this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.DORMANT));
+                2, 5, 9, 1);
     }
 
     void 데베_저장_팀이름_시작멤버수_끝멤버수_휴면멤버수_테스트(Integer clubNumber, Integer startMemberNumber,
@@ -147,22 +114,16 @@ class entityMappingTest {
         // ================================= Club - Member -- ClubArticle 41.ClubArticle 매핑 시작 ============================
         applyClubArticleCommentToClubArticle(SUGGESTION, leaderNumber, clubMember_1);
         applyClubArticleCommentToClubArticle(SUGGESTION, leaderNumber, clubMember_1);
-        applyClubArticleCommentToClubArticle(SUGGESTION, leaderNumber, clubMember_1);
-        applyClubArticleCommentToClubArticle(FREEDOM, leaderNumber, clubMember_1);
         applyClubArticleCommentToClubArticle(FREEDOM, leaderNumber, clubMember_1);
         applyClubArticleCommentToClubArticle(FREEDOM, leaderNumber, clubMember_1);
         applyClubArticleCommentToClubArticle(SUGGESTION, deputyLeaderNumber, clubMember_2);
         applyClubArticleCommentToClubArticle(SUGGESTION, deputyLeaderNumber, clubMember_2);
-        applyClubArticleCommentToClubArticle(SUGGESTION, deputyLeaderNumber, clubMember_2);
         applyClubArticleCommentToClubArticle(FREEDOM, deputyLeaderNumber, clubMember_2);
         applyClubArticleCommentToClubArticle(FREEDOM, deputyLeaderNumber, clubMember_2);
-        applyClubArticleCommentToClubArticle(FREEDOM, deputyLeaderNumber, clubMember_2);
-        applyClubArticleCommentToClubArticle(CONFIDENTIAL, deputyLeaderNumber, clubMember_2);
         applyClubArticleCommentToClubArticle(CONFIDENTIAL, deputyLeaderNumber, clubMember_2);
         applyClubArticleCommentToClubArticle(CONFIDENTIAL, deputyLeaderNumber, clubMember_2);
 
         for (int i = 0; i < members.size(); i++) {
-            applyClubArticleCommentToClubArticle(SUGGESTION, i + 3, clubMembers.get(i));
             applyClubArticleCommentToClubArticle(SUGGESTION, i + 3, clubMembers.get(i));
             applyClubArticleCommentToClubArticle(SUGGESTION, i + 3, clubMembers.get(i));
         }
@@ -170,11 +131,9 @@ class entityMappingTest {
         for (int i = 0; i < members.size(); i++) {
             applyClubArticleCommentToClubArticle(FREEDOM, i + 3, clubMembers.get(i));
             applyClubArticleCommentToClubArticle(FREEDOM, i + 3, clubMembers.get(i));
-            applyClubArticleCommentToClubArticle(FREEDOM, i + 3, clubMembers.get(i));
         }
 
         for (int i = 0; i < members.size(); i++) {
-            applyClubArticleCommentToClubArticle(CONFIDENTIAL, i + 3, clubMembers.get(i));
             applyClubArticleCommentToClubArticle(CONFIDENTIAL, i + 3, clubMembers.get(i));
             applyClubArticleCommentToClubArticle(CONFIDENTIAL, i + 3, clubMembers.get(i));
         }
@@ -274,14 +233,13 @@ class entityMappingTest {
         // ClubArticleComment
         ClubArticleComment clubArticleComment_0 = TestMakeEntity.createSampleClubArticleComment(0, member);
         ClubArticleComment clubArticleComment_1 = TestMakeEntity.createSampleClubArticleComment(1, member);
-        ClubArticleComment clubArticleComment_2 = TestMakeEntity.createSampleClubArticleComment(2, member);
 
         // ClubArticle - ClubArticleComment
         clubArticle.addClubArticleComment(clubArticleComment_0);
         clubArticle.addClubArticleComment(clubArticleComment_1);
-        clubArticle.addClubArticleComment(clubArticleComment_2);
 
         return clubArticleRepository.save(clubArticle);
     }
+
 
 }

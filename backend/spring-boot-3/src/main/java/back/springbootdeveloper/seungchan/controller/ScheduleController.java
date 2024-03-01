@@ -8,6 +8,7 @@ import back.springbootdeveloper.seungchan.service.ImageService;
 import back.springbootdeveloper.seungchan.util.BaseResponseBodyUtiil;
 import back.springbootdeveloper.seungchan.util.BaseResultDTO;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -35,7 +36,10 @@ public class ScheduleController {
 //            , @PathVariable(value = "club_member_id") Long clubMemberId
 //            , @RequestParam(value = "scheduleImage") MultipartFile scheduleImage) {
     @PostMapping(value = "/schedules/manual")
-    public BaseResultDTO<ImageResDto> RegisterTimeTableImage(@RequestParam(value = "scheduleImage") MultipartFile scheduleImage) {
+    public BaseResultDTO<ImageResDto> RegisterTimeTableImage(
+            HttpServletRequest request,
+            @RequestParam(value = "scheduleImage") MultipartFile scheduleImage) {
+
         ImageResDto imageResDto = imageService.uploadImage(scheduleImage);
 
         Mono<String> resultMono = fastApiHttpReqService.callInternalApi();

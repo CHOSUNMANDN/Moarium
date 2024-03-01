@@ -1,4 +1,4 @@
-package back.springbootdeveloper.seungchan.testutills;
+package back.springbootdeveloper.seungchan.testutil;
 
 import back.springbootdeveloper.seungchan.constant.entity.ANONYMITY;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;

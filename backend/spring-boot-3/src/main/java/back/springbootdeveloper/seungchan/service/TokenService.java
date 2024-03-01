@@ -27,6 +27,7 @@ public class TokenService {
     private final RefreshTokenService refreshTokenService;
     private final RefreshTokenRepository refreshTokenRepository;
     private final MemberService memberService;
+
     public String createNewAccessToken(String refreshToken) {
         // 토큰 유효성 검사에 실패하면 예외 발생
         if (!tokenProvider.validToken(refreshToken)) {
@@ -41,7 +42,7 @@ public class TokenService {
 
     public String createAccessAndRefreshToken(String memberEmail) {
         // 이메일을 기반으로 사용자 정보를 조회
-        Member member= memberService.findByEmail(memberEmail);
+        Member member = memberService.findByEmail(memberEmail);
 
         // 새로운 리프레쉬 토큰을 생성한다.
         String refreshToken = tokenProvider.generateToken(member, REFRESH_TOKEN_DURATION);
@@ -55,6 +56,27 @@ public class TokenService {
         // 새로운 access 토큰을 생성한다.
         return tokenProvider.generateToken(member, ACCESS_TOKEN_DURATION);
     }
+
+    /**
+     * 테스트 목적으로 액세스 토큰과 리프레시 토큰을 생성하고 반환합니다.
+     *
+     * @param memberId 회원 ID
+     * @return 생성된 액세스 토큰
+     */
+    public String testCreateAccessAndRefreshToken(Long memberId) {
+        // 회원 ID를 기반으로 회원 정보를 조회합니다.
+        Member member = memberService.findByMemberId(memberId);
+
+        // 새로운 리프레시 토큰을 생성합니다.
+        String refreshToken = tokenProvider.generateToken(member, REFRESH_TOKEN_DURATION);
+
+        // 생성된 리프레시 토큰을 데이터베이스에 저장합니다.
+        saveRefreshToken(member.getMemberId(), refreshToken);
+
+        // 새로운 액세스 토큰을 생성하고 반환합니다.
+        return tokenProvider.generateToken(member, ACCESS_TOKEN_DURATION);
+    }
+
 
     // 사용자 ID를 기반으로 refresh 토큰을 저장하거나 갱신한다.
     private void saveRefreshToken(Long memberId, String newRefreshToken) {
@@ -98,7 +120,7 @@ public class TokenService {
         return token;
     }
 
-    public boolean isValidToken(String token){
+    public boolean isValidToken(String token) {
         return tokenProvider.validToken(token);
     }
 
