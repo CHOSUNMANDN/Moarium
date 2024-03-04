@@ -74,6 +74,16 @@ export default function Club() {
     }
   }, [type, isAttendanceModalOpen]);
 
+  useEffect(() => {
+    if (isAttendanceModalOpen || isMemberInfoOpen !== 0) {
+      const originalStyle = window.getComputedStyle(document.body).overflow;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = originalStyle;
+      };
+    }
+  }, [isAttendanceModalOpen, isMemberInfoOpen]);
+
   return (
     <main>
       {isAttendanceModalOpen ? <AttendanceModal setIsAttendanceModalOpen={setIsAttendanceModalOpen} setAllertModalStatus={setAllertModalStatus} /> : null}
