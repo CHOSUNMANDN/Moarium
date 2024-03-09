@@ -172,6 +172,60 @@ class ClubApplyControllerTest {
   }
 
   @Test
+  void 동아리_지원서_작성_API_예외_2번_신청_테스트() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_deputy_leader_member();
+    final String url = "/clubs/{club_id}/apply";
+    //
+    final Club targetClub = clubRepository.findById(testCreateUtil.getTWO_CLUB_ID()).get();
+    final Member loginMember = testCreateUtil.get_entity_one_club_deputy_leader_member();
+
+    // 검증을 위한 데이터 준비
+    String selfIntroduction = "테스트 자기 소개";
+    String customContent = "테스트 커스텀 대답";
+    List<CustomInformation> customClubApplyInformations = customClubApplyInformationService.findAllCustomInformationByClubId(
+        targetClub.getClubId());
+    List<CustomInformationReqForm> customInformations = new ArrayList<>();
+
+    for (final CustomInformation customClubApplyInformation : customClubApplyInformations) {
+      customInformations.add(
+          CustomInformationReqForm.builder()
+              .customInformationId(customClubApplyInformation.getCustomInformationId())
+              .customContent(customContent)
+              .build()
+      );
+    }
+    ApplyMemberToClubReqDto requestDto = ApplyMemberToClubReqDto.builder()
+        .selfIntroduction(selfIntroduction)
+        .customInformations(customInformations)
+        .build();
+    // when
+    final String requestBody = objectMapper.writeValueAsString(requestDto);
+
+    // 신청 1번
+    mockMvc.perform(post(url, targetClub.getClubId())
+        .accept(MediaType.APPLICATION_JSON)
+        .contentType(MediaType.APPLICATION_JSON_VALUE)
+        .content(requestBody)
+        .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // 신청 2번
+    ResultActions result = mockMvc.perform(post(url, targetClub.getClubId())
+        .accept(MediaType.APPLICATION_JSON)
+        .contentType(MediaType.APPLICATION_JSON_VALUE)
+        .content(requestBody)
+        .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(jsonPath("$.message").value(
+            ResponseMessage.BAD_ALREADY_APPLY_CLUB.get()));
+  }
+
+  @Test
   void 동아리_지원서_작성_API_커스텀_조회() throws Exception {
     // given
     // 유저 로그인
