@@ -210,4 +210,19 @@ public class ApiExceptionHandler {
     );
     return new ResponseEntity<>(apiException, httpStatus);
   }
+
+  @ExceptionHandler(value = {NotLeaderException.class}) // add
+  public ResponseEntity<Object> NotLeaderExceptionException(
+      NotLeaderException e) { // add
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.INVALID_NOT_LEADER_MEMBER; // add
+    ApiException apiException = new ApiException(
+        ExceptionMessage.NOT_LEADER_OF_CLUB.get(), // add
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
+
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 }

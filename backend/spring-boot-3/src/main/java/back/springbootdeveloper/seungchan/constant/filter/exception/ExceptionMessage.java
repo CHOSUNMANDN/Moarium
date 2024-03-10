@@ -12,7 +12,8 @@ public enum ExceptionMessage {
   INVALID_SELECTION_CLASSIFICATION("적절한 분류를 선택해주세요"),
 
   EXTERNAL_SERVICE_BAD_REQUEST("외부 API 요청에 문제가 생겼습니다."),
-  EXTERNAL_SERVICE_UNAVAILABLE("외부 API server에 문제가 생겼습니다.");
+  EXTERNAL_SERVICE_UNAVAILABLE("외부 API server에 문제가 생겼습니다."),
+  NOT_LEADER_OF_CLUB("이 기능은 팀의 대표만 사용할 수 있습니다.");
 
   private final String message;
 
