@@ -27,9 +27,9 @@ public class AdminLeaderController {
   private final TokenService tokenService;
   private final TempMemberService tempMemberService;
 
-  @Operation(summary = "admin page 비밀 번호 찾기 api ", description = "이메일 인증을 통해 해당 이메일로 비밀번호를 보낸다.")
+  @Operation(summary = "모든 신청 신입 회원 정보 확인", description = "팀 리더 admin Control 페이지 모든 신청 신입 회원들의 정보 보여 확인")
   @GetMapping("/temp/member")
-  public BaseResultDTO<TempMembersInformationResDto> findTempMembersForClub(
+  public BaseResultDTO<TempMembersInformationResDto> findAllTempMembersForClub(
       HttpServletRequest request,
       @PathVariable(value = "club_id") Long clubId) {
     // 클럽의 리더 검증
