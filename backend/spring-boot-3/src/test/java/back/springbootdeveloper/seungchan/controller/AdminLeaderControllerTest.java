@@ -1,12 +1,16 @@
 package back.springbootdeveloper.seungchan.controller;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import back.springbootdeveloper.seungchan.annotation.MoariumSpringBootTest;
+import back.springbootdeveloper.seungchan.constant.dto.response.ResponseMessage;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
+import back.springbootdeveloper.seungchan.dto.request.CheckDuplicationClubNameReqDto;
 import back.springbootdeveloper.seungchan.dto.response.CustomInformation;
 import back.springbootdeveloper.seungchan.dto.response.TempMembersInformation;
 import back.springbootdeveloper.seungchan.entity.Club;
@@ -154,5 +158,36 @@ class AdminLeaderControllerTest {
           .andExpect(jsonPath("$.result.customInformations[" + i + "].customType").value(
               targetCustomInformations.get(i).getCustomType()));
     }
+  }
+
+  @Test
+  void 신청_신입_회원_정회원_전환_테스트() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/informations/{club_id}/details/leader/temp/member/{club_member_id}/accept";
+    final Long targetClubId = testCreateUtil.getONE_CLUB_ID();
+
+    // 검증 준비
+    final ClubMember targetClubMember = clubMemberRepository.findAllByClubIdAndClubGradeId(
+        targetClubId, CLUB_GRADE.TEMP_MEMBER.getId()).get(0);
+
+    // when
+    ResultActions result = mockMvc.perform(
+        post(url, targetClubId, targetClubMember.getClubMemberId())
+            .accept(MediaType.APPLICATION_JSON)
+            .contentType(MediaType.APPLICATION_JSON_VALUE)
+            .header("authorization", "Bearer " + token) // token header에 담기
+    );
+    final ClubMember resultClubMember = clubMemberRepository.findById(
+        targetClubMember.getClubMemberId()).get();
+
+    // then
+    result
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.message").value(
+            ResponseMessage.SUCCESS_ACCEPT_TEMP_MEMBER.get()));
+
+    assertThat(resultClubMember.getClubGradeId()).isEqualTo(CLUB_GRADE.MEMBER.getId().longValue());
   }
 }
