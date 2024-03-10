@@ -50,7 +50,6 @@ class AdminLeaderControllerTest {
   @Test
   void 지원자_확인_페이지() throws Exception {
     // given
-    // given
     // 유저 로그인
     final String token = testCreateUtil.create_token_one_club_leader_member();
     final String url = "/clubs/informations/{club_id}/details/leader/temp/member";
