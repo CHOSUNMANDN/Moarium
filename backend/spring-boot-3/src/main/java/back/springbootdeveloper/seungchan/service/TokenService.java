@@ -31,6 +31,7 @@ public class TokenService {
   private final RefreshTokenService refreshTokenService;
   private final RefreshTokenRepository refreshTokenRepository;
   private final MemberService memberService;
+  private final ClubMemberRepository clubMemberRepository;
 
   /**
    * 새로운 엑세스 토큰을 생성합니다.
@@ -127,10 +128,11 @@ public class TokenService {
     ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId)
         .orElseThrow(
             EntityNotFoundException::new);
-    System.out.println("clubMember.getClubGradeId() = " + clubMember.getClubGradeId());
+    
     return CLUB_GRADE.LEADER.is(clubMember.getClubGradeId());
   }
 
+  /*
    * HttpServletRequest에서 토큰을 추출하여 해당 토큰으로부터 모래시계 왕 여부를 확인합니다.
    *
    * @param request HttpServletRequest 객체
@@ -157,7 +159,6 @@ public class TokenService {
     if (header == null || !header.startsWith("Bearer ")) {
       throw new BadCredentialsException("Invalid token");
     }
-
 
     // "Bearer " 접두사를 제거하여 실제 토큰 얻기
     return header.replace("Bearer ", "");
