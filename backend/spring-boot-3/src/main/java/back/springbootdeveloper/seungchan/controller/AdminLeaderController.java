@@ -1,5 +1,6 @@
 package back.springbootdeveloper.seungchan.controller;
 
+import back.springbootdeveloper.seungchan.dto.response.TempMembersDetailInformationResDto;
 import back.springbootdeveloper.seungchan.dto.response.TempMembersInformationResDto;
 import back.springbootdeveloper.seungchan.dto.response.TempMembersInformation;
 import back.springbootdeveloper.seungchan.service.TempMemberService;
@@ -41,5 +42,20 @@ public class AdminLeaderController {
     return BaseResultDTO.ofSuccess(TempMembersInformationResDto.builder()
         .tempMembersInformations(tempMembersInformations)
         .build());
+  }
+
+  @Operation(summary = "개인 신청 신입 회원 정보 확인", description = "팀 리더 admin Control 페이지 개인 신청 신입 회원들의 정보 보여 확인")
+  @GetMapping("/temp/member/{club_member_id}")
+  public BaseResultDTO<TempMembersDetailInformationResDto> findDetailTempMembersForClub(
+      HttpServletRequest request,
+      @PathVariable(value = "club_id") Long clubId,
+      @PathVariable(value = "club_member_id") Long clubMemberId) {
+    // 클럽의 리더 검증
+    MyValidation.isLeaderMember(tokenService, request, clubId);
+    // 필요한 정보 찾기
+    TempMembersDetailInformationResDto tempMembersDetailInformationResDto = tempMemberService.
+        getTempMembersDetailInformationResDto(clubMemberId);
+
+    return BaseResultDTO.ofSuccess(tempMembersDetailInformationResDto);
   }
 }

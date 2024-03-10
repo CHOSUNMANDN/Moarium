@@ -1,10 +1,17 @@
 package back.springbootdeveloper.seungchan.service;
 
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
+import back.springbootdeveloper.seungchan.dto.response.CustomInformation;
+import back.springbootdeveloper.seungchan.dto.response.TempMembersDetailInformationResDto;
 import back.springbootdeveloper.seungchan.dto.response.TempMembersInformation;
+import back.springbootdeveloper.seungchan.dto.response.TempMembersInformationResDto;
 import back.springbootdeveloper.seungchan.entity.ClubMember;
+import back.springbootdeveloper.seungchan.entity.ClubMemberCustomInformation;
+import back.springbootdeveloper.seungchan.entity.ClubMemberInformation;
+import back.springbootdeveloper.seungchan.entity.CustomClubApplyInformation;
 import back.springbootdeveloper.seungchan.entity.Member;
 import back.springbootdeveloper.seungchan.filter.exception.judgment.EntityNotFoundException;
+import back.springbootdeveloper.seungchan.repository.ClubMemberInformationRepository;
 import back.springbootdeveloper.seungchan.repository.ClubMemberRepository;
 import back.springbootdeveloper.seungchan.repository.MemberRepository;
 import java.util.ArrayList;
@@ -20,6 +27,7 @@ public class TempMemberService {
 
   private final ClubMemberRepository clubMemberRepository;
   private final MemberRepository memberRepository;
+  private final ClubMemberInformationRepository clubMemberInformationRepository;
 
   /**
    * 주어진 클럽 ID에 속하는 모든 임시 멤버들의 정보를 조회합니다.
@@ -47,5 +55,41 @@ public class TempMemberService {
     }
 
     return tempMembersInformations;
+  }
+
+  /**
+   * 주어진 클럽 멤버 ID에 해당하는 임시 멤버의 상세 정보를 조회합니다.
+   *
+   * @param clubMemberId 클럽 멤버 ID
+   * @return 임시 멤버의 상세 정보를 담은 TempMembersDetailInformationResDto 객체
+   * @throws EntityNotFoundException 멤버나 클럽 멤버 정보를 찾을 수 없는 경우
+   */
+  public TempMembersDetailInformationResDto getTempMembersDetailInformationResDto(
+      final Long clubMemberId) {
+    // 클럽 멤버 ID에 해당하는 ClubMember를 가져옵니다.
+    ClubMember clubMember = clubMemberRepository.findById(clubMemberId)
+        .orElseThrow(EntityNotFoundException::new);
+
+    // ClubMember에 속하는 Member를 가져옵니다.
+    Member member = memberRepository.findById(clubMember.getMemberId())
+        .orElseThrow(EntityNotFoundException::new);
+
+    // ClubMember에 속하는 ClubMemberInformation을 가져옵니다.
+    ClubMemberInformation clubMemberInformation = clubMemberInformationRepository.findById(
+        clubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
+
+    // ClubMemberInformation에 속하는 ClubMemberCustomInformation과 CustomClubApplyInformation을 가져와 CustomInformation으로 매핑합니다.
+    List<ClubMemberCustomInformation> clubMemberCustomInformations = clubMemberInformation.getClubMemberCustomInformations();
+    List<CustomInformation> customInformations = new ArrayList<>();
+    for (final ClubMemberCustomInformation clubMemberCustomInformation : clubMemberCustomInformations) {
+      CustomClubApplyInformation customClubApplyInformation = clubMemberCustomInformation.getCustomClubApplyInformation();
+
+      customInformations.add(
+          new CustomInformation(clubMemberCustomInformation, customClubApplyInformation));
+    }
+
+    // TempMembersDetailInformationResDto 객체를 생성하여 반환합니다.
+    return new TempMembersDetailInformationResDto(clubMember.getClubMemberId(), member,
+        customInformations);
   }
 }
