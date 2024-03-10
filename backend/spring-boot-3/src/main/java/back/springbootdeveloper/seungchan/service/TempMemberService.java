@@ -93,11 +93,20 @@ public class TempMemberService {
         customInformations);
   }
 
+  /**
+   * 주어진 클럽 멤버 ID에 해당하는 임시 멤버를 클럽 멤버로 승인합니다.
+   *
+   * @param clubMemberId 클럽 멤버 ID
+   * @throws EntityNotFoundException 클럽 멤버를 찾을 수 없는 경우
+   */
   @Transactional
   public void acceptTempMember(final Long clubMemberId) {
+    // 주어진 클럽 멤버 ID에 해당하는 ClubMember를 가져옵니다.
     ClubMember targetClubMember = clubMemberRepository.findById(clubMemberId)
         .orElseThrow(EntityNotFoundException::new);
 
+    // ClubMember의 클럽 등급을 멤버로 업데이트합니다.
     targetClubMember.updateClubGradeId(CLUB_GRADE.MEMBER);
   }
+
 }
