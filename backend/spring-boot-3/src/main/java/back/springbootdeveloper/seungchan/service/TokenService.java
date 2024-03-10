@@ -1,8 +1,12 @@
 package back.springbootdeveloper.seungchan.service;
 
 import back.springbootdeveloper.seungchan.config.jwt.TokenProvider;
+import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
+import back.springbootdeveloper.seungchan.entity.ClubMember;
 import back.springbootdeveloper.seungchan.entity.Member;
 import back.springbootdeveloper.seungchan.entity.RefreshToken;
+import back.springbootdeveloper.seungchan.filter.exception.judgment.EntityNotFoundException;
+import back.springbootdeveloper.seungchan.repository.ClubMemberRepository;
 import back.springbootdeveloper.seungchan.repository.RefreshTokenRepository;
 import back.springbootdeveloper.seungchan.util.CookieUtil;
 import jakarta.servlet.http.HttpServletRequest;
@@ -21,7 +25,6 @@ public class TokenService {
   public static final String ACCESS_TOKEN_COOKIE_NAME = "access_token"; // 리프레쉬 토큰의 이름
   public static final Duration REFRESH_TOKEN_DURATION = Duration.ofDays(14); // 리프레쉬 토큰의 유효기간
   public static final Duration ACCESS_TOKEN_DURATION = Duration.ofDays(1); // 액세스 토큰의 유효기간
-
   private final static String HEADER_AUTHORIZATION = "Authorization";
 
   private final TokenProvider tokenProvider;
@@ -110,6 +113,24 @@ public class TokenService {
   }
 
   /**
+   * 주어진 HttpServletRequest에서 사용자 토큰을 추출하고, 해당 토큰을 사용하여 사용자의 ID를 가져온 후, 주어진 클럽 ID와 사용자 ID를 사용하여
+   * ClubMember를 조회하여 사용자가 클럽의 리더인지 여부를 확인합니다.
+   *
+   * @param request 클럽 리더 여부를 확인할 사용자의 HttpServletRequest
+   * @param clubId  클럽 ID
+   * @return 사용자가 클럽의 리더이면 true, 아니면 false
+   * @throws EntityNotFoundException ClubMember를 찾을 수 없는 경우
+   */
+  public Boolean isLeaderOfClubFromToken(HttpServletRequest request, Long clubId) {
+    String token = getToken(request);
+    Long memberId = tokenProvider.getUserId(token);
+    ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId)
+        .orElseThrow(
+            EntityNotFoundException::new);
+    System.out.println("clubMember.getClubGradeId() = " + clubMember.getClubGradeId());
+    return CLUB_GRADE.LEADER.is(clubMember.getClubGradeId());
+  }
+
    * HttpServletRequest에서 토큰을 추출하여 해당 토큰으로부터 모래시계 왕 여부를 확인합니다.
    *
    * @param request HttpServletRequest 객체
@@ -136,6 +157,7 @@ public class TokenService {
     if (header == null || !header.startsWith("Bearer ")) {
       throw new BadCredentialsException("Invalid token");
     }
+
 
     // "Bearer " 접두사를 제거하여 실제 토큰 얻기
     return header.replace("Bearer ", "");
