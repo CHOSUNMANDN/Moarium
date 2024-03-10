@@ -1951,9 +1951,9 @@ INSERT INTO attendance_week_date (attendance_week_date_id, create_date, update_d
                                   monday_date,
                                   saturday, sunday, sunday_date, thursday, tuesday, wednesday,
                                   attendance_state_id)
-VALUES (105, '2024-02-18 17:06:46.349015', '2024-02-17 17:06:46.348974', 'ATTENDANCE', 'ATTENDANCE',
+VALUES (105, '2024-02-18 17:06:46.349015', '2024-02-17 17:06:46.348974', 'UNDECIDED', 'UNDECIDED',
         '2024-02-12',
-        'ATTENDANCE', 'UNDECIDED', '2024-02-18', 'UNDECIDED', 'ABSENCE', 'UNDECIDED', 105);
+        'UNDECIDED', 'UNDECIDED', '2024-02-18', 'UNDECIDED', 'UNDECIDED', 'UNDECIDED', 105);
 INSERT INTO attendance_week_date (attendance_week_date_id, create_date, update_date, friday, monday,
                                   monday_date,
                                   saturday, sunday, sunday_date, thursday, tuesday, wednesday,
