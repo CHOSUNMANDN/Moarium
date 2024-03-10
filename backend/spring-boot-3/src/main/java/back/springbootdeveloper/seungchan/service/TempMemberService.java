@@ -92,4 +92,12 @@ public class TempMemberService {
     return new TempMembersDetailInformationResDto(clubMember.getClubMemberId(), member,
         customInformations);
   }
+
+  @Transactional
+  public void acceptTempMember(final Long clubMemberId) {
+    ClubMember targetClubMember = clubMemberRepository.findById(clubMemberId)
+        .orElseThrow(EntityNotFoundException::new);
+
+    targetClubMember.updateClubGradeId(CLUB_GRADE.MEMBER);
+  }
 }
