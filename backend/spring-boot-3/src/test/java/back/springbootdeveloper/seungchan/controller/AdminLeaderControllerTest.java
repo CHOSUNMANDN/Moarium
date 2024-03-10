@@ -7,10 +7,15 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import back.springbootdeveloper.seungchan.annotation.MoariumSpringBootTest;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
+import back.springbootdeveloper.seungchan.dto.response.CustomInformation;
 import back.springbootdeveloper.seungchan.dto.response.TempMembersInformation;
 import back.springbootdeveloper.seungchan.entity.Club;
 import back.springbootdeveloper.seungchan.entity.ClubMember;
+import back.springbootdeveloper.seungchan.entity.ClubMemberCustomInformation;
+import back.springbootdeveloper.seungchan.entity.ClubMemberInformation;
+import back.springbootdeveloper.seungchan.entity.CustomClubApplyInformation;
 import back.springbootdeveloper.seungchan.entity.Member;
+import back.springbootdeveloper.seungchan.repository.ClubMemberInformationRepository;
 import back.springbootdeveloper.seungchan.repository.ClubMemberRepository;
 import back.springbootdeveloper.seungchan.repository.MemberRepository;
 import back.springbootdeveloper.seungchan.testutil.TestCreateUtil;
@@ -23,6 +28,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
+import org.springframework.transaction.annotation.Transactional;
 
 @MoariumSpringBootTest
 class AdminLeaderControllerTest {
@@ -35,6 +41,8 @@ class AdminLeaderControllerTest {
   private TestCreateUtil testCreateUtil;
   @Autowired
   private ClubMemberRepository clubMemberRepository;
+  @Autowired
+  private ClubMemberInformationRepository clubMemberInformationRepository;
   @Autowired
   private MemberRepository memberRepository;
   private Member memberOneClubLeader;
@@ -88,6 +96,63 @@ class AdminLeaderControllerTest {
               tempMembersInformations.get(i).getMajor()))
           .andExpect(jsonPath("$.result.tempMembersInformations[" + i + "].studentId").value(
               tempMembersInformations.get(i).getStudentId()));
+    }
+  }
+
+  @Test
+  @Transactional
+  void 개인_신청_신입_회원_정보_확인_테스트() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/informations/{club_id}/details/leader/temp/member/{club_member_id}";
+    final Member loginMember = testCreateUtil.get_entity_one_club_leader_member();
+    final Long targetClubId = testCreateUtil.getONE_CLUB_ID();
+
+    // 검증을 위한 데이터 준비
+    final ClubMember targetClubMember = clubMemberRepository.findAllByClubIdAndClubGradeId(
+        targetClubId, CLUB_GRADE.TEMP_MEMBER.getId()).get(0);
+    final Member targetMember = memberRepository.findById(targetClubMember.getMemberId()).get();
+    final ClubMemberInformation targetClubMemberInformation = clubMemberInformationRepository.findById(
+        targetClubMember.getClubMemberInformationId()).get();
+    final List<ClubMemberCustomInformation> targetClubMemberCustomInformations = targetClubMemberInformation.getClubMemberCustomInformations();
+    List<CustomInformation> targetCustomInformations = new ArrayList<>();
+
+    for (final ClubMemberCustomInformation clubMemberCustomInformation : targetClubMemberCustomInformations) {
+      CustomClubApplyInformation customClubApplyInformation = clubMemberCustomInformation.getCustomClubApplyInformation();
+
+      targetCustomInformations.add(
+          new CustomInformation(clubMemberCustomInformation, customClubApplyInformation));
+    }
+
+    // when
+    ResultActions result = mockMvc.perform(
+        get(url, targetClubId, targetClubMember.getClubMemberId())
+            .accept(MediaType.APPLICATION_JSON)
+            .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(jsonPath("$.result.clubMemberId").value(
+            targetClubMember.getClubMemberId()))
+        .andExpect(jsonPath("$.result.name").value(
+            targetMember.getFullName()))
+        .andExpect(jsonPath("$.result.email").value(
+            targetMember.getEmail()))
+        .andExpect(jsonPath("$.result.major").value(
+            targetMember.getMajor()))
+        .andExpect(jsonPath("$.result.studentId").value(
+            targetMember.getStudentId()));
+
+    for (int i = 0; i < targetCustomInformations.size(); i++) {
+      result
+          .andExpect(jsonPath("$.result.customInformations[" + i + "].customInformationId").value(
+              targetCustomInformations.get(i).getCustomInformationId()))
+          .andExpect(jsonPath("$.result.customInformations[" + i + "].customContent").value(
+              targetCustomInformations.get(i).getCustomContent()))
+          .andExpect(jsonPath("$.result.customInformations[" + i + "].customType").value(
+              targetCustomInformations.get(i).getCustomType()));
     }
   }
 }
