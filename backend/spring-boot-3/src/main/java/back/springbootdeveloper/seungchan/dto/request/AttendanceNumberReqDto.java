@@ -10,8 +10,9 @@ import lombok.*;
 @Data
 @Builder
 public class AttendanceNumberReqDto {
-    @NotBlank(message = "{validation.attendanceNumber.notblank}")
-    @Size(min = 4, message = "{validation.attendanceNumber.size.min.4}")
-    @Pattern(regexp = "^[0-9]+$", message = "{validation.attendanceNumber.invalid}")
-    private String numOfAttendance;
+
+  @NotBlank(message = "{validation.attendanceNumber.notblank}")
+  @Size(min = 4, message = "{validation.attendanceNumber.size.min.4}")
+  @Pattern(regexp = "^[0-9]+$", message = "{validation.attendanceNumber.invalid}")
+  private String numOfAttendance;
 }

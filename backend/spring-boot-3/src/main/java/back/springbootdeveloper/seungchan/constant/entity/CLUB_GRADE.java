@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public enum CLUB_GRADE {
   LEADER(1, "LEADER"), DEPUTY_LEADER(2, "DEPUTY_LEADER"),
-  MEMBER(3, "MEMBER"), DORMANT(4, "DORMANT");
+  MEMBER(3, "MEMBER"), DORMANT(4, "DORMANT"), TEMP_MEMBER(5, "TEMP_MEMBER");
 
   private Integer id;
   private String grade;

@@ -11,8 +11,9 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class WriteClubArticleCommentReqDto {
-    @NotBlank
-    private String clubArticleCommentContent;
-    @NotBlank
-    private String anonymity;
+
+  @NotBlank
+  private String clubArticleCommentContent;
+  @NotBlank
+  private String anonymity;
 }

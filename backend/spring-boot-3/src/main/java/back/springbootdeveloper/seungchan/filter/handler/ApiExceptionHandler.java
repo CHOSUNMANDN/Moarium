@@ -21,187 +21,193 @@ import java.time.ZonedDateTime;
 
 @ControllerAdvice
 public class ApiExceptionHandler {
-    @ExceptionHandler(value = {UserNotExistException.class})
-    public ResponseEntity<Object> handleUserNotExistException(UserNotExistException e) {
 
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        CustomHttpStatus customHttpStatus = CustomHttpStatus.USER_NOT_EXIST;
+  @ExceptionHandler(value = {UserNotExistException.class})
+  public ResponseEntity<Object> handleUserNotExistException(UserNotExistException e) {
 
-        ApiException apiException = new ApiException(
-                ExceptionMessage.USER_NOT_EXIST_MESSAGE.get(),
-                httpStatus,
-                customHttpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.USER_NOT_EXIST;
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    ApiException apiException = new ApiException(
+        ExceptionMessage.USER_NOT_EXIST_MESSAGE.get(),
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
+
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
 
-    @ExceptionHandler(value = {MethodArgumentNotValidException.class})
-    public ResponseEntity<Object> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
-        String errorMessage = e.getBindingResult()
-                .getAllErrors()
-                .get(0)
-                .getDefaultMessage();
+  @ExceptionHandler(value = {MethodArgumentNotValidException.class})
+  public ResponseEntity<Object> handleMethodArgumentNotValidException(
+      MethodArgumentNotValidException e) {
+    String errorMessage = e.getBindingResult()
+        .getAllErrors()
+        .get(0)
+        .getDefaultMessage();
 
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        CustomHttpStatus customHttpStatus = CustomHttpStatus.DATA_VALID;
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.DATA_VALID;
 
-        ApiException apiException = new ApiException(
+    ApiException apiException = new ApiException(
 //                ExceptionMessage.USER_NOT_EXIST_MESSAGE.get(),
-                errorMessage,
-                httpStatus,
-                customHttpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+        errorMessage,
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
-    @ExceptionHandler(value = {NewUserRegistrationException.class})
-    public ResponseEntity<Object> handleNewUserRegistrationExceptionException(NewUserRegistrationException e) {
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+  @ExceptionHandler(value = {NewUserRegistrationException.class})
+  public ResponseEntity<Object> handleNewUserRegistrationExceptionException(
+      NewUserRegistrationException e) {
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
 
-        ApiException apiException = new ApiException(
-                ExceptionMessage.NEW_USER_REGISTRATION_MESSAGE.get(),
-                httpStatus,
-                httpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+    ApiException apiException = new ApiException(
+        ExceptionMessage.NEW_USER_REGISTRATION_MESSAGE.get(),
+        httpStatus,
+        httpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
-    @ExceptionHandler(value = {WeekendException.class})
-    public ResponseEntity<Object> handleWeekendException(WeekendException e) {
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        CustomHttpStatus customHttpStatus = CustomHttpStatus.WEEKEND;
+  @ExceptionHandler(value = {WeekendException.class})
+  public ResponseEntity<Object> handleWeekendException(WeekendException e) {
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.WEEKEND;
 
-        ApiException apiException = new ApiException(
-                ExceptionMessage.WEEKEND_MESSAGE.get(),
-                httpStatus,
-                customHttpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+    ApiException apiException = new ApiException(
+        ExceptionMessage.WEEKEND_MESSAGE.get(),
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
-    @ExceptionHandler(value = {PasswordConfirmationException.class})
-    public ResponseEntity<Object> handlePasswordConfirmationException(PasswordConfirmationException e) {
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        CustomHttpStatus customHttpStatus = CustomHttpStatus.PASSWORD_CONFIRMATION;
+  @ExceptionHandler(value = {PasswordConfirmationException.class})
+  public ResponseEntity<Object> handlePasswordConfirmationException(
+      PasswordConfirmationException e) {
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.PASSWORD_CONFIRMATION;
 
-        ApiException apiException = new ApiException(
-                ExceptionMessage.PASSWORD_CONFIRMATION.get(),
-                httpStatus,
-                customHttpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+    ApiException apiException = new ApiException(
+        ExceptionMessage.PASSWORD_CONFIRMATION.get(),
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
-    @ExceptionHandler(value = {UpdateFailedException.class})
-    public ResponseEntity<Object> handleUpdateFailedException(UpdateFailedException e) {
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        CustomHttpStatus customHttpStatus = CustomHttpStatus.UPDATE_FAILED; // add
+  @ExceptionHandler(value = {UpdateFailedException.class})
+  public ResponseEntity<Object> handleUpdateFailedException(UpdateFailedException e) {
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.UPDATE_FAILED; // add
 
-        ApiException apiException = new ApiException(
-                ExceptionMessage.UPDATE_FAILED.get(), // add
-                httpStatus,
-                customHttpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+    ApiException apiException = new ApiException(
+        ExceptionMessage.UPDATE_FAILED.get(), // add
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
-    @ExceptionHandler(value = {EmailSameMatchException.class})
-    public ResponseEntity<Object> handleEmailsMatchException(EmailSameMatchException e) {
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        CustomHttpStatus customHttpStatus = CustomHttpStatus.EMAIL_SAME_MATCH; // add
+  @ExceptionHandler(value = {EmailSameMatchException.class})
+  public ResponseEntity<Object> handleEmailsMatchException(EmailSameMatchException e) {
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.EMAIL_SAME_MATCH; // add
 
-        ApiException apiException = new ApiException(
-                ExceptionMessage.EMAIL_SAME_MATCH.get(), // add
-                httpStatus,
-                customHttpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+    ApiException apiException = new ApiException(
+        ExceptionMessage.EMAIL_SAME_MATCH.get(), // add
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
-    @ExceptionHandler(value = {MissMatchesPasswordException.class})
-    public ResponseEntity<Object> handleMissMatchesPasswordException(MissMatchesPasswordException e) {
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        CustomHttpStatus customHttpStatus = CustomHttpStatus.PASSWORD_MISS_MATCHES; // add
+  @ExceptionHandler(value = {MissMatchesPasswordException.class})
+  public ResponseEntity<Object> handleMissMatchesPasswordException(MissMatchesPasswordException e) {
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.PASSWORD_MISS_MATCHES; // add
 
-        ApiException apiException = new ApiException(
-                ExceptionMessage.PASSWORD_MISS_MATCH.get(), // add
-                httpStatus,
-                customHttpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+    ApiException apiException = new ApiException(
+        ExceptionMessage.PASSWORD_MISS_MATCH.get(), // add
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
-    @ExceptionHandler(value = {EntityNotFoundException.class})
-    public ResponseEntity<Object> handleEntityNotFoundException(MissMatchesPasswordException e) {
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        CustomHttpStatus customHttpStatus = CustomHttpStatus.ENTITY_NOT_FOUND; // add
+  @ExceptionHandler(value = {EntityNotFoundException.class})
+  public ResponseEntity<Object> handleEntityNotFoundException(MissMatchesPasswordException e) {
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.ENTITY_NOT_FOUND; // add
 
-        ApiException apiException = new ApiException(
-                ExceptionMessage.ENTITY_NOT_FOUND.get(), // add
-                httpStatus,
-                customHttpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+    ApiException apiException = new ApiException(
+        ExceptionMessage.ENTITY_NOT_FOUND.get(), // add
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
-    @ExceptionHandler(value = {InvalidSelectionClassificationException.class}) // add
-    public ResponseEntity<Object> handleInvalidSelectionClassificationException(InvalidSelectionClassificationException e) { // add
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        CustomHttpStatus customHttpStatus = CustomHttpStatus.INVALID_SELECTION_CLASSIFICATION; // add
-        ApiException apiException = new ApiException(
-                ExceptionMessage.INVALID_SELECTION_CLASSIFICATION.get(), // add
-                httpStatus,
-                customHttpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
+  @ExceptionHandler(value = {InvalidSelectionClassificationException.class}) // add
+  public ResponseEntity<Object> handleInvalidSelectionClassificationException(
+      InvalidSelectionClassificationException e) { // add
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.INVALID_SELECTION_CLASSIFICATION; // add
+    ApiException apiException = new ApiException(
+        ExceptionMessage.INVALID_SELECTION_CLASSIFICATION.get(), // add
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
 
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
 
+  // 외부 API 4xx 응답시 발생하는 기본 Exception
+  @ExceptionHandler(value = {DefaultExternalApiClientErrorException.class})
+  public ResponseEntity<Object> handleDefaultExternalApiClientErrorException(
+      DefaultExternalApiClientErrorException e) {
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    ApiException apiException = new ApiException(
+        ExceptionMessage.EXTERNAL_SERVICE_BAD_REQUEST.get(),
+        httpStatus,
+        httpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 
-    // 외부 API 4xx 응답시 발생하는 기본 Exception
-    @ExceptionHandler(value = {DefaultExternalApiClientErrorException.class})
-    public ResponseEntity<Object> handleDefaultExternalApiClientErrorException(DefaultExternalApiClientErrorException e){
-        HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
-        ApiException apiException = new ApiException(
-                ExceptionMessage.EXTERNAL_SERVICE_BAD_REQUEST.get(),
-                httpStatus,
-                httpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
-        return new ResponseEntity<>(apiException, httpStatus);
-    }
-
-    // 외부 API 5xx 응답시 발생하는 기본 Exception
-    @ExceptionHandler(value = {DefaultExternalApiServerErrorException.class})
-    public ResponseEntity<Object> handleDefaultExternalApiServerErrorException(DefaultExternalApiServerErrorException e){
-        HttpStatus httpStatus = HttpStatus.SERVICE_UNAVAILABLE;
-        ApiException apiException = new ApiException(
-                ExceptionMessage.EXTERNAL_SERVICE_UNAVAILABLE.get(),
-                httpStatus,
-                httpStatus.value(),
-                ZonedDateTime.now(ZoneId.of("Z"))
-        );
-        return new ResponseEntity<>(apiException,httpStatus);
-    }
+  // 외부 API 5xx 응답시 발생하는 기본 Exception
+  @ExceptionHandler(value = {DefaultExternalApiServerErrorException.class})
+  public ResponseEntity<Object> handleDefaultExternalApiServerErrorException(
+      DefaultExternalApiServerErrorException e) {
+    HttpStatus httpStatus = HttpStatus.SERVICE_UNAVAILABLE;
+    ApiException apiException = new ApiException(
+        ExceptionMessage.EXTERNAL_SERVICE_UNAVAILABLE.get(),
+        httpStatus,
+        httpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 }

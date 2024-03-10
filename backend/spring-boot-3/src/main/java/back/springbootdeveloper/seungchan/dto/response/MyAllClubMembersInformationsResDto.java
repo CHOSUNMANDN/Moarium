@@ -12,5 +12,6 @@ import java.util.List;
 @Data
 @Builder
 public class MyAllClubMembersInformationsResDto {
-    List<MyAllClubMembersAttendance> myAllClubMembersAttendances;
+
+  List<MyAllClubMembersAttendance> myAllClubMembersAttendances;
 }

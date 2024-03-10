@@ -12,21 +12,22 @@ import lombok.ToString;
 @Entity
 @Table(name = "article_category")
 public class ArticleCategory extends BaseEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "article_category_id")
-    private Long articleCategoryId;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "article_category", length = 15, nullable = false)
-    private ARTICLE_CATEGORY articleCategory;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "article_category_id")
+  private Long articleCategoryId;
 
-    @Builder
-    public ArticleCategory(ARTICLE_CATEGORY articleCategory) {
-        this.articleCategory = articleCategory;
-    }
+  @Enumerated(EnumType.STRING)
+  @Column(name = "article_category", length = 15, nullable = false)
+  private ARTICLE_CATEGORY articleCategory;
 
-    public void updateArticleCategory(ARTICLE_CATEGORY articleCategory) {
-        this.articleCategory = articleCategory;
-    }
+  @Builder
+  public ArticleCategory(ARTICLE_CATEGORY articleCategory) {
+    this.articleCategory = articleCategory;
+  }
+
+  public void updateArticleCategory(ARTICLE_CATEGORY articleCategory) {
+    this.articleCategory = articleCategory;
+  }
 }

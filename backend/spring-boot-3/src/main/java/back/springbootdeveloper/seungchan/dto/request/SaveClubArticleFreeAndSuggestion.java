@@ -11,10 +11,11 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class SaveClubArticleFreeAndSuggestion {
-    @NotBlank
-    private String clubArticleTitle;
-    @NotBlank
-    private String clubArticleContent;
-    @NotBlank
-    private String classification; // "FREEDOM" OR "SUGGESTION"
+
+  @NotBlank
+  private String clubArticleTitle;
+  @NotBlank
+  private String clubArticleContent;
+  @NotBlank
+  private String classification; // "FREEDOM" OR "SUGGESTION"
 }

@@ -20,31 +20,34 @@ import reactor.core.publisher.Mono;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/clubs")
 public class ScheduleController {
-    private final ImageService imageService;
-    private final FastApiHttpReqService fastApiHttpReqService;
 
-    @Autowired
-    public ScheduleController(ImageService imageService, FastApiHttpReqService fastApiHttpReqService) {
-        this.imageService = imageService;
-        this.fastApiHttpReqService = fastApiHttpReqService;
-    }
+  private final ImageService imageService;
+  private final FastApiHttpReqService fastApiHttpReqService;
 
-    // @RequestPart 는 name 속성을 통해 key 값을 지정해 바인딩 해줄 수 있는데,
-    // 지정하지 않으면 디폴트로 변수명을 key 값으로 갖기 때문에 특별히 이유가 있지 않다면 따로 지정해주지 않아도 된다.
+  @Autowired
+  public ScheduleController(ImageService imageService,
+      FastApiHttpReqService fastApiHttpReqService) {
+    this.imageService = imageService;
+    this.fastApiHttpReqService = fastApiHttpReqService;
+  }
+
+  // @RequestPart 는 name 속성을 통해 key 값을 지정해 바인딩 해줄 수 있는데,
+  // 지정하지 않으면 디폴트로 변수명을 key 값으로 갖기 때문에 특별히 이유가 있지 않다면 따로 지정해주지 않아도 된다.
 //    @PostMapping(value = "/{club_id}/schedules/{club_member_id}/manual")
 //    public ResponseEntity<BaseResponseBody> RegisterTimeTableImage(@PathVariable(value = "club_id") Long clubId
 //            , @PathVariable(value = "club_member_id") Long clubMemberId
 //            , @RequestParam(value = "scheduleImage") MultipartFile scheduleImage) {
-    @PostMapping(value = "/schedules/manual")
-    public BaseResultDTO<ImageResDto> RegisterTimeTableImage(
-            HttpServletRequest request,
-            @RequestParam(value = "scheduleImage") MultipartFile scheduleImage) {
+  @PostMapping(value = "/schedules/manual")
+  public BaseResultDTO<ImageResDto> RegisterTimeTableImage(
+      HttpServletRequest request,
+      @RequestParam(value = "scheduleImage") MultipartFile scheduleImage) {
 
-        ImageResDto imageResDto = imageService.uploadImage(scheduleImage);
+    ImageResDto imageResDto = imageService.uploadImage(scheduleImage);
 
-        Mono<String> resultMono = fastApiHttpReqService.callInternalApi();
-        resultMono.subscribe(result -> System.out.println("Result: " + result));
+    Mono<String> resultMono = fastApiHttpReqService.callInternalApi();
+    resultMono.subscribe(result -> System.out.println("Result: " + result));
 
-        return BaseResultDTO.ofSuccessWithMessage(ResponseMessage.REGISTRATION_TIMETABLE_COMPLETE.get(), imageResDto);
-    }
+    return BaseResultDTO.ofSuccessWithMessage(ResponseMessage.REGISTRATION_TIMETABLE_COMPLETE.get(),
+        imageResDto);
+  }
 }
