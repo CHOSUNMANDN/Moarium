@@ -190,4 +190,88 @@ class AdminLeaderControllerTest {
 
     assertThat(resultClubMember.getClubGradeId()).isEqualTo(CLUB_GRADE.MEMBER.getId().longValue());
   }
+
+  @Test
+  void 신청_신입_회원_정회원_전환_예외_임시_회원이_아닌_회원_테스트_1() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/informations/{club_id}/details/leader/temp/member/{club_member_id}/accept";
+    final Long targetClubId = testCreateUtil.getONE_CLUB_ID();
+    final Member loginMember = testCreateUtil.get_entity_one_club_leader_member();
+
+    // 검증 준비
+    final ClubMember targetClubMember = clubMemberRepository.findByClubIdAndMemberId(targetClubId,
+        loginMember.getMemberId()).get();
+
+    // when
+    ResultActions result = mockMvc.perform(
+        post(url, targetClubId, targetClubMember.getClubMemberId())
+            .accept(MediaType.APPLICATION_JSON)
+            .contentType(MediaType.APPLICATION_JSON_VALUE)
+            .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.message").value(
+            ResponseMessage.BAD_ACCEPT_TEMP_MEMBER.get()));
+  }
+
+  @Test
+  void 신청_신입_회원_정회원_전환_예외_임시_회원이_아닌_회원_테스트_2() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/informations/{club_id}/details/leader/temp/member/{club_member_id}/accept";
+    final Long targetClubId = testCreateUtil.getONE_CLUB_ID();
+    final Member loginMember = testCreateUtil.get_entity_one_club_deputy_leader_member();
+
+    // 검증 준비
+    final ClubMember targetClubMember = clubMemberRepository.findByClubIdAndMemberId(targetClubId,
+        loginMember.getMemberId()).get();
+
+    // when
+    ResultActions result = mockMvc.perform(
+        post(url, targetClubId, targetClubMember.getClubMemberId())
+            .accept(MediaType.APPLICATION_JSON)
+            .contentType(MediaType.APPLICATION_JSON_VALUE)
+            .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.message").value(
+            ResponseMessage.BAD_ACCEPT_TEMP_MEMBER.get()));
+  }
+
+  @Test
+  void 신청_신입_회원_정회원_전환_예외_임시_회원이_아닌_회원_테스트_3() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/informations/{club_id}/details/leader/temp/member/{club_member_id}/accept";
+    final Long targetClubId = testCreateUtil.getONE_CLUB_ID();
+    final Member loginMember = testCreateUtil.get_entity_one_club_normal_member();
+
+    // 검증 준비
+    final ClubMember targetClubMember = clubMemberRepository.findByClubIdAndMemberId(targetClubId,
+        loginMember.getMemberId()).get();
+
+    // when
+    ResultActions result = mockMvc.perform(
+        post(url, targetClubId, targetClubMember.getClubMemberId())
+            .accept(MediaType.APPLICATION_JSON)
+            .contentType(MediaType.APPLICATION_JSON_VALUE)
+            .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.message").value(
+            ResponseMessage.BAD_ACCEPT_TEMP_MEMBER.get()));
+  }
 }
