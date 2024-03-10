@@ -49,6 +49,64 @@ public class TestSaveEntity {
         1, 0, 4, 2);
     데베_저장_팀이름_시작멤버수_끝멤버수_휴면멤버수_테스트(
         2, 5, 9, 1);
+    데베_저장_팀지원_팀이름_시작멤버수_끝멤버수_테스트(
+        1, 10, 14);
+  }
+
+  void 데베_저장_팀지원_팀이름_시작멤버수_끝멤버수_테스트(Integer clubNumber, Integer startMemberNumber,
+      Integer endMemberNumber) throws Exception {
+    // ================================== 시작 설정 ============================
+    Integer roofStart = startMemberNumber;
+    Integer roofEnd = endMemberNumber;
+    Club club = clubRepository.findById(Long.valueOf(clubNumber)).get();
+    // ================================== Club 2.AttendanceSate 등록 ============================
+    List<AttendanceState> attendanceSates = new ArrayList<>();
+    AttendanceState attendanceSate_1 = mapping_AttendanceSate___AttendanceCheckTime_AttendanceWeekDate_VacationToken();
+    AttendanceState attendanceSate_2 = mapping_AttendanceSate___AttendanceCheckTime_AttendanceWeekDate_VacationToken();
+    for (int i = roofStart; i <= roofEnd; i++) {
+      attendanceSates.add(
+          mapping_AttendanceSate___AttendanceCheckTime_AttendanceWeekDate_VacationToken());
+    }
+
+    // ================================== Club 3.ClubControl 생성 ============================
+    ClubControl clubControl = mapping_ClubControl___VacattionTokenControl_AttendanceWeek();
+
+    // ================================== Club 4.Club - ClubControl 등록 ============================
+    club = mappring_Club_ClubControl(club, clubControl);
+
+    // ================================== Club 5.ClubCrade 생성 ============================
+    ClubGrade clubGradeTempMember = clubGradeRepository.findByClubGrade(CLUB_GRADE.TEMP_MEMBER)
+        .get();
+
+    // ================================= Member 20.Member 등록 시작 ============================
+    List<Member> members = new ArrayList<>();
+    for (int i = roofStart; i <= roofEnd; i++) {
+      members.add(applyMember(i));
+    }
+    // ================================= Member 21.ClubMemberInformation 등록 시작 ============================
+    List<ClubMemberInformation> clubMemberInformations = new ArrayList<>();
+    for (int i = roofStart; i <= roofEnd; i++) {
+      clubMemberInformations.add(applyClubMemberInformation(i, club));
+    }
+
+    // ================================= Club - Member 30.ClubMember 등록 시작 ============================
+    List<ClubMember> clubMembers = new ArrayList<>();
+    // 일반 유저 등록
+    for (int i = 0; i < members.size(); i++) {
+      clubMembers.add(
+          applyClubMember(members.get(i), club, clubGradeTempMember, attendanceSates.get(i),
+              clubMemberInformations.get(i)));
+    }
+
+    // ================================= custom_club_apply_information - club_member_custom_information 31. 커스텀 자기소개 등록 시작 ============================
+    // ================================= club_member_information  ====================================================================================
+    // 일반 유저 등록
+    for (int i = 0; i < members.size(); i++) {
+      addClubMemberCustomInformation_To_CustomClubApplyInformation(i, club,
+          clubMembers.get(i));
+    }
+
+    club = clubRepository.save(club);
   }
 
   void 데베_저장_팀이름_시작멤버수_끝멤버수_휴면멤버수_테스트(Integer clubNumber, Integer startMemberNumber,
