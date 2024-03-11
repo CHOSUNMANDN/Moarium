@@ -114,22 +114,29 @@ public class ClubArticleService {
   /**
    * 주어진 클럽 ID, 게시글 ID, 회원 ID를 기반으로 클럽 게시글의 상세 정보를 가져옵니다.
    *
-   * @param clubId    클럽 ID
-   * @param articleId 게시글 ID
-   * @param memberId  회원 ID
+   * @param clubId     클럽 ID
+   * @param articleId  게시글 ID
+   * @param memberId   회원 ID
+   * @param pageNumber
    * @return 클럽 게시글의 상세 정보를 담은 ClubArticleDetailResDto 객체
    * @throws EntityNotFoundException 엔티티를 찾을 수 없을 때 발생하는 예외
    */
   public ClubArticleDetailResDto getClubArticleDetailResDto(Long clubId, Long articleId,
-      Long memberId) {
+      Long memberId, final Integer pageNumber) {
     // 게시글 및 회원 정보 조회
     ClubArticle clubArticle = clubArticleRepository.findById(articleId)
         .orElseThrow(EntityNotFoundException::new);
     ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId)
         .orElseThrow(EntityNotFoundException::new);
+    Pageable pageable = PageRequest.of(0, 6);
+    Integer ZERO_INDEX = 1;
+    for (int i = 0; i < pageNumber - ZERO_INDEX; i++) {
+      pageable = pageable.next();
+    }
 
     // 게시글 댓글 정보 조회
-    List<ClubArticleComment> clubArticleComments = clubArticle.getClubArticleComments();
+    Page<ClubArticleComment> clubArticleComments = clubArticleCommentRepository.findAllByClubArticle_ClubArticleId(
+        articleId, pageable);
     List<ClubArticleCommentInformation> clubArticleCommentInformations = getClubArticleCommentInformations(
         memberId, clubArticleComments);
     // 게시글 작성자 여부 확인
@@ -306,7 +313,7 @@ public class ClubArticleService {
    * @return ClubArticleCommentInformation 객체의 리스트
    */
   private List<ClubArticleCommentInformation> getClubArticleCommentInformations(Long memberId,
-      List<ClubArticleComment> clubArticleComments) {
+      Page<ClubArticleComment> clubArticleComments) {
     List<ClubArticleCommentInformation> clubArticleCommentInformations = new ArrayList<>();
 
     for (ClubArticleComment clubArticleComment : clubArticleComments) {

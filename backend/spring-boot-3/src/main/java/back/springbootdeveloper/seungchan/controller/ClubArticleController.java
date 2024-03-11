@@ -80,12 +80,13 @@ public class ClubArticleController {
   @GetMapping(value = "/{article_id}")
   public BaseResultDTO<ClubArticleDetailResDto> findClubArticleDetail(
       HttpServletRequest request,
+      @RequestParam(value = "page") Integer pageNumber,
       @PathVariable(value = "club_id") Long clubId,
       @PathVariable(value = "article_id") Long articleId) {
     Long memberId = tokenService.getMemberIdFromToken(request);
 
     final ClubArticleDetailResDto clubArticleDetailResDto = clubArticleService.getClubArticleDetailResDto(
-        clubId, articleId, memberId);
+        clubId, articleId, memberId, pageNumber);
 
     return BaseResultDTO.ofSuccess(clubArticleDetailResDto);
   }
