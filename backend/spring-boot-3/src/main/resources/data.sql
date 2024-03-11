@@ -4806,7 +4806,7 @@ VALUES (104, 104, 3, 5, 104, 1);
 INSERT INTO club_member (club_member_id, attendance_state_id, club_grade_id, club_id,
                          club_member_information_id,
                          member_id)
-VALUES (105, 105, 5, 1, 104, 31);
+VALUES (105, 105, 5, 1, 105, 31);
 INSERT INTO club_member (club_member_id, attendance_state_id, club_grade_id, club_id,
                          club_member_information_id,
                          member_id)
