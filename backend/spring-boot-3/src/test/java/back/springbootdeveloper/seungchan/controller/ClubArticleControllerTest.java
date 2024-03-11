@@ -9,7 +9,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import back.springbootdeveloper.seungchan.annotation.MoariumSpringBootTest;
-import back.springbootdeveloper.seungchan.constant.dto.response.RESPONSE_MESSAGE_VALUE;
 import back.springbootdeveloper.seungchan.constant.dto.response.ResponseMessage;
 import back.springbootdeveloper.seungchan.constant.entity.ANONYMITY;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
@@ -27,7 +26,6 @@ import back.springbootdeveloper.seungchan.entity.Club;
 import back.springbootdeveloper.seungchan.entity.ClubArticle;
 import back.springbootdeveloper.seungchan.entity.ClubArticleComment;
 import back.springbootdeveloper.seungchan.entity.ClubMember;
-import back.springbootdeveloper.seungchan.entity.ClubMemberInformation;
 import back.springbootdeveloper.seungchan.entity.Member;
 import back.springbootdeveloper.seungchan.repository.ClubArticleCommentRepository;
 import back.springbootdeveloper.seungchan.repository.ClubArticleRepository;
@@ -36,7 +34,6 @@ import back.springbootdeveloper.seungchan.repository.ClubRepository;
 import back.springbootdeveloper.seungchan.service.ClubArticleCommentService;
 import back.springbootdeveloper.seungchan.service.ClubArticleService;
 import back.springbootdeveloper.seungchan.testutil.TestCreateUtil;
-import back.springbootdeveloper.seungchan.util.BaseResponseBodyUtiil;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -244,6 +241,7 @@ class ClubArticleControllerTest {
     // 유저 로그인
     final String token = testCreateUtil.create_token_one_club_leader_member();
     final String url = "/clubs/informations/{club_id}/articles/{article_id}";
+    final Integer pageNumber = 1;
 
     // 검증을 위한 데이터 준비
     final Club targetClub = clubRepository.findById(targetClubOneId).get();
@@ -254,13 +252,15 @@ class ClubArticleControllerTest {
         targetClubMember.getClubMemberId());
 
     final ClubArticleDetailResDto targetClubArticleDetailResDto = clubArticleService.getClubArticleDetailResDto(
-        targetClub.getClubId(), targetClubArticle.getClubArticleId(), targetMember.getMemberId());
+        targetClub.getClubId(), targetClubArticle.getClubArticleId(), targetMember.getMemberId(),
+        pageNumber);
     final List<ClubArticleCommentInformation> clubArticleCommentInformations = targetClubArticleDetailResDto.getClubArticleCommentInformations();
 
     // when
     ResultActions result = mockMvc.perform(
         get(url, targetClub.getClubId(), targetClubArticle.getClubArticleId())
             .accept(MediaType.APPLICATION_JSON)
+            .param("page", String.valueOf(pageNumber))
             .header("authorization", "Bearer " + token) // token header에 담기
     );
 
