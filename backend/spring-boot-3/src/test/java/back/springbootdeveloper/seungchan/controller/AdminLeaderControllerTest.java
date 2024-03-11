@@ -32,6 +32,7 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
@@ -338,5 +339,95 @@ class AdminLeaderControllerTest {
     assertThat(isDeleteClubMember).isTrue();
     assertThat(isDeleteAttendanceState).isTrue();
     assertThat(isDeleteClubMemberInformation).isTrue();
+  }
+
+  @Test
+  void 신청_신입_회원_거절_예외_일반회원_테스트_1() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/informations/{club_id}/details/leader/temp/member/{club_member_id}/refuse";
+    final Long targetClubId = testCreateUtil.getONE_CLUB_ID();
+    final Member targetMember = testCreateUtil.get_entity_one_club_leader_member();
+
+    // 검증 준비
+    final ClubMember targetClubMember = clubMemberRepository.findByClubIdAndMemberId(targetClubId,
+        targetMember.getMemberId()).get();
+
+    // when
+    ResultActions result = mockMvc.perform(
+        post(url, targetClubId, targetClubMember.getClubMemberId())
+            .accept(MediaType.APPLICATION_JSON)
+            .contentType(MediaType.APPLICATION_JSON_VALUE)
+            .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(status().isBadRequest())
+        .andExpect(jsonPath("$.statusCode").value(
+            HttpStatus.BAD_REQUEST.value()))
+        .andExpect(jsonPath("$.message").value(
+            ResponseMessage.BAD_REFUSE_TEMP_MEMBER.get()));
+  }
+
+  @Test
+  void 신청_신입_회원_거절_예외_일반회원_테스트_2() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/informations/{club_id}/details/leader/temp/member/{club_member_id}/refuse";
+    final Long targetClubId = testCreateUtil.getONE_CLUB_ID();
+    final Member targetMember = testCreateUtil.get_entity_one_club_deputy_leader_member();
+
+    // 검증 준비
+    final ClubMember targetClubMember = clubMemberRepository.findByClubIdAndMemberId(targetClubId,
+        targetMember.getMemberId()).get();
+
+    // when
+    ResultActions result = mockMvc.perform(
+        post(url, targetClubId, targetClubMember.getClubMemberId())
+            .accept(MediaType.APPLICATION_JSON)
+            .contentType(MediaType.APPLICATION_JSON_VALUE)
+            .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(status().isBadRequest())
+        .andExpect(jsonPath("$.statusCode").value(
+            HttpStatus.BAD_REQUEST.value()))
+        .andExpect(jsonPath("$.message").value(
+            ResponseMessage.BAD_REFUSE_TEMP_MEMBER.get()));
+  }
+
+  @Test
+  void 신청_신입_회원_거절_예외_일반회원_테스트_3() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/informations/{club_id}/details/leader/temp/member/{club_member_id}/refuse";
+    final Long targetClubId = testCreateUtil.getONE_CLUB_ID();
+    final Member targetMember = testCreateUtil.get_entity_one_club_normal_member();
+
+    // 검증 준비
+    final ClubMember targetClubMember = clubMemberRepository.findByClubIdAndMemberId(targetClubId,
+        targetMember.getMemberId()).get();
+
+    // when
+    ResultActions result = mockMvc.perform(
+        post(url, targetClubId, targetClubMember.getClubMemberId())
+            .accept(MediaType.APPLICATION_JSON)
+            .contentType(MediaType.APPLICATION_JSON_VALUE)
+            .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(status().isBadRequest())
+        .andExpect(jsonPath("$.statusCode").value(
+            HttpStatus.BAD_REQUEST.value()))
+        .andExpect(jsonPath("$.message").value(
+            ResponseMessage.BAD_REFUSE_TEMP_MEMBER.get()));
   }
 }
