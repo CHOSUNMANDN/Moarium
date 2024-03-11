@@ -13,17 +13,20 @@ import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import back.springbootdeveloper.seungchan.dto.request.CheckDuplicationClubNameReqDto;
 import back.springbootdeveloper.seungchan.dto.response.CustomInformation;
 import back.springbootdeveloper.seungchan.dto.response.TempMembersInformation;
+import back.springbootdeveloper.seungchan.entity.AttendanceState;
 import back.springbootdeveloper.seungchan.entity.Club;
 import back.springbootdeveloper.seungchan.entity.ClubMember;
 import back.springbootdeveloper.seungchan.entity.ClubMemberCustomInformation;
 import back.springbootdeveloper.seungchan.entity.ClubMemberInformation;
 import back.springbootdeveloper.seungchan.entity.CustomClubApplyInformation;
 import back.springbootdeveloper.seungchan.entity.Member;
+import back.springbootdeveloper.seungchan.repository.AttendanceStateRepository;
 import back.springbootdeveloper.seungchan.repository.ClubMemberInformationRepository;
 import back.springbootdeveloper.seungchan.repository.ClubMemberRepository;
 import back.springbootdeveloper.seungchan.repository.MemberRepository;
 import back.springbootdeveloper.seungchan.testutil.TestCreateUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
@@ -49,6 +52,8 @@ class AdminLeaderControllerTest {
   private ClubMemberInformationRepository clubMemberInformationRepository;
   @Autowired
   private MemberRepository memberRepository;
+  @Autowired
+  private AttendanceStateRepository attendanceStateRepository;
   private Member memberOneClubLeader;
   private Long targetClubOneId;
   private String token;
@@ -273,5 +278,65 @@ class AdminLeaderControllerTest {
         .andExpect(status().isOk())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_ACCEPT_TEMP_MEMBER.get()));
+  }
+
+  @Test
+  void 신청_신입_회원_거절_테스트() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/informations/{club_id}/details/leader/temp/member/{club_member_id}/refuse";
+    final Long targetClubId = testCreateUtil.getONE_CLUB_ID();
+    final Member loginMember = testCreateUtil.get_entity_one_club_normal_member();
+
+    // 검증 준비
+    final ClubMember targetClubMember = clubMemberRepository.findAllByClubIdAndClubGradeId(
+        targetClubId, CLUB_GRADE.TEMP_MEMBER.getId()).get(0);
+    Boolean isDeleteClubMember = false;
+    Boolean isDeleteAttendanceState = false;
+    Boolean isDeleteClubMemberInformation = false;
+
+    // when
+    ResultActions result = mockMvc.perform(
+        post(url, targetClubId, targetClubMember.getClubMemberId())
+            .accept(MediaType.APPLICATION_JSON)
+            .contentType(MediaType.APPLICATION_JSON_VALUE)
+            .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    try {
+      clubMemberRepository.findById(
+              targetClubMember.getClubMemberId())
+          .orElseThrow(
+              FileNotFoundException::new);
+    } catch (FileNotFoundException e) {
+      isDeleteClubMember = true;
+    }
+    try {
+      attendanceStateRepository.findById(
+              targetClubMember.getAttendanceStateId())
+          .orElseThrow(
+              FileNotFoundException::new);
+    } catch (FileNotFoundException e) {
+      isDeleteAttendanceState = true;
+    }
+    try {
+      clubMemberInformationRepository.findById(
+              targetClubMember.getClubMemberInformationId())
+          .orElseThrow(
+              FileNotFoundException::new);
+    } catch (FileNotFoundException e) {
+      isDeleteClubMemberInformation = true;
+    }
+
+    // then
+    result
+        .andExpect(status().isOk())
+        .andExpect(jsonPath("$.message").value(
+            ResponseMessage.SUCCESS_REFUSE_TEMP_MEMBER.get()));
+
+    assertThat(isDeleteClubMember).isTrue();
+    assertThat(isDeleteAttendanceState).isTrue();
+    assertThat(isDeleteClubMemberInformation).isTrue();
   }
 }
