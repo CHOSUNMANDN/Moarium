@@ -41,7 +41,7 @@ public enum ResponseMessage {
   SUCCESS_ACCEPT_TEMP_MEMBER("임시 회원을 정회원으로 전환 하였습니다."),
   BAD_ACCEPT_TEMP_MEMBER("임시 회원을 정회원으로 전환 실패 했습니다."),
   SUCCESS_REFUSE_TEMP_MEMBER("임시 회원 신청을 거부했습니다."),
-  BAD_REFUSE_TEMP_MEMBER("임시 회원 신청 거부를 처리하는 동안 문제가 발생했습니다.");
+  BAD_REFUSE_TEMP_MEMBER("임시 회원 대상만 가능 합니다.");
 
   private final String message;
 
