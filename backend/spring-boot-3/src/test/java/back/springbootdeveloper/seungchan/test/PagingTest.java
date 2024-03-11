@@ -2,6 +2,8 @@ package back.springbootdeveloper.seungchan.test;
 
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
 import back.springbootdeveloper.seungchan.entity.ClubArticle;
+import back.springbootdeveloper.seungchan.entity.ClubArticleComment;
+import back.springbootdeveloper.seungchan.repository.ClubArticleCommentRepository;
 import back.springbootdeveloper.seungchan.repository.ClubArticleRepository;
 import java.util.List;
 import org.junit.jupiter.api.Test;
@@ -16,6 +18,8 @@ public class PagingTest {
 
   @Autowired
   private ClubArticleRepository clubArticleRepository;
+  @Autowired
+  private ClubArticleCommentRepository clubArticleCommentRepository;
 
 
   @Test
@@ -35,5 +39,22 @@ public class PagingTest {
     clubArticlePage = clubArticleRepository.findAllByClubIdAndClassification(
         clubId,
         CLUB_ARTICLE_CLASSIFICATION.SUGGESTION, pageable);
+  }
+
+  @Test
+  void Paging_테스트_club_member_id() throws Exception {
+    Long clubId = 1L;
+    Pageable pageable = PageRequest.of(0, 6);
+    Page<ClubArticle> clubArticlePage = clubArticleRepository.findAllByClubIdAndClassification(
+        clubId,
+        CLUB_ARTICLE_CLASSIFICATION.SUGGESTION, pageable);
+
+    Page<ClubArticleComment> clubArticleComments = clubArticleCommentRepository.findAllByClubArticle_ClubArticleId(
+        1L, pageable);
+
+    for (final ClubArticleComment clubArticleComment : clubArticleComments) {
+      System.out.println("clubArticleComment.getClubArticleCommentId() = "
+          + clubArticleComment.getClubArticleCommentId());
+    }
   }
 }
