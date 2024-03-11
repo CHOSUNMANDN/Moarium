@@ -4831,6200 +4831,4430 @@ VALUES (110, 110, 5, 1, 110, 36);
 
 -- club_article
 INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (1, '2024-02-27 14:42:37.846819', '2024-02-27 14:42:37.845350', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (2, '2024-02-27 14:42:37.852642', '2024-02-27 14:42:37.852540', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (3, '2024-02-27 14:42:37.856965', '2024-02-27 14:42:37.856860', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (4, '2024-02-27 14:42:37.860722', '2024-02-27 14:42:37.860632', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (5, '2024-02-27 14:42:37.864387', '2024-02-27 14:42:37.864280', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (6, '2024-02-27 14:42:37.867908', '2024-02-27 14:42:37.867824', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (7, '2024-02-27 14:42:37.871801', '2024-02-27 14:42:37.871713', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (8, '2024-02-27 14:42:37.875143', '2024-02-27 14:42:37.875043', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (9, '2024-02-27 14:42:37.878990', '2024-02-27 14:42:37.878891', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (10, '2024-02-27 14:42:37.882463', '2024-02-27 14:42:37.882368', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (11, '2024-02-27 14:42:37.885468', '2024-02-27 14:42:37.885396', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (12, '2024-02-27 14:42:37.888600', '2024-02-27 14:42:37.888491', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (13, '2024-02-27 14:42:37.891704', '2024-02-27 14:42:37.891637', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (14, '2024-02-27 14:42:37.894876', '2024-02-27 14:42:37.894790', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (15, '2024-02-27 14:42:37.898287', '2024-02-27 14:42:37.898212', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (16, '2024-02-27 14:42:37.902077', '2024-02-27 14:42:37.901756', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (17, '2024-02-27 14:42:37.905495', '2024-02-27 14:42:37.905414', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (18, '2024-02-27 14:42:37.908714', '2024-02-27 14:42:37.908618', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (19, '2024-02-27 14:42:37.912473', '2024-02-27 14:42:37.912379', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (20, '2024-02-27 14:42:37.915933', '2024-02-27 14:42:37.915829', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (21, '2024-02-27 14:42:37.919591', '2024-02-27 14:42:37.919500', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (22, '2024-02-27 14:42:37.922697', '2024-02-27 14:42:37.922624', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (23, '2024-02-27 14:42:37.926140', '2024-02-27 14:42:37.926032', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (24, '2024-02-27 14:42:37.929207', '2024-02-27 14:42:37.929120', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (25, '2024-02-27 14:42:37.932150', '2024-02-27 14:42:37.932085', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (26, '2024-02-27 14:42:37.934948', '2024-02-27 14:42:37.934877', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (27, '2024-02-27 14:42:37.937919', '2024-02-27 14:42:37.937842', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (28, '2024-02-27 14:42:37.941189', '2024-02-27 14:42:37.941109', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (29, '2024-02-27 14:42:37.947883', '2024-02-27 14:42:37.947800', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (30, '2024-02-27 14:42:37.951139', '2024-02-27 14:42:37.951056', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (31, '2024-02-27 14:42:37.954350', '2024-02-27 14:42:37.954277', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (32, '2024-02-27 14:42:37.957213', '2024-02-27 14:42:37.957146', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (33, '2024-02-27 14:42:37.959976', '2024-02-27 14:42:37.959909', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (34, '2024-02-27 14:42:37.962600', '2024-02-27 14:42:37.962535', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (35, '2024-02-27 14:42:37.965375', '2024-02-27 14:42:37.965276', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (36, '2024-02-27 14:42:37.968364', '2024-02-27 14:42:37.968296', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (37, '2024-02-27 14:42:37.971258', '2024-02-27 14:42:37.971157', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (38, '2024-02-27 14:42:37.974285', '2024-02-27 14:42:37.974211', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (39, '2024-02-27 14:42:37.977215', '2024-02-27 14:42:37.977128', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (40, '2024-02-27 14:42:37.980272', '2024-02-27 14:42:37.980182', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (41, '2024-02-27 14:42:37.983388', '2024-02-27 14:42:37.983248', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (42, '2024-02-27 14:42:37.986223', '2024-02-27 14:42:37.986114', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (43, '2024-02-27 14:42:37.988936', '2024-02-27 14:42:37.988875', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (44, '2024-02-27 14:42:37.992173', '2024-02-27 14:42:37.992102', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (45, '2024-02-27 14:42:37.995520', '2024-02-27 14:42:37.995467', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (46, '2024-02-27 14:42:37.998651', '2024-02-27 14:42:37.998561', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (47, '2024-02-27 14:42:38.001988', '2024-02-27 14:42:38.001912', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (48, '2024-02-27 14:42:38.005053', '2024-02-27 14:42:38.004968', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (49, '2024-02-27 14:42:38.007991', '2024-02-27 14:42:38.007904', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (50, '2024-02-27 14:42:38.011086', '2024-02-27 14:42:38.011020', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (51, '2024-02-27 14:42:38.013984', '2024-02-27 14:42:38.013916', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (52, '2024-02-27 14:42:38.017049', '2024-02-27 14:42:38.016977', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (53, '2024-02-27 14:42:38.020221', '2024-02-27 14:42:38.020151', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (54, '2024-02-27 14:42:38.022814', '2024-02-27 14:42:38.022751', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (55, '2024-02-27 14:42:38.025449', '2024-02-27 14:42:38.025384', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 16, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (56, '2024-02-27 14:42:38.028123', '2024-02-27 14:42:38.028057', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 16, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (57, '2024-02-27 14:42:38.031209', '2024-02-27 14:42:38.031139', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 16, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (58, '2024-02-27 14:42:38.034046', '2024-02-27 14:42:38.033984', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (59, '2024-02-27 14:42:38.036720', '2024-02-27 14:42:38.036663', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (60, '2024-02-27 14:42:38.039201', '2024-02-27 14:42:38.039137', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (61, '2024-02-27 14:42:38.041930', '2024-02-27 14:42:38.041875', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (62, '2024-02-27 14:42:38.044425', '2024-02-27 14:42:38.044369', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (63, '2024-02-27 14:42:38.047526', '2024-02-27 14:42:38.047435', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (64, '2024-02-27 14:42:38.050360', '2024-02-27 14:42:38.050299', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (65, '2024-02-27 14:42:38.052839', '2024-02-27 14:42:38.052782', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (66, '2024-02-27 14:42:38.055224', '2024-02-27 14:42:38.055169', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (67, '2024-02-27 14:42:38.057998', '2024-02-27 14:42:38.057899', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (68, '2024-02-27 14:42:38.060615', '2024-02-27 14:42:38.060526', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (69, '2024-02-27 14:42:38.063540', '2024-02-27 14:42:38.063389', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (70, '2024-02-27 14:42:38.066357', '2024-02-27 14:42:38.066282', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (71, '2024-02-27 14:42:38.068762', '2024-02-27 14:42:38.068718', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (72, '2024-02-27 14:42:38.071064', '2024-02-27 14:42:38.071015', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (73, '2024-02-27 14:42:38.073889', '2024-02-27 14:42:38.073773', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (74, '2024-02-27 14:42:38.078517', '2024-02-27 14:42:38.078407', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (75, '2024-02-27 14:42:38.081678', '2024-02-27 14:42:38.081615', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (76, '2024-02-27 14:42:38.084796', '2024-02-27 14:42:38.084734', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (77, '2024-02-27 14:42:38.087377', '2024-02-27 14:42:38.087320', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (78, '2024-02-27 14:42:38.089972', '2024-02-27 14:42:38.089908', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (79, '2024-02-27 14:42:38.092759', '2024-02-27 14:42:38.092707', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (80, '2024-02-27 14:42:38.100196', '2024-02-27 14:42:38.100143', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (81, '2024-02-27 14:42:38.102415', '2024-02-27 14:42:38.102368', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (82, '2024-02-27 14:42:38.104872', '2024-02-27 14:42:38.104827', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (83, '2024-02-27 14:42:38.107344', '2024-02-27 14:42:38.107293', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (84, '2024-02-27 14:42:38.109577', '2024-02-27 14:42:38.109524', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (85, '2024-02-27 14:42:38.111902', '2024-02-27 14:42:38.111850', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (86, '2024-02-27 14:42:38.114509', '2024-02-27 14:42:38.114454', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (87, '2024-02-27 14:42:38.116838', '2024-02-27 14:42:38.116773', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (88, '2024-02-27 14:42:38.119223', '2024-02-27 14:42:38.119165', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (89, '2024-02-27 14:42:38.122208', '2024-02-27 14:42:38.122150', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (90, '2024-02-27 14:42:38.124618', '2024-02-27 14:42:38.124561', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (91, '2024-02-27 14:42:38.126957', '2024-02-27 14:42:38.126911', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (92, '2024-02-27 14:42:38.129256', '2024-02-27 14:42:38.129208', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (93, '2024-02-27 14:42:38.131940', '2024-02-27 14:42:38.131873', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (94, '2024-02-27 14:42:38.134180', '2024-02-27 14:42:38.134133', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (95, '2024-02-27 14:42:38.136678', '2024-02-27 14:42:38.136618', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (96, '2024-02-27 14:42:38.139196', '2024-02-27 14:42:38.139117', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (97, '2024-02-27 14:42:38.141628', '2024-02-27 14:42:38.141388', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (98, '2024-02-27 14:42:38.143713', '2024-02-27 14:42:38.143664', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (99, '2024-02-27 14:42:38.145757', '2024-02-27 14:42:38.145698', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (100, '2024-02-27 14:42:38.147760', '2024-02-27 14:42:38.147691', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (101, '2024-02-27 14:42:38.149591', '2024-02-27 14:42:38.149440', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (102, '2024-02-27 14:42:38.151338', '2024-02-27 14:42:38.151297', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (103, '2024-02-27 14:42:38.152940', '2024-02-27 14:42:38.152887', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (104, '2024-02-27 14:42:38.155069', '2024-02-27 14:42:38.155011', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (105, '2024-02-27 14:42:38.156929', '2024-02-27 14:42:38.156855', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (106, '2024-02-27 14:42:38.158780', '2024-02-27 14:42:38.158717', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (107, '2024-02-27 14:42:38.160767', '2024-02-27 14:42:38.160714', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (108, '2024-02-27 14:42:38.162908', '2024-02-27 14:42:38.162859', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (109, '2024-02-27 14:42:38.164797', '2024-02-27 14:42:38.164749', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (110, '2024-02-27 14:42:38.166651', '2024-02-27 14:42:38.166607', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (111, '2024-02-27 14:42:38.168386', '2024-02-27 14:42:38.168341', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (112, '2024-02-27 14:42:38.170178', '2024-02-27 14:42:38.170135', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (113, '2024-02-27 14:42:38.172347', '2024-02-27 14:42:38.172298', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (114, '2024-02-27 14:42:38.174361', '2024-02-27 14:42:38.174313', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (115, '2024-02-27 14:42:38.176084', '2024-02-27 14:42:38.176045', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (116, '2024-02-27 14:42:38.177805', '2024-02-27 14:42:38.177751', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (117, '2024-02-27 14:42:38.179569', '2024-02-27 14:42:38.179524', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (118, '2024-02-27 14:42:38.181388', '2024-02-27 14:42:38.181347', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (119, '2024-02-27 14:42:38.183241', '2024-02-27 14:42:38.183195', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (120, '2024-02-27 14:42:38.185020', '2024-02-27 14:42:38.184976', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (121, '2024-02-27 14:42:38.187160', '2024-02-27 14:42:38.187097', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (122, '2024-02-27 14:42:38.188900', '2024-02-27 14:42:38.188863', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (123, '2024-02-27 14:42:38.190507', '2024-02-27 14:42:38.190471', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (124, '2024-02-27 14:42:38.192592', '2024-02-27 14:42:38.192539', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (125, '2024-02-27 14:42:38.194616', '2024-02-27 14:42:38.194569', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (126, '2024-02-27 14:42:38.196432', '2024-02-27 14:42:38.196389', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (127, '2024-02-27 14:42:38.198589', '2024-02-27 14:42:38.198539', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (128, '2024-02-27 14:42:38.200976', '2024-02-27 14:42:38.200768', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (129, '2024-02-27 14:42:38.202921', '2024-02-27 14:42:38.202876', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (130, '2024-02-27 14:42:38.205127', '2024-02-27 14:42:38.205055', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (131, '2024-02-27 14:42:38.207107', '2024-02-27 14:42:38.207060', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (132, '2024-02-27 14:42:38.208963', '2024-02-27 14:42:38.208919', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (133, '2024-02-27 14:42:38.210661', '2024-02-27 14:42:38.210622', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (134, '2024-02-27 14:42:38.212433', '2024-02-27 14:42:38.212388', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (135, '2024-02-27 14:42:38.214431', '2024-02-27 14:42:38.214387', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (136, '2024-02-27 14:42:38.216064', '2024-02-27 14:42:38.216025', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (137, '2024-02-27 14:42:38.217722', '2024-02-27 14:42:38.217682', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (138, '2024-02-27 14:42:38.219509', '2024-02-27 14:42:38.219399', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (139, '2024-02-27 14:42:38.221425', '2024-02-27 14:42:38.221389', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 16, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (140, '2024-02-27 14:42:38.223080', '2024-02-27 14:42:38.223040', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 16, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (141, '2024-02-27 14:42:38.224860', '2024-02-27 14:42:38.224825', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 16, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (142, '2024-02-27 14:42:38.226814', '2024-02-27 14:42:38.226769', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (143, '2024-02-27 14:42:38.228571', '2024-02-27 14:42:38.228527', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (144, '2024-02-27 14:42:38.230288', '2024-02-27 14:42:38.230241', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (145, '2024-02-27 14:42:38.232001', '2024-02-27 14:42:38.231965', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (146, '2024-02-27 14:42:38.233686', '2024-02-27 14:42:38.233647', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (147, '2024-02-27 14:42:38.235581', '2024-02-27 14:42:38.235543', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (148, '2024-02-27 14:42:38.237182', '2024-02-27 14:42:38.237147', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (149, '2024-02-27 14:42:38.238710', '2024-02-27 14:42:38.238679', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (150, '2024-02-27 14:42:38.240236', '2024-02-27 14:42:38.240198', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (151, '2024-02-27 14:42:38.241725', '2024-02-27 14:42:38.241692', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (152, '2024-02-27 14:42:38.243264', '2024-02-27 14:42:38.243232', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (153, '2024-02-27 14:42:38.245231', '2024-02-27 14:42:38.245186', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (154, '2024-02-27 14:42:38.246962', '2024-02-27 14:42:38.246916', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (155, '2024-02-27 14:42:38.248713', '2024-02-27 14:42:38.248681', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (156, '2024-02-27 14:42:38.250213', '2024-02-27 14:42:38.250182', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (157, '2024-02-27 14:42:38.251777', '2024-02-27 14:42:38.251743', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (158, '2024-02-27 14:42:38.253761', '2024-02-27 14:42:38.253719', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (159, '2024-02-27 14:42:38.255454', '2024-02-27 14:42:38.255412', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (160, '2024-02-27 14:42:38.257499', '2024-02-27 14:42:38.257460', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (161, '2024-02-27 14:42:38.259216', '2024-02-27 14:42:38.259054', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (162, '2024-02-27 14:42:38.261875', '2024-02-27 14:42:38.261839', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (163, '2024-02-27 14:42:38.263613', '2024-02-27 14:42:38.263577', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (164, '2024-02-27 14:42:38.265547', '2024-02-27 14:42:38.265510', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (165, '2024-02-27 14:42:38.267101', '2024-02-27 14:42:38.267067', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (166, '2024-02-27 14:42:38.268565', '2024-02-27 14:42:38.268535', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (167, '2024-02-27 14:42:38.269905', '2024-02-27 14:42:38.269876', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (168, '2024-02-27 14:42:38.271306', '2024-02-27 14:42:38.271276', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (169, '2024-02-27 14:42:38.274027', '2024-02-27 14:42:38.273987', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (170, '2024-02-27 14:42:38.275877', '2024-02-27 14:42:38.275839', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (171, '2024-02-27 14:42:38.277612', '2024-02-27 14:42:38.277575', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (172, '2024-02-27 14:42:38.279451', '2024-02-27 14:42:38.279413', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (173, '2024-02-27 14:42:38.281058', '2024-02-27 14:42:38.281028', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (174, '2024-02-27 14:42:38.282482', '2024-02-27 14:42:38.282423', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (175, '2024-02-27 14:42:38.283928', '2024-02-27 14:42:38.283900', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (176, '2024-02-27 14:42:38.285459', '2024-02-27 14:42:38.285428', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (177, '2024-02-27 14:42:38.286982', '2024-02-27 14:42:38.286950', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (178, '2024-02-27 14:42:38.288905', '2024-02-27 14:42:38.288863', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (179, '2024-02-27 14:42:38.290860', '2024-02-27 14:42:38.290811', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (180, '2024-02-27 14:42:38.292495', '2024-02-27 14:42:38.292463', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (181, '2024-02-27 14:42:38.294068', '2024-02-27 14:42:38.294027', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (182, '2024-02-27 14:42:38.295704', '2024-02-27 14:42:38.295668', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (183, '2024-02-27 14:42:38.297652', '2024-02-27 14:42:38.297607', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (184, '2024-02-27 14:42:38.299193', '2024-02-27 14:42:38.299155', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (185, '2024-02-27 14:42:38.301116', '2024-02-27 14:42:38.301056', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (186, '2024-02-27 14:42:38.302975', '2024-02-27 14:42:38.302884', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (187, '2024-02-27 14:42:38.304638', '2024-02-27 14:42:38.304607', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (188, '2024-02-27 14:42:38.306724', '2024-02-27 14:42:38.306692', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (189, '2024-02-27 14:42:38.308425', '2024-02-27 14:42:38.308388', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (190, '2024-02-27 14:42:38.309977', '2024-02-27 14:42:38.309950', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (191, '2024-02-27 14:42:38.311554', '2024-02-27 14:42:38.311521', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (192, '2024-02-27 14:42:38.313196', '2024-02-27 14:42:38.313164', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (193, '2024-02-27 14:42:38.315213', '2024-02-27 14:42:38.315171', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (194, '2024-02-27 14:42:38.316915', '2024-02-27 14:42:38.316879', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (195, '2024-02-27 14:42:38.318551', '2024-02-27 14:42:38.318521', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (196, '2024-02-27 14:42:38.320151', '2024-02-27 14:42:38.320125', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (197, '2024-02-27 14:42:38.321992', '2024-02-27 14:42:38.321960', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (198, '2024-02-27 14:42:38.323522', '2024-02-27 14:42:38.323493', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (199, '2024-02-27 14:42:38.325567', '2024-02-27 14:42:38.325532', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (200, '2024-02-27 14:42:38.327374', '2024-02-27 14:42:38.327335', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (201, '2024-02-27 14:42:38.329044', '2024-02-27 14:42:38.329009', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (202, '2024-02-27 14:42:38.330757', '2024-02-27 14:42:38.330731', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (203, '2024-02-27 14:42:38.332443', '2024-02-27 14:42:38.332416', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (204, '2024-02-27 14:42:38.333948', '2024-02-27 14:42:38.333921', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (205, '2024-02-27 14:42:38.335468', '2024-02-27 14:42:38.335439', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (206, '2024-02-27 14:42:38.337233', '2024-02-27 14:42:38.337200', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (207, '2024-02-27 14:42:38.338933', '2024-02-27 14:42:38.338905', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (208, '2024-02-27 14:42:38.340536', '2024-02-27 14:42:38.340449', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (209, '2024-02-27 14:42:38.342340', '2024-02-27 14:42:38.342308', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (210, '2024-02-27 14:42:38.343921', '2024-02-27 14:42:38.343880', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (211, '2024-02-27 14:42:38.345694', '2024-02-27 14:42:38.345646', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (212, '2024-02-27 14:42:38.347129', '2024-02-27 14:42:38.347105', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (213, '2024-02-27 14:42:38.348600', '2024-02-27 14:42:38.348566', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (214, '2024-02-27 14:42:38.350153', '2024-02-27 14:42:38.350121', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (215, '2024-02-27 14:42:38.352008', '2024-02-27 14:42:38.351964', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (216, '2024-02-27 14:42:38.353809', '2024-02-27 14:42:38.353774', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (217, '2024-02-27 14:42:38.355386', '2024-02-27 14:42:38.355338', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (218, '2024-02-27 14:42:38.357221', '2024-02-27 14:42:38.357189', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (219, '2024-02-27 14:42:38.358648', '2024-02-27 14:42:38.358622', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (220, '2024-02-27 14:42:38.360013', '2024-02-27 14:42:38.359984', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (221, '2024-02-27 14:42:38.361861', '2024-02-27 14:42:38.361835', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (222, '2024-02-27 14:42:38.363211', '2024-02-27 14:42:38.363180', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (223, '2024-02-27 14:42:38.364656', '2024-02-27 14:42:38.364623', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 16, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (224, '2024-02-27 14:42:38.366022', '2024-02-27 14:42:38.365991', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 16, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (225, '2024-02-27 14:42:38.367432', '2024-02-27 14:42:38.367365', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 16, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (226, '2024-02-27 14:42:38.368741', '2024-02-27 14:42:38.368709', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (227, '2024-02-27 14:42:38.370040', '2024-02-27 14:42:38.370017', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (228, '2024-02-27 14:42:38.371563', '2024-02-27 14:42:38.371534', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (229, '2024-02-27 14:42:38.373184', '2024-02-27 14:42:38.373149', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (230, '2024-02-27 14:42:38.374892', '2024-02-27 14:42:38.374864', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (231, '2024-02-27 14:42:38.376349', '2024-02-27 14:42:38.376327', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (232, '2024-02-27 14:42:38.377749', '2024-02-27 14:42:38.377723', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (233, '2024-02-27 14:42:38.379150', '2024-02-27 14:42:38.379127', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (234, '2024-02-27 14:42:38.380687', '2024-02-27 14:42:38.380664', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (235, '2024-02-27 14:42:38.381954', '2024-02-27 14:42:38.381935', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (236, '2024-02-27 14:42:38.383422', '2024-02-27 14:42:38.383396', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (237, '2024-02-27 14:42:38.384712', '2024-02-27 14:42:38.384690', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (238, '2024-02-27 14:42:38.386068', '2024-02-27 14:42:38.386040', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (239, '2024-02-27 14:42:38.387564', '2024-02-27 14:42:38.387537', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (240, '2024-02-27 14:42:38.389006', '2024-02-27 14:42:38.388980', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (241, '2024-02-27 14:42:38.390742', '2024-02-27 14:42:38.390712', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (242, '2024-02-27 14:42:38.392535', '2024-02-27 14:42:38.392511', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (243, '2024-02-27 14:42:38.393884', '2024-02-27 14:42:38.393856', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (244, '2024-02-27 14:42:38.395263', '2024-02-27 14:42:38.395236', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (245, '2024-02-27 14:42:38.396799', '2024-02-27 14:42:38.396762', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (246, '2024-02-27 14:42:38.398436', '2024-02-27 14:42:38.398406', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (247, '2024-02-27 14:42:38.399785', '2024-02-27 14:42:38.399759', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (248, '2024-02-27 14:42:38.401344', '2024-02-27 14:42:38.401314', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (249, '2024-02-27 14:42:38.402854', '2024-02-27 14:42:38.402827', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (250, '2024-02-27 14:42:38.404433', '2024-02-27 14:42:38.404406', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (251, '2024-02-27 14:42:38.406004', '2024-02-27 14:42:38.405971', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (252, '2024-02-27 14:42:38.407356', '2024-02-27 14:42:38.407329', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (253, '2024-02-27 14:42:38.408660', '2024-02-27 14:42:38.408640', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (254, '2024-02-27 14:42:38.410029', '2024-02-27 14:42:38.410004', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (255, '2024-02-27 14:42:38.411496', '2024-02-27 14:42:38.411470', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (256, '2024-02-27 14:42:38.412731', '2024-02-27 14:42:38.412691', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (257, '2024-02-27 14:42:38.414297', '2024-02-27 14:42:38.414276', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (258, '2024-02-27 14:42:38.416157', '2024-02-27 14:42:38.416106', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (259, '2024-02-27 14:42:38.417654', '2024-02-27 14:42:38.417632', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (260, '2024-02-27 14:42:38.419304', '2024-02-27 14:42:38.419256', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (261, '2024-02-27 14:42:38.421075', '2024-02-27 14:42:38.421040', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (262, '2024-02-27 14:42:38.422569', '2024-02-27 14:42:38.422537', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (263, '2024-02-27 14:42:38.423847', '2024-02-27 14:42:38.423820', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (264, '2024-02-27 14:42:38.425100', '2024-02-27 14:42:38.425014', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (265, '2024-02-27 14:42:38.426609', '2024-02-27 14:42:38.426584', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (266, '2024-02-27 14:42:38.428025', '2024-02-27 14:42:38.427993', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (267, '2024-02-27 14:42:38.429283', '2024-02-27 14:42:38.429265', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (268, '2024-02-27 14:42:38.477154', '2024-02-27 14:42:38.477114', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (269, '2024-02-27 14:42:38.478671', '2024-02-27 14:42:38.478644', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (270, '2024-02-27 14:42:38.480092', '2024-02-27 14:42:38.480046', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (271, '2024-02-27 14:42:38.481654', '2024-02-27 14:42:38.481622', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (272, '2024-02-27 14:42:38.483433', '2024-02-27 14:42:38.483356', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (273, '2024-02-27 14:42:38.484881', '2024-02-27 14:42:38.484842', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (274, '2024-02-27 14:42:38.486116', '2024-02-27 14:42:38.486089', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (275, '2024-02-27 14:42:38.487419', '2024-02-27 14:42:38.487397', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (276, '2024-02-27 14:42:38.488914', '2024-02-27 14:42:38.488892', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (277, '2024-02-27 14:42:38.490288', '2024-02-27 14:42:38.490263', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (278, '2024-02-27 14:42:38.491492', '2024-02-27 14:42:38.491473', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (279, '2024-02-27 14:42:38.492811', '2024-02-27 14:42:38.492788', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (280, '2024-02-27 14:42:38.494488', '2024-02-27 14:42:38.494459', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (281, '2024-02-27 14:42:38.496034', '2024-02-27 14:42:38.496013', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (282, '2024-02-27 14:42:38.497328', '2024-02-27 14:42:38.497307', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (283, '2024-02-27 14:42:38.498608', '2024-02-27 14:42:38.498591', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (284, '2024-02-27 14:42:38.499730', '2024-02-27 14:42:38.499710', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (285, '2024-02-27 14:42:38.500828', '2024-02-27 14:42:38.500810', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (286, '2024-02-27 14:42:38.501938', '2024-02-27 14:42:38.501911', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (287, '2024-02-27 14:42:38.503279', '2024-02-27 14:42:38.503256', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (288, '2024-02-27 14:42:38.504594', '2024-02-27 14:42:38.504567', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (289, '2024-02-27 14:42:38.505789', '2024-02-27 14:42:38.505756', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (290, '2024-02-27 14:42:38.506935', '2024-02-27 14:42:38.506914', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (291, '2024-02-27 14:42:38.508098', '2024-02-27 14:42:38.508077', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (292, '2024-02-27 14:42:38.509218', '2024-02-27 14:42:38.509201', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (293, '2024-02-27 14:42:38.510508', '2024-02-27 14:42:38.510491', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (294, '2024-02-27 14:42:38.511630', '2024-02-27 14:42:38.511614', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (295, '2024-02-27 14:42:38.512686', '2024-02-27 14:42:38.512669', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (296, '2024-02-27 14:42:38.513718', '2024-02-27 14:42:38.513701', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (297, '2024-02-27 14:42:38.514934', '2024-02-27 14:42:38.514912', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (298, '2024-02-27 14:42:38.516154', '2024-02-27 14:42:38.516128', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (299, '2024-02-27 14:42:38.517394', '2024-02-27 14:42:38.517374', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (300, '2024-02-27 14:42:38.518521', '2024-02-27 14:42:38.518503', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (301, '2024-02-27 14:42:38.519594', '2024-02-27 14:42:38.519578', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (302, '2024-02-27 14:42:38.520785', '2024-02-27 14:42:38.520768', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (303, '2024-02-27 14:42:38.522243', '2024-02-27 14:42:38.522214', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (304, '2024-02-27 14:42:38.523575', '2024-02-27 14:42:38.523548', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (305, '2024-02-27 14:42:38.524801', '2024-02-27 14:42:38.524780', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (306, '2024-02-27 14:42:38.526202', '2024-02-27 14:42:38.526185', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (307, '2024-02-27 14:42:38.527782', '2024-02-27 14:42:38.527745', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (308, '2024-02-27 14:42:38.529211', '2024-02-27 14:42:38.529191', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (309, '2024-02-27 14:42:38.530487', '2024-02-27 14:42:38.530467', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (310, '2024-02-27 14:42:38.531659', '2024-02-27 14:42:38.531640', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (311, '2024-02-27 14:42:38.532770', '2024-02-27 14:42:38.532749', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (312, '2024-02-27 14:42:38.533869', '2024-02-27 14:42:38.533850', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (313, '2024-02-27 14:42:38.535089', '2024-02-27 14:42:38.535061', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (314, '2024-02-27 14:42:38.536339', '2024-02-27 14:42:38.536320', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (315, '2024-02-27 14:42:38.537811', '2024-02-27 14:42:38.537785', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (316, '2024-02-27 14:42:38.539497', '2024-02-27 14:42:38.539459', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (317, '2024-02-27 14:42:38.541053', '2024-02-27 14:42:38.541030', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (318, '2024-02-27 14:42:38.542584', '2024-02-27 14:42:38.542557', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (319, '2024-02-27 14:42:38.543976', '2024-02-27 14:42:38.543953', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (320, '2024-02-27 14:42:38.545452', '2024-02-27 14:42:38.545429', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (321, '2024-02-27 14:42:38.546841', '2024-02-27 14:42:38.546816', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (322, '2024-02-27 14:42:38.548332', '2024-02-27 14:42:38.548307', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 46, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (323, '2024-02-27 14:42:38.549615', '2024-02-27 14:42:38.549596', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 46, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (324, '2024-02-27 14:42:38.551265', '2024-02-27 14:42:38.551223', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 46, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (325, '2024-02-27 14:42:38.556332', '2024-02-27 14:42:38.556176', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (326, '2024-02-27 14:42:38.560013', '2024-02-27 14:42:38.559964', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (327, '2024-02-27 14:42:38.564765', '2024-02-27 14:42:38.564553', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (328, '2024-02-27 14:42:38.570363', '2024-02-27 14:42:38.570079', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (329, '2024-02-27 14:42:38.573489', '2024-02-27 14:42:38.573428', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (330, '2024-02-27 14:42:38.575887', '2024-02-27 14:42:38.575820', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (331, '2024-02-27 14:42:38.578250', '2024-02-27 14:42:38.578185', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (332, '2024-02-27 14:42:38.580401', '2024-02-27 14:42:38.580364', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (333, '2024-02-27 14:42:38.582549', '2024-02-27 14:42:38.582522', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (334, '2024-02-27 14:42:38.584319', '2024-02-27 14:42:38.584294', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (335, '2024-02-27 14:42:38.585736', '2024-02-27 14:42:38.585715', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (336, '2024-02-27 14:42:38.587150', '2024-02-27 14:42:38.587131', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (337, '2024-02-27 14:42:38.588377', '2024-02-27 14:42:38.588350', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (338, '2024-02-27 14:42:38.589622', '2024-02-27 14:42:38.589603', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (339, '2024-02-27 14:42:38.590836', '2024-02-27 14:42:38.590813', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (340, '2024-02-27 14:42:38.592075', '2024-02-27 14:42:38.592057', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (341, '2024-02-27 14:42:38.594070', '2024-02-27 14:42:38.594040', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (342, '2024-02-27 14:42:38.595900', '2024-02-27 14:42:38.595873', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (343, '2024-02-27 14:42:38.597521', '2024-02-27 14:42:38.597501', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (344, '2024-02-27 14:42:38.599042', '2024-02-27 14:42:38.599021', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (345, '2024-02-27 14:42:38.600366', '2024-02-27 14:42:38.600342', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (346, '2024-02-27 14:42:38.601639', '2024-02-27 14:42:38.601615', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (347, '2024-02-27 14:42:38.602806', '2024-02-27 14:42:38.602789', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (348, '2024-02-27 14:42:38.604040', '2024-02-27 14:42:38.604016', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (349, '2024-02-27 14:42:38.605535', '2024-02-27 14:42:38.605511', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (350, '2024-02-27 14:42:38.606866', '2024-02-27 14:42:38.606844', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (351, '2024-02-27 14:42:38.608264', '2024-02-27 14:42:38.608244', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (352, '2024-02-27 14:42:38.609529', '2024-02-27 14:42:38.609509', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (353, '2024-02-27 14:42:38.610770', '2024-02-27 14:42:38.610751', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (354, '2024-02-27 14:42:38.611995', '2024-02-27 14:42:38.611974', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (355, '2024-02-27 14:42:38.613141', '2024-02-27 14:42:38.613123', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (356, '2024-02-27 14:42:38.614460', '2024-02-27 14:42:38.614438', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (357, '2024-02-27 14:42:38.615823', '2024-02-27 14:42:38.615804', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (358, '2024-02-27 14:42:38.617140', '2024-02-27 14:42:38.617120', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (359, '2024-02-27 14:42:38.618332', '2024-02-27 14:42:38.618314', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (360, '2024-02-27 14:42:38.619512', '2024-02-27 14:42:38.619495', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (361, '2024-02-27 14:42:38.621192', '2024-02-27 14:42:38.621170', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (362, '2024-02-27 14:42:38.622427', '2024-02-27 14:42:38.622408', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (363, '2024-02-27 14:42:38.624017', '2024-02-27 14:42:38.623988', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (364, '2024-02-27 14:42:38.625530', '2024-02-27 14:42:38.625500', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (365, '2024-02-27 14:42:38.626872', '2024-02-27 14:42:38.626850', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (366, '2024-02-27 14:42:38.628195', '2024-02-27 14:42:38.628171', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (367, '2024-02-27 14:42:38.629546', '2024-02-27 14:42:38.629520', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (368, '2024-02-27 14:42:38.631067', '2024-02-27 14:42:38.631045', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (369, '2024-02-27 14:42:38.632429', '2024-02-27 14:42:38.632410', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (370, '2024-02-27 14:42:38.633906', '2024-02-27 14:42:38.633883', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (371, '2024-02-27 14:42:38.635293', '2024-02-27 14:42:38.635271', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (372, '2024-02-27 14:42:38.637061', '2024-02-27 14:42:38.636997', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (373, '2024-02-27 14:42:38.638485', '2024-02-27 14:42:38.638463', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (374, '2024-02-27 14:42:38.639761', '2024-02-27 14:42:38.639737', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (375, '2024-02-27 14:42:38.641285', '2024-02-27 14:42:38.641266', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (376, '2024-02-27 14:42:38.642351', '2024-02-27 14:42:38.642335', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 46, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (377, '2024-02-27 14:42:38.643466', '2024-02-27 14:42:38.643449', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 46, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (378, '2024-02-27 14:42:38.644907', '2024-02-27 14:42:38.644873', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 46, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (379, '2024-02-27 14:42:38.646133', '2024-02-27 14:42:38.646111', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (380, '2024-02-27 14:42:38.647477', '2024-02-27 14:42:38.647416', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (381, '2024-02-27 14:42:38.648899', '2024-02-27 14:42:38.648874', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (382, '2024-02-27 14:42:38.650065', '2024-02-27 14:42:38.650045', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (383, '2024-02-27 14:42:38.651496', '2024-02-27 14:42:38.651469', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (384, '2024-02-27 14:42:38.652766', '2024-02-27 14:42:38.652744', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (385, '2024-02-27 14:42:38.654017', '2024-02-27 14:42:38.653994', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (386, '2024-02-27 14:42:38.655692', '2024-02-27 14:42:38.655670', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (387, '2024-02-27 14:42:38.657116', '2024-02-27 14:42:38.657094', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (388, '2024-02-27 14:42:38.658410', '2024-02-27 14:42:38.658393', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (389, '2024-02-27 14:42:38.659512', '2024-02-27 14:42:38.659491', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (390, '2024-02-27 14:42:38.660586', '2024-02-27 14:42:38.660569', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (391, '2024-02-27 14:42:38.661594', '2024-02-27 14:42:38.661573', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (392, '2024-02-27 14:42:38.662844', '2024-02-27 14:42:38.662822', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (393, '2024-02-27 14:42:38.664180', '2024-02-27 14:42:38.664151', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (394, '2024-02-27 14:42:38.665663', '2024-02-27 14:42:38.665643', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (395, '2024-02-27 14:42:38.667122', '2024-02-27 14:42:38.667104', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (396, '2024-02-27 14:42:38.668371', '2024-02-27 14:42:38.668351', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (397, '2024-02-27 14:42:38.669498', '2024-02-27 14:42:38.669480', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (398, '2024-02-27 14:42:38.670760', '2024-02-27 14:42:38.670719', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (399, '2024-02-27 14:42:38.672095', '2024-02-27 14:42:38.672071', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (400, '2024-02-27 14:42:38.673546', '2024-02-27 14:42:38.673526', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (401, '2024-02-27 14:42:38.674888', '2024-02-27 14:42:38.674865', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (402, '2024-02-27 14:42:38.676098', '2024-02-27 14:42:38.676079', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (403, '2024-02-27 14:42:38.677371', '2024-02-27 14:42:38.677344', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (404, '2024-02-27 14:42:38.678557', '2024-02-27 14:42:38.678536', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (405, '2024-02-27 14:42:38.679935', '2024-02-27 14:42:38.679915', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (406, '2024-02-27 14:42:38.681133', '2024-02-27 14:42:38.681112', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (407, '2024-02-27 14:42:38.682396', '2024-02-27 14:42:38.682373', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (408, '2024-02-27 14:42:38.683835', '2024-02-27 14:42:38.683813', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (409, '2024-02-27 14:42:38.685314', '2024-02-27 14:42:38.685290', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (410, '2024-02-27 14:42:38.687006', '2024-02-27 14:42:38.686936', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (411, '2024-02-27 14:42:38.688460', '2024-02-27 14:42:38.688435', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (412, '2024-02-27 14:42:38.689800', '2024-02-27 14:42:38.689779', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (413, '2024-02-27 14:42:38.691040', '2024-02-27 14:42:38.691025', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (414, '2024-02-27 14:42:38.692522', '2024-02-27 14:42:38.692486', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (415, '2024-02-27 14:42:38.693684', '2024-02-27 14:42:38.693665', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (416, '2024-02-27 14:42:38.694990', '2024-02-27 14:42:38.694971', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (417, '2024-02-27 14:42:38.696276', '2024-02-27 14:42:38.696258', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (418, '2024-02-27 14:42:38.697332', '2024-02-27 14:42:38.697316', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (419, '2024-02-27 14:42:38.698715', '2024-02-27 14:42:38.698690', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (420, '2024-02-27 14:42:38.699931', '2024-02-27 14:42:38.699913', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (421, '2024-02-27 14:42:38.701199', '2024-02-27 14:42:38.701180', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (422, '2024-02-27 14:42:38.702416', '2024-02-27 14:42:38.702399', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (423, '2024-02-27 14:42:38.704035', '2024-02-27 14:42:38.704009', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (424, '2024-02-27 14:42:38.705353', '2024-02-27 14:42:38.705334', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (425, '2024-02-27 14:42:38.706558', '2024-02-27 14:42:38.706540', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (426, '2024-02-27 14:42:38.707795', '2024-02-27 14:42:38.707772', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (427, '2024-02-27 14:42:38.709008', '2024-02-27 14:42:38.708989', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (428, '2024-02-27 14:42:38.710346', '2024-02-27 14:42:38.710329', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (429, '2024-02-27 14:42:38.711857', '2024-02-27 14:42:38.711839', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (430, '2024-02-27 14:42:38.713223', '2024-02-27 14:42:38.713200', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 46, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (431, '2024-02-27 14:42:38.714621', '2024-02-27 14:42:38.714596', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 46, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (432, '2024-02-27 14:42:38.715953', '2024-02-27 14:42:38.715930', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 46, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (433, '2024-02-27 14:42:38.717163', '2024-02-27 14:42:38.717144', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (434, '2024-02-27 14:42:38.718346', '2024-02-27 14:42:38.718329', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (435, '2024-02-27 14:42:38.719446', '2024-02-27 14:42:38.719427', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (436, '2024-02-27 14:42:38.720604', '2024-02-27 14:42:38.720579', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (437, '2024-02-27 14:42:38.722168', '2024-02-27 14:42:38.722147', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (438, '2024-02-27 14:42:38.723432', '2024-02-27 14:42:38.723401', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (439, '2024-02-27 14:42:38.724614', '2024-02-27 14:42:38.724594', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (440, '2024-02-27 14:42:38.725901', '2024-02-27 14:42:38.725877', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (441, '2024-02-27 14:42:38.727162', '2024-02-27 14:42:38.727143', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (442, '2024-02-27 14:42:38.728484', '2024-02-27 14:42:38.728466', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (443, '2024-02-27 14:42:38.729582', '2024-02-27 14:42:38.729563', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (444, '2024-02-27 14:42:38.730771', '2024-02-27 14:42:38.730751', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (445, '2024-02-27 14:42:38.791993', '2024-02-27 14:42:38.791955', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (446, '2024-02-27 14:42:38.793385', '2024-02-27 14:42:38.793367', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (447, '2024-02-27 14:42:38.794928', '2024-02-27 14:42:38.794904', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (448, '2024-02-27 14:42:38.796120', '2024-02-27 14:42:38.796105', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (449, '2024-02-27 14:42:38.797195', '2024-02-27 14:42:38.797176', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (450, '2024-02-27 14:42:38.798199', '2024-02-27 14:42:38.798185', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (451, '2024-02-27 14:42:38.799324', '2024-02-27 14:42:38.799301', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (452, '2024-02-27 14:42:38.800724', '2024-02-27 14:42:38.800707', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (453, '2024-02-27 14:42:38.802031', '2024-02-27 14:42:38.801979', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (454, '2024-02-27 14:42:38.803323', '2024-02-27 14:42:38.803300', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (455, '2024-02-27 14:42:38.804510', '2024-02-27 14:42:38.804491', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (456, '2024-02-27 14:42:38.805903', '2024-02-27 14:42:38.805862', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (457, '2024-02-27 14:42:38.807326', '2024-02-27 14:42:38.807299', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (458, '2024-02-27 14:42:38.808466', '2024-02-27 14:42:38.808446', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (459, '2024-02-27 14:42:38.809881', '2024-02-27 14:42:38.809855', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (460, '2024-02-27 14:42:38.811134', '2024-02-27 14:42:38.811115', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (461, '2024-02-27 14:42:38.812339', '2024-02-27 14:42:38.812318', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (462, '2024-02-27 14:42:38.813832', '2024-02-27 14:42:38.813805', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (463, '2024-02-27 14:42:38.815193', '2024-02-27 14:42:38.815175', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (464, '2024-02-27 14:42:38.816586', '2024-02-27 14:42:38.816568', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (465, '2024-02-27 14:42:38.817871', '2024-02-27 14:42:38.817855', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (466, '2024-02-27 14:42:38.819238', '2024-02-27 14:42:38.819224', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (467, '2024-02-27 14:42:38.820270', '2024-02-27 14:42:38.820257', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (468, '2024-02-27 14:42:38.821298', '2024-02-27 14:42:38.821281', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (469, '2024-02-27 14:42:38.822484', '2024-02-27 14:42:38.822465', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (470, '2024-02-27 14:42:38.823671', '2024-02-27 14:42:38.823655', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (471, '2024-02-27 14:42:38.824867', '2024-02-27 14:42:38.824849', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (472, '2024-02-27 14:42:38.826359', '2024-02-27 14:42:38.826336', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (473, '2024-02-27 14:42:38.827569', '2024-02-27 14:42:38.827550', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (474, '2024-02-27 14:42:38.828870', '2024-02-27 14:42:38.828849', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (475, '2024-02-27 14:42:38.830082', '2024-02-27 14:42:38.830066', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (476, '2024-02-27 14:42:38.831241', '2024-02-27 14:42:38.831226', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (477, '2024-02-27 14:42:38.832514', '2024-02-27 14:42:38.832498', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (478, '2024-02-27 14:42:38.833747', '2024-02-27 14:42:38.833731', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (479, '2024-02-27 14:42:38.834881', '2024-02-27 14:42:38.834864', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (480, '2024-02-27 14:42:38.835992', '2024-02-27 14:42:38.835973', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (481, '2024-02-27 14:42:38.837325', '2024-02-27 14:42:38.837303', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (482, '2024-02-27 14:42:38.838610', '2024-02-27 14:42:38.838587', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (483, '2024-02-27 14:42:38.839666', '2024-02-27 14:42:38.839647', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (484, '2024-02-27 14:42:38.840966', '2024-02-27 14:42:38.840943', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (485, '2024-02-27 14:42:38.842180', '2024-02-27 14:42:38.842163', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (486, '2024-02-27 14:42:38.843281', '2024-02-27 14:42:38.843267', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (487, '2024-02-27 14:42:38.844439', '2024-02-27 14:42:38.844425', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (488, '2024-02-27 14:42:38.846030', '2024-02-27 14:42:38.846009', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (489, '2024-02-27 14:42:38.847505', '2024-02-27 14:42:38.847485', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (490, '2024-02-27 14:42:38.848808', '2024-02-27 14:42:38.848791', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (491, '2024-02-27 14:42:38.850332', '2024-02-27 14:42:38.850312', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (492, '2024-02-27 14:42:38.851621', '2024-02-27 14:42:38.851598', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (493, '2024-02-27 14:42:38.853054', '2024-02-27 14:42:38.853027', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (494, '2024-02-27 14:42:38.854525', '2024-02-27 14:42:38.854505', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (495, '2024-02-27 14:42:38.855910', '2024-02-27 14:42:38.855892', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (496, '2024-02-27 14:42:38.857062', '2024-02-27 14:42:38.857046', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (497, '2024-02-27 14:42:38.858206', '2024-02-27 14:42:38.858193', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (498, '2024-02-27 14:42:38.859193', '2024-02-27 14:42:38.859181', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (499, '2024-02-27 14:42:38.860301', '2024-02-27 14:42:38.860268', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 66, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (500, '2024-02-27 14:42:38.861492', '2024-02-27 14:42:38.861468', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 66, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (501, '2024-02-27 14:42:38.865833', '2024-02-27 14:42:38.865799', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 66, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (502, '2024-02-27 14:42:38.867057', '2024-02-27 14:42:38.867039', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (503, '2024-02-27 14:42:38.868294', '2024-02-27 14:42:38.868275', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (504, '2024-02-27 14:42:38.870695', '2024-02-27 14:42:38.870631', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (505, '2024-02-27 14:42:38.872341', '2024-02-27 14:42:38.872316', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (506, '2024-02-27 14:42:38.873906', '2024-02-27 14:42:38.873862', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (507, '2024-02-27 14:42:38.875342', '2024-02-27 14:42:38.875324', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (508, '2024-02-27 14:42:38.880633', '2024-02-27 14:42:38.880614', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (509, '2024-02-27 14:42:38.881646', '2024-02-27 14:42:38.881632', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (510, '2024-02-27 14:42:38.882628', '2024-02-27 14:42:38.882614', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (511, '2024-02-27 14:42:38.883820', '2024-02-27 14:42:38.883798', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (512, '2024-02-27 14:42:38.885054', '2024-02-27 14:42:38.885037', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (513, '2024-02-27 14:42:38.886238', '2024-02-27 14:42:38.886218', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (514, '2024-02-27 14:42:38.887462', '2024-02-27 14:42:38.887441', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (515, '2024-02-27 14:42:38.888516', '2024-02-27 14:42:38.888499', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (516, '2024-02-27 14:42:38.889792', '2024-02-27 14:42:38.889773', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (517, '2024-02-27 14:42:38.891029', '2024-02-27 14:42:38.891009', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (518, '2024-02-27 14:42:38.892240', '2024-02-27 14:42:38.892215', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (519, '2024-02-27 14:42:38.893570', '2024-02-27 14:42:38.893540', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (520, '2024-02-27 14:42:38.894683', '2024-02-27 14:42:38.894670', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (521, '2024-02-27 14:42:38.895698', '2024-02-27 14:42:38.895681', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (522, '2024-02-27 14:42:38.896967', '2024-02-27 14:42:38.896919', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (523, '2024-02-27 14:42:38.898313', '2024-02-27 14:42:38.898294', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (524, '2024-02-27 14:42:38.899413', '2024-02-27 14:42:38.899399', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (525, '2024-02-27 14:42:38.900428', '2024-02-27 14:42:38.900414', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (526, '2024-02-27 14:42:38.901396', '2024-02-27 14:42:38.901379', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (527, '2024-02-27 14:42:38.902485', '2024-02-27 14:42:38.902470', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (528, '2024-02-27 14:42:38.903611', '2024-02-27 14:42:38.903593', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (529, '2024-02-27 14:42:38.904671', '2024-02-27 14:42:38.904657', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (530, '2024-02-27 14:42:38.905595', '2024-02-27 14:42:38.905582', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (531, '2024-02-27 14:42:38.906546', '2024-02-27 14:42:38.906526', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (532, '2024-02-27 14:42:38.907519', '2024-02-27 14:42:38.907502', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (533, '2024-02-27 14:42:38.908777', '2024-02-27 14:42:38.908762', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (534, '2024-02-27 14:42:38.909863', '2024-02-27 14:42:38.909850', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (535, '2024-02-27 14:42:38.910856', '2024-02-27 14:42:38.910839', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (536, '2024-02-27 14:42:38.912082', '2024-02-27 14:42:38.912068', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (537, '2024-02-27 14:42:38.913073', '2024-02-27 14:42:38.913041', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (538, '2024-02-27 14:42:38.914452', '2024-02-27 14:42:38.914429', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (539, '2024-02-27 14:42:38.915591', '2024-02-27 14:42:38.915576', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (540, '2024-02-27 14:42:38.916602', '2024-02-27 14:42:38.916590', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (541, '2024-02-27 14:42:38.917554', '2024-02-27 14:42:38.917526', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (542, '2024-02-27 14:42:38.918851', '2024-02-27 14:42:38.918827', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (543, '2024-02-27 14:42:38.919988', '2024-02-27 14:42:38.919967', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (544, '2024-02-27 14:42:38.921100', '2024-02-27 14:42:38.921085', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (545, '2024-02-27 14:42:38.922114', '2024-02-27 14:42:38.922100', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (546, '2024-02-27 14:42:38.923189', '2024-02-27 14:42:38.923172', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (547, '2024-02-27 14:42:38.924463', '2024-02-27 14:42:38.924435', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (548, '2024-02-27 14:42:38.925950', '2024-02-27 14:42:38.925931', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (549, '2024-02-27 14:42:38.927207', '2024-02-27 14:42:38.927191', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (550, '2024-02-27 14:42:38.928382', '2024-02-27 14:42:38.928357', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (551, '2024-02-27 14:42:38.929435', '2024-02-27 14:42:38.929421', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (552, '2024-02-27 14:42:38.930419', '2024-02-27 14:42:38.930401', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (553, '2024-02-27 14:42:38.931372', '2024-02-27 14:42:38.931355', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (554, '2024-02-27 14:42:38.932761', '2024-02-27 14:42:38.932732', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (555, '2024-02-27 14:42:38.934163', '2024-02-27 14:42:38.934144', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (556, '2024-02-27 14:42:38.935227', '2024-02-27 14:42:38.935212', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (557, '2024-02-27 14:42:38.936255', '2024-02-27 14:42:38.936236', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (558, '2024-02-27 14:42:38.937343', '2024-02-27 14:42:38.937328', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (559, '2024-02-27 14:42:38.938603', '2024-02-27 14:42:38.938585', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (560, '2024-02-27 14:42:38.939878', '2024-02-27 14:42:38.939850', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (561, '2024-02-27 14:42:38.941083', '2024-02-27 14:42:38.941065', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (562, '2024-02-27 14:42:38.942054', '2024-02-27 14:42:38.942041', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (563, '2024-02-27 14:42:38.943169', '2024-02-27 14:42:38.943152', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (564, '2024-02-27 14:42:38.944676', '2024-02-27 14:42:38.944643', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (565, '2024-02-27 14:42:38.946395', '2024-02-27 14:42:38.946373', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (566, '2024-02-27 14:42:38.947850', '2024-02-27 14:42:38.947824', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (567, '2024-02-27 14:42:38.949128', '2024-02-27 14:42:38.949113', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (568, '2024-02-27 14:42:38.950373', '2024-02-27 14:42:38.950354', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (569, '2024-02-27 14:42:38.951574', '2024-02-27 14:42:38.951557', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (570, '2024-02-27 14:42:38.952795', '2024-02-27 14:42:38.952781', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (571, '2024-02-27 14:42:38.953952', '2024-02-27 14:42:38.953937', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (572, '2024-02-27 14:42:38.955164', '2024-02-27 14:42:38.955150', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (573, '2024-02-27 14:42:38.956482', '2024-02-27 14:42:38.956466', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (574, '2024-02-27 14:42:38.957642', '2024-02-27 14:42:38.957624', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (575, '2024-02-27 14:42:38.958896', '2024-02-27 14:42:38.958882', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (576, '2024-02-27 14:42:38.959999', '2024-02-27 14:42:38.959988', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (577, '2024-02-27 14:42:38.961087', '2024-02-27 14:42:38.961071', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (578, '2024-02-27 14:42:38.962474', '2024-02-27 14:42:38.962456', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (579, '2024-02-27 14:42:38.964109', '2024-02-27 14:42:38.964064', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (580, '2024-02-27 14:42:38.965415', '2024-02-27 14:42:38.965398', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (581, '2024-02-27 14:42:38.966582', '2024-02-27 14:42:38.966563', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (582, '2024-02-27 14:42:38.967777', '2024-02-27 14:42:38.967758', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (583, '2024-02-27 14:42:38.969008', '2024-02-27 14:42:38.968992', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 66, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (584, '2024-02-27 14:42:38.970153', '2024-02-27 14:42:38.970140', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 66, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (585, '2024-02-27 14:42:38.971216', '2024-02-27 14:42:38.971204', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 66, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (586, '2024-02-27 14:42:38.972673', '2024-02-27 14:42:38.972653', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (587, '2024-02-27 14:42:38.973968', '2024-02-27 14:42:38.973955', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (588, '2024-02-27 14:42:38.975222', '2024-02-27 14:42:38.975208', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (589, '2024-02-27 14:42:38.976460', '2024-02-27 14:42:38.976444', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (590, '2024-02-27 14:42:38.977660', '2024-02-27 14:42:38.977641', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (591, '2024-02-27 14:42:38.978813', '2024-02-27 14:42:38.978797', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (592, '2024-02-27 14:42:38.980177', '2024-02-27 14:42:38.980159', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (593, '2024-02-27 14:42:38.981331', '2024-02-27 14:42:38.981317', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (594, '2024-02-27 14:42:38.982628', '2024-02-27 14:42:38.982612', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (595, '2024-02-27 14:42:38.983822', '2024-02-27 14:42:38.983805', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (596, '2024-02-27 14:42:38.985240', '2024-02-27 14:42:38.985225', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (597, '2024-02-27 14:42:38.986428', '2024-02-27 14:42:38.986413', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (598, '2024-02-27 14:42:38.987616', '2024-02-27 14:42:38.987601', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (599, '2024-02-27 14:42:38.988900', '2024-02-27 14:42:38.988883', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (600, '2024-02-27 14:42:38.989992', '2024-02-27 14:42:38.989979', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (601, '2024-02-27 14:42:38.991025', '2024-02-27 14:42:38.991011', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (602, '2024-02-27 14:42:38.992287', '2024-02-27 14:42:38.992267', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (603, '2024-02-27 14:42:38.993846', '2024-02-27 14:42:38.993777', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (604, '2024-02-27 14:42:38.995137', '2024-02-27 14:42:38.995119', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (605, '2024-02-27 14:42:38.996457', '2024-02-27 14:42:38.996443', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (606, '2024-02-27 14:42:38.997896', '2024-02-27 14:42:38.997877', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (607, '2024-02-27 14:42:38.999067', '2024-02-27 14:42:38.999054', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (608, '2024-02-27 14:42:39.000330', '2024-02-27 14:42:39.000297', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (609, '2024-02-27 14:42:39.001608', '2024-02-27 14:42:39.001587', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (610, '2024-02-27 14:42:39.002764', '2024-02-27 14:42:39.002745', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (611, '2024-02-27 14:42:39.003873', '2024-02-27 14:42:39.003860', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (612, '2024-02-27 14:42:39.005689', '2024-02-27 14:42:39.005657', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (613, '2024-02-27 14:42:39.008529', '2024-02-27 14:42:39.008507', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (614, '2024-02-27 14:42:39.011266', '2024-02-27 14:42:39.011229', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (615, '2024-02-27 14:42:39.017313', '2024-02-27 14:42:39.017241', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (616, '2024-02-27 14:42:39.019729', '2024-02-27 14:42:39.019685', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (617, '2024-02-27 14:42:39.021720', '2024-02-27 14:42:39.021692', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (618, '2024-02-27 14:42:39.023201', '2024-02-27 14:42:39.023183', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (619, '2024-02-27 14:42:39.025167', '2024-02-27 14:42:39.025146', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (620, '2024-02-27 14:42:39.026814', '2024-02-27 14:42:39.026795', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (621, '2024-02-27 14:42:39.028499', '2024-02-27 14:42:39.028482', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (622, '2024-02-27 14:42:39.030017', '2024-02-27 14:42:39.030001', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (623, '2024-02-27 14:42:39.031539', '2024-02-27 14:42:39.031516', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (624, '2024-02-27 14:42:39.033242', '2024-02-27 14:42:39.033219', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (625, '2024-02-27 14:42:39.034630', '2024-02-27 14:42:39.034609', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (626, '2024-02-27 14:42:39.035942', '2024-02-27 14:42:39.035925', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (627, '2024-02-27 14:42:39.037317', '2024-02-27 14:42:39.037302', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (628, '2024-02-27 14:42:39.038573', '2024-02-27 14:42:39.038560', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (629, '2024-02-27 14:42:39.039886', '2024-02-27 14:42:39.039869', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (630, '2024-02-27 14:42:39.041135', '2024-02-27 14:42:39.041121', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (631, '2024-02-27 14:42:39.042412', '2024-02-27 14:42:39.042396', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (632, '2024-02-27 14:42:39.043823', '2024-02-27 14:42:39.043807', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (633, '2024-02-27 14:42:39.045415', '2024-02-27 14:42:39.045398', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (634, '2024-02-27 14:42:39.046743', '2024-02-27 14:42:39.046729', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (635, '2024-02-27 14:42:39.048064', '2024-02-27 14:42:39.048029', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (636, '2024-02-27 14:42:39.049373', '2024-02-27 14:42:39.049358', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (637, '2024-02-27 14:42:39.050660', '2024-02-27 14:42:39.050644', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (638, '2024-02-27 14:42:39.051817', '2024-02-27 14:42:39.051803', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (639, '2024-02-27 14:42:39.053093', '2024-02-27 14:42:39.053075', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (640, '2024-02-27 14:42:39.054357', '2024-02-27 14:42:39.054344', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (641, '2024-02-27 14:42:39.055663', '2024-02-27 14:42:39.055649', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (642, '2024-02-27 14:42:39.056859', '2024-02-27 14:42:39.056844', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (643, '2024-02-27 14:42:39.057983', '2024-02-27 14:42:39.057969', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (644, '2024-02-27 14:42:39.059205', '2024-02-27 14:42:39.059189', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (645, '2024-02-27 14:42:39.060385', '2024-02-27 14:42:39.060373', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (646, '2024-02-27 14:42:39.061575', '2024-02-27 14:42:39.061561', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (647, '2024-02-27 14:42:39.062903', '2024-02-27 14:42:39.062891', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (648, '2024-02-27 14:42:39.063981', '2024-02-27 14:42:39.063966', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (649, '2024-02-27 14:42:39.065126', '2024-02-27 14:42:39.065114', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (650, '2024-02-27 14:42:39.066194', '2024-02-27 14:42:39.066183', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (651, '2024-02-27 14:42:39.067290', '2024-02-27 14:42:39.067274', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (652, '2024-02-27 14:42:39.068381', '2024-02-27 14:42:39.068367', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (653, '2024-02-27 14:42:39.069485', '2024-02-27 14:42:39.069425', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (654, '2024-02-27 14:42:39.070535', '2024-02-27 14:42:39.070524', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (655, '2024-02-27 14:42:39.071584', '2024-02-27 14:42:39.071572', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (656, '2024-02-27 14:42:39.072620', '2024-02-27 14:42:39.072607', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (657, '2024-02-27 14:42:39.073643', '2024-02-27 14:42:39.073632', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (658, '2024-02-27 14:42:39.074704', '2024-02-27 14:42:39.074692', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (659, '2024-02-27 14:42:39.075739', '2024-02-27 14:42:39.075723', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (660, '2024-02-27 14:42:39.076759', '2024-02-27 14:42:39.076730', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (661, '2024-02-27 14:42:39.077988', '2024-02-27 14:42:39.077977', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (662, '2024-02-27 14:42:39.079027', '2024-02-27 14:42:39.079015', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (663, '2024-02-27 14:42:39.080083', '2024-02-27 14:42:39.080071', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (664, '2024-02-27 14:42:39.081534', '2024-02-27 14:42:39.081509', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (665, '2024-02-27 14:42:39.082913', '2024-02-27 14:42:39.082895', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (666, '2024-02-27 14:42:39.084016', '2024-02-27 14:42:39.084002', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (667, '2024-02-27 14:42:39.085175', '2024-02-27 14:42:39.085157', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 66, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (668, '2024-02-27 14:42:39.086255', '2024-02-27 14:42:39.086237', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 66, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (669, '2024-02-27 14:42:39.087367', '2024-02-27 14:42:39.087354', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 66, '테스트_클럽_게시물_내용_16', 0, '', '테스트_클럽_게시물_제목_16');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (670, '2024-02-27 14:42:39.088475', '2024-02-27 14:42:39.088456', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (671, '2024-02-27 14:42:39.089529', '2024-02-27 14:42:39.089517', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (672, '2024-02-27 14:42:39.090604', '2024-02-27 14:42:39.090591', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (673, '2024-02-27 14:42:39.091715', '2024-02-27 14:42:39.091704', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (674, '2024-02-27 14:42:39.092724', '2024-02-27 14:42:39.092713', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (675, '2024-02-27 14:42:39.093929', '2024-02-27 14:42:39.093913', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (676, '2024-02-27 14:42:39.095210', '2024-02-27 14:42:39.095196', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (677, '2024-02-27 14:42:39.096279', '2024-02-27 14:42:39.096262', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (678, '2024-02-27 14:42:39.097348', '2024-02-27 14:42:39.097336', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (679, '2024-02-27 14:42:39.098355', '2024-02-27 14:42:39.098343', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (680, '2024-02-27 14:42:39.099441', '2024-02-27 14:42:39.099428', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (681, '2024-02-27 14:42:39.100488', '2024-02-27 14:42:39.100475', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (682, '2024-02-27 14:42:39.102166', '2024-02-27 14:42:39.102115', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (683, '2024-02-27 14:42:39.103620', '2024-02-27 14:42:39.103607', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (684, '2024-02-27 14:42:39.104706', '2024-02-27 14:42:39.104693', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (685, '2024-02-27 14:42:39.106180', '2024-02-27 14:42:39.106167', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (686, '2024-02-27 14:42:39.107293', '2024-02-27 14:42:39.107276', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (687, '2024-02-27 14:42:39.108729', '2024-02-27 14:42:39.108714', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (688, '2024-02-27 14:42:39.109955', '2024-02-27 14:42:39.109937', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (689, '2024-02-27 14:42:39.111436', '2024-02-27 14:42:39.111418', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (690, '2024-02-27 14:42:39.112595', '2024-02-27 14:42:39.112582', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (691, '2024-02-27 14:42:39.113696', '2024-02-27 14:42:39.113684', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (692, '2024-02-27 14:42:39.114917', '2024-02-27 14:42:39.114903', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (693, '2024-02-27 14:42:39.116015', '2024-02-27 14:42:39.116003', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (694, '2024-02-27 14:42:39.117196', '2024-02-27 14:42:39.117183', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (695, '2024-02-27 14:42:39.118470', '2024-02-27 14:42:39.118457', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (696, '2024-02-27 14:42:39.119705', '2024-02-27 14:42:39.119686', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (697, '2024-02-27 14:42:39.120900', '2024-02-27 14:42:39.120884', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (698, '2024-02-27 14:42:39.122016', '2024-02-27 14:42:39.122002', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (699, '2024-02-27 14:42:39.123382', '2024-02-27 14:42:39.123368', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (700, '2024-02-27 14:42:39.124545', '2024-02-27 14:42:39.124524', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (701, '2024-02-27 14:42:39.125758', '2024-02-27 14:42:39.125701', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (702, '2024-02-27 14:42:39.127057', '2024-02-27 14:42:39.127044', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (703, '2024-02-27 14:42:39.128325', '2024-02-27 14:42:39.128312', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (704, '2024-02-27 14:42:39.129392', '2024-02-27 14:42:39.129376', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (705, '2024-02-27 14:42:39.130457', '2024-02-27 14:42:39.130445', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (706, '2024-02-27 14:42:39.131639', '2024-02-27 14:42:39.131624', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (707, '2024-02-27 14:42:39.132894', '2024-02-27 14:42:39.132880', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (708, '2024-02-27 14:42:39.133968', '2024-02-27 14:42:39.133955', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (709, '2024-02-27 14:42:39.135260', '2024-02-27 14:42:39.135238', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (710, '2024-02-27 14:42:39.136549', '2024-02-27 14:42:39.136530', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (711, '2024-02-27 14:42:39.137671', '2024-02-27 14:42:39.137637', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (712, '2024-02-27 14:42:39.163762', '2024-02-27 14:42:39.163727', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (713, '2024-02-27 14:42:39.165026', '2024-02-27 14:42:39.165010', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (714, '2024-02-27 14:42:39.166431', '2024-02-27 14:42:39.166413', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (715, '2024-02-27 14:42:39.167800', '2024-02-27 14:42:39.167782', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (716, '2024-02-27 14:42:39.169019', '2024-02-27 14:42:39.169005', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (717, '2024-02-27 14:42:39.170279', '2024-02-27 14:42:39.170262', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (718, '2024-02-27 14:42:39.171531', '2024-02-27 14:42:39.171517', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (719, '2024-02-27 14:42:39.172868', '2024-02-27 14:42:39.172852', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (720, '2024-02-27 14:42:39.173966', '2024-02-27 14:42:39.173950', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (721, '2024-02-27 14:42:39.175094', '2024-02-27 14:42:39.175069', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (722, '2024-02-27 14:42:39.176123', '2024-02-27 14:42:39.176110', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (723, '2024-02-27 14:42:39.177283', '2024-02-27 14:42:39.177266', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (724, '2024-02-27 14:42:39.178380', '2024-02-27 14:42:39.178367', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (725, '2024-02-27 14:42:39.179511', '2024-02-27 14:42:39.179500', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (726, '2024-02-27 14:42:39.180558', '2024-02-27 14:42:39.180544', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (727, '2024-02-27 14:42:39.181679', '2024-02-27 14:42:39.181663', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (728, '2024-02-27 14:42:39.182756', '2024-02-27 14:42:39.182742', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (729, '2024-02-27 14:42:39.183871', '2024-02-27 14:42:39.183860', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (730, '2024-02-27 14:42:39.184953', '2024-02-27 14:42:39.184943', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (731, '2024-02-27 14:42:39.186311', '2024-02-27 14:42:39.186291', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (732, '2024-02-27 14:42:39.187522', '2024-02-27 14:42:39.187507', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (733, '2024-02-27 14:42:39.188770', '2024-02-27 14:42:39.188757', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (734, '2024-02-27 14:42:39.189809', '2024-02-27 14:42:39.189795', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (735, '2024-02-27 14:42:39.190826', '2024-02-27 14:42:39.190814', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (736, '2024-02-27 14:42:39.191934', '2024-02-27 14:42:39.191920', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (737, '2024-02-27 14:42:39.193230', '2024-02-27 14:42:39.193219', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (738, '2024-02-27 14:42:39.194307', '2024-02-27 14:42:39.194294', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (739, '2024-02-27 14:42:39.195393', '2024-02-27 14:42:39.195382', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (740, '2024-02-27 14:42:39.196430', '2024-02-27 14:42:39.196420', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (741, '2024-02-27 14:42:39.197502', '2024-02-27 14:42:39.197491', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (742, '2024-02-27 14:42:39.198583', '2024-02-27 14:42:39.198573', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (743, '2024-02-27 14:42:39.199623', '2024-02-27 14:42:39.199613', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (744, '2024-02-27 14:42:39.200597', '2024-02-27 14:42:39.200586', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (745, '2024-02-27 14:42:39.201619', '2024-02-27 14:42:39.201609', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (746, '2024-02-27 14:42:39.202666', '2024-02-27 14:42:39.202653', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (747, '2024-02-27 14:42:39.203712', '2024-02-27 14:42:39.203699', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (748, '2024-02-27 14:42:39.204798', '2024-02-27 14:42:39.204781', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (749, '2024-02-27 14:42:39.206003', '2024-02-27 14:42:39.205989', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (750, '2024-02-27 14:42:39.207074', '2024-02-27 14:42:39.207062', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (751, '2024-02-27 14:42:39.208519', '2024-02-27 14:42:39.208504', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (752, '2024-02-27 14:42:39.209744', '2024-02-27 14:42:39.209729', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (753, '2024-02-27 14:42:39.211252', '2024-02-27 14:42:39.211237', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (754, '2024-02-27 14:42:39.212939', '2024-02-27 14:42:39.212919', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (755, '2024-02-27 14:42:39.214964', '2024-02-27 14:42:39.214934', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (756, '2024-02-27 14:42:39.216921', '2024-02-27 14:42:39.216889', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (757, '2024-02-27 14:42:39.218742', '2024-02-27 14:42:39.218721', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (758, '2024-02-27 14:42:39.220785', '2024-02-27 14:42:39.220766', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (759, '2024-02-27 14:42:39.222351', '2024-02-27 14:42:39.222307', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (760, '2024-02-27 14:42:39.224057', '2024-02-27 14:42:39.224038', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (761, '2024-02-27 14:42:39.225376', '2024-02-27 14:42:39.225360', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (762, '2024-02-27 14:42:39.227117', '2024-02-27 14:42:39.227099', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (763, '2024-02-27 14:42:39.228458', '2024-02-27 14:42:39.228438', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (764, '2024-02-27 14:42:39.229574', '2024-02-27 14:42:39.229562', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (765, '2024-02-27 14:42:39.231426', '2024-02-27 14:42:39.231398', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (766, '2024-02-27 14:42:39.232659', '2024-02-27 14:42:39.232644', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (767, '2024-02-27 14:42:39.233916', '2024-02-27 14:42:39.233898', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (768, '2024-02-27 14:42:39.235121', '2024-02-27 14:42:39.235103', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (769, '2024-02-27 14:42:39.236357', '2024-02-27 14:42:39.236323', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (770, '2024-02-27 14:42:39.238051', '2024-02-27 14:42:39.238004', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (771, '2024-02-27 14:42:39.239314', '2024-02-27 14:42:39.239299', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (772, '2024-02-27 14:42:39.240598', '2024-02-27 14:42:39.240582', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (773, '2024-02-27 14:42:39.242396', '2024-02-27 14:42:39.242376', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (774, '2024-02-27 14:42:39.243772', '2024-02-27 14:42:39.243754', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (775, '2024-02-27 14:42:39.244921', '2024-02-27 14:42:39.244909', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (776, '2024-02-27 14:42:39.246038', '2024-02-27 14:42:39.246027', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (777, '2024-02-27 14:42:39.247164', '2024-02-27 14:42:39.247150', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (778, '2024-02-27 14:42:39.248236', '2024-02-27 14:42:39.248223', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (779, '2024-02-27 14:42:39.249690', '2024-02-27 14:42:39.249674', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (780, '2024-02-27 14:42:39.250861', '2024-02-27 14:42:39.250848', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (781, '2024-02-27 14:42:39.252006', '2024-02-27 14:42:39.251992', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (782, '2024-02-27 14:42:39.253182', '2024-02-27 14:42:39.253171', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (783, '2024-02-27 14:42:39.254340', '2024-02-27 14:42:39.254329', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (784, '2024-02-27 14:42:39.255463', '2024-02-27 14:42:39.255452', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (785, '2024-02-27 14:42:39.256606', '2024-02-27 14:42:39.256595', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (786, '2024-02-27 14:42:39.257800', '2024-02-27 14:42:39.257788', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (787, '2024-02-27 14:42:39.258984', '2024-02-27 14:42:39.258972', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (788, '2024-02-27 14:42:39.260128', '2024-02-27 14:42:39.260117', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (789, '2024-02-27 14:42:39.261401', '2024-02-27 14:42:39.261388', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (790, '2024-02-27 14:42:39.262610', '2024-02-27 14:42:39.262596', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (791, '2024-02-27 14:42:39.263856', '2024-02-27 14:42:39.263843', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (792, '2024-02-27 14:42:39.265026', '2024-02-27 14:42:39.265014', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (793, '2024-02-27 14:42:39.266589', '2024-02-27 14:42:39.266571', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (794, '2024-02-27 14:42:39.267781', '2024-02-27 14:42:39.267768', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (795, '2024-02-27 14:42:39.268932', '2024-02-27 14:42:39.268917', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (796, '2024-02-27 14:42:39.270098', '2024-02-27 14:42:39.270084', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (797, '2024-02-27 14:42:39.271504', '2024-02-27 14:42:39.271492', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (798, '2024-02-27 14:42:39.272597', '2024-02-27 14:42:39.272585', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (799, '2024-02-27 14:42:39.299309', '2024-02-27 14:42:39.299278', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (800, '2024-02-27 14:42:39.300450', '2024-02-27 14:42:39.300433', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (801, '2024-02-27 14:42:39.301537', '2024-02-27 14:42:39.301521', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (802, '2024-02-27 14:42:39.302672', '2024-02-27 14:42:39.302658', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (803, '2024-02-27 14:42:39.303916', '2024-02-27 14:42:39.303903', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (804, '2024-02-27 14:42:39.304960', '2024-02-27 14:42:39.304947', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (805, '2024-02-27 14:42:39.306021', '2024-02-27 14:42:39.306010', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (806, '2024-02-27 14:42:39.306986', '2024-02-27 14:42:39.306974', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (807, '2024-02-27 14:42:39.307983', '2024-02-27 14:42:39.307973', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (808, '2024-02-27 14:42:39.309043', '2024-02-27 14:42:39.309032', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (809, '2024-02-27 14:42:39.310073', '2024-02-27 14:42:39.310062', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (810, '2024-02-27 14:42:39.311176', '2024-02-27 14:42:39.311164', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (811, '2024-02-27 14:42:39.312220', '2024-02-27 14:42:39.312205', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (812, '2024-02-27 14:42:39.313469', '2024-02-27 14:42:39.313457', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (813, '2024-02-27 14:42:39.314577', '2024-02-27 14:42:39.314538', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (814, '2024-02-27 14:42:39.315724', '2024-02-27 14:42:39.315712', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (815, '2024-02-27 14:42:39.316769', '2024-02-27 14:42:39.316754', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (816, '2024-02-27 14:42:39.317746', '2024-02-27 14:42:39.317736', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (817, '2024-02-27 14:42:39.318741', '2024-02-27 14:42:39.318731', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (818, '2024-02-27 14:42:39.319751', '2024-02-27 14:42:39.319739', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (819, '2024-02-27 14:42:39.320755', '2024-02-27 14:42:39.320744', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (820, '2024-02-27 14:42:39.321859', '2024-02-27 14:42:39.321849', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (821, '2024-02-27 14:42:39.322881', '2024-02-27 14:42:39.322838', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (822, '2024-02-27 14:42:39.324071', '2024-02-27 14:42:39.324059', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (823, '2024-02-27 14:42:39.325097', '2024-02-27 14:42:39.325086', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (824, '2024-02-27 14:42:39.326207', '2024-02-27 14:42:39.326196', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (825, '2024-02-27 14:42:39.327273', '2024-02-27 14:42:39.327260', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (826, '2024-02-27 14:42:39.328541', '2024-02-27 14:42:39.328530', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (827, '2024-02-27 14:42:39.329701', '2024-02-27 14:42:39.329687', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (828, '2024-02-27 14:42:39.330882', '2024-02-27 14:42:39.330857', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (829, '2024-02-27 14:42:39.332024', '2024-02-27 14:42:39.332007', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (830, '2024-02-27 14:42:39.333102', '2024-02-27 14:42:39.333088', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (831, '2024-02-27 14:42:39.334149', '2024-02-27 14:42:39.334139', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (832, '2024-02-27 14:42:39.335349', '2024-02-27 14:42:39.335335', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (833, '2024-02-27 14:42:39.336442', '2024-02-27 14:42:39.336427', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (834, '2024-02-27 14:42:39.337515', '2024-02-27 14:42:39.337503', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (835, '2024-02-27 14:42:39.338719', '2024-02-27 14:42:39.338704', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (836, '2024-02-27 14:42:39.339920', '2024-02-27 14:42:39.339900', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (837, '2024-02-27 14:42:39.340990', '2024-02-27 14:42:39.340977', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'SUGGESTION', 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (838, '2024-02-27 14:42:39.342136', '2024-02-27 14:42:39.342118', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (839, '2024-02-27 14:42:39.343228', '2024-02-27 14:42:39.343216', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (840, '2024-02-27 14:42:39.344404', '2024-02-27 14:42:39.344393', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (841, '2024-02-27 14:42:39.345433', '2024-02-27 14:42:39.345418', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (842, '2024-02-27 14:42:39.346622', '2024-02-27 14:42:39.346610', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (843, '2024-02-27 14:42:39.347962', '2024-02-27 14:42:39.347945', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (844, '2024-02-27 14:42:39.349228', '2024-02-27 14:42:39.349217', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (845, '2024-02-27 14:42:39.350297', '2024-02-27 14:42:39.350285', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (846, '2024-02-27 14:42:39.351329', '2024-02-27 14:42:39.351318', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (847, '2024-02-27 14:42:39.352436', '2024-02-27 14:42:39.352424', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (848, '2024-02-27 14:42:39.353436', '2024-02-27 14:42:39.353426', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (849, '2024-02-27 14:42:39.354401', '2024-02-27 14:42:39.354392', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (850, '2024-02-27 14:42:39.355470', '2024-02-27 14:42:39.355460', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (851, '2024-02-27 14:42:39.356584', '2024-02-27 14:42:39.356574', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (852, '2024-02-27 14:42:39.357673', '2024-02-27 14:42:39.357663', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (853, '2024-02-27 14:42:39.358700', '2024-02-27 14:42:39.358687', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (854, '2024-02-27 14:42:39.359873', '2024-02-27 14:42:39.359862', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (855, '2024-02-27 14:42:39.360864', '2024-02-27 14:42:39.360853', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (856, '2024-02-27 14:42:39.361848', '2024-02-27 14:42:39.361838', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (857, '2024-02-27 14:42:39.362811', '2024-02-27 14:42:39.362801', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (858, '2024-02-27 14:42:39.363880', '2024-02-27 14:42:39.363866', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (859, '2024-02-27 14:42:39.365019', '2024-02-27 14:42:39.365005', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (860, '2024-02-27 14:42:39.366277', '2024-02-27 14:42:39.366265', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (861, '2024-02-27 14:42:39.367503', '2024-02-27 14:42:39.367490', '2024-02-27', 'REAL_NAME',
-        'UNCONFIRMED',
-        'FREEDOM', 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (862, '2024-02-27 14:42:39.368576', '2024-02-27 14:42:39.368563', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (863, '2024-02-27 14:42:39.369831', '2024-02-27 14:42:39.369820', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (864, '2024-02-27 14:42:39.371015', '2024-02-27 14:42:39.371006', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (865, '2024-02-27 14:42:39.372069', '2024-02-27 14:42:39.372057', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (866, '2024-02-27 14:42:39.373097', '2024-02-27 14:42:39.373085', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (867, '2024-02-27 14:42:39.374156', '2024-02-27 14:42:39.374146', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (868, '2024-02-27 14:42:39.375390', '2024-02-27 14:42:39.375381', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (869, '2024-02-27 14:42:39.376414', '2024-02-27 14:42:39.376403', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (870, '2024-02-27 14:42:39.377392', '2024-02-27 14:42:39.377383', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (871, '2024-02-27 14:42:39.378506', '2024-02-27 14:42:39.378497', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (872, '2024-02-27 14:42:39.379469', '2024-02-27 14:42:39.379457', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (873, '2024-02-27 14:42:39.380628', '2024-02-27 14:42:39.380616', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (874, '2024-02-27 14:42:39.381625', '2024-02-27 14:42:39.381616', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (875, '2024-02-27 14:42:39.382653', '2024-02-27 14:42:39.382644', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (876, '2024-02-27 14:42:39.383643', '2024-02-27 14:42:39.383634', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (877, '2024-02-27 14:42:39.384624', '2024-02-27 14:42:39.384614', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (878, '2024-02-27 14:42:39.385589', '2024-02-27 14:42:39.385579', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (879, '2024-02-27 14:42:39.387010', '2024-02-27 14:42:39.386994', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (880, '2024-02-27 14:42:39.388209', '2024-02-27 14:42:39.388199', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (881, '2024-02-27 14:42:39.389335', '2024-02-27 14:42:39.389326', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (882, '2024-02-27 14:42:39.390600', '2024-02-27 14:42:39.390588', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (883, '2024-02-27 14:42:39.391681', '2024-02-27 14:42:39.391670', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (884, '2024-02-27 14:42:39.392737', '2024-02-27 14:42:39.392724', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
-INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
-                          club_article_check,
-                          classification, club_member_id, content, like_count, suggestion_answer,
-                          title)
-VALUES (885, '2024-02-27 14:42:39.393859', '2024-02-27 14:42:39.393846', '2024-02-27', 'ANONYMOUS',
-        'UNCONFIRMED',
-        'CONFIDENTIAL', 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (1, '2024-02-27 14:02:37.580914', '2024-02-27 14:02:37.579331', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (2, '2024-02-27 14:02:37.586895', '2024-02-27 14:02:37.586790', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (3, '2024-02-27 14:02:37.589603', '2024-02-27 14:02:37.589530', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (4, '2024-02-27 14:02:37.592571', '2024-02-27 14:02:37.592466', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (5, '2024-02-27 14:02:37.595483', '2024-02-27 14:02:37.595385', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (6, '2024-02-27 14:02:37.598515', '2024-02-27 14:02:37.598441', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 1, '테스트_클럽_게시물_내용_0', 0, '', '테스트_클럽_게시물_제목_0');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (7, '2024-02-27 14:02:37.601369', '2024-02-27 14:02:37.601286', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (8, '2024-02-27 14:02:37.604407', '2024-02-27 14:02:37.604308', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (9, '2024-02-27 14:02:37.607379', '2024-02-27 14:02:37.607279', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (10, '2024-02-27 14:02:37.610567', '2024-02-27 14:02:37.610463', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (11, '2024-02-27 14:02:37.613542', '2024-02-27 14:02:37.613430', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (12, '2024-02-27 14:02:37.614697', '2024-02-27 14:02:37.614602', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (13, '2024-02-27 14:02:37.619701', '2024-02-27 14:02:37.619630', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (14, '2024-02-27 14:02:37.622294', '2024-02-27 14:02:37.622229', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (15, '2024-02-27 14:02:37.624812', '2024-02-27 14:02:37.624753', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 2, '테스트_클럽_게시물_내용_1', 0, '', '테스트_클럽_게시물_제목_1');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (16, '2024-02-27 14:02:37.627511', '2024-02-27 14:02:37.627288', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (17, '2024-02-27 14:02:37.629884', '2024-02-27 14:02:37.629826', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (18, '2024-02-27 14:02:37.632532', '2024-02-27 14:02:37.632453', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (19, '2024-02-27 14:02:37.635684', '2024-02-27 14:02:37.635608', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (20, '2024-02-27 14:02:37.638479', '2024-02-27 14:02:37.638407', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (21, '2024-02-27 14:02:37.641412', '2024-02-27 14:02:37.641338', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (22, '2024-02-27 14:02:37.644074', '2024-02-27 14:02:37.644009', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (23, '2024-02-27 14:02:37.646770', '2024-02-27 14:02:37.646710', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (24, '2024-02-27 14:02:37.649283', '2024-02-27 14:02:37.649214', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (25, '2024-02-27 14:02:37.651852', '2024-02-27 14:02:37.651785', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (26, '2024-02-27 14:02:37.654492', '2024-02-27 14:02:37.654409', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (27, '2024-02-27 14:02:37.657115', '2024-02-27 14:02:37.657027', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (28, '2024-02-27 14:02:37.660254', '2024-02-27 14:02:37.660173', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (29, '2024-02-27 14:02:37.662870', '2024-02-27 14:02:37.662802', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (30, '2024-02-27 14:02:37.665644', '2024-02-27 14:02:37.665559', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (31, '2024-02-27 14:02:37.668503', '2024-02-27 14:02:37.668423', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (32, '2024-02-27 14:02:37.671314', '2024-02-27 14:02:37.671241', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (33, '2024-02-27 14:02:37.674391', '2024-02-27 14:02:37.674298', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (34, '2024-02-27 14:02:37.677255', '2024-02-27 14:02:37.677184', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (35, '2024-02-27 14:02:37.679892', '2024-02-27 14:02:37.679824', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (36, '2024-02-27 14:02:37.682613', '2024-02-27 14:02:37.682512', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (37, '2024-02-27 14:02:37.685387', '2024-02-27 14:02:37.685312', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (38, '2024-02-27 14:02:37.689553', '2024-02-27 14:02:37.689453', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (39, '2024-02-27 14:02:37.692348', '2024-02-27 14:02:37.692288', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (40, '2024-02-27 14:02:37.694738', '2024-02-27 14:02:37.694678', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (41, '2024-02-27 14:02:37.696992', '2024-02-27 14:02:37.696922', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (42, '2024-02-27 14:02:37.699501', '2024-02-27 14:02:37.699441', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (43, '2024-02-27 14:02:37.702361', '2024-02-27 14:02:37.702287', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (44, '2024-02-27 14:02:37.704857', '2024-02-27 14:02:37.704804', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (45, '2024-02-27 14:02:37.707491', '2024-02-27 14:02:37.707439', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (46, '2024-02-27 14:02:37.710030', '2024-02-27 14:02:37.709960', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (47, '2024-02-27 14:02:37.712568', '2024-02-27 14:02:37.712511', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (48, '2024-02-27 14:02:37.714974', '2024-02-27 14:02:37.714923', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (49, '2024-02-27 14:02:37.717486', '2024-02-27 14:02:37.717412', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (50, '2024-02-27 14:02:37.720061', '2024-02-27 14:02:37.720002', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (51, '2024-02-27 14:02:37.722518', '2024-02-27 14:02:37.722465', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (52, '2024-02-27 14:02:37.725072', '2024-02-27 14:02:37.725020', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (53, '2024-02-27 14:02:37.727447', '2024-02-27 14:02:37.727397', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (54, '2024-02-27 14:02:37.729941', '2024-02-27 14:02:37.729897', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (55, '2024-02-27 14:02:37.732330', '2024-02-27 14:02:37.732287', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (56, '2024-02-27 14:02:37.734600', '2024-02-27 14:02:37.734548', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (57, '2024-02-27 14:02:37.736829', '2024-02-27 14:02:37.736781', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (58, '2024-02-27 14:02:37.739295', '2024-02-27 14:02:37.739253', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (59, '2024-02-27 14:02:37.741905', '2024-02-27 14:02:37.741838', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (60, '2024-02-27 14:02:37.744105', '2024-02-27 14:02:37.744066', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (61, '2024-02-27 14:02:37.746398', '2024-02-27 14:02:37.746344', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (62, '2024-02-27 14:02:37.748640', '2024-02-27 14:02:37.748595', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (63, '2024-02-27 14:02:37.750971', '2024-02-27 14:02:37.750913', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (64, '2024-02-27 14:02:37.753146', '2024-02-27 14:02:37.753117', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (65, '2024-02-27 14:02:37.755376', '2024-02-27 14:02:37.755320', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (66, '2024-02-27 14:02:37.757802', '2024-02-27 14:02:37.757747', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (67, '2024-02-27 14:02:37.759913', '2024-02-27 14:02:37.759870', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (68, '2024-02-27 14:02:37.761841', '2024-02-27 14:02:37.761770', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (69, '2024-02-27 14:02:37.763773', '2024-02-27 14:02:37.763720', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (70, '2024-02-27 14:02:37.765977', '2024-02-27 14:02:37.765918', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (71, '2024-02-27 14:02:37.767952', '2024-02-27 14:02:37.767903', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (72, '2024-02-27 14:02:37.769684', '2024-02-27 14:02:37.769642', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (73, '2024-02-27 14:02:37.771271', '2024-02-27 14:02:37.771231', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (74, '2024-02-27 14:02:37.772896', '2024-02-27 14:02:37.772849', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (75, '2024-02-27 14:02:37.774782', '2024-02-27 14:02:37.774712', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (76, '2024-02-27 14:02:37.776620', '2024-02-27 14:02:37.776565', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (77, '2024-02-27 14:02:37.778351', '2024-02-27 14:02:37.778306', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (78, '2024-02-27 14:02:37.780046', '2024-02-27 14:02:37.780003', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (79, '2024-02-27 14:02:37.781741', '2024-02-27 14:02:37.781702', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (80, '2024-02-27 14:02:37.783598', '2024-02-27 14:02:37.783551', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (81, '2024-02-27 14:02:37.785562', '2024-02-27 14:02:37.785509', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (82, '2024-02-27 14:02:37.787769', '2024-02-27 14:02:37.787694', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (83, '2024-02-27 14:02:37.789605', '2024-02-27 14:02:37.789546', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (84, '2024-02-27 14:02:37.791404', '2024-02-27 14:02:37.791557', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (85, '2024-02-27 14:02:37.793919', '2024-02-27 14:02:37.793643', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (86, '2024-02-27 14:02:37.796573', '2024-02-27 14:02:37.796523', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (87, '2024-02-27 14:02:37.798980', '2024-02-27 14:02:37.798934', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (88, '2024-02-27 14:02:37.801124', '2024-02-27 14:02:37.801082', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (89, '2024-02-27 14:02:37.802962', '2024-02-27 14:02:37.802921', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (90, '2024-02-27 14:02:37.804812', '2024-02-27 14:02:37.804767', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (91, '2024-02-27 14:02:37.806746', '2024-02-27 14:02:37.806703', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (92, '2024-02-27 14:02:37.808499', '2024-02-27 14:02:37.808452', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (93, '2024-02-27 14:02:37.810391', '2024-02-27 14:02:37.810310', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (94, '2024-02-27 14:02:37.812214', '2024-02-27 14:02:37.812172', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (95, '2024-02-27 14:02:37.814041', '2024-02-27 14:02:37.813989', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (96, '2024-02-27 14:02:37.815876', '2024-02-27 14:02:37.815830', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (97, '2024-02-27 14:02:37.817586', '2024-02-27 14:02:37.817541', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (98, '2024-02-27 14:02:37.819358', '2024-02-27 14:02:37.819314', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (99, '2024-02-27 14:02:37.820965', '2024-02-27 14:02:37.820929', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 1, 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (100, '2024-02-27 14:02:37.822745', '2024-02-27 14:02:37.822703', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (101, '2024-02-27 14:02:37.824514', '2024-02-27 14:02:37.824458', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (102, '2024-02-27 14:02:37.826305', '2024-02-27 14:02:37.826254', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (103, '2024-02-27 14:02:37.828155', '2024-02-27 14:02:37.828104', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (104, '2024-02-27 14:02:37.830074', '2024-02-27 14:02:37.830031', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (105, '2024-02-27 14:02:37.831722', '2024-02-27 14:02:37.831482', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (106, '2024-02-27 14:02:37.833535', '2024-02-27 14:02:37.833488', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (107, '2024-02-27 14:02:37.835258', '2024-02-27 14:02:37.835214', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (108, '2024-02-27 14:02:37.837020', '2024-02-27 14:02:37.836980', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (109, '2024-02-27 14:02:37.838856', '2024-02-27 14:02:37.838814', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (110, '2024-02-27 14:02:37.840508', '2024-02-27 14:02:37.840472', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (111, '2024-02-27 14:02:37.842558', '2024-02-27 14:02:37.842510', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (112, '2024-02-27 14:02:37.844186', '2024-02-27 14:02:37.844150', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (113, '2024-02-27 14:02:37.845813', '2024-02-27 14:02:37.845769', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (114, '2024-02-27 14:02:37.847819', '2024-02-27 14:02:37.847773', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (115, '2024-02-27 14:02:37.849685', '2024-02-27 14:02:37.849636', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (116, '2024-02-27 14:02:37.851511', '2024-02-27 14:02:37.851471', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (117, '2024-02-27 14:02:37.853175', '2024-02-27 14:02:37.853135', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (118, '2024-02-27 14:02:37.855090', '2024-02-27 14:02:37.855041', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (119, '2024-02-27 14:02:37.856663', '2024-02-27 14:02:37.856622', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (120, '2024-02-27 14:02:37.858140', '2024-02-27 14:02:37.858114', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (121, '2024-02-27 14:02:37.859570', '2024-02-27 14:02:37.859533', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (122, '2024-02-27 14:02:37.861540', '2024-02-27 14:02:37.861490', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (123, '2024-02-27 14:02:37.863307', '2024-02-27 14:02:37.863240', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (124, '2024-02-27 14:02:37.865242', '2024-02-27 14:02:37.865197', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (125, '2024-02-27 14:02:37.866937', '2024-02-27 14:02:37.866895', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (126, '2024-02-27 14:02:37.868507', '2024-02-27 14:02:37.868471', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (127, '2024-02-27 14:02:37.870093', '2024-02-27 14:02:37.870051', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (128, '2024-02-27 14:02:37.871871', '2024-02-27 14:02:37.871471', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (129, '2024-02-27 14:02:37.873535', '2024-02-27 14:02:37.873499', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (130, '2024-02-27 14:02:37.875614', '2024-02-27 14:02:37.875573', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (131, '2024-02-27 14:02:37.877268', '2024-02-27 14:02:37.877223', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (132, '2024-02-27 14:02:37.880045', '2024-02-27 14:02:37.879976', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (133, '2024-02-27 14:02:37.881976', '2024-02-27 14:02:37.881936', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (134, '2024-02-27 14:02:37.884149', '2024-02-27 14:02:37.884100', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (135, '2024-02-27 14:02:37.885925', '2024-02-27 14:02:37.885866', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (136, '2024-02-27 14:02:37.887678', '2024-02-27 14:02:37.887643', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (137, '2024-02-27 14:02:37.889234', '2024-02-27 14:02:37.889198', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (138, '2024-02-27 14:02:37.890759', '2024-02-27 14:02:37.890724', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (139, '2024-02-27 14:02:37.892328', '2024-02-27 14:02:37.892282', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (140, '2024-02-27 14:02:37.894149', '2024-02-27 14:02:37.894108', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (141, '2024-02-27 14:02:37.896130', '2024-02-27 14:02:37.896082', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (142, '2024-02-27 14:02:37.897962', '2024-02-27 14:02:37.897903', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (143, '2024-02-27 14:02:37.899885', '2024-02-27 14:02:37.899843', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (144, '2024-02-27 14:02:37.901844', '2024-02-27 14:02:37.901789', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (145, '2024-02-27 14:02:37.903941', '2024-02-27 14:02:37.903890', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (146, '2024-02-27 14:02:37.905799', '2024-02-27 14:02:37.905759', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (147, '2024-02-27 14:02:37.908526', '2024-02-27 14:02:37.908484', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (148, '2024-02-27 14:02:37.910323', '2024-02-27 14:02:37.910286', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (149, '2024-02-27 14:02:37.912220', '2024-02-27 14:02:37.912185', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (150, '2024-02-27 14:02:37.913687', '2024-02-27 14:02:37.913654', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (151, '2024-02-27 14:02:37.915297', '2024-02-27 14:02:37.915262', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (152, '2024-02-27 14:02:37.914746', '2024-02-27 14:02:37.914706', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (153, '2024-02-27 14:02:37.920403', '2024-02-27 14:02:37.920369', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (154, '2024-02-27 14:02:37.922250', '2024-02-27 14:02:37.922144', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (155, '2024-02-27 14:02:37.923897', '2024-02-27 14:02:37.923842', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (156, '2024-02-27 14:02:37.925829', '2024-02-27 14:02:37.925757', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (157, '2024-02-27 14:02:37.927997', '2024-02-27 14:02:37.927936', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (158, '2024-02-27 14:02:37.930399', '2024-02-27 14:02:37.930307', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (159, '2024-02-27 14:02:37.932464', '2024-02-27 14:02:37.932423', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (160, '2024-02-27 14:02:37.934390', '2024-02-27 14:02:37.934348', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (161, '2024-02-27 14:02:37.936038', '2024-02-27 14:02:37.935993', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (162, '2024-02-27 14:02:37.937572', '2024-02-27 14:02:37.937533', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (163, '2024-02-27 14:02:37.939090', '2024-02-27 14:02:37.939058', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (164, '2024-02-27 14:02:37.940530', '2024-02-27 14:02:37.940503', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (165, '2024-02-27 14:02:37.941944', '2024-02-27 14:02:37.941913', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (166, '2024-02-27 14:02:37.943715', '2024-02-27 14:02:37.943675', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (167, '2024-02-27 14:02:37.945066', '2024-02-27 14:02:37.945039', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (168, '2024-02-27 14:02:37.946543', '2024-02-27 14:02:37.946514', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (169, '2024-02-27 14:02:37.948280', '2024-02-27 14:02:37.948242', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (170, '2024-02-27 14:02:37.949887', '2024-02-27 14:02:37.949856', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (171, '2024-02-27 14:02:37.951845', '2024-02-27 14:02:37.951779', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (172, '2024-02-27 14:02:37.953890', '2024-02-27 14:02:37.953858', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (173, '2024-02-27 14:02:37.955277', '2024-02-27 14:02:37.955250', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (174, '2024-02-27 14:02:37.956738', '2024-02-27 14:02:37.956709', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (175, '2024-02-27 14:02:37.958157', '2024-02-27 14:02:37.958130', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (176, '2024-02-27 14:02:37.959727', '2024-02-27 14:02:37.959695', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (177, '2024-02-27 14:02:37.961295', '2024-02-27 14:02:37.961238', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (178, '2024-02-27 14:02:37.963125', '2024-02-27 14:02:37.963084', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (179, '2024-02-27 14:02:37.964783', '2024-02-27 14:02:37.964751', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (180, '2024-02-27 14:02:37.966417', '2024-02-27 14:02:37.966381', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (181, '2024-02-27 14:02:37.967862', '2024-02-27 14:02:37.967835', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (182, '2024-02-27 14:02:37.969245', '2024-02-27 14:02:37.969210', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (183, '2024-02-27 14:02:37.970802', '2024-02-27 14:02:37.970771', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 1, 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (184, '2024-02-27 14:02:37.972108', '2024-02-27 14:02:37.972084', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (185, '2024-02-27 14:02:37.973406', '2024-02-27 14:02:37.973381', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (186, '2024-02-27 14:02:37.974785', '2024-02-27 14:02:37.974757', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 3, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (187, '2024-02-27 14:02:37.976257', '2024-02-27 14:02:37.976203', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (188, '2024-02-27 14:02:37.977938', '2024-02-27 14:02:37.977894', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (189, '2024-02-27 14:02:37.979303', '2024-02-27 14:02:37.979279', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 4, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (190, '2024-02-27 14:02:37.980705', '2024-02-27 14:02:37.980676', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (191, '2024-02-27 14:02:37.981953', '2024-02-27 14:02:37.981934', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (192, '2024-02-27 14:02:37.983233', '2024-02-27 14:02:37.983205', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 5, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (193, '2024-02-27 14:02:37.984707', '2024-02-27 14:02:37.984664', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (194, '2024-02-27 14:02:37.986404', '2024-02-27 14:02:37.986378', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (195, '2024-02-27 14:02:37.988344', '2024-02-27 14:02:37.988313', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 6, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (196, '2024-02-27 14:02:37.989961', '2024-02-27 14:02:37.989933', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (197, '2024-02-27 14:02:37.991454', '2024-02-27 14:02:37.991431', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (198, '2024-02-27 14:02:37.993054', '2024-02-27 14:02:37.993032', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 7, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (199, '2024-02-27 14:02:37.994665', '2024-02-27 14:02:37.994643', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (200, '2024-02-27 14:02:37.996122', '2024-02-27 14:02:37.996102', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (201, '2024-02-27 14:02:37.997379', '2024-02-27 14:02:37.997358', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 8, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (202, '2024-02-27 14:02:37.998679', '2024-02-27 14:02:37.998660', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (203, '2024-02-27 14:02:38.000296', '2024-02-27 14:02:38.000268', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (204, '2024-02-27 14:02:38.001497', '2024-02-27 14:02:38.001475', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 9, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (205, '2024-02-27 14:02:38.002982', '2024-02-27 14:02:38.002958', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (206, '2024-02-27 14:02:38.004274', '2024-02-27 14:02:38.004254', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (207, '2024-02-27 14:02:38.005562', '2024-02-27 14:02:38.005538', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 10, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (208, '2024-02-27 14:02:38.007056', '2024-02-27 14:02:38.007030', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (209, '2024-02-27 14:02:38.009442', '2024-02-27 14:02:38.009414', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (210, '2024-02-27 14:02:38.010925', '2024-02-27 14:02:38.010899', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 11, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (211, '2024-02-27 14:02:38.012491', '2024-02-27 14:02:38.012467', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (212, '2024-02-27 14:02:38.014107', '2024-02-27 14:02:38.014072', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (213, '2024-02-27 14:02:38.015570', '2024-02-27 14:02:38.015540', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 12, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (214, '2024-02-27 14:02:38.014834', '2024-02-27 14:02:38.014807', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (215, '2024-02-27 14:02:38.018087', '2024-02-27 14:02:38.018068', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (216, '2024-02-27 14:02:38.019462', '2024-02-27 14:02:38.019435', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 13, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (217, '2024-02-27 14:02:38.020833', '2024-02-27 14:02:38.020810', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (218, '2024-02-27 14:02:38.022274', '2024-02-27 14:02:38.022233', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (219, '2024-02-27 14:02:38.024200', '2024-02-27 14:02:38.024159', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (220, '2024-02-27 14:02:38.026010', '2024-02-27 14:02:38.025978', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (221, '2024-02-27 14:02:38.027582', '2024-02-27 14:02:38.027560', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (222, '2024-02-27 14:02:38.028841', '2024-02-27 14:02:38.028820', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 15, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (223, '2024-02-27 14:02:38.029989', '2024-02-27 14:02:38.029954', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (224, '2024-02-27 14:02:38.031288', '2024-02-27 14:02:38.031266', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (225, '2024-02-27 14:02:38.032518', '2024-02-27 14:02:38.032489', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 14, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (226, '2024-02-27 14:02:38.033746', '2024-02-27 14:02:38.033727', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (227, '2024-02-27 14:02:38.035180', '2024-02-27 14:02:38.035141', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (228, '2024-02-27 14:02:38.036340', '2024-02-27 14:02:38.036321', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 17, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (229, '2024-02-27 14:02:38.037754', '2024-02-27 14:02:38.037714', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (230, '2024-02-27 14:02:38.039083', '2024-02-27 14:02:38.039052', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (231, '2024-02-27 14:02:38.040537', '2024-02-27 14:02:38.040501', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 18, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (232, '2024-02-27 14:02:38.042187', '2024-02-27 14:02:38.042027', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (233, '2024-02-27 14:02:38.043697', '2024-02-27 14:02:38.043674', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (234, '2024-02-27 14:02:38.045147', '2024-02-27 14:02:38.045136', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 19, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (235, '2024-02-27 14:02:38.046879', '2024-02-27 14:02:38.046851', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (236, '2024-02-27 14:02:38.048261', '2024-02-27 14:02:38.048240', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (237, '2024-02-27 14:02:38.049445', '2024-02-27 14:02:38.049428', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 20, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (238, '2024-02-27 14:02:38.050545', '2024-02-27 14:02:38.050527', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (239, '2024-02-27 14:02:38.051428', '2024-02-27 14:02:38.051407', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (240, '2024-02-27 14:02:38.052886', '2024-02-27 14:02:38.052862', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 21, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (241, '2024-02-27 14:02:38.054118', '2024-02-27 14:02:38.054102', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (242, '2024-02-27 14:02:38.055723', '2024-02-27 14:02:38.055704', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (243, '2024-02-27 14:02:38.056828', '2024-02-27 14:02:38.056811', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 22, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (244, '2024-02-27 14:02:38.057961', '2024-02-27 14:02:38.057944', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (245, '2024-02-27 14:02:38.059150', '2024-02-27 14:02:38.059127', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (246, '2024-02-27 14:02:38.060627', '2024-02-27 14:02:38.060593', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 23, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (247, '2024-02-27 14:02:38.061842', '2024-02-27 14:02:38.061814', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (248, '2024-02-27 14:02:38.063114', '2024-02-27 14:02:38.063092', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (249, '2024-02-27 14:02:38.064279', '2024-02-27 14:02:38.064258', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 24, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (250, '2024-02-27 14:02:38.065620', '2024-02-27 14:02:38.065602', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (251, '2024-02-27 14:02:38.071753', '2024-02-27 14:02:38.071730', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (252, '2024-02-27 14:02:38.072968', '2024-02-27 14:02:38.072942', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 25, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (253, '2024-02-27 14:02:38.074286', '2024-02-27 14:02:38.074267', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (254, '2024-02-27 14:02:38.075594', '2024-02-27 14:02:38.075569', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (255, '2024-02-27 14:02:38.077001', '2024-02-27 14:02:38.076974', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 26, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (256, '2024-02-27 14:02:38.078347', '2024-02-27 14:02:38.078320', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (257, '2024-02-27 14:02:38.079646', '2024-02-27 14:02:38.079621', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (258, '2024-02-27 14:02:38.081187', '2024-02-27 14:02:38.081130', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 27, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (259, '2024-02-27 14:02:38.082512', '2024-02-27 14:02:38.082487', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (260, '2024-02-27 14:02:38.084102', '2024-02-27 14:02:38.084071', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (261, '2024-02-27 14:02:38.085414', '2024-02-27 14:02:38.085397', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 28, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (262, '2024-02-27 14:02:38.086658', '2024-02-27 14:02:38.086635', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (263, '2024-02-27 14:02:38.087840', '2024-02-27 14:02:38.087823', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (264, '2024-02-27 14:02:38.089114', '2024-02-27 14:02:38.089096', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 29, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (265, '2024-02-27 14:02:38.090543', '2024-02-27 14:02:38.090519', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (266, '2024-02-27 14:02:38.091742', '2024-02-27 14:02:38.091721', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (267, '2024-02-27 14:02:38.092893', '2024-02-27 14:02:38.092877', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 1, 30, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (268, '2024-02-27 14:02:38.184854', '2024-02-27 14:02:38.184788', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (269, '2024-02-27 14:02:38.186241', '2024-02-27 14:02:38.186208', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (270, '2024-02-27 14:02:38.187625', '2024-02-27 14:02:38.187599', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (271, '2024-02-27 14:02:38.188965', '2024-02-27 14:02:38.188937', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (272, '2024-02-27 14:02:38.190517', '2024-02-27 14:02:38.190497', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (273, '2024-02-27 14:02:38.191933', '2024-02-27 14:02:38.191795', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 31, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (274, '2024-02-27 14:02:38.193849', '2024-02-27 14:02:38.193821', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (275, '2024-02-27 14:02:38.195184', '2024-02-27 14:02:38.195159', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (276, '2024-02-27 14:02:38.196424', '2024-02-27 14:02:38.196406', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (277, '2024-02-27 14:02:38.197669', '2024-02-27 14:02:38.197651', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (278, '2024-02-27 14:02:38.198757', '2024-02-27 14:02:38.198741', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (279, '2024-02-27 14:02:38.199881', '2024-02-27 14:02:38.199863', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (280, '2024-02-27 14:02:38.201012', '2024-02-27 14:02:38.200994', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (281, '2024-02-27 14:02:38.202313', '2024-02-27 14:02:38.202291', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (282, '2024-02-27 14:02:38.203488', '2024-02-27 14:02:38.203472', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 32, '테스트_클럽_게시물_내용_31', 0, '', '테스트_클럽_게시물_제목_31');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (283, '2024-02-27 14:02:38.204724', '2024-02-27 14:02:38.204703', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (284, '2024-02-27 14:02:38.205914', '2024-02-27 14:02:38.205896', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (285, '2024-02-27 14:02:38.207008', '2024-02-27 14:02:38.206992', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (286, '2024-02-27 14:02:38.208066', '2024-02-27 14:02:38.208048', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (287, '2024-02-27 14:02:38.209154', '2024-02-27 14:02:38.209137', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (288, '2024-02-27 14:02:38.210495', '2024-02-27 14:02:38.210477', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (289, '2024-02-27 14:02:38.211498', '2024-02-27 14:02:38.211481', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (290, '2024-02-27 14:02:38.212990', '2024-02-27 14:02:38.212927', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (291, '2024-02-27 14:02:38.214479', '2024-02-27 14:02:38.214458', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (292, '2024-02-27 14:02:38.215618', '2024-02-27 14:02:38.215597', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (293, '2024-02-27 14:02:38.214733', '2024-02-27 14:02:38.214714', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (294, '2024-02-27 14:02:38.217769', '2024-02-27 14:02:38.217753', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (295, '2024-02-27 14:02:38.218963', '2024-02-27 14:02:38.218944', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (296, '2024-02-27 14:02:38.220098', '2024-02-27 14:02:38.220081', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (297, '2024-02-27 14:02:38.221231', '2024-02-27 14:02:38.221209', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (298, '2024-02-27 14:02:38.222487', '2024-02-27 14:02:38.222466', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (299, '2024-02-27 14:02:38.223921', '2024-02-27 14:02:38.223900', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (300, '2024-02-27 14:02:38.225214', '2024-02-27 14:02:38.225197', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (301, '2024-02-27 14:02:38.226353', '2024-02-27 14:02:38.226337', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (302, '2024-02-27 14:02:38.227449', '2024-02-27 14:02:38.227432', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (303, '2024-02-27 14:02:38.228744', '2024-02-27 14:02:38.228725', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (304, '2024-02-27 14:02:38.229901', '2024-02-27 14:02:38.229882', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (305, '2024-02-27 14:02:38.231119', '2024-02-27 14:02:38.231098', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (306, '2024-02-27 14:02:38.232235', '2024-02-27 14:02:38.232219', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (307, '2024-02-27 14:02:38.233828', '2024-02-27 14:02:38.233790', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (308, '2024-02-27 14:02:38.235938', '2024-02-27 14:02:38.235909', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (309, '2024-02-27 14:02:38.237336', '2024-02-27 14:02:38.237310', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (310, '2024-02-27 14:02:38.239571', '2024-02-27 14:02:38.239545', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (311, '2024-02-27 14:02:38.241196', '2024-02-27 14:02:38.241172', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (312, '2024-02-27 14:02:38.242512', '2024-02-27 14:02:38.242491', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (313, '2024-02-27 14:02:38.243832', '2024-02-27 14:02:38.243804', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (314, '2024-02-27 14:02:38.245044', '2024-02-27 14:02:38.245023', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (315, '2024-02-27 14:02:38.246260', '2024-02-27 14:02:38.246242', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (316, '2024-02-27 14:02:38.247407', '2024-02-27 14:02:38.247379', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (317, '2024-02-27 14:02:38.248446', '2024-02-27 14:02:38.248430', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (318, '2024-02-27 14:02:38.249770', '2024-02-27 14:02:38.249735', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (319, '2024-02-27 14:02:38.250932', '2024-02-27 14:02:38.250914', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (320, '2024-02-27 14:02:38.252067', '2024-02-27 14:02:38.252051', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (321, '2024-02-27 14:02:38.253292', '2024-02-27 14:02:38.253274', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (322, '2024-02-27 14:02:38.254479', '2024-02-27 14:02:38.254457', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 46, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (323, '2024-02-27 14:02:38.255732', '2024-02-27 14:02:38.255690', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 46, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (324, '2024-02-27 14:02:38.257056', '2024-02-27 14:02:38.257028', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 46, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (325, '2024-02-27 14:02:38.258295', '2024-02-27 14:02:38.258275', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (326, '2024-02-27 14:02:38.259813', '2024-02-27 14:02:38.259791', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (327, '2024-02-27 14:02:38.261145', '2024-02-27 14:02:38.261143', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (328, '2024-02-27 14:02:38.262641', '2024-02-27 14:02:38.262621', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (329, '2024-02-27 14:02:38.263918', '2024-02-27 14:02:38.263894', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (330, '2024-02-27 14:02:38.265117', '2024-02-27 14:02:38.265100', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (331, '2024-02-27 14:02:38.266650', '2024-02-27 14:02:38.266630', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (332, '2024-02-27 14:02:38.267948', '2024-02-27 14:02:38.267932', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (333, '2024-02-27 14:02:38.269080', '2024-02-27 14:02:38.269060', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (334, '2024-02-27 14:02:38.270490', '2024-02-27 14:02:38.270466', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (335, '2024-02-27 14:02:38.271740', '2024-02-27 14:02:38.271717', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (336, '2024-02-27 14:02:38.272943', '2024-02-27 14:02:38.272923', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 2, 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (337, '2024-02-27 14:02:38.273986', '2024-02-27 14:02:38.273970', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (338, '2024-02-27 14:02:38.275360', '2024-02-27 14:02:38.275337', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (339, '2024-02-27 14:02:38.276480', '2024-02-27 14:02:38.276462', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (340, '2024-02-27 14:02:38.277963', '2024-02-27 14:02:38.277941', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (341, '2024-02-27 14:02:38.279257', '2024-02-27 14:02:38.279232', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (342, '2024-02-27 14:02:38.280432', '2024-02-27 14:02:38.280415', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (343, '2024-02-27 14:02:38.281437', '2024-02-27 14:02:38.281421', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (344, '2024-02-27 14:02:38.282822', '2024-02-27 14:02:38.282803', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (345, '2024-02-27 14:02:38.284272', '2024-02-27 14:02:38.284253', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (346, '2024-02-27 14:02:38.285476', '2024-02-27 14:02:38.285454', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (347, '2024-02-27 14:02:38.286649', '2024-02-27 14:02:38.286632', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (348, '2024-02-27 14:02:38.287679', '2024-02-27 14:02:38.287655', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (349, '2024-02-27 14:02:38.289043', '2024-02-27 14:02:38.289019', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (350, '2024-02-27 14:02:38.290472', '2024-02-27 14:02:38.290441', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (351, '2024-02-27 14:02:38.291488', '2024-02-27 14:02:38.291471', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (352, '2024-02-27 14:02:38.292793', '2024-02-27 14:02:38.292776', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (353, '2024-02-27 14:02:38.294052', '2024-02-27 14:02:38.294033', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (354, '2024-02-27 14:02:38.295588', '2024-02-27 14:02:38.295568', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (355, '2024-02-27 14:02:38.297086', '2024-02-27 14:02:38.297065', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (356, '2024-02-27 14:02:38.298272', '2024-02-27 14:02:38.298252', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (357, '2024-02-27 14:02:38.299425', '2024-02-27 14:02:38.299407', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (358, '2024-02-27 14:02:38.300626', '2024-02-27 14:02:38.300604', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (359, '2024-02-27 14:02:38.301744', '2024-02-27 14:02:38.301726', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (360, '2024-02-27 14:02:38.302901', '2024-02-27 14:02:38.302885', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (361, '2024-02-27 14:02:38.304155', '2024-02-27 14:02:38.304132', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (362, '2024-02-27 14:02:38.305664', '2024-02-27 14:02:38.305644', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (363, '2024-02-27 14:02:38.307114', '2024-02-27 14:02:38.307095', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (364, '2024-02-27 14:02:38.308490', '2024-02-27 14:02:38.308458', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (365, '2024-02-27 14:02:38.309664', '2024-02-27 14:02:38.309646', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (366, '2024-02-27 14:02:38.310945', '2024-02-27 14:02:38.310926', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (367, '2024-02-27 14:02:38.312061', '2024-02-27 14:02:38.312038', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (368, '2024-02-27 14:02:38.314310', '2024-02-27 14:02:38.314286', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (369, '2024-02-27 14:02:38.315518', '2024-02-27 14:02:38.315494', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (370, '2024-02-27 14:02:38.314746', '2024-02-27 14:02:38.314729', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (371, '2024-02-27 14:02:38.317956', '2024-02-27 14:02:38.317937', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (372, '2024-02-27 14:02:38.319113', '2024-02-27 14:02:38.319091', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (373, '2024-02-27 14:02:38.320413', '2024-02-27 14:02:38.320397', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (374, '2024-02-27 14:02:38.321401', '2024-02-27 14:02:38.321580', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (375, '2024-02-27 14:02:38.322986', '2024-02-27 14:02:38.322940', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (376, '2024-02-27 14:02:38.324132', '2024-02-27 14:02:38.324115', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 46, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (377, '2024-02-27 14:02:38.325173', '2024-02-27 14:02:38.325153', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 46, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (378, '2024-02-27 14:02:38.326235', '2024-02-27 14:02:38.326220', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 46, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (379, '2024-02-27 14:02:38.327434', '2024-02-27 14:02:38.327415', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (380, '2024-02-27 14:02:38.328536', '2024-02-27 14:02:38.328520', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (381, '2024-02-27 14:02:38.329769', '2024-02-27 14:02:38.329738', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (382, '2024-02-27 14:02:38.330789', '2024-02-27 14:02:38.330771', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (383, '2024-02-27 14:02:38.331791', '2024-02-27 14:02:38.331765', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (384, '2024-02-27 14:02:38.333013', '2024-02-27 14:02:38.332979', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (385, '2024-02-27 14:02:38.334135', '2024-02-27 14:02:38.334108', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (386, '2024-02-27 14:02:38.335204', '2024-02-27 14:02:38.335191', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (387, '2024-02-27 14:02:38.336303', '2024-02-27 14:02:38.336285', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (388, '2024-02-27 14:02:38.337343', '2024-02-27 14:02:38.337329', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (389, '2024-02-27 14:02:38.338353', '2024-02-27 14:02:38.338337', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (390, '2024-02-27 14:02:38.339328', '2024-02-27 14:02:38.339314', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 2, 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (391, '2024-02-27 14:02:38.340412', '2024-02-27 14:02:38.340390', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (392, '2024-02-27 14:02:38.341474', '2024-02-27 14:02:38.341462', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (393, '2024-02-27 14:02:38.342424', '2024-02-27 14:02:38.342410', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 33, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (394, '2024-02-27 14:02:38.343529', '2024-02-27 14:02:38.343491', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (395, '2024-02-27 14:02:38.345076', '2024-02-27 14:02:38.345059', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (396, '2024-02-27 14:02:38.346403', '2024-02-27 14:02:38.346362', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 34, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (397, '2024-02-27 14:02:38.347874', '2024-02-27 14:02:38.347853', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (398, '2024-02-27 14:02:38.349054', '2024-02-27 14:02:38.349036', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (399, '2024-02-27 14:02:38.350244', '2024-02-27 14:02:38.350220', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 35, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (400, '2024-02-27 14:02:38.351504', '2024-02-27 14:02:38.351486', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (401, '2024-02-27 14:02:38.352866', '2024-02-27 14:02:38.352849', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (402, '2024-02-27 14:02:38.353948', '2024-02-27 14:02:38.353930', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 36, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (403, '2024-02-27 14:02:38.355394', '2024-02-27 14:02:38.355373', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (404, '2024-02-27 14:02:38.356605', '2024-02-27 14:02:38.356587', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (405, '2024-02-27 14:02:38.357619', '2024-02-27 14:02:38.357604', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 37, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (406, '2024-02-27 14:02:38.358814', '2024-02-27 14:02:38.358800', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (407, '2024-02-27 14:02:38.359958', '2024-02-27 14:02:38.359944', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (408, '2024-02-27 14:02:38.361087', '2024-02-27 14:02:38.361069', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 38, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (409, '2024-02-27 14:02:38.362441', '2024-02-27 14:02:38.362411', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (410, '2024-02-27 14:02:38.363750', '2024-02-27 14:02:38.363724', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (411, '2024-02-27 14:02:38.364993', '2024-02-27 14:02:38.364977', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 39, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (412, '2024-02-27 14:02:38.366037', '2024-02-27 14:02:38.366019', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (413, '2024-02-27 14:02:38.367297', '2024-02-27 14:02:38.367274', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (414, '2024-02-27 14:02:38.368485', '2024-02-27 14:02:38.368471', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 40, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (415, '2024-02-27 14:02:38.369539', '2024-02-27 14:02:38.369524', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (416, '2024-02-27 14:02:38.370574', '2024-02-27 14:02:38.370562', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (417, '2024-02-27 14:02:38.371400', '2024-02-27 14:02:38.371579', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 41, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (418, '2024-02-27 14:02:38.372662', '2024-02-27 14:02:38.372647', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (419, '2024-02-27 14:02:38.373687', '2024-02-27 14:02:38.373668', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (420, '2024-02-27 14:02:38.374666', '2024-02-27 14:02:38.374653', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 42, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (421, '2024-02-27 14:02:38.375757', '2024-02-27 14:02:38.375743', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (422, '2024-02-27 14:02:38.376931', '2024-02-27 14:02:38.376909', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (423, '2024-02-27 14:02:38.378309', '2024-02-27 14:02:38.378291', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 43, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (424, '2024-02-27 14:02:38.379518', '2024-02-27 14:02:38.379493', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (425, '2024-02-27 14:02:38.380705', '2024-02-27 14:02:38.380690', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (426, '2024-02-27 14:02:38.381806', '2024-02-27 14:02:38.381792', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 44, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (427, '2024-02-27 14:02:38.383030', '2024-02-27 14:02:38.383000', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (428, '2024-02-27 14:02:38.384181', '2024-02-27 14:02:38.384147', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (429, '2024-02-27 14:02:38.385199', '2024-02-27 14:02:38.385187', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 45, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (430, '2024-02-27 14:02:38.386287', '2024-02-27 14:02:38.386271', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 46, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (431, '2024-02-27 14:02:38.387453', '2024-02-27 14:02:38.387435', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 46, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (432, '2024-02-27 14:02:38.388442', '2024-02-27 14:02:38.388430', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 46, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (433, '2024-02-27 14:02:38.389355', '2024-02-27 14:02:38.389344', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (434, '2024-02-27 14:02:38.390508', '2024-02-27 14:02:38.390495', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (435, '2024-02-27 14:02:38.391571', '2024-02-27 14:02:38.391550', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 47, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (436, '2024-02-27 14:02:38.392731', '2024-02-27 14:02:38.392719', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (437, '2024-02-27 14:02:38.393683', '2024-02-27 14:02:38.393672', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (438, '2024-02-27 14:02:38.394817', '2024-02-27 14:02:38.394803', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 48, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (439, '2024-02-27 14:02:38.396061', '2024-02-27 14:02:38.396045', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (440, '2024-02-27 14:02:38.397362', '2024-02-27 14:02:38.397346', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (441, '2024-02-27 14:02:38.398601', '2024-02-27 14:02:38.398583', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 49, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (442, '2024-02-27 14:02:38.399695', '2024-02-27 14:02:38.399681', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (443, '2024-02-27 14:02:38.401192', '2024-02-27 14:02:38.401173', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (444, '2024-02-27 14:02:38.402823', '2024-02-27 14:02:38.402807', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 2, 50, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (445, '2024-02-27 14:02:38.514930', '2024-02-27 14:02:38.514836', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (446, '2024-02-27 14:02:38.514357', '2024-02-27 14:02:38.514336', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (447, '2024-02-27 14:02:38.517426', '2024-02-27 14:02:38.517411', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (448, '2024-02-27 14:02:38.518402', '2024-02-27 14:02:38.518390', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (449, '2024-02-27 14:02:38.519384', '2024-02-27 14:02:38.519368', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (450, '2024-02-27 14:02:38.520528', '2024-02-27 14:02:38.520513', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 51, '테스트_클럽_게시물_내용_50', 0, '', '테스트_클럽_게시물_제목_50');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (451, '2024-02-27 14:02:38.521513', '2024-02-27 14:02:38.521495', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (452, '2024-02-27 14:02:38.522527', '2024-02-27 14:02:38.522514', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (453, '2024-02-27 14:02:38.523480', '2024-02-27 14:02:38.523467', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (454, '2024-02-27 14:02:38.524599', '2024-02-27 14:02:38.524587', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (455, '2024-02-27 14:02:38.525512', '2024-02-27 14:02:38.525501', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (456, '2024-02-27 14:02:38.526433', '2024-02-27 14:02:38.526419', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (457, '2024-02-27 14:02:38.527435', '2024-02-27 14:02:38.527423', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (458, '2024-02-27 14:02:38.528408', '2024-02-27 14:02:38.528395', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (459, '2024-02-27 14:02:38.529295', '2024-02-27 14:02:38.529284', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 52, '테스트_클럽_게시물_내용_51', 0, '', '테스트_클럽_게시물_제목_51');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (460, '2024-02-27 14:02:38.530268', '2024-02-27 14:02:38.530251', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (461, '2024-02-27 14:02:38.531174', '2024-02-27 14:02:38.531142', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (462, '2024-02-27 14:02:38.532088', '2024-02-27 14:02:38.532077', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (463, '2024-02-27 14:02:38.533120', '2024-02-27 14:02:38.533108', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (464, '2024-02-27 14:02:38.534092', '2024-02-27 14:02:38.534074', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (465, '2024-02-27 14:02:38.535156', '2024-02-27 14:02:38.535143', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (466, '2024-02-27 14:02:38.536142', '2024-02-27 14:02:38.536130', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (467, '2024-02-27 14:02:38.537236', '2024-02-27 14:02:38.537224', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (468, '2024-02-27 14:02:38.538324', '2024-02-27 14:02:38.538310', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (469, '2024-02-27 14:02:38.539571', '2024-02-27 14:02:38.539551', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (470, '2024-02-27 14:02:38.540589', '2024-02-27 14:02:38.540575', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (471, '2024-02-27 14:02:38.541428', '2024-02-27 14:02:38.541415', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (472, '2024-02-27 14:02:38.542753', '2024-02-27 14:02:38.542740', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (473, '2024-02-27 14:02:38.543987', '2024-02-27 14:02:38.543970', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (474, '2024-02-27 14:02:38.545217', '2024-02-27 14:02:38.545199', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (475, '2024-02-27 14:02:38.546256', '2024-02-27 14:02:38.546241', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (476, '2024-02-27 14:02:38.547417', '2024-02-27 14:02:38.547400', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (477, '2024-02-27 14:02:38.548525', '2024-02-27 14:02:38.548507', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (478, '2024-02-27 14:02:38.549581', '2024-02-27 14:02:38.549567', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (479, '2024-02-27 14:02:38.550642', '2024-02-27 14:02:38.550630', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (480, '2024-02-27 14:02:38.551722', '2024-02-27 14:02:38.551708', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (481, '2024-02-27 14:02:38.552774', '2024-02-27 14:02:38.552761', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (482, '2024-02-27 14:02:38.556433', '2024-02-27 14:02:38.556363', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (483, '2024-02-27 14:02:38.557975', '2024-02-27 14:02:38.557952', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (484, '2024-02-27 14:02:38.559084', '2024-02-27 14:02:38.559067', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (485, '2024-02-27 14:02:38.560278', '2024-02-27 14:02:38.560252', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (486, '2024-02-27 14:02:38.561563', '2024-02-27 14:02:38.561536', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (487, '2024-02-27 14:02:38.562842', '2024-02-27 14:02:38.562825', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (488, '2024-02-27 14:02:38.563996', '2024-02-27 14:02:38.563982', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (489, '2024-02-27 14:02:38.565070', '2024-02-27 14:02:38.565058', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (490, '2024-02-27 14:02:38.566063', '2024-02-27 14:02:38.566047', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (491, '2024-02-27 14:02:38.566960', '2024-02-27 14:02:38.566948', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (492, '2024-02-27 14:02:38.567860', '2024-02-27 14:02:38.567848', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (493, '2024-02-27 14:02:38.568750', '2024-02-27 14:02:38.568739', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (494, '2024-02-27 14:02:38.569714', '2024-02-27 14:02:38.569704', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (495, '2024-02-27 14:02:38.570649', '2024-02-27 14:02:38.570633', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (496, '2024-02-27 14:02:38.571747', '2024-02-27 14:02:38.571724', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (497, '2024-02-27 14:02:38.572630', '2024-02-27 14:02:38.572618', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (498, '2024-02-27 14:02:38.573526', '2024-02-27 14:02:38.573515', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (499, '2024-02-27 14:02:38.574399', '2024-02-27 14:02:38.574388', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 66, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (500, '2024-02-27 14:02:38.575391', '2024-02-27 14:02:38.575378', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 66, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (501, '2024-02-27 14:02:38.576500', '2024-02-27 14:02:38.576487', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 66, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (502, '2024-02-27 14:02:38.577506', '2024-02-27 14:02:38.577486', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (503, '2024-02-27 14:02:38.578475', '2024-02-27 14:02:38.578460', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (504, '2024-02-27 14:02:38.579739', '2024-02-27 14:02:38.579721', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (505, '2024-02-27 14:02:38.580862', '2024-02-27 14:02:38.580844', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (506, '2024-02-27 14:02:38.581943', '2024-02-27 14:02:38.581927', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (507, '2024-02-27 14:02:38.582948', '2024-02-27 14:02:38.582936', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (508, '2024-02-27 14:02:38.583988', '2024-02-27 14:02:38.583961', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (509, '2024-02-27 14:02:38.585245', '2024-02-27 14:02:38.585229', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (510, '2024-02-27 14:02:38.586298', '2024-02-27 14:02:38.586282', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (511, '2024-02-27 14:02:38.587368', '2024-02-27 14:02:38.587351', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (512, '2024-02-27 14:02:38.588373', '2024-02-27 14:02:38.588359', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (513, '2024-02-27 14:02:38.589387', '2024-02-27 14:02:38.589374', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (514, '2024-02-27 14:02:38.590315', '2024-02-27 14:02:38.590298', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (515, '2024-02-27 14:02:38.591583', '2024-02-27 14:02:38.591567', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (516, '2024-02-27 14:02:38.592931', '2024-02-27 14:02:38.592890', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (517, '2024-02-27 14:02:38.594123', '2024-02-27 14:02:38.594108', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (518, '2024-02-27 14:02:38.595118', '2024-02-27 14:02:38.595103', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (519, '2024-02-27 14:02:38.596119', '2024-02-27 14:02:38.596106', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (520, '2024-02-27 14:02:38.597058', '2024-02-27 14:02:38.597046', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (521, '2024-02-27 14:02:38.597948', '2024-02-27 14:02:38.597937', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (522, '2024-02-27 14:02:38.598808', '2024-02-27 14:02:38.598797', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (523, '2024-02-27 14:02:38.599861', '2024-02-27 14:02:38.599848', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (524, '2024-02-27 14:02:38.600885', '2024-02-27 14:02:38.600868', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (525, '2024-02-27 14:02:38.601933', '2024-02-27 14:02:38.601920', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (526, '2024-02-27 14:02:38.603141', '2024-02-27 14:02:38.603122', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (527, '2024-02-27 14:02:38.604135', '2024-02-27 14:02:38.604120', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (528, '2024-02-27 14:02:38.605090', '2024-02-27 14:02:38.605078', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (529, '2024-02-27 14:02:38.606125', '2024-02-27 14:02:38.606114', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (530, '2024-02-27 14:02:38.607157', '2024-02-27 14:02:38.607145', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (531, '2024-02-27 14:02:38.608073', '2024-02-27 14:02:38.608062', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (532, '2024-02-27 14:02:38.608947', '2024-02-27 14:02:38.608931', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (533, '2024-02-27 14:02:38.609853', '2024-02-27 14:02:38.609842', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (534, '2024-02-27 14:02:38.610710', '2024-02-27 14:02:38.610700', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (535, '2024-02-27 14:02:38.611582', '2024-02-27 14:02:38.611571', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (536, '2024-02-27 14:02:38.612443', '2024-02-27 14:02:38.612433', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (537, '2024-02-27 14:02:38.613591', '2024-02-27 14:02:38.613579', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (538, '2024-02-27 14:02:38.614685', '2024-02-27 14:02:38.614655', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (539, '2024-02-27 14:02:38.615601', '2024-02-27 14:02:38.615590', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (540, '2024-02-27 14:02:38.614822', '2024-02-27 14:02:38.614791', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (541, '2024-02-27 14:02:38.617832', '2024-02-27 14:02:38.617821', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (542, '2024-02-27 14:02:38.618838', '2024-02-27 14:02:38.618827', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (543, '2024-02-27 14:02:38.619896', '2024-02-27 14:02:38.619885', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 3, 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (544, '2024-02-27 14:02:38.620928', '2024-02-27 14:02:38.620918', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (545, '2024-02-27 14:02:38.621946', '2024-02-27 14:02:38.621932', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (546, '2024-02-27 14:02:38.622990', '2024-02-27 14:02:38.622972', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (547, '2024-02-27 14:02:38.623935', '2024-02-27 14:02:38.623922', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (548, '2024-02-27 14:02:38.624845', '2024-02-27 14:02:38.624834', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (549, '2024-02-27 14:02:38.625813', '2024-02-27 14:02:38.625800', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (550, '2024-02-27 14:02:38.626828', '2024-02-27 14:02:38.626813', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (551, '2024-02-27 14:02:38.628015', '2024-02-27 14:02:38.628002', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (552, '2024-02-27 14:02:38.628945', '2024-02-27 14:02:38.628931', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (553, '2024-02-27 14:02:38.629907', '2024-02-27 14:02:38.629890', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (554, '2024-02-27 14:02:38.630932', '2024-02-27 14:02:38.630919', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (555, '2024-02-27 14:02:38.631946', '2024-02-27 14:02:38.631935', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (556, '2024-02-27 14:02:38.633085', '2024-02-27 14:02:38.633065', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (557, '2024-02-27 14:02:38.634355', '2024-02-27 14:02:38.634342', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (558, '2024-02-27 14:02:38.635318', '2024-02-27 14:02:38.635307', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (559, '2024-02-27 14:02:38.636322', '2024-02-27 14:02:38.636311', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (560, '2024-02-27 14:02:38.637723', '2024-02-27 14:02:38.637703', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (561, '2024-02-27 14:02:38.639225', '2024-02-27 14:02:38.639209', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (562, '2024-02-27 14:02:38.640571', '2024-02-27 14:02:38.640556', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (563, '2024-02-27 14:02:38.641431', '2024-02-27 14:02:38.641419', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (564, '2024-02-27 14:02:38.642567', '2024-02-27 14:02:38.642553', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (565, '2024-02-27 14:02:38.643765', '2024-02-27 14:02:38.643754', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (566, '2024-02-27 14:02:38.644732', '2024-02-27 14:02:38.644721', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (567, '2024-02-27 14:02:38.645746', '2024-02-27 14:02:38.645734', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (568, '2024-02-27 14:02:38.646683', '2024-02-27 14:02:38.646672', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (569, '2024-02-27 14:02:38.647651', '2024-02-27 14:02:38.647641', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (570, '2024-02-27 14:02:38.648504', '2024-02-27 14:02:38.648493', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (571, '2024-02-27 14:02:38.649420', '2024-02-27 14:02:38.649404', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (572, '2024-02-27 14:02:38.650446', '2024-02-27 14:02:38.650432', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (573, '2024-02-27 14:02:38.651407', '2024-02-27 14:02:38.651396', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (574, '2024-02-27 14:02:38.652473', '2024-02-27 14:02:38.652458', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (575, '2024-02-27 14:02:38.653402', '2024-02-27 14:02:38.653390', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (576, '2024-02-27 14:02:38.654400', '2024-02-27 14:02:38.654384', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (577, '2024-02-27 14:02:38.655320', '2024-02-27 14:02:38.655309', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (578, '2024-02-27 14:02:38.656206', '2024-02-27 14:02:38.656195', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (579, '2024-02-27 14:02:38.657245', '2024-02-27 14:02:38.657234', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (580, '2024-02-27 14:02:38.658145', '2024-02-27 14:02:38.658134', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (581, '2024-02-27 14:02:38.659034', '2024-02-27 14:02:38.659023', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (582, '2024-02-27 14:02:38.659951', '2024-02-27 14:02:38.659938', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (583, '2024-02-27 14:02:38.660832', '2024-02-27 14:02:38.660821', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 66, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (584, '2024-02-27 14:02:38.661732', '2024-02-27 14:02:38.661721', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 66, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (585, '2024-02-27 14:02:38.662824', '2024-02-27 14:02:38.662811', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 66, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (586, '2024-02-27 14:02:38.663873', '2024-02-27 14:02:38.663861', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (587, '2024-02-27 14:02:38.664920', '2024-02-27 14:02:38.664909', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (588, '2024-02-27 14:02:38.665843', '2024-02-27 14:02:38.665832', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (589, '2024-02-27 14:02:38.666792', '2024-02-27 14:02:38.666776', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (590, '2024-02-27 14:02:38.667952', '2024-02-27 14:02:38.667937', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (591, '2024-02-27 14:02:38.669359', '2024-02-27 14:02:38.669342', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (592, '2024-02-27 14:02:38.670565', '2024-02-27 14:02:38.670552', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (593, '2024-02-27 14:02:38.671498', '2024-02-27 14:02:38.671479', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (594, '2024-02-27 14:02:38.672413', '2024-02-27 14:02:38.672402', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (595, '2024-02-27 14:02:38.673280', '2024-02-27 14:02:38.673268', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (596, '2024-02-27 14:02:38.674417', '2024-02-27 14:02:38.674403', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (597, '2024-02-27 14:02:38.675502', '2024-02-27 14:02:38.675485', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (598, '2024-02-27 14:02:38.676704', '2024-02-27 14:02:38.676686', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (599, '2024-02-27 14:02:38.677763', '2024-02-27 14:02:38.677749', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (600, '2024-02-27 14:02:38.678779', '2024-02-27 14:02:38.678767', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (601, '2024-02-27 14:02:38.679832', '2024-02-27 14:02:38.679817', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (602, '2024-02-27 14:02:38.681104', '2024-02-27 14:02:38.681085', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (603, '2024-02-27 14:02:38.682482', '2024-02-27 14:02:38.682457', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (604, '2024-02-27 14:02:38.683581', '2024-02-27 14:02:38.683566', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (605, '2024-02-27 14:02:38.684633', '2024-02-27 14:02:38.684617', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (606, '2024-02-27 14:02:38.685844', '2024-02-27 14:02:38.685829', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (607, '2024-02-27 14:02:38.686920', '2024-02-27 14:02:38.686894', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (608, '2024-02-27 14:02:38.687973', '2024-02-27 14:02:38.687954', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (609, '2024-02-27 14:02:38.688914', '2024-02-27 14:02:38.688897', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (610, '2024-02-27 14:02:38.689831', '2024-02-27 14:02:38.689819', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (611, '2024-02-27 14:02:38.690708', '2024-02-27 14:02:38.690693', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (612, '2024-02-27 14:02:38.691583', '2024-02-27 14:02:38.691572', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (613, '2024-02-27 14:02:38.693681', '2024-02-27 14:02:38.693667', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (614, '2024-02-27 14:02:38.695204', '2024-02-27 14:02:38.695187', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (615, '2024-02-27 14:02:38.696375', '2024-02-27 14:02:38.696360', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (616, '2024-02-27 14:02:38.697806', '2024-02-27 14:02:38.697784', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (617, '2024-02-27 14:02:38.698994', '2024-02-27 14:02:38.698981', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (618, '2024-02-27 14:02:38.700020', '2024-02-27 14:02:38.700006', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (619, '2024-02-27 14:02:38.701061', '2024-02-27 14:02:38.701049', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (620, '2024-02-27 14:02:38.702238', '2024-02-27 14:02:38.702228', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (621, '2024-02-27 14:02:38.703149', '2024-02-27 14:02:38.703154', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (622, '2024-02-27 14:02:38.704184', '2024-02-27 14:02:38.704144', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (623, '2024-02-27 14:02:38.705146', '2024-02-27 14:02:38.705125', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (624, '2024-02-27 14:02:38.706111', '2024-02-27 14:02:38.706099', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (625, '2024-02-27 14:02:38.706982', '2024-02-27 14:02:38.706972', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (626, '2024-02-27 14:02:38.707814', '2024-02-27 14:02:38.707806', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (627, '2024-02-27 14:02:38.708707', '2024-02-27 14:02:38.708697', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 3, 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (628, '2024-02-27 14:02:38.709532', '2024-02-27 14:02:38.709522', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (629, '2024-02-27 14:02:38.710851', '2024-02-27 14:02:38.710830', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (630, '2024-02-27 14:02:38.711891', '2024-02-27 14:02:38.711882', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 53, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (631, '2024-02-27 14:02:38.712759', '2024-02-27 14:02:38.712750', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (632, '2024-02-27 14:02:38.713607', '2024-02-27 14:02:38.713598', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (633, '2024-02-27 14:02:38.714679', '2024-02-27 14:02:38.714662', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 54, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (634, '2024-02-27 14:02:38.714184', '2024-02-27 14:02:38.714140', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (635, '2024-02-27 14:02:38.717348', '2024-02-27 14:02:38.717333', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (636, '2024-02-27 14:02:38.718367', '2024-02-27 14:02:38.718352', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 55, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (637, '2024-02-27 14:02:38.719551', '2024-02-27 14:02:38.719532', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (638, '2024-02-27 14:02:38.720681', '2024-02-27 14:02:38.720665', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (639, '2024-02-27 14:02:38.721785', '2024-02-27 14:02:38.721769', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 56, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (640, '2024-02-27 14:02:38.722821', '2024-02-27 14:02:38.722806', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (641, '2024-02-27 14:02:38.723906', '2024-02-27 14:02:38.723893', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (642, '2024-02-27 14:02:38.724842', '2024-02-27 14:02:38.724828', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 57, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (643, '2024-02-27 14:02:38.725782', '2024-02-27 14:02:38.725769', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (644, '2024-02-27 14:02:38.726660', '2024-02-27 14:02:38.726649', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (645, '2024-02-27 14:02:38.727694', '2024-02-27 14:02:38.727683', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 58, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (646, '2024-02-27 14:02:38.728694', '2024-02-27 14:02:38.728679', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (647, '2024-02-27 14:02:38.729868', '2024-02-27 14:02:38.729847', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (648, '2024-02-27 14:02:38.731148', '2024-02-27 14:02:38.731153', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 59, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (649, '2024-02-27 14:02:38.732146', '2024-02-27 14:02:38.732136', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (650, '2024-02-27 14:02:38.733042', '2024-02-27 14:02:38.733031', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (651, '2024-02-27 14:02:38.733936', '2024-02-27 14:02:38.733926', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 60, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (652, '2024-02-27 14:02:38.734980', '2024-02-27 14:02:38.734966', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (653, '2024-02-27 14:02:38.736059', '2024-02-27 14:02:38.736042', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (654, '2024-02-27 14:02:38.737009', '2024-02-27 14:02:38.736999', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 61, '테스트_클럽_게시물_내용_11', 0, '', '테스트_클럽_게시물_제목_11');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (655, '2024-02-27 14:02:38.737846', '2024-02-27 14:02:38.737836', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (656, '2024-02-27 14:02:38.738659', '2024-02-27 14:02:38.738650', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (657, '2024-02-27 14:02:38.739713', '2024-02-27 14:02:38.739695', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 62, '테스트_클럽_게시물_내용_12', 0, '', '테스트_클럽_게시물_제목_12');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (658, '2024-02-27 14:02:38.740647', '2024-02-27 14:02:38.740636', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (659, '2024-02-27 14:02:38.741820', '2024-02-27 14:02:38.741805', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (660, '2024-02-27 14:02:38.742795', '2024-02-27 14:02:38.742778', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 63, '테스트_클럽_게시물_내용_13', 0, '', '테스트_클럽_게시물_제목_13');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (661, '2024-02-27 14:02:38.743951', '2024-02-27 14:02:38.743934', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (662, '2024-02-27 14:02:38.745224', '2024-02-27 14:02:38.745211', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (663, '2024-02-27 14:02:38.746283', '2024-02-27 14:02:38.746269', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 64, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (664, '2024-02-27 14:02:38.747602', '2024-02-27 14:02:38.747581', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (665, '2024-02-27 14:02:38.748652', '2024-02-27 14:02:38.748638', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (666, '2024-02-27 14:02:38.749681', '2024-02-27 14:02:38.749665', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 65, '테스트_클럽_게시물_내용_15', 0, '', '테스트_클럽_게시물_제목_15');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (667, '2024-02-27 14:02:38.750684', '2024-02-27 14:02:38.750671', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 66, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (668, '2024-02-27 14:02:38.751737', '2024-02-27 14:02:38.751700', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 66, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (669, '2024-02-27 14:02:38.752865', '2024-02-27 14:02:38.752852', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 66, '테스트_클럽_게시물_내용_14', 0, '', '테스트_클럽_게시물_제목_14');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (670, '2024-02-27 14:02:38.754118', '2024-02-27 14:02:38.754097', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (671, '2024-02-27 14:02:38.755380', '2024-02-27 14:02:38.755363', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (672, '2024-02-27 14:02:38.756310', '2024-02-27 14:02:38.756299', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 67, '테스트_클럽_게시물_내용_17', 0, '', '테스트_클럽_게시물_제목_17');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (673, '2024-02-27 14:02:38.757258', '2024-02-27 14:02:38.757248', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (674, '2024-02-27 14:02:38.758136', '2024-02-27 14:02:38.758127', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (675, '2024-02-27 14:02:38.759176', '2024-02-27 14:02:38.759142', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 68, '테스트_클럽_게시물_내용_18', 0, '', '테스트_클럽_게시물_제목_18');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (676, '2024-02-27 14:02:38.760072', '2024-02-27 14:02:38.760061', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (677, '2024-02-27 14:02:38.761043', '2024-02-27 14:02:38.761023', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (678, '2024-02-27 14:02:38.762006', '2024-02-27 14:02:38.761993', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 69, '테스트_클럽_게시물_내용_19', 0, '', '테스트_클럽_게시물_제목_19');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (679, '2024-02-27 14:02:38.763024', '2024-02-27 14:02:38.763006', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (680, '2024-02-27 14:02:38.764085', '2024-02-27 14:02:38.764068', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (681, '2024-02-27 14:02:38.765344', '2024-02-27 14:02:38.765329', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 70, '테스트_클럽_게시물_내용_20', 0, '', '테스트_클럽_게시물_제목_20');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (682, '2024-02-27 14:02:38.766345', '2024-02-27 14:02:38.766331', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (683, '2024-02-27 14:02:38.767425', '2024-02-27 14:02:38.767414', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (684, '2024-02-27 14:02:38.768407', '2024-02-27 14:02:38.768393', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 71, '테스트_클럽_게시물_내용_21', 0, '', '테스트_클럽_게시물_제목_21');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (685, '2024-02-27 14:02:38.769414', '2024-02-27 14:02:38.769406', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (686, '2024-02-27 14:02:38.770441', '2024-02-27 14:02:38.770427', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (687, '2024-02-27 14:02:38.771355', '2024-02-27 14:02:38.771344', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 72, '테스트_클럽_게시물_내용_22', 0, '', '테스트_클럽_게시물_제목_22');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (688, '2024-02-27 14:02:38.772299', '2024-02-27 14:02:38.772282', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (689, '2024-02-27 14:02:38.773510', '2024-02-27 14:02:38.773498', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (690, '2024-02-27 14:02:38.774467', '2024-02-27 14:02:38.774457', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 73, '테스트_클럽_게시물_내용_23', 0, '', '테스트_클럽_게시물_제목_23');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (691, '2024-02-27 14:02:38.775382', '2024-02-27 14:02:38.775369', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (692, '2024-02-27 14:02:38.776297', '2024-02-27 14:02:38.776286', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (693, '2024-02-27 14:02:38.777205', '2024-02-27 14:02:38.777194', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 74, '테스트_클럽_게시물_내용_24', 0, '', '테스트_클럽_게시물_제목_24');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (694, '2024-02-27 14:02:38.778299', '2024-02-27 14:02:38.778286', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (695, '2024-02-27 14:02:38.779198', '2024-02-27 14:02:38.779188', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (696, '2024-02-27 14:02:38.780129', '2024-02-27 14:02:38.780114', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 75, '테스트_클럽_게시물_내용_25', 0, '', '테스트_클럽_게시물_제목_25');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (697, '2024-02-27 14:02:38.781139', '2024-02-27 14:02:38.781125', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (698, '2024-02-27 14:02:38.782136', '2024-02-27 14:02:38.782124', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (699, '2024-02-27 14:02:38.783036', '2024-02-27 14:02:38.783025', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 76, '테스트_클럽_게시물_내용_26', 0, '', '테스트_클럽_게시물_제목_26');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (700, '2024-02-27 14:02:38.783901', '2024-02-27 14:02:38.783891', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (701, '2024-02-27 14:02:38.784740', '2024-02-27 14:02:38.784730', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (702, '2024-02-27 14:02:38.785550', '2024-02-27 14:02:38.785541', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 77, '테스트_클럽_게시물_내용_27', 0, '', '테스트_클럽_게시물_제목_27');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (703, '2024-02-27 14:02:38.786669', '2024-02-27 14:02:38.786654', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (704, '2024-02-27 14:02:38.787639', '2024-02-27 14:02:38.787628', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (705, '2024-02-27 14:02:38.788506', '2024-02-27 14:02:38.788496', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 78, '테스트_클럽_게시물_내용_28', 0, '', '테스트_클럽_게시물_제목_28');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (706, '2024-02-27 14:02:38.789445', '2024-02-27 14:02:38.789435', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (707, '2024-02-27 14:02:38.790324', '2024-02-27 14:02:38.790315', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (708, '2024-02-27 14:02:38.791208', '2024-02-27 14:02:38.791197', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 79, '테스트_클럽_게시물_내용_29', 0, '', '테스트_클럽_게시물_제목_29');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (709, '2024-02-27 14:02:38.792126', '2024-02-27 14:02:38.792114', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (710, '2024-02-27 14:02:38.792956', '2024-02-27 14:02:38.792947', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (711, '2024-02-27 14:02:38.793778', '2024-02-27 14:02:38.793769', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 3, 80, '테스트_클럽_게시물_내용_30', 0, '', '테스트_클럽_게시물_제목_30');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (712, '2024-02-27 14:02:38.833269', '2024-02-27 14:02:38.833243', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (713, '2024-02-27 14:02:38.834387', '2024-02-27 14:02:38.834374', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (714, '2024-02-27 14:02:38.835338', '2024-02-27 14:02:38.835324', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (715, '2024-02-27 14:02:38.836300', '2024-02-27 14:02:38.836289', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (716, '2024-02-27 14:02:38.837174', '2024-02-27 14:02:38.837143', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (717, '2024-02-27 14:02:38.838174', '2024-02-27 14:02:38.838144', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 81, '테스트_클럽_게시물_내용_80', 0, '', '테스트_클럽_게시물_제목_80');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (718, '2024-02-27 14:02:38.839015', '2024-02-27 14:02:38.839005', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (719, '2024-02-27 14:02:38.839893', '2024-02-27 14:02:38.839884', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (720, '2024-02-27 14:02:38.840738', '2024-02-27 14:02:38.840728', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (721, '2024-02-27 14:02:38.841567', '2024-02-27 14:02:38.841556', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (722, '2024-02-27 14:02:38.842645', '2024-02-27 14:02:38.842634', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (723, '2024-02-27 14:02:38.843668', '2024-02-27 14:02:38.843657', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (724, '2024-02-27 14:02:38.844856', '2024-02-27 14:02:38.844839', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (725, '2024-02-27 14:02:38.845945', '2024-02-27 14:02:38.845929', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (726, '2024-02-27 14:02:38.846980', '2024-02-27 14:02:38.846965', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 82, '테스트_클럽_게시물_내용_81', 0, '', '테스트_클럽_게시물_제목_81');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (727, '2024-02-27 14:02:38.848086', '2024-02-27 14:02:38.848066', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (728, '2024-02-27 14:02:38.849115', '2024-02-27 14:02:38.849103', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (729, '2024-02-27 14:02:38.850207', '2024-02-27 14:02:38.850193', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (730, '2024-02-27 14:02:38.851215', '2024-02-27 14:02:38.851203', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (731, '2024-02-27 14:02:38.852106', '2024-02-27 14:02:38.852095', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (732, '2024-02-27 14:02:38.852969', '2024-02-27 14:02:38.852959', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (733, '2024-02-27 14:02:38.853814', '2024-02-27 14:02:38.853804', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (734, '2024-02-27 14:02:38.854690', '2024-02-27 14:02:38.854671', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (735, '2024-02-27 14:02:38.855795', '2024-02-27 14:02:38.855786', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (736, '2024-02-27 14:02:38.856669', '2024-02-27 14:02:38.856656', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (737, '2024-02-27 14:02:38.857576', '2024-02-27 14:02:38.857564', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (738, '2024-02-27 14:02:38.858465', '2024-02-27 14:02:38.858455', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (739, '2024-02-27 14:02:38.859343', '2024-02-27 14:02:38.859332', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (740, '2024-02-27 14:02:38.860489', '2024-02-27 14:02:38.860472', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (741, '2024-02-27 14:02:38.861585', '2024-02-27 14:02:38.861572', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (742, '2024-02-27 14:02:38.862481', '2024-02-27 14:02:38.862470', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (743, '2024-02-27 14:02:38.863498', '2024-02-27 14:02:38.863489', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (744, '2024-02-27 14:02:38.864328', '2024-02-27 14:02:38.864318', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (745, '2024-02-27 14:02:38.865177', '2024-02-27 14:02:38.865147', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (746, '2024-02-27 14:02:38.866090', '2024-02-27 14:02:38.866080', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (747, '2024-02-27 14:02:38.867048', '2024-02-27 14:02:38.867027', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (748, '2024-02-27 14:02:38.868134', '2024-02-27 14:02:38.868119', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (749, '2024-02-27 14:02:38.869378', '2024-02-27 14:02:38.869353', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (750, '2024-02-27 14:02:38.870315', '2024-02-27 14:02:38.870304', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 4, 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (751, '2024-02-27 14:02:38.871215', '2024-02-27 14:02:38.871204', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (752, '2024-02-27 14:02:38.872065', '2024-02-27 14:02:38.872056', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (753, '2024-02-27 14:02:38.872890', '2024-02-27 14:02:38.872880', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (754, '2024-02-27 14:02:38.873738', '2024-02-27 14:02:38.873728', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (755, '2024-02-27 14:02:38.874951', '2024-02-27 14:02:38.874941', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (756, '2024-02-27 14:02:38.875865', '2024-02-27 14:02:38.875856', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (757, '2024-02-27 14:02:38.876763', '2024-02-27 14:02:38.876748', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (758, '2024-02-27 14:02:38.877642', '2024-02-27 14:02:38.877629', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (759, '2024-02-27 14:02:38.878517', '2024-02-27 14:02:38.878507', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (760, '2024-02-27 14:02:38.879422', '2024-02-27 14:02:38.879413', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (761, '2024-02-27 14:02:38.880484', '2024-02-27 14:02:38.880466', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (762, '2024-02-27 14:02:38.881496', '2024-02-27 14:02:38.881480', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (763, '2024-02-27 14:02:38.882927', '2024-02-27 14:02:38.882913', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (764, '2024-02-27 14:02:38.883989', '2024-02-27 14:02:38.883975', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (765, '2024-02-27 14:02:38.885028', '2024-02-27 14:02:38.885014', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (766, '2024-02-27 14:02:38.886038', '2024-02-27 14:02:38.886023', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (767, '2024-02-27 14:02:38.887006', '2024-02-27 14:02:38.886992', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (768, '2024-02-27 14:02:38.887904', '2024-02-27 14:02:38.887887', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (769, '2024-02-27 14:02:38.888875', '2024-02-27 14:02:38.888864', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (770, '2024-02-27 14:02:38.889721', '2024-02-27 14:02:38.889710', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (771, '2024-02-27 14:02:38.890549', '2024-02-27 14:02:38.890539', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (772, '2024-02-27 14:02:38.891407', '2024-02-27 14:02:38.891395', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (773, '2024-02-27 14:02:38.892513', '2024-02-27 14:02:38.892493', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (774, '2024-02-27 14:02:38.893408', '2024-02-27 14:02:38.893397', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 4, 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (775, '2024-02-27 14:02:38.894411', '2024-02-27 14:02:38.894398', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (776, '2024-02-27 14:02:38.895466', '2024-02-27 14:02:38.895454', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (777, '2024-02-27 14:02:38.896832', '2024-02-27 14:02:38.896814', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 83, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (778, '2024-02-27 14:02:38.897968', '2024-02-27 14:02:38.897945', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (779, '2024-02-27 14:02:38.899012', '2024-02-27 14:02:38.899001', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (780, '2024-02-27 14:02:38.900139', '2024-02-27 14:02:38.900127', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 84, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (781, '2024-02-27 14:02:38.901195', '2024-02-27 14:02:38.901182', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (782, '2024-02-27 14:02:38.902180', '2024-02-27 14:02:38.902145', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (783, '2024-02-27 14:02:38.903146', '2024-02-27 14:02:38.903156', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 85, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (784, '2024-02-27 14:02:38.904054', '2024-02-27 14:02:38.904039', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (785, '2024-02-27 14:02:38.904950', '2024-02-27 14:02:38.904939', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (786, '2024-02-27 14:02:38.905832', '2024-02-27 14:02:38.905822', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 86, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (787, '2024-02-27 14:02:38.906857', '2024-02-27 14:02:38.906846', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (788, '2024-02-27 14:02:38.907792', '2024-02-27 14:02:38.907783', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (789, '2024-02-27 14:02:38.908976', '2024-02-27 14:02:38.908964', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 87, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (790, '2024-02-27 14:02:38.910256', '2024-02-27 14:02:38.910238', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (791, '2024-02-27 14:02:38.911572', '2024-02-27 14:02:38.911557', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (792, '2024-02-27 14:02:38.912653', '2024-02-27 14:02:38.912641', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 88, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (793, '2024-02-27 14:02:38.913724', '2024-02-27 14:02:38.913710', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (794, '2024-02-27 14:02:38.914884', '2024-02-27 14:02:38.914872', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (795, '2024-02-27 14:02:38.915772', '2024-02-27 14:02:38.915762', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 89, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (796, '2024-02-27 14:02:38.914698', '2024-02-27 14:02:38.914684', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (797, '2024-02-27 14:02:38.917658', '2024-02-27 14:02:38.917648', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (798, '2024-02-27 14:02:38.918495', '2024-02-27 14:02:38.918483', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 4, 90, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (799, '2024-02-27 14:02:38.963318', '2024-02-27 14:02:38.963280', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (800, '2024-02-27 14:02:38.964462', '2024-02-27 14:02:38.964441', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (801, '2024-02-27 14:02:38.965452', '2024-02-27 14:02:38.965440', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (802, '2024-02-27 14:02:38.966407', '2024-02-27 14:02:38.966396', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (803, '2024-02-27 14:02:38.967462', '2024-02-27 14:02:38.967446', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (804, '2024-02-27 14:02:38.968414', '2024-02-27 14:02:38.968404', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 91, '테스트_클럽_게시물_내용_90', 0, '', '테스트_클럽_게시물_제목_90');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (805, '2024-02-27 14:02:38.969364', '2024-02-27 14:02:38.969352', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (806, '2024-02-27 14:02:38.970313', '2024-02-27 14:02:38.970301', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (807, '2024-02-27 14:02:38.971281', '2024-02-27 14:02:38.971267', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (808, '2024-02-27 14:02:38.972268', '2024-02-27 14:02:38.972256', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (809, '2024-02-27 14:02:38.973302', '2024-02-27 14:02:38.973283', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (810, '2024-02-27 14:02:38.974541', '2024-02-27 14:02:38.974522', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (811, '2024-02-27 14:02:38.975549', '2024-02-27 14:02:38.975536', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (812, '2024-02-27 14:02:38.976614', '2024-02-27 14:02:38.976604', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (813, '2024-02-27 14:02:38.977626', '2024-02-27 14:02:38.977615', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 92, '테스트_클럽_게시물_내용_91', 0, '', '테스트_클럽_게시물_제목_91');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (814, '2024-02-27 14:02:38.978557', '2024-02-27 14:02:38.978546', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (815, '2024-02-27 14:02:38.979501', '2024-02-27 14:02:38.979489', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (816, '2024-02-27 14:02:38.980471', '2024-02-27 14:02:38.980461', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (817, '2024-02-27 14:02:38.981418', '2024-02-27 14:02:38.981404', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (818, '2024-02-27 14:02:38.982358', '2024-02-27 14:02:38.982346', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (819, '2024-02-27 14:02:38.983352', '2024-02-27 14:02:38.983336', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (820, '2024-02-27 14:02:38.984311', '2024-02-27 14:02:38.984299', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (821, '2024-02-27 14:02:38.985310', '2024-02-27 14:02:38.985298', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (822, '2024-02-27 14:02:38.986243', '2024-02-27 14:02:38.986232', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (823, '2024-02-27 14:02:38.987062', '2024-02-27 14:02:38.987052', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (824, '2024-02-27 14:02:38.989151', '2024-02-27 14:02:38.989135', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (825, '2024-02-27 14:02:38.990221', '2024-02-27 14:02:38.990211', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (826, '2024-02-27 14:02:38.991286', '2024-02-27 14:02:38.991271', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (827, '2024-02-27 14:02:38.992331', '2024-02-27 14:02:38.992317', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (828, '2024-02-27 14:02:38.993278', '2024-02-27 14:02:38.993265', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (829, '2024-02-27 14:02:38.994323', '2024-02-27 14:02:38.994311', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (830, '2024-02-27 14:02:38.995354', '2024-02-27 14:02:38.995342', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (831, '2024-02-27 14:02:38.996400', '2024-02-27 14:02:38.996388', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (832, '2024-02-27 14:02:38.997377', '2024-02-27 14:02:38.997361', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (833, '2024-02-27 14:02:38.998390', '2024-02-27 14:02:38.998379', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (834, '2024-02-27 14:02:38.999448', '2024-02-27 14:02:38.999433', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (835, '2024-02-27 14:02:39.000454', '2024-02-27 14:02:39.000442', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (836, '2024-02-27 14:02:39.001449', '2024-02-27 14:02:39.001430', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (837, '2024-02-27 14:02:39.002575', '2024-02-27 14:02:39.002561', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'SUGGESTION', 5, 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (838, '2024-02-27 14:02:39.003693', '2024-02-27 14:02:39.003680', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (839, '2024-02-27 14:02:39.004556', '2024-02-27 14:02:39.004546', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (840, '2024-02-27 14:02:39.005387', '2024-02-27 14:02:39.005376', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (841, '2024-02-27 14:02:39.006277', '2024-02-27 14:02:39.006266', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (842, '2024-02-27 14:02:39.007350', '2024-02-27 14:02:39.007334', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (843, '2024-02-27 14:02:39.008344', '2024-02-27 14:02:39.008332', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (844, '2024-02-27 14:02:39.009401', '2024-02-27 14:02:39.009391', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (845, '2024-02-27 14:02:39.010381', '2024-02-27 14:02:39.010369', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (846, '2024-02-27 14:02:39.011557', '2024-02-27 14:02:39.011544', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (847, '2024-02-27 14:02:39.012499', '2024-02-27 14:02:39.012489', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (848, '2024-02-27 14:02:39.013323', '2024-02-27 14:02:39.013313', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (849, '2024-02-27 14:02:39.014119', '2024-02-27 14:02:39.014109', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (850, '2024-02-27 14:02:39.014983', '2024-02-27 14:02:39.014974', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (851, '2024-02-27 14:02:39.015949', '2024-02-27 14:02:39.015940', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (852, '2024-02-27 14:02:39.014830', '2024-02-27 14:02:39.014819', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (853, '2024-02-27 14:02:39.017674', '2024-02-27 14:02:39.017664', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (854, '2024-02-27 14:02:39.018484', '2024-02-27 14:02:39.018475', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (855, '2024-02-27 14:02:39.019368', '2024-02-27 14:02:39.019359', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (856, '2024-02-27 14:02:39.020193', '2024-02-27 14:02:39.020184', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (857, '2024-02-27 14:02:39.021058', '2024-02-27 14:02:39.021049', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (858, '2024-02-27 14:02:39.022072', '2024-02-27 14:02:39.022061', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (859, '2024-02-27 14:02:39.022931', '2024-02-27 14:02:39.022921', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (860, '2024-02-27 14:02:39.023888', '2024-02-27 14:02:39.023877', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (861, '2024-02-27 14:02:39.024743', '2024-02-27 14:02:39.024730', '2024-02-27', 'REAL_NAME',
+        'UNCONFIRMED', 'FREEDOM', 5, 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (862, '2024-02-27 14:02:39.025744', '2024-02-27 14:02:39.025734', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (863, '2024-02-27 14:02:39.026739', '2024-02-27 14:02:39.026717', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (864, '2024-02-27 14:02:39.027756', '2024-02-27 14:02:39.027744', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 93, '테스트_클럽_게시물_내용_3', 0, '', '테스트_클럽_게시물_제목_3');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (865, '2024-02-27 14:02:39.028811', '2024-02-27 14:02:39.028801', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (866, '2024-02-27 14:02:39.029839', '2024-02-27 14:02:39.029827', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (867, '2024-02-27 14:02:39.030764', '2024-02-27 14:02:39.030754', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 94, '테스트_클럽_게시물_내용_4', 0, '', '테스트_클럽_게시물_제목_4');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (868, '2024-02-27 14:02:39.031759', '2024-02-27 14:02:39.031748', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (869, '2024-02-27 14:02:39.032614', '2024-02-27 14:02:39.032607', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (870, '2024-02-27 14:02:39.033442', '2024-02-27 14:02:39.033432', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 95, '테스트_클럽_게시물_내용_5', 0, '', '테스트_클럽_게시물_제목_5');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (871, '2024-02-27 14:02:39.034299', '2024-02-27 14:02:39.034290', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (872, '2024-02-27 14:02:39.035285', '2024-02-27 14:02:39.035276', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (873, '2024-02-27 14:02:39.036297', '2024-02-27 14:02:39.036279', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 96, '테스트_클럽_게시물_내용_6', 0, '', '테스트_클럽_게시물_제목_6');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (874, '2024-02-27 14:02:39.037513', '2024-02-27 14:02:39.037500', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (875, '2024-02-27 14:02:39.038590', '2024-02-27 14:02:39.038575', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (876, '2024-02-27 14:02:39.039574', '2024-02-27 14:02:39.039562', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 97, '테스트_클럽_게시물_내용_7', 0, '', '테스트_클럽_게시물_제목_7');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (877, '2024-02-27 14:02:39.040555', '2024-02-27 14:02:39.040542', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (878, '2024-02-27 14:02:39.041437', '2024-02-27 14:02:39.041426', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (879, '2024-02-27 14:02:39.042478', '2024-02-27 14:02:39.042466', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 98, '테스트_클럽_게시물_내용_8', 0, '', '테스트_클럽_게시물_제목_8');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (880, '2024-02-27 14:02:39.043348', '2024-02-27 14:02:39.043338', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (881, '2024-02-27 14:02:39.044181', '2024-02-27 14:02:39.044171', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (882, '2024-02-27 14:02:39.045065', '2024-02-27 14:02:39.045054', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 99, '테스트_클럽_게시물_내용_9', 0, '', '테스트_클럽_게시물_제목_9');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (883, '2024-02-27 14:02:39.045893', '2024-02-27 14:02:39.045884', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (884, '2024-02-27 14:02:39.046705', '2024-02-27 14:02:39.046696', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
+INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,
+                          club_article_check, classification, club_id, club_member_id, content,
+                          like_count, suggestion_answer, title)
+VALUES (885, '2024-02-27 14:02:39.047523', '2024-02-27 14:02:39.047514', '2024-02-27', 'ANONYMOUS',
+        'UNCONFIRMED', 'CONFIDENTIAL', 5, 100, '테스트_클럽_게시물_내용_10', 0, '', '테스트_클럽_게시물_제목_10');
 
 
 -- club_article_comment

@@ -58,18 +58,22 @@ public class ClubArticle extends BaseEntity {
   @Column(name = "club_member_id", nullable = false)
   private Long clubMemberId;
 
+  @Column(name = "club_id", nullable = false)
+  private Long clubId;
+
   @Enumerated(EnumType.STRING)
   @Column(name = "anonymous", length = 15, nullable = false)
   private ANONYMITY anonymity = ANONYMITY.REAL_NAME;
 
   @Builder
   public ClubArticle(String title, String content, CLUB_ARTICLE_CLASSIFICATION classification,
-      Long clubMemberId, ANONYMITY anonymity) {
+      Long clubMemberId, ANONYMITY anonymity, Long clubId) {
     this.title = title;
     this.content = content;
     this.classification = classification;
     this.clubMemberId = clubMemberId;
     this.anonymity = anonymity;
+    this.clubId = clubId;
   }
 
 

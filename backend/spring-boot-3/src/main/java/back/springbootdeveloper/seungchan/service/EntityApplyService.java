@@ -47,15 +47,18 @@ public class EntityApplyService {
   @Transactional
   public Optional<ClubArticle> applyClubArticleConfidential(String title, String content,
       Long clubMemberId, String anonymity) {
+    ClubMember clubMember = clubMemberRepository.findById(clubMemberId)
+        .orElseThrow(EntityNotFoundException::new);
+
     // 주어진 익명성에 따라 클럽 게시글 생성
     if (ANONYMITY.ANONYMOUS.is(anonymity)) {
       return Optional.of(clubArticleRepository.save(
           createClubArticle(title, content, CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL, clubMemberId,
-              ANONYMITY.ANONYMOUS)));
+              ANONYMITY.ANONYMOUS, clubMember.getClubId())));
     } else {
       return Optional.of(clubArticleRepository.save(
           createClubArticle(title, content, CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL, clubMemberId,
-              ANONYMITY.REAL_NAME)));
+              ANONYMITY.REAL_NAME, clubMember.getClubId())));
     }
   }
 
@@ -72,16 +75,19 @@ public class EntityApplyService {
   @Transactional
   public Optional<ClubArticle> applyClubArticleFreeAndSuggestion(String title, String content,
       Long clubMemberId, String classification) {
+    ClubMember clubMember = clubMemberRepository.findById(clubMemberId)
+        .orElseThrow(EntityNotFoundException::new);
+
     // 주어진 익명성에 따라 클럽 게시글 생성
     if (CLUB_ARTICLE_CLASSIFICATION.SUGGESTION.is(classification)) {
       return Optional.of(clubArticleRepository.save(
           createClubArticle(title, content, CLUB_ARTICLE_CLASSIFICATION.SUGGESTION, clubMemberId,
-              ANONYMITY.REAL_NAME)));
+              ANONYMITY.REAL_NAME, clubMember.getClubId())));
     }
     if (CLUB_ARTICLE_CLASSIFICATION.FREEDOM.is(classification)) {
       return Optional.of(clubArticleRepository.save(
           createClubArticle(title, content, CLUB_ARTICLE_CLASSIFICATION.FREEDOM, clubMemberId,
-              ANONYMITY.REAL_NAME)));
+              ANONYMITY.REAL_NAME, clubMember.getClubId())));
     }
 
     return null;
@@ -343,13 +349,15 @@ public class EntityApplyService {
    * @return 생성된 ClubArticle 객체 반환
    */
   private ClubArticle createClubArticle(String title, String content,
-      CLUB_ARTICLE_CLASSIFICATION classification, Long clubMemberId, ANONYMITY anonymity) {
+      CLUB_ARTICLE_CLASSIFICATION classification, Long clubMemberId, ANONYMITY anonymity,
+      Long clubId) {
     return ClubArticle.builder()
         .title(title)
         .content(content)
         .classification(classification)
         .clubMemberId(clubMemberId)
         .anonymity(anonymity)
+        .clubId(clubId)
         .build();
   }
 }
