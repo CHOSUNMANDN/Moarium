@@ -9,8 +9,8 @@ public enum CustomHttpStatus {
   EMAIL_SAME_MATCH(-485, "Email Same Match"),
   PASSWORD_MISS_MATCHES(-486, "Password Miss Matches"),
   ENTITY_NOT_FOUND(-487, "Not Found Entity"),
-  INVALID_SELECTION_CLASSIFICATION(-488, "Bad Selection Classification");
-
+  INVALID_SELECTION_CLASSIFICATION(-488, "Bad Selection Classification"),
+  INVALID_NOT_LEADER_MEMBER(-489, "Bad Not Leader Of Club");
   private final int value;
 
 

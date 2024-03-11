@@ -623,6 +623,42 @@ INSERT INTO attendance_check_time (attendance_check_time_id, create_date, update
 VALUES (104, '2024-02-17 17:06:46.348826', '2024-02-17 17:06:46.348814', 'TEN', 'NOT_APPLIED',
         'TEN', 'TEN', 'TEN',
         'TEN', 'TEN', 'TEN');
+INSERT INTO attendance_check_time (attendance_check_time_id, create_date, update_date, friday,
+                                   long_vacation, monday,
+                                   saturday, sunday, thursday, tuesday, wednesday)
+VALUES (105, '2024-02-17 17:06:46.348826', '2024-02-17 17:06:46.348814', 'TEN', 'NOT_APPLIED',
+        'TEN', 'TEN', 'TEN',
+        'TEN', 'TEN', 'TEN');
+INSERT INTO attendance_check_time (attendance_check_time_id, create_date, update_date, friday,
+                                   long_vacation, monday,
+                                   saturday, sunday, thursday, tuesday, wednesday)
+VALUES (106, '2024-02-17 17:06:46.348826', '2024-02-17 17:06:46.348814', 'TEN', 'NOT_APPLIED',
+        'TEN', 'TEN', 'TEN',
+        'TEN', 'TEN', 'TEN');
+INSERT INTO attendance_check_time (attendance_check_time_id, create_date, update_date, friday,
+                                   long_vacation, monday,
+                                   saturday, sunday, thursday, tuesday, wednesday)
+VALUES (107, '2024-02-17 17:06:46.348826', '2024-02-17 17:06:46.348814', 'TEN', 'NOT_APPLIED',
+        'TEN', 'TEN', 'TEN',
+        'TEN', 'TEN', 'TEN');
+INSERT INTO attendance_check_time (attendance_check_time_id, create_date, update_date, friday,
+                                   long_vacation, monday,
+                                   saturday, sunday, thursday, tuesday, wednesday)
+VALUES (108, '2024-02-17 17:06:46.348826', '2024-02-17 17:06:46.348814', 'TEN', 'NOT_APPLIED',
+        'TEN', 'TEN', 'TEN',
+        'TEN', 'TEN', 'TEN');
+INSERT INTO attendance_check_time (attendance_check_time_id, create_date, update_date, friday,
+                                   long_vacation, monday,
+                                   saturday, sunday, thursday, tuesday, wednesday)
+VALUES (109, '2024-02-17 17:06:46.348826', '2024-02-17 17:06:46.348814', 'TEN', 'NOT_APPLIED',
+        'TEN', 'TEN', 'TEN',
+        'TEN', 'TEN', 'TEN');
+INSERT INTO attendance_check_time (attendance_check_time_id, create_date, update_date, friday,
+                                   long_vacation, monday,
+                                   saturday, sunday, thursday, tuesday, wednesday)
+VALUES (110, '2024-02-17 17:06:46.348826', '2024-02-17 17:06:46.348814', 'TEN', 'NOT_APPLIED',
+        'TEN', 'TEN', 'TEN',
+        'TEN', 'TEN', 'TEN');
 
 
 -- attendance_state
@@ -834,6 +870,18 @@ INSERT INTO attendance_state (attendance_state_id, attendance_check_time_id)
 VALUES (103, 103);
 INSERT INTO attendance_state (attendance_state_id, attendance_check_time_id)
 VALUES (104, 104);
+INSERT INTO attendance_state (attendance_state_id, attendance_check_time_id)
+VALUES (105, 105);
+INSERT INTO attendance_state (attendance_state_id, attendance_check_time_id)
+VALUES (106, 106);
+INSERT INTO attendance_state (attendance_state_id, attendance_check_time_id)
+VALUES (107, 107);
+INSERT INTO attendance_state (attendance_state_id, attendance_check_time_id)
+VALUES (108, 108);
+INSERT INTO attendance_state (attendance_state_id, attendance_check_time_id)
+VALUES (109, 109);
+INSERT INTO attendance_state (attendance_state_id, attendance_check_time_id)
+VALUES (110, 110);
 
 -- vacation_token
 INSERT INTO vacation_token (vacation_token_id, create_date, update_date, vacation_token,
@@ -1149,6 +1197,24 @@ VALUES (103, '2024-02-17 17:06:46.349179', '2024-02-17 17:06:46.349165', 5, '202
 INSERT INTO vacation_token (vacation_token_id, create_date, update_date, vacation_token,
                             vacation_token_date, attendance_state_id)
 VALUES (104, '2024-02-17 17:06:46.349179', '2024-02-17 17:06:46.349165', 5, '2024-02', 104);
+INSERT INTO vacation_token (vacation_token_id, create_date, update_date, vacation_token,
+                            vacation_token_date, attendance_state_id)
+VALUES (105, '2024-03-10 17:06:46.349179', '2024-03-10 17:06:46.349165', 5, '2024-03', 105);
+INSERT INTO vacation_token (vacation_token_id, create_date, update_date, vacation_token,
+                            vacation_token_date, attendance_state_id)
+VALUES (106, '2024-03-10 17:07:46.349179', '2024-03-10 17:07:46.349165', 5, '2024-03', 106);
+INSERT INTO vacation_token (vacation_token_id, create_date, update_date, vacation_token,
+                            vacation_token_date, attendance_state_id)
+VALUES (107, '2024-03-10 17:08:46.349179', '2024-03-10 17:08:46.349165', 5, '2024-03', 107);
+INSERT INTO vacation_token (vacation_token_id, create_date, update_date, vacation_token,
+                            vacation_token_date, attendance_state_id)
+VALUES (108, '2024-03-10 17:09:46.349179', '2024-03-10 17:09:46.349165', 5, '2024-03', 108);
+INSERT INTO vacation_token (vacation_token_id, create_date, update_date, vacation_token,
+                            vacation_token_date, attendance_state_id)
+VALUES (109, '2024-03-10 17:10:46.349179', '2024-03-10 17:10:46.349165', 5, '2024-03', 109);
+INSERT INTO vacation_token (vacation_token_id, create_date, update_date, vacation_token,
+                            vacation_token_date, attendance_state_id)
+VALUES (110, '2024-03-10 17:11:46.349179', '2024-03-10 17:11:46.349165', 5, '2024-03', 110);
 
 
 -- attendance_week_date
@@ -1885,9 +1951,44 @@ INSERT INTO attendance_week_date (attendance_week_date_id, create_date, update_d
                                   monday_date,
                                   saturday, sunday, sunday_date, thursday, tuesday, wednesday,
                                   attendance_state_id)
-VALUES (105, '2024-02-18 17:06:46.349015', '2024-02-17 17:06:46.348974', 'ATTENDANCE', 'ATTENDANCE',
+VALUES (105, '2024-02-18 17:06:46.349015', '2024-02-17 17:06:46.348974', 'UNDECIDED', 'UNDECIDED',
         '2024-02-12',
-        'ATTENDANCE', 'UNDECIDED', '2024-02-18', 'UNDECIDED', 'ABSENCE', 'UNDECIDED', 1);
+        'UNDECIDED', 'UNDECIDED', '2024-02-18', 'UNDECIDED', 'UNDECIDED', 'UNDECIDED', 105);
+INSERT INTO attendance_week_date (attendance_week_date_id, create_date, update_date, friday, monday,
+                                  monday_date,
+                                  saturday, sunday, sunday_date, thursday, tuesday, wednesday,
+                                  attendance_state_id)
+VALUES (106, '2024-03-10 17:06:46.349015', '2024-03-10 17:06:46.348974', 'UNDECIDED', 'UNDECIDED',
+        '2024-03-04',
+        'UNDECIDED', 'UNDECIDED', '2024-03-10', 'UNDECIDED', 'UNDECIDED', 'UNDECIDED', 106);
+INSERT INTO attendance_week_date (attendance_week_date_id, create_date, update_date, friday, monday,
+                                  monday_date,
+                                  saturday, sunday, sunday_date, thursday, tuesday, wednesday,
+                                  attendance_state_id)
+VALUES (107, '2024-03-10 17:07:46.349015', '2024-03-10 17:07:46.348974', 'UNDECIDED', 'UNDECIDED',
+        '2024-03-04',
+        'UNDECIDED', 'UNDECIDED', '2024-03-10', 'UNDECIDED', 'UNDECIDED', 'UNDECIDED', 107);
+INSERT INTO attendance_week_date (attendance_week_date_id, create_date, update_date, friday, monday,
+                                  monday_date,
+                                  saturday, sunday, sunday_date, thursday, tuesday, wednesday,
+                                  attendance_state_id)
+VALUES (108, '2024-03-10 17:08:46.349015', '2024-03-10 17:08:46.348974', 'UNDECIDED', 'UNDECIDED',
+        '2024-03-04',
+        'UNDECIDED', 'UNDECIDED', '2024-03-10', 'UNDECIDED', 'UNDECIDED', 'UNDECIDED', 108);
+INSERT INTO attendance_week_date (attendance_week_date_id, create_date, update_date, friday, monday,
+                                  monday_date,
+                                  saturday, sunday, sunday_date, thursday, tuesday, wednesday,
+                                  attendance_state_id)
+VALUES (109, '2024-03-10 17:09:46.349015', '2024-03-10 17:09:46.348974', 'UNDECIDED', 'UNDECIDED',
+        '2024-03-04',
+        'UNDECIDED', 'UNDECIDED', '2024-03-10', 'UNDECIDED', 'UNDECIDED', 'UNDECIDED', 109);
+INSERT INTO attendance_week_date (attendance_week_date_id, create_date, update_date, friday, monday,
+                                  monday_date,
+                                  saturday, sunday, sunday_date, thursday, tuesday, wednesday,
+                                  attendance_state_id)
+VALUES (110, '2024-03-10 17:10:46.349015', '2024-03-10 17:10:46.348974', 'UNDECIDED', 'UNDECIDED',
+        '2024-03-04',
+        'UNDECIDED', 'UNDECIDED', '2024-03-10', 'UNDECIDED', 'UNDECIDED', 'UNDECIDED', 110);
 
 
 -- attendance_week
@@ -2555,6 +2656,30 @@ VALUES (103, '2024-02-17 17:06:46.361513', '2024-02-17 17:06:46.361506', '테스
 INSERT INTO club_member_information (club_member_information_id, create_date, update_date,
                                      introduce, favorite_check)
 VALUES (104, '2024-02-17 17:06:46.361513', '2024-02-17 17:06:46.361506', '테스트_클럽_지원_자기소개_103',
+        'UNCHECK');
+INSERT INTO club_member_information (club_member_information_id, create_date, update_date,
+                                     introduce, favorite_check)
+VALUES (105, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361506', '테스트_클럽_지원_자기소개_104',
+        'UNCHECK');
+INSERT INTO club_member_information (club_member_information_id, create_date, update_date,
+                                     introduce, favorite_check)
+VALUES (106, '2024-03-10 17:07:46.361513', '2024-03-10 17:07:46.361506', '테스트_클럽_지원_자기소개_105',
+        'UNCHECK');
+INSERT INTO club_member_information (club_member_information_id, create_date, update_date,
+                                     introduce, favorite_check)
+VALUES (107, '2024-03-10 17:08:46.361513', '2024-03-10 17:08:46.361506', '테스트_클럽_지원_자기소개_106',
+        'UNCHECK');
+INSERT INTO club_member_information (club_member_information_id, create_date, update_date,
+                                     introduce, favorite_check)
+VALUES (108, '2024-03-10 17:09:46.361513', '2024-03-10 17:09:46.361506', '테스트_클럽_지원_자기소개_107',
+        'UNCHECK');
+INSERT INTO club_member_information (club_member_information_id, create_date, update_date,
+                                     introduce, favorite_check)
+VALUES (109, '2024-03-10 17:10:46.361513', '2024-03-10 17:10:46.361506', '테스트_클럽_지원_자기소개_108',
+        'UNCHECK');
+INSERT INTO club_member_information (club_member_information_id, create_date, update_date,
+                                     introduce, favorite_check)
+VALUES (110, '2024-03-10 17:11:46.361513', '2024-03-10 17:11:46.361506', '테스트_클럽_지원_자기소개_109',
         'UNCHECK');
 
 -- club_member_custom_information
@@ -3598,6 +3723,66 @@ INSERT INTO club_member_custom_information (club_member_custom_information_id, c
                                             custom_club_apply_information_id)
 VALUES (208, '2024-03-07 21:56:31.880488', '2024-03-07 21:56:31.885050',
         '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 104, 10);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (209, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 105, 1);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (210, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 105, 2);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (211, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 106, 1);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (212, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 106, 2);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (213, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 107, 1);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (214, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 107, 2);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (215, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 108, 1);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (216, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 108, 2);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (217, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 109, 1);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (218, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 109, 2);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (219, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 110, 1);
+INSERT INTO club_member_custom_information (club_member_custom_information_id, create_date,
+                                            update_date, custom_content, club_member_information_id,
+                                            custom_club_apply_information_id)
+VALUES (220, '2024-03-10 17:06:46.361513', '2024-03-10 17:06:46.361516',
+        '클럽에 지원하는 커스텀 지원폼에 대한 답변 18', 110, 2);
 
 -- member
 INSERT INTO member (member_id, create_date, update_date, email, first_name, last_name, major,
@@ -4618,6 +4803,31 @@ INSERT INTO club_member (club_member_id, attendance_state_id, club_grade_id, clu
                          club_member_information_id,
                          member_id)
 VALUES (104, 104, 3, 5, 104, 1);
+INSERT INTO club_member (club_member_id, attendance_state_id, club_grade_id, club_id,
+                         club_member_information_id,
+                         member_id)
+VALUES (105, 105, 5, 1, 105, 31);
+INSERT INTO club_member (club_member_id, attendance_state_id, club_grade_id, club_id,
+                         club_member_information_id,
+                         member_id)
+VALUES (106, 106, 5, 1, 106, 32);
+INSERT INTO club_member (club_member_id, attendance_state_id, club_grade_id, club_id,
+                         club_member_information_id,
+                         member_id)
+VALUES (107, 107, 5, 1, 107, 33);
+INSERT INTO club_member (club_member_id, attendance_state_id, club_grade_id, club_id,
+                         club_member_information_id,
+                         member_id)
+VALUES (108, 108, 5, 1, 108, 34);
+INSERT INTO club_member (club_member_id, attendance_state_id, club_grade_id, club_id,
+                         club_member_information_id,
+                         member_id)
+VALUES (109, 109, 5, 1, 109, 35);
+INSERT INTO club_member (club_member_id, attendance_state_id, club_grade_id, club_id,
+                         club_member_information_id,
+                         member_id)
+VALUES (110, 110, 5, 1, 110, 36);
+
 
 -- club_article
 INSERT INTO club_article (club_article_id, create_date, update_date, club_article_date, anonymous,

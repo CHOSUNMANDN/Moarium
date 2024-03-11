@@ -58,7 +58,7 @@ public class BaseResponseBodyUtiil {
             .statusCode(HttpStatus.BAD_REQUEST.value())
             .timestamp(ZonedDateTime.now(ZoneId.of("Z")))
             .build(),
-        HttpStatus.OK
+        HttpStatus.BAD_REQUEST
     );
   }
 
@@ -75,7 +75,7 @@ public class BaseResponseBodyUtiil {
             .statusCode(HttpStatus.BAD_REQUEST.value())
             .timestamp(ZonedDateTime.now(ZoneId.of("Z")))
             .build(),
-        HttpStatus.OK
+        HttpStatus.BAD_REQUEST
     );
   }
 }

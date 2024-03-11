@@ -166,7 +166,7 @@ class ClubApplyControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_ALREADY_REGISTRATION_CLUB.get()));
   }

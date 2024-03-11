@@ -37,7 +37,11 @@ public enum ResponseMessage {
   SUCCESS_APPLY_CLUB("지원서 신청이 완료 되었습니다."),
   BAD_APPLY_CLUB("지원서 신청이 실패 하였습니다."),
   BAD_ALREADY_APPLY_CLUB("이미 지원서 신청을 하였습니다."),
-  BAD_ALREADY_REGISTRATION_CLUB("이미 가입된 회원입니다.");
+  BAD_ALREADY_REGISTRATION_CLUB("이미 가입된 회원입니다."),
+  SUCCESS_ACCEPT_TEMP_MEMBER("임시 회원을 정회원으로 전환 하였습니다."),
+  BAD_ACCEPT_TEMP_MEMBER("임시 회원을 정회원으로 전환 실패 했습니다."),
+  SUCCESS_REFUSE_TEMP_MEMBER("임시 회원 신청을 거부했습니다."),
+  BAD_REFUSE_TEMP_MEMBER("임시 회원 대상만 가능 합니다.");
 
   private final String message;
 

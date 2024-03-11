@@ -16,7 +16,7 @@ import java.util.List;
  * 엔티티에서 컬럼 삭제 담당하는 클래스입니다.
  */
 @Service
-@Transactional
+@Transactional(readOnly = true)
 @RequiredArgsConstructor
 public class EntityDeleteService {
 
@@ -34,6 +34,7 @@ public class EntityDeleteService {
    * @param clubMemberId 클럽 멤버의 고유 식별자
    * @throws EntityNotFoundException 지정된 멤버, 멤버 정보 또는 출석 상태를 찾을 수 없을 때 발생하는 예외
    */
+  @Transactional
   public void expulsionMemberFromClub(Long clubMemberId) {
     ClubMember clubMember = clubMemberRepository.findById(clubMemberId)
         .orElseThrow(EntityNotFoundException::new);

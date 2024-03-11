@@ -1,5 +1,6 @@
 package back.springbootdeveloper.seungchan.entity;
 
+import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -59,4 +60,13 @@ public class ClubMember {
     this.clubGradeId = Long.valueOf(clubGradeId);
   }
 
+  /**
+   * ClubMember의 클럽 등급 ID를 업데이트합니다.
+   *
+   * @param clubGrade 클럽 등급
+   */
+  public void updateClubGradeId(CLUB_GRADE clubGrade) {
+    // 주어진 클럽 등급의 ID를 사용하여 ClubMember의 클럽 등급 ID를 업데이트합니다.
+    this.clubGradeId = Long.valueOf(clubGrade.getId());
+  }
 }

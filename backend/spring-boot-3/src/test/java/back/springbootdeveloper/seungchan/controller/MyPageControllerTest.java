@@ -128,7 +128,7 @@ class MyPageControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_NOT_SAME_LOGIN_TARGET_MEMBER.get()))
         .andExpect(jsonPath("$.httpStatus").value("BAD_REQUEST"))
@@ -155,7 +155,7 @@ class MyPageControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_TARGET_LEADER_MEMBER.get()))
         .andExpect(jsonPath("$.httpStatus").value("BAD_REQUEST"))
@@ -252,7 +252,7 @@ class MyPageControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_NOT_SAME_LOGIN_TARGET_MEMBER.get()));
   }
@@ -277,7 +277,7 @@ class MyPageControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_TARGET_LEADER_MEMBER.get()));
   }
