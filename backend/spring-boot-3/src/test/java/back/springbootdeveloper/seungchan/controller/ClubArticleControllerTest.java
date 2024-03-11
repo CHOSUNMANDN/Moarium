@@ -360,15 +360,17 @@ class ClubArticleControllerTest {
         targetClub.getClubId(), targetMember.getMemberId()).get();
     final ClubArticle targetClubArticle = clubArticleService.findLastByClubArticleId(
         targetClubMember.getClubMemberId());
+    Integer pageNumber = 1;
 
     final ClubArticleSimpleInformationResDto targetClubMemberSimpleInformationResDto = clubArticleService.getClubMemberSimpleInformationResDto(
-        targetClub.getClubId(), targetMember.getMemberId(),
-        CLUB_ARTICLE_CLASSIFICATION.SUGGESTION);
+        targetClub.getClubId(),
+        CLUB_ARTICLE_CLASSIFICATION.SUGGESTION, pageNumber);
     final List<ClubArticleSimpleInformation> targetClubArticleSimpleInformations = targetClubMemberSimpleInformationResDto.getClubArticleSimpleInformations();
     // when
 
     ResultActions result = mockMvc.perform(
         get(url, targetClub.getClubId(), targetClubArticle.getClubArticleId())
+            .param("page", String.valueOf(pageNumber))
             .accept(MediaType.APPLICATION_JSON)
             .header("authorization", "Bearer " + token) // token header에 담기
     );
@@ -408,15 +410,17 @@ class ClubArticleControllerTest {
         targetClub.getClubId(), targetMember.getMemberId()).get();
     final ClubArticle targetClubArticle = clubArticleService.findLastByClubArticleId(
         targetClubMember.getClubMemberId());
+    Integer pageNumber = 1;
 
     final ClubArticleSimpleInformationResDto targetClubMemberSimpleInformationResDto = clubArticleService.getClubMemberSimpleInformationResDto(
-        targetClub.getClubId(), targetMember.getMemberId(),
-        CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL);
+        targetClub.getClubId(),
+        CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL, pageNumber);
     final List<ClubArticleSimpleInformation> targetClubArticleSimpleInformations = targetClubMemberSimpleInformationResDto.getClubArticleSimpleInformations();
     // when
 
     ResultActions result = mockMvc.perform(
         get(url, targetClub.getClubId(), targetClubArticle.getClubArticleId())
+            .param("page", String.valueOf(pageNumber))
             .accept(MediaType.APPLICATION_JSON)
             .header("authorization", "Bearer " + token) // token header에 담기
     );
@@ -456,15 +460,17 @@ class ClubArticleControllerTest {
         targetClub.getClubId(), targetMember.getMemberId()).get();
     final ClubArticle targetClubArticle = clubArticleService.findLastByClubArticleId(
         targetClubMember.getClubMemberId());
+    Integer pageNumber = 1;
 
     final ClubArticleSimpleInformationResDto targetClubMemberSimpleInformationResDto = clubArticleService.getClubMemberSimpleInformationResDto(
-        targetClub.getClubId(), targetMember.getMemberId(),
-        CLUB_ARTICLE_CLASSIFICATION.FREEDOM);
+        targetClub.getClubId(),
+        CLUB_ARTICLE_CLASSIFICATION.FREEDOM, pageNumber);
     final List<ClubArticleSimpleInformation> targetClubArticleSimpleInformations = targetClubMemberSimpleInformationResDto.getClubArticleSimpleInformations();
     // when
 
     ResultActions result = mockMvc.perform(
         get(url, targetClub.getClubId(), targetClubArticle.getClubArticleId())
+            .param("page", String.valueOf(pageNumber))
             .accept(MediaType.APPLICATION_JSON)
             .header("authorization", "Bearer " + token) // token header에 담기
     );
