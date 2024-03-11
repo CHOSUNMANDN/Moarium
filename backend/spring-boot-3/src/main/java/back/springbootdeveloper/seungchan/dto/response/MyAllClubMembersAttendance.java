@@ -11,8 +11,9 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class MyAllClubMembersAttendance {
-    private String clubName;
-    private Integer vacationToken;
-    private MyAttendanceState myAttendanceState;
-    private MyAttendanceCount myAttendanceCount;
+
+  private String clubName;
+  private Integer vacationToken;
+  private MyAttendanceState myAttendanceState;
+  private MyAttendanceCount myAttendanceCount;
 }

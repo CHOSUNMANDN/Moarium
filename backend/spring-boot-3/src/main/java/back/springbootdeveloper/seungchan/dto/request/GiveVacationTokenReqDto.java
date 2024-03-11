@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class GiveVacationTokenReqDto {
-    @NotNull(message = "{validation.vacation.token.notblank}")
-    private Integer vacationToken;
+
+  @NotNull(message = "{validation.vacation.token.notblank}")
+  private Integer vacationToken;
 }

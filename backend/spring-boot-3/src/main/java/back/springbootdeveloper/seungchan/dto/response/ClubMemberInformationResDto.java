@@ -10,8 +10,9 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class ClubMemberInformationResDto {
-    private String name;
-    private String major;
-    private String studentId;
-    private String selfIntroduction;
+
+  private String name;
+  private String major;
+  private String studentId;
+  private String selfIntroduction;
 }

@@ -1,5 +1,6 @@
 package back.springbootdeveloper.seungchan.service;
 
 public interface OAuthLoginApiClientService<P> {
-    P requestOAuthLogin(String authCode);
+
+  P requestOAuthLogin(String authCode);
 }

@@ -7,7 +7,8 @@ import lombok.*;
 @NoArgsConstructor
 @Data
 @Builder
-public class LoginReqDto{
-    @NotBlank(message = "{validation.authCode.notblank}")
-    private String authCode;
+public class LoginReqDto {
+
+  @NotBlank(message = "{validation.authCode.notblank}")
+  private String authCode;
 }

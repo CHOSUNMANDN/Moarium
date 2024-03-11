@@ -9,10 +9,11 @@ import lombok.*;
 @Data
 @Builder
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class) // camel case -> snake case
-public class GoogleOAuthLoginReqDto{
-    private String clientId;
-    private String redirectUri;
-    private String clientSecret;
-    private String grantType;
-    private String code;
+public class GoogleOAuthLoginReqDto {
+
+  private String clientId;
+  private String redirectUri;
+  private String clientSecret;
+  private String grantType;
+  private String code;
 }

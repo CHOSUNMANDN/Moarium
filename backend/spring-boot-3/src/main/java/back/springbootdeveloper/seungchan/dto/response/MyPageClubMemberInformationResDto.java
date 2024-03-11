@@ -10,9 +10,10 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class MyPageClubMemberInformationResDto {
-    private String ClubName;
-    private String memberName;
-    private String memberStudentId;
-    private String memberStatusMessage;
-    private String memberProfile;
+
+  private String ClubName;
+  private String memberName;
+  private String memberStudentId;
+  private String memberStatusMessage;
+  private String memberProfile;
 }

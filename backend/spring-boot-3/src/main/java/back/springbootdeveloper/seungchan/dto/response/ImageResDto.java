@@ -10,5 +10,6 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class ImageResDto {
-    private String imageName;
+
+  private String imageName;
 }

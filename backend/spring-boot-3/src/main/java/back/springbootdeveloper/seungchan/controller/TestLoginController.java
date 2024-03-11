@@ -16,17 +16,19 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequiredArgsConstructor
 public class TestLoginController {
-    private final TokenService tokenService;
 
-    @Operation(summary = "테스트을 위한 로컬 로그인", description = "테스트를 위한 로컬 로그인")
-    @ResponseBody
-    @PostMapping("/test/login")
-    public BaseResultDTO<LoginResDto> testLogin(@RequestBody @Valid TestLoginReqDto request) {
-        // Get Access Token
-        LoginResDto loginResDto = new LoginResDto(tokenService.testCreateAccessAndRefreshToken(request.getMemberId()));
+  private final TokenService tokenService;
 
+  @Operation(summary = "테스트을 위한 로컬 로그인", description = "테스트를 위한 로컬 로그인")
+  @ResponseBody
+  @PostMapping("/test/login")
+  public BaseResultDTO<LoginResDto> testLogin(@RequestBody @Valid TestLoginReqDto request) {
+    // Get Access Token
+    LoginResDto loginResDto = new LoginResDto(
+        tokenService.testCreateAccessAndRefreshToken(request.getMemberId()));
 
-        // TODO: Response Format 맞추기
-        return BaseResultDTO.ofSuccessWithMessage(ResponseMessage.OAUTH_LOGIN_SUCCESS.get(), loginResDto);
-    }
+    // TODO: Response Format 맞추기
+    return BaseResultDTO.ofSuccessWithMessage(ResponseMessage.OAUTH_LOGIN_SUCCESS.get(),
+        loginResDto);
+  }
 }

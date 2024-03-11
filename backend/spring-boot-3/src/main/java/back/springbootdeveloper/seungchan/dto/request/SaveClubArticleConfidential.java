@@ -11,10 +11,11 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class SaveClubArticleConfidential {
-    @NotBlank
-    private String clubArticleTitle;
-    @NotBlank
-    private String clubArticleContent;
-    @NotBlank
-    private String anonymity;
+
+  @NotBlank
+  private String clubArticleTitle;
+  @NotBlank
+  private String clubArticleContent;
+  @NotBlank
+  private String anonymity;
 }

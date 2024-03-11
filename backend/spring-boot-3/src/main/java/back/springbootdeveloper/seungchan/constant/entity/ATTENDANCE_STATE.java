@@ -4,18 +4,18 @@ import lombok.Getter;
 
 @Getter
 public enum ATTENDANCE_STATE {
-    UNDECIDED("UNDECIDED"),
-    ATTENDANCE("ATTENDANCE"),
-    ABSENCE("ABSENCE"),
-    VACATION("VACATION");
+  UNDECIDED("UNDECIDED"),
+  ATTENDANCE("ATTENDANCE"),
+  ABSENCE("ABSENCE"),
+  VACATION("VACATION");
 
-    private String state;
+  private String state;
 
-    ATTENDANCE_STATE(String state) {
-        this.state = state;
-    }
+  ATTENDANCE_STATE(String state) {
+    this.state = state;
+  }
 
-    public boolean is(ATTENDANCE_STATE attendanceState) {
-        return this.state.equals(attendanceState.getState());
-    }
+  public boolean is(ATTENDANCE_STATE attendanceState) {
+    return this.state.equals(attendanceState.getState());
+  }
 }

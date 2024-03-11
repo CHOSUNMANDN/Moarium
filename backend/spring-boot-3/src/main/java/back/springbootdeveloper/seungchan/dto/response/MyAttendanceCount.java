@@ -10,8 +10,9 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class MyAttendanceCount {
-    private String attendance;
-    private String vacation;
-    private String absence;
-    private String totalCount;
+
+  private String attendance;
+  private String vacation;
+  private String absence;
+  private String totalCount;
 }

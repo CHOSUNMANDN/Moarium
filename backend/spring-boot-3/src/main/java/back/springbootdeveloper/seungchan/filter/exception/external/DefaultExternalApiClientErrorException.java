@@ -1,4 +1,5 @@
 package back.springbootdeveloper.seungchan.filter.exception.external;
 
-public class DefaultExternalApiClientErrorException extends RuntimeException{
+public class DefaultExternalApiClientErrorException extends RuntimeException {
+
 }

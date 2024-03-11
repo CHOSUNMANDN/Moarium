@@ -8,15 +8,17 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 @Service
 public class RefreshTokenService {
-    private final RefreshTokenRepository refreshTokenRepository;
 
-    public RefreshToken findByRefreshToken(String refreshToken) {
-        return refreshTokenRepository.findByRefreshToken(refreshToken)
-                .orElseThrow(() -> new IllegalArgumentException("Unexpected token"));
-    }
+  private final RefreshTokenRepository refreshTokenRepository;
 
-    // TODO : Error Handling
-    public RefreshToken findByMemberId(Long memberId){
-        return refreshTokenRepository.findByMemberId(memberId).orElseThrow(() -> new IllegalArgumentException("Token does not exist"));
-    }
+  public RefreshToken findByRefreshToken(String refreshToken) {
+    return refreshTokenRepository.findByRefreshToken(refreshToken)
+        .orElseThrow(() -> new IllegalArgumentException("Unexpected token"));
+  }
+
+  // TODO : Error Handling
+  public RefreshToken findByMemberId(Long memberId) {
+    return refreshTokenRepository.findByMemberId(memberId)
+        .orElseThrow(() -> new IllegalArgumentException("Token does not exist"));
+  }
 }

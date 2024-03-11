@@ -11,8 +11,9 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class UpdateClubArticlePutDto {
-    @NotBlank
-    private String clubArticleUpdateTitle;
-    @NotBlank
-    private String clubArticleUpdateContent;
+
+  @NotBlank
+  private String clubArticleUpdateTitle;
+  @NotBlank
+  private String clubArticleUpdateContent;
 }
