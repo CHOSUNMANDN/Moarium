@@ -88,4 +88,26 @@ public class AdminLeaderController {
     return BaseResponseBodyUtiil.BaseResponseBodyFailure(
         ResponseMessage.BAD_ACCEPT_TEMP_MEMBER.get());
   }
+
+  @Operation(summary = "신청 신입 회원 거절", description = "팀 리더 admin Control 페이지 신청 신입 회원 거절")
+  @PostMapping("/temp/member/{club_member_id}/refuse")
+  public ResponseEntity<BaseResponseBody> refuseTempMembersForClub(
+      HttpServletRequest request,
+      @PathVariable(value = "club_id") Long clubId,
+      @PathVariable(value = "club_member_id") Long clubMemberId) {
+    // 클럽의 리더 검증
+    MyValidation.isLeaderMember(tokenService, request, clubId);
+
+    // 임시 회원 검증
+    Boolean isTempMember = clubGradeService.isMemberStatus(clubMemberId, CLUB_GRADE.TEMP_MEMBER);
+    if (isTempMember) {
+      tempMemberService.refuseTempMember(clubMemberId);
+
+      return BaseResponseBodyUtiil.BaseResponseBodySuccess(
+          ResponseMessage.SUCCESS_REFUSE_TEMP_MEMBER.get());
+    }
+
+    return BaseResponseBodyUtiil.BaseResponseBodyFailure(
+        ResponseMessage.BAD_REFUSE_TEMP_MEMBER.get());
+  }
 }

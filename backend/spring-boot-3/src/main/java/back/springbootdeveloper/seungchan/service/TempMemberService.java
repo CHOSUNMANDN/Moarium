@@ -28,6 +28,7 @@ public class TempMemberService {
   private final ClubMemberRepository clubMemberRepository;
   private final MemberRepository memberRepository;
   private final ClubMemberInformationRepository clubMemberInformationRepository;
+  private final EntityDeleteService entityDeleteService;
 
   /**
    * 주어진 클럽 ID에 속하는 모든 임시 멤버들의 정보를 조회합니다.
@@ -109,4 +110,14 @@ public class TempMemberService {
     targetClubMember.updateClubGradeId(CLUB_GRADE.MEMBER);
   }
 
+  /**
+   * 주어진 클럽 멤버 ID에 해당하는 임시 멤버를 클럽에서 거부합니다.
+   *
+   * @param clubMemberId 클럽 멤버 ID
+   */
+  @Transactional
+  public void refuseTempMember(final Long clubMemberId) {
+    // 주어진 클럽 멤버 ID에 해당하는 멤버를 클럽에서 추방하는 서비스를 호출합니다.
+    entityDeleteService.expulsionMemberFromClub(clubMemberId);
+  }
 }
