@@ -657,7 +657,7 @@ class ClubArticleControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(ResponseMessage.BAD_SUGGESTION_ANSWER.get()));
   }
 
@@ -784,7 +784,7 @@ class ClubArticleControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(
             jsonPath("$.message").value(ResponseMessage.BAD_UPDATE_SUGGESTION_ANSWER.get()))
         .andExpect(jsonPath("$.httpStatus").value("BAD_REQUEST"))

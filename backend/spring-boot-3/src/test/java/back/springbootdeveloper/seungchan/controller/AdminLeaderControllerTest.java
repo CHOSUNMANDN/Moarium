@@ -220,7 +220,7 @@ class AdminLeaderControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_ACCEPT_TEMP_MEMBER.get()));
   }
@@ -248,7 +248,7 @@ class AdminLeaderControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_ACCEPT_TEMP_MEMBER.get()));
   }
@@ -276,7 +276,7 @@ class AdminLeaderControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_ACCEPT_TEMP_MEMBER.get()));
   }

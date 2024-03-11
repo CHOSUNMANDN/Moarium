@@ -103,7 +103,7 @@ class ClubRegistrationControllerTest {
 
     // then
     result
-        .andExpect(status().isOk())
+        .andExpect(status().isBadRequest())
         .andExpect(jsonPath("$.message").value(
             ResponseMessage.BAD_DUPLICATION_CLUBNAME.get()));
   }
