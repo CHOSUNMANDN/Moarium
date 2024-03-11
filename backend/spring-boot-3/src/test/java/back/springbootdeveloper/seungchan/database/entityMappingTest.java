@@ -64,7 +64,7 @@ class entityMappingTest {
   }
 
   @Test
-//  @Disabled
+  @Disabled
   void 매핑_저장_학습_테스트_1() throws Exception {
     this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.LEADER));
     this.clubGradeRepository.save(new ClubGrade(CLUB_GRADE.DEPUTY_LEADER));
@@ -372,18 +372,14 @@ class entityMappingTest {
           ANONYMITY.REAL_NAME, clubId);
     }
 
-    // ClubArticleComment
-    ClubArticleComment clubArticleComment_0 = TestMakeEntity.createSampleClubArticleComment(0,
-        member);
-    ClubArticleComment clubArticleComment_1 = TestMakeEntity.createSampleClubArticleComment(1,
-        member);
-    ClubArticleComment clubArticleComment_2 = TestMakeEntity.createSampleClubArticleComment(2,
-        member);
+    for (int i = 0; i < 20; i++) {
+      // ClubArticleComment
+      ClubArticleComment clubArticleComment_0 = TestMakeEntity.createSampleClubArticleComment(i,
+          member);
 
-    // ClubArticle - ClubArticleComment
-    clubArticle.addClubArticleComment(clubArticleComment_0);
-    clubArticle.addClubArticleComment(clubArticleComment_1);
-    clubArticle.addClubArticleComment(clubArticleComment_2);
+      // ClubArticle - ClubArticleComment
+      clubArticle.addClubArticleComment(clubArticleComment_0);
+    }
 
     return clubArticleRepository.save(clubArticle);
   }
