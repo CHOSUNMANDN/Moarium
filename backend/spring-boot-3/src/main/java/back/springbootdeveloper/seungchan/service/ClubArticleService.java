@@ -10,6 +10,10 @@ import back.springbootdeveloper.seungchan.entity.*;
 import back.springbootdeveloper.seungchan.filter.exception.judgment.EntityNotFoundException;
 import back.springbootdeveloper.seungchan.repository.*;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -166,32 +170,37 @@ public class ClubArticleService {
   }
 
   /**
-   * 주어진 클럽 ID, 회원 ID 및 게시글 분류를 기반으로 해당 클럽 회원의 간단한 정보를 가져옵니다.
+   * 주어진 클럽 ID, 게시물 분류 및 페이지 번호에 해당하는 클럽 게시물의 간단한 정보를 가져옵니다.
    *
    * @param clubId         클럽 ID
-   * @param memberId       회원 ID
-   * @param classification 게시글 분류
-   * @return 해당 클럽 회원의 간단한 정보를 담은 ClubMemberSimpleInformationResDto 객체
+   * @param classification 게시물 분류
+   * @param pageNumber     페이지 번호
+   * @return 클럽 게시물의 간단한 정보를 담은 ClubArticleSimpleInformationResDto 객체
+   * @throws EntityNotFoundException 게시물 작성자 혹은 클럽 멤버를 찾을 수 없는 경우
    */
   public ClubArticleSimpleInformationResDto getClubMemberSimpleInformationResDto(Long clubId,
-      Long memberId, CLUB_ARTICLE_CLASSIFICATION classification) {
+      CLUB_ARTICLE_CLASSIFICATION classification, Integer pageNumber) {
     List<ClubArticleSimpleInformation> clubArticleSimpleInformations = new ArrayList<>();
-    List<ClubMember> clubMembers = clubMemberRepository.findAllByClubId(clubId);
+    Pageable pageable = PageRequest.of(0, 6, Sort.by(Sort.Order.desc("clubArticleId")));
+    Integer ZERO_INDEX = 1;
+    for (int i = 0; i < pageNumber - ZERO_INDEX; i++) {
+      pageable = pageable.next();
+    }
 
-    // 각 클럽 회원에 대해 반복하여 클럽 게시글 조회
-    for (ClubMember clubMember : clubMembers) {
-      // 해당 클럽 회원이 작성한 특정 분류의 클럽 게시글 조회
-      List<ClubArticle> clubArticles = clubArticleRepository.findAllByClubMemberIdAndClassification(
-          clubMember.getClubMemberId(), classification);
+    Page<ClubArticle> clubArticlePage = clubArticleRepository.findAllByClubIdAndClassification(
+        clubId,
+        classification, pageable);
+
+    // 각 게시글에 대해 간단한 정보 생성하여 리스트에 추가
+    for (ClubArticle clubArticle : clubArticlePage) {
+      ClubMember clubMember = clubMemberRepository.findById(clubArticle.getClubMemberId())
+          .orElseThrow(EntityNotFoundException::new);
       Member authorMember = memberRepository.findById(clubMember.getMemberId())
           .orElseThrow(EntityNotFoundException::new);
 
-      // 각 게시글에 대해 간단한 정보 생성하여 리스트에 추가
-      for (ClubArticle clubArticle : clubArticles) {
-        clubArticleSimpleInformations.add(
-            createClubArticleSimpleInformation(authorMember, clubArticle)
-        );
-      }
+      clubArticleSimpleInformations.add(
+          createClubArticleSimpleInformation(authorMember, clubArticle)
+      );
     }
 
     // ClubMemberSimpleInformationResDto 객체 생성 및 반환
