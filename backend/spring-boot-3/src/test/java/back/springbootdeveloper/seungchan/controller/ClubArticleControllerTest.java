@@ -9,6 +9,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import back.springbootdeveloper.seungchan.annotation.MoariumSpringBootTest;
+import back.springbootdeveloper.seungchan.constant.PAGE;
 import back.springbootdeveloper.seungchan.constant.dto.response.ResponseMessage;
 import back.springbootdeveloper.seungchan.constant.entity.ANONYMITY;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
@@ -44,6 +45,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
+import org.springframework.transaction.annotation.Transactional;
 
 @MoariumSpringBootTest
 class ClubArticleControllerTest {
@@ -236,6 +238,7 @@ class ClubArticleControllerTest {
   }
 
   @Test
+  @Transactional
   void 팀_게시판_상세_페이지_조회_테스트() throws Exception {
     // given
     // 유저 로그인
@@ -255,7 +258,8 @@ class ClubArticleControllerTest {
         targetClub.getClubId(), targetClubArticle.getClubArticleId(), targetMember.getMemberId(),
         pageNumber);
     final List<ClubArticleCommentInformation> clubArticleCommentInformations = targetClubArticleDetailResDto.getClubArticleCommentInformations();
-
+    final Integer commentPageCount =
+        targetClubArticle.getClubArticleComments().size() / PAGE.PAGE_SIZE.getValue() + 1;
     // when
     ResultActions result = mockMvc.perform(
         get(url, targetClub.getClubId(), targetClubArticle.getClubArticleId())
@@ -283,7 +287,9 @@ class ClubArticleControllerTest {
         .andExpect(jsonPath("$.result.clubArticleAnswerCheck").value(
             targetClubArticleDetailResDto.getClubArticleAnswerCheck()))
         .andExpect(jsonPath("$.result.clubArticleClassification").value(
-            targetClubArticleDetailResDto.getClubArticleClassification()));
+            targetClubArticleDetailResDto.getClubArticleClassification()))
+        .andExpect(jsonPath("$.result.commandPageCount").value(
+            commentPageCount));
 
     for (int i = 0; i < clubArticleCommentInformations.size(); i++) {
       result
