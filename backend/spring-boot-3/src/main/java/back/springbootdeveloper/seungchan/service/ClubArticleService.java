@@ -194,7 +194,8 @@ public class ClubArticleService {
   public ClubArticleSimpleInformationResDto getClubMemberSimpleInformationResDto(Long clubId,
       CLUB_ARTICLE_CLASSIFICATION classification, Integer pageNumber) {
     List<ClubArticleSimpleInformation> clubArticleSimpleInformations = new ArrayList<>();
-    Pageable pageable = PageRequest.of(0, 6, Sort.by(Sort.Order.desc("clubArticleId")));
+    Pageable pageable = PageRequest.of(PAGE.BASE_PAGE_INDEX.getValue(), PAGE.PAGE_SIZE.getValue(),
+        Sort.by(Sort.Order.desc("clubArticleId")));
     Integer ZERO_INDEX = 1;
     for (int i = 0; i < pageNumber - ZERO_INDEX; i++) {
       pageable = pageable.next();
