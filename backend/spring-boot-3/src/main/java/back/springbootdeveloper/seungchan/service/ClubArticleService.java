@@ -130,10 +130,7 @@ public class ClubArticleService {
     ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId)
         .orElseThrow(EntityNotFoundException::new);
     Pageable pageable = PageRequest.of(PAGE.BASE_PAGE_INDEX.getValue(), PAGE.PAGE_SIZE.getValue());
-    Integer ZERO_INDEX = 1;
-    for (int i = 0; i < pageNumber - ZERO_INDEX; i++) {
-      pageable = pageable.next();
-    }
+    pageable = getNextPageable(pageNumber, pageable);
 
     // page count을 얻기 위한 연산
     List<ClubArticleComment> comments = clubArticle.getClubArticleComments();
@@ -196,10 +193,7 @@ public class ClubArticleService {
     List<ClubArticleSimpleInformation> clubArticleSimpleInformations = new ArrayList<>();
     Pageable pageable = PageRequest.of(PAGE.BASE_PAGE_INDEX.getValue(), PAGE.PAGE_SIZE.getValue(),
         Sort.by(Sort.Order.desc("clubArticleId")));
-    Integer ZERO_INDEX = 1;
-    for (int i = 0; i < pageNumber - ZERO_INDEX; i++) {
-      pageable = pageable.next();
-    }
+    pageable = getNextPageable(pageNumber, pageable);
 
     Page<ClubArticle> clubArticlePage = clubArticleRepository.findAllByClubIdAndClassification(
         clubId,
@@ -308,6 +302,26 @@ public class ClubArticleService {
 
   private boolean isNotSame(Integer updateClubArticleLikeCount, Integer clubArticleLikeCount) {
     return updateClubArticleLikeCount != clubArticleLikeCount;
+  }
+
+  /**
+   * 다음 페이지의 Pageable 객체를 반환합니다.
+   *
+   * @param pageNumber 다음 페이지 번호
+   * @param pageable   현재 페이지 정보를 나타내는 Pageable 객체
+   * @return 다음 페이지의 Pageable 객체
+   */
+  private Pageable getNextPageable(final Integer pageNumber, Pageable pageable) {
+    // 페이지 번호가 0부터 시작하는 것으로 가정하여 0을 나타내는 상수를 설정합니다.
+    final Integer ZERO_INDEX = 1;
+
+    // 주어진 페이지 번호에 따라 Pageable 객체를 조정합니다.
+    for (int i = 0; i < pageNumber - ZERO_INDEX; i++) {
+      pageable = pageable.next();
+    }
+
+    // 다음 페이지의 Pageable 객체를 반환합니다.
+    return pageable;
   }
 
 
