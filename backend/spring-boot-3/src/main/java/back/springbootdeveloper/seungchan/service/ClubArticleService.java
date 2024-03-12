@@ -1,5 +1,6 @@
 package back.springbootdeveloper.seungchan.service;
 
+import back.springbootdeveloper.seungchan.constant.PAGE;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_SUGGESTION_CHECK;
 import back.springbootdeveloper.seungchan.constant.judgement.AUTHOR_JUDGMENT;
@@ -128,11 +129,15 @@ public class ClubArticleService {
         .orElseThrow(EntityNotFoundException::new);
     ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId)
         .orElseThrow(EntityNotFoundException::new);
-    Pageable pageable = PageRequest.of(0, 6);
+    Pageable pageable = PageRequest.of(PAGE.BASE_PAGE_INDEX.getValue(), PAGE.PAGE_SIZE.getValue());
     Integer ZERO_INDEX = 1;
     for (int i = 0; i < pageNumber - ZERO_INDEX; i++) {
       pageable = pageable.next();
     }
+
+    // page count을 얻기 위한 연산
+    List<ClubArticleComment> comments = clubArticle.getClubArticleComments();
+    Integer commandPageCount = comments.size() / PAGE.PAGE_SIZE.getValue() + 1;
 
     // 게시글 댓글 정보 조회
     Page<ClubArticleComment> clubArticleComments = clubArticleCommentRepository.findAllByClubArticle_ClubArticleId(
@@ -153,6 +158,7 @@ public class ClubArticleService {
         .clubArticleAnswerSuggestion(clubArticle.getSuggestionAnswer())
         .clubArticleAnswerCheck(clubArticle.getAnswerCheck().getCheck())
         .clubArticleClassification(clubArticle.getClassification().getSort())
+        .commandPageCount(String.valueOf(commandPageCount))
         .clubArticleCommentInformations(clubArticleCommentInformations)
         .build();
   }
