@@ -80,12 +80,13 @@ public class ClubArticleController {
   @GetMapping(value = "/{article_id}")
   public BaseResultDTO<ClubArticleDetailResDto> findClubArticleDetail(
       HttpServletRequest request,
+      @RequestParam(value = "page") Integer pageNumber,
       @PathVariable(value = "club_id") Long clubId,
       @PathVariable(value = "article_id") Long articleId) {
     Long memberId = tokenService.getMemberIdFromToken(request);
 
     final ClubArticleDetailResDto clubArticleDetailResDto = clubArticleService.getClubArticleDetailResDto(
-        clubId, articleId, memberId);
+        clubId, articleId, memberId, pageNumber);
 
     return BaseResultDTO.ofSuccess(clubArticleDetailResDto);
   }
@@ -107,11 +108,11 @@ public class ClubArticleController {
   @GetMapping(value = "/suggestions")
   public BaseResultDTO<ClubArticleSimpleInformationResDto> findAllSuggestionClubArticle(
       HttpServletRequest request,
+      @RequestParam(value = "page") Integer pageNumber,
       @PathVariable(value = "club_id") Long clubId) {
     Long memberId = tokenService.getMemberIdFromToken(request);
-
     ClubArticleSimpleInformationResDto clubMemberSimpleInformationResDto = clubArticleService.getClubMemberSimpleInformationResDto(
-        clubId, memberId, CLUB_ARTICLE_CLASSIFICATION.SUGGESTION);
+        clubId, CLUB_ARTICLE_CLASSIFICATION.SUGGESTION, pageNumber);
 
     return BaseResultDTO.ofSuccess(clubMemberSimpleInformationResDto);
   }
@@ -120,12 +121,13 @@ public class ClubArticleController {
   @GetMapping(value = "/confidentials")
   public BaseResultDTO<ClubArticleSimpleInformationResDto> findAllConfidentialClubArticle(
       HttpServletRequest request,
+      @RequestParam(value = "page") Integer pageNumber,
       @PathVariable(value = "club_id") Long clubId) {
     Long memberId = tokenService.getMemberIdFromToken(request);
 
     ClubArticleSimpleInformationResDto clubMemberSimpleInformationResDto =
-        clubArticleService.getClubMemberSimpleInformationResDto(clubId, memberId,
-            CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL);
+        clubArticleService.getClubMemberSimpleInformationResDto(clubId,
+            CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL, pageNumber);
 
     return BaseResultDTO.ofSuccess(clubMemberSimpleInformationResDto);
   }
@@ -134,12 +136,13 @@ public class ClubArticleController {
   @GetMapping(value = "/frees")
   public BaseResultDTO<ClubArticleSimpleInformationResDto> findSuggestionAnswerClubArticle(
       HttpServletRequest request,
+      @RequestParam(value = "page") Integer pageNumber,
       @PathVariable(value = "club_id") Long clubId) {
     Long memberId = tokenService.getMemberIdFromToken(request);
 
     ClubArticleSimpleInformationResDto clubMemberSimpleInformationResDto =
-        clubArticleService.getClubMemberSimpleInformationResDto(clubId, memberId,
-            CLUB_ARTICLE_CLASSIFICATION.FREEDOM);
+        clubArticleService.getClubMemberSimpleInformationResDto(clubId,
+            CLUB_ARTICLE_CLASSIFICATION.FREEDOM, pageNumber);
 
     return BaseResultDTO.ofSuccess(clubMemberSimpleInformationResDto);
   }

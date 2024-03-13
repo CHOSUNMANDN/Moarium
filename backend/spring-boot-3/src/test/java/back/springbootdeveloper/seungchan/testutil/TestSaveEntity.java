@@ -6,7 +6,6 @@ import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import back.springbootdeveloper.seungchan.constant.entity.CUSTOM_TYPE;
 import back.springbootdeveloper.seungchan.entity.*;
 import back.springbootdeveloper.seungchan.repository.*;
-import org.checkerframework.checker.units.qual.A;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -202,38 +201,50 @@ public class TestSaveEntity {
     club = clubRepository.save(club);
     // ========================================= 40.ClubArticle - ClubArticleComment 3개 등록 시작 ========================
     // ================================= Club - Member -- ClubArticle 41.ClubArticle 매핑 시작 ============================
-    applyClubArticleCommentToClubArticle(SUGGESTION, leaderNumber, clubMember_1);
-    applyClubArticleCommentToClubArticle(SUGGESTION, leaderNumber, clubMember_1);
-    applyClubArticleCommentToClubArticle(SUGGESTION, leaderNumber, clubMember_1);
-    applyClubArticleCommentToClubArticle(FREEDOM, leaderNumber, clubMember_1);
-    applyClubArticleCommentToClubArticle(FREEDOM, leaderNumber, clubMember_1);
-    applyClubArticleCommentToClubArticle(FREEDOM, leaderNumber, clubMember_1);
-    applyClubArticleCommentToClubArticle(SUGGESTION, deputyLeaderNumber, clubMember_2);
-    applyClubArticleCommentToClubArticle(SUGGESTION, deputyLeaderNumber, clubMember_2);
-    applyClubArticleCommentToClubArticle(SUGGESTION, deputyLeaderNumber, clubMember_2);
-    applyClubArticleCommentToClubArticle(FREEDOM, deputyLeaderNumber, clubMember_2);
-    applyClubArticleCommentToClubArticle(FREEDOM, deputyLeaderNumber, clubMember_2);
-    applyClubArticleCommentToClubArticle(FREEDOM, deputyLeaderNumber, clubMember_2);
-    applyClubArticleCommentToClubArticle(CONFIDENTIAL, deputyLeaderNumber, clubMember_2);
-    applyClubArticleCommentToClubArticle(CONFIDENTIAL, deputyLeaderNumber, clubMember_2);
-    applyClubArticleCommentToClubArticle(CONFIDENTIAL, deputyLeaderNumber, clubMember_2);
+    applyClubArticleCommentToClubArticle(SUGGESTION, leaderNumber, clubMember_1, club.getClubId());
+    applyClubArticleCommentToClubArticle(SUGGESTION, leaderNumber, clubMember_1, club.getClubId());
+    applyClubArticleCommentToClubArticle(SUGGESTION, leaderNumber, clubMember_1, club.getClubId());
+    applyClubArticleCommentToClubArticle(FREEDOM, leaderNumber, clubMember_1, club.getClubId());
+    applyClubArticleCommentToClubArticle(FREEDOM, leaderNumber, clubMember_1, club.getClubId());
+    applyClubArticleCommentToClubArticle(FREEDOM, leaderNumber, clubMember_1, club.getClubId());
+    applyClubArticleCommentToClubArticle(SUGGESTION, deputyLeaderNumber, clubMember_2,
+        club.getClubId());
+    applyClubArticleCommentToClubArticle(SUGGESTION, deputyLeaderNumber, clubMember_2,
+        club.getClubId());
+    applyClubArticleCommentToClubArticle(SUGGESTION, deputyLeaderNumber, clubMember_2,
+        club.getClubId());
+    applyClubArticleCommentToClubArticle(FREEDOM, deputyLeaderNumber, clubMember_2,
+        club.getClubId());
+    applyClubArticleCommentToClubArticle(FREEDOM, deputyLeaderNumber, clubMember_2,
+        club.getClubId());
+    applyClubArticleCommentToClubArticle(FREEDOM, deputyLeaderNumber, clubMember_2,
+        club.getClubId());
+    applyClubArticleCommentToClubArticle(CONFIDENTIAL, deputyLeaderNumber, clubMember_2,
+        club.getClubId());
+    applyClubArticleCommentToClubArticle(CONFIDENTIAL, deputyLeaderNumber, clubMember_2,
+        club.getClubId());
+    applyClubArticleCommentToClubArticle(CONFIDENTIAL, deputyLeaderNumber, clubMember_2,
+        club.getClubId());
 
     for (int i = 0; i < members.size(); i++) {
-      applyClubArticleCommentToClubArticle(SUGGESTION, i + 3, clubMembers.get(i));
-      applyClubArticleCommentToClubArticle(SUGGESTION, i + 3, clubMembers.get(i));
-      applyClubArticleCommentToClubArticle(SUGGESTION, i + 3, clubMembers.get(i));
+      applyClubArticleCommentToClubArticle(SUGGESTION, i + 3, clubMembers.get(i), club.getClubId());
+      applyClubArticleCommentToClubArticle(SUGGESTION, i + 3, clubMembers.get(i), club.getClubId());
+      applyClubArticleCommentToClubArticle(SUGGESTION, i + 3, clubMembers.get(i), club.getClubId());
     }
 
     for (int i = 0; i < members.size(); i++) {
-      applyClubArticleCommentToClubArticle(FREEDOM, i + 3, clubMembers.get(i));
-      applyClubArticleCommentToClubArticle(FREEDOM, i + 3, clubMembers.get(i));
-      applyClubArticleCommentToClubArticle(FREEDOM, i + 3, clubMembers.get(i));
+      applyClubArticleCommentToClubArticle(FREEDOM, i + 3, clubMembers.get(i), club.getClubId());
+      applyClubArticleCommentToClubArticle(FREEDOM, i + 3, clubMembers.get(i), club.getClubId());
+      applyClubArticleCommentToClubArticle(FREEDOM, i + 3, clubMembers.get(i), club.getClubId());
     }
 
     for (int i = 0; i < members.size(); i++) {
-      applyClubArticleCommentToClubArticle(CONFIDENTIAL, i + 3, clubMembers.get(i));
-      applyClubArticleCommentToClubArticle(CONFIDENTIAL, i + 3, clubMembers.get(i));
-      applyClubArticleCommentToClubArticle(CONFIDENTIAL, i + 3, clubMembers.get(i));
+      applyClubArticleCommentToClubArticle(CONFIDENTIAL, i + 3, clubMembers.get(i),
+          club.getClubId());
+      applyClubArticleCommentToClubArticle(CONFIDENTIAL, i + 3, clubMembers.get(i),
+          club.getClubId());
+      applyClubArticleCommentToClubArticle(CONFIDENTIAL, i + 3, clubMembers.get(i),
+          club.getClubId());
     }
   }
 
@@ -364,16 +375,17 @@ public class TestSaveEntity {
   }
 
   private ClubArticle applyClubArticleCommentToClubArticle(
-      CLUB_ARTICLE_CLASSIFICATION classification, Integer number, ClubMember clubMember) {
+      CLUB_ARTICLE_CLASSIFICATION classification, Integer number, ClubMember clubMember,
+      Long clubId) {
     Member member = memberRepository.findById(clubMember.getClubMemberId()).get();
     ClubArticle clubArticle;
     // ClubArticle
     if (classification == CLUB_ARTICLE_CLASSIFICATION.CONFIDENTIAL) {
       clubArticle = TestMakeEntity.createSampleClubArticle(classification, number, clubMember,
-          ANONYMITY.ANONYMOUS);
+          ANONYMITY.ANONYMOUS, clubId);
     } else {
       clubArticle = TestMakeEntity.createSampleClubArticle(classification, number, clubMember,
-          ANONYMITY.REAL_NAME);
+          ANONYMITY.REAL_NAME, clubId);
     }
 
     // ClubArticleComment

@@ -22,5 +22,6 @@ public class ClubArticleDetailResDto {
   private String clubArticleAnswerSuggestion;
   private String clubArticleAnswerCheck;
   private String clubArticleClassification;
+  private String commandPageCount;
   private List<ClubArticleCommentInformation> clubArticleCommentInformations;
 }

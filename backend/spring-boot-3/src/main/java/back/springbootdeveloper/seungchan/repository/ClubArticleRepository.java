@@ -1,9 +1,9 @@
 package back.springbootdeveloper.seungchan.repository;
 
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
-import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import back.springbootdeveloper.seungchan.entity.ClubArticle;
-import back.springbootdeveloper.seungchan.entity.ClubGrade;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -29,4 +29,15 @@ public interface ClubArticleRepository extends JpaRepository<ClubArticle, Long> 
    */
   List<ClubArticle> findAllByClubMemberIdAndClassification(Long clubMemberId,
       CLUB_ARTICLE_CLASSIFICATION classification);
+
+  /**
+   * 주어진 클럽 ID와 게시물 분류에 해당하는 모든 클럽 게시물을 조회합니다.
+   *
+   * @param clubId                    클럽 ID
+   * @param clubArticleClassification 게시물 분류
+   * @param pageable
+   * @return 클럽 ID와 게시물 분류에 해당하는 모든 클럽 게시물 리스트
+   */
+  Page<ClubArticle> findAllByClubIdAndClassification(Long clubId,
+      CLUB_ARTICLE_CLASSIFICATION clubArticleClassification, final Pageable pageable);
 }
