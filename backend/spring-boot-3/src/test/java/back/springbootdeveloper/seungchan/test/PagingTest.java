@@ -12,6 +12,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.util.StopWatch;
 
 @DataJpaTest
 public class PagingTest {
@@ -56,5 +57,17 @@ public class PagingTest {
       System.out.println("clubArticleComment.getClubArticleCommentId() = "
           + clubArticleComment.getClubArticleCommentId());
     }
+  }
+
+  @Test
+  void SELECT_CLUT_ARTICLE_COMMENT_CHECK_TIME() throws Exception {
+    StopWatch stopWatch = new StopWatch();
+    stopWatch.start();
+
+    List<ClubArticleComment> comments = clubArticleCommentRepository.findAll();
+
+    stopWatch.stop();
+    System.out.println(stopWatch.prettyPrint());
+    System.out.println("코드 실행 시간 (s): " + stopWatch.getTotalTimeSeconds());
   }
 }
