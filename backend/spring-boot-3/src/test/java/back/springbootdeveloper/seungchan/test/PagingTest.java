@@ -74,12 +74,39 @@ public class PagingTest {
 
   @Test
   void SELECT_CLUT_ARTICLE_COMMENT_CHECK_TIME_2() throws Exception {
-    StopWatch stopWatch = new StopWatch();
-    stopWatch.start();
-    List<ClubArticleComment> clubArticleComments = clubArticleCommentRepository.findAllByMemberId(
-        1L);
-    System.out.println("clubArticleComments.size() = " + clubArticleComments.size());
-    System.out.println(stopWatch.prettyPrint());
-    System.out.println("코드 실행 시간 (s): " + stopWatch.getTotalTimeSeconds());
+    for (int i = 0; i < 10; i++) {
+      long beforeTime = System.currentTimeMillis(); // 코드 실행 전에 시간 받아오기
+      List<ClubArticleComment> clubArticleComments = clubArticleCommentRepository.findAll();
+
+      long afterTime = System.currentTimeMillis(); // 코드 실행 후에 시간 받아오기
+      double secDiffTime = (afterTime - beforeTime) / 1000.0; // 두 시간에 차 계산 후 초로 변환
+      System.out.println("시간차이(s) : " + secDiffTime);
+    }
+  }
+
+  @Test
+  void SELECT_CLUT_ARTICLE_COMMENT_CHECK_TIME_3() throws Exception {
+    for (int i = 0; i < 10; i++) {
+      long beforeTime = System.currentTimeMillis(); // 코드 실행 전에 시간 받아오기
+
+      List<ClubArticleComment> clubArticleComments = clubArticleCommentRepository.findAllByQueryDsl();
+
+      long afterTime = System.currentTimeMillis(); // 코드 실행 후에 시간 받아오기
+      double secDiffTime = (afterTime - beforeTime) / 1000.0; // 두 시간에 차 계산 후 초로 변환
+      System.out.println("시간차이(s) : " + secDiffTime);
+    }
+  }
+
+  @Test
+  void SELECT_CLUT_ARTICLE_COMMENT_CHECK_TIME_4() throws Exception {
+    for (int i = 0; i < 10; i++) {
+      long beforeTime = System.currentTimeMillis(); // 코드 실행 전에 시간 받아오기
+
+      List<ClubArticleComment> clubArticleComments = clubArticleCommentRepository.findAllByQueryDslCoveringIndex();
+
+      long afterTime = System.currentTimeMillis(); // 코드 실행 후에 시간 받아오기
+      double secDiffTime = (afterTime - beforeTime) / 1000.0; // 두 시간에 차 계산 후 초로 변환
+      System.out.println("시간차이(s) : " + secDiffTime);
+    }
   }
 }

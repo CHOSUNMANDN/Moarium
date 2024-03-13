@@ -2,6 +2,7 @@ package back.springbootdeveloper.seungchan.repository;
 
 import static back.springbootdeveloper.seungchan.entity.QClubArticleComment.clubArticleComment;
 
+import back.springbootdeveloper.seungchan.entity.ClubArticle;
 import back.springbootdeveloper.seungchan.entity.ClubArticleComment;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import java.util.List;
