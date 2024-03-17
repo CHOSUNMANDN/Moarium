@@ -21,6 +21,16 @@ public interface ClubMemberRepository extends JpaRepository<ClubMember, Long> {
    */
   List<ClubMember> findAllByClubIdAndClubGradeId(Long clubId, Integer clubGradeId);
 
+  /**
+   * 주어진 클럽 ID와 리더 등급 ID에 해당하는 클럽 리더를 조회합니다.
+   *
+   * @param clubId   클럽 ID
+   * @param leaderId 리더 등급 ID
+   * @return 클럽 리더
+   */
+  @Query("SELECT cm FROM ClubMember cm WHERE cm.clubId = :clubId AND cm.clubGradeId = :leaderId")
+  ClubMember findLeaderByClubIdAndLeaderId(@Param("clubId") Long clubId,
+      @Param("leaderId") Integer leaderId);
 
   /**
    * 지정된 클럽 ID에 해당하는 모든 클럽 멤버를 검색하되, 임시, 휴면 상태가 아닌 멤버만 반환합니다.
