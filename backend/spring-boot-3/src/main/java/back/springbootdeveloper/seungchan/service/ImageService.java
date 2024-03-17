@@ -1,10 +1,12 @@
 package back.springbootdeveloper.seungchan.service;
 
 import back.springbootdeveloper.seungchan.dto.response.ImageResDto;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.util.FileCopyUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -87,6 +89,34 @@ public class ImageService {
     }
 
     return imageUrls;
+  }
+
+  public List<byte[]> getClubInformationImages(final String clubName) {
+//    String clubInformationImageUrl =
+//        baseImageDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
+    String clubInformationImageUrl =
+        imageBaseDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
+    List<byte[]> clubInformationImagebytes = new ArrayList<>();
+
+    // 사진이 저장된 폴더의 객체에서 사진을 가져온다.
+    List<String> imageUrls = new ArrayList<>();
+    File clubInformationDirectory = new File(clubInformationImageUrl);
+    File[] imageFiles = clubInformationDirectory.listFiles();
+
+    if (imageFiles != null) {
+      for (File imageFile : imageFiles) {
+        if (imageFile.isFile() && imageFile.getName().startsWith(clubName)) {
+          try {
+            clubInformationImagebytes.add(FileCopyUtils.copyToByteArray(imageFile));
+
+          } catch (IOException e) {
+            e.printStackTrace();
+          }
+        }
+      }
+    }
+
+    return clubInformationImagebytes;
   }
 
   /**
