@@ -26,7 +26,6 @@ import org.springframework.web.bind.annotation.*;
 
 @Tag(name = "Club Article 게시물 관련 Controller", description = "Club Article 관련 API을 관리한다.")
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/clubs/informations/{club_id}/articles")
 @RequiredArgsConstructor
 public class ClubArticleController {

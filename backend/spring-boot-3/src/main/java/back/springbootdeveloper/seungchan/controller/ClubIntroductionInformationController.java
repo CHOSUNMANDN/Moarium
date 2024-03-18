@@ -32,7 +32,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Tag(name = "클럽 소개 조회 페이지", description = "클럽에 지원하기 위해서 클럽 소개 조회 페이지")
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/clubs/informations/{club_id}")
 @RequiredArgsConstructor
 public class ClubIntroductionInformationController {

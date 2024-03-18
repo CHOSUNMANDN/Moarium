@@ -17,7 +17,6 @@ import reactor.core.publisher.Mono;
 
 @Tag(name = "시간표 자동 등록 페이지 API", description = "시간표 자동 등록을 하여 OCR 적용 한다.")
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/clubs")
 public class ScheduleController {
 

@@ -29,7 +29,6 @@ import java.util.List;
 
 @Tag(name = "club detail page 컨트롤러", description = "club datail page 컨트롤러 - 토큰 필요")
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/clubs/informations/{club_id}/details")
 @RequiredArgsConstructor
 public class ClubDetailPageController {
