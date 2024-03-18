@@ -111,6 +111,51 @@ public class ImageService {
     File[] imageFiles = clubInformationDirectory.listFiles();
 
     // 파일들이 존재하는 경우
+    addClubInformationImageBase64(clubName, clubInformationImageBase64, imageFiles);
+
+    // 등록된 소개 사진이 없는 경우, 기본 사진 등록
+    if (clubInformationImageBase64.isEmpty()) {
+      addBaseImageBase64(clubInformationImageBase64);
+    }
+
+    // Base64로 인코딩된 클럽 정보 이미지 리스트 반환
+    return clubInformationImageBase64;
+  }
+
+  /**
+   * String 리스트에 기본 이미지를 추가합니다.
+   *
+   * @param ImageBase64s 이미지 리스트
+   */
+  private void addBaseImageBase64(final List<String> ImageBase64s) {
+    String baseUrl = imageBaseDirUrl + baseImageDirUrl + baseImageName;
+
+    // 클럽 정보 이미지 디렉토리 가져오기
+    File baseImageFile = new File(baseUrl);
+
+    // 파일들이 존재하는 경우
+    if (baseImageFile != null) {
+      try {
+        // 파일의 바이트 배열 읽어오기
+        byte[] bytes = Files.readAllBytes(baseImageFile.toPath());
+        // 바이트 배열을 Base64로 인코딩하여 리스트에 추가
+        String base64EncodedImage = Base64.getEncoder().encodeToString(bytes);
+        ImageBase64s.add(base64EncodedImage);
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    }
+  }
+
+  /**
+   * 클럽 정보 이미지 리스트에 클럽 소개 이미지를 Base64 형식으로 추가합니다.
+   *
+   * @param clubName                   클럽 이름
+   * @param clubInformationImageBase64 클럽 정보 이미지 리스트
+   * @param imageFiles                 클럽 정보 이미지 파일 배열
+   */
+  private void addClubInformationImageBase64(final String clubName,
+      final List<String> clubInformationImageBase64, final File[] imageFiles) {
     if (imageFiles != null) {
       // 각 파일에 대하여
       for (File imageFile : imageFiles) {
@@ -128,30 +173,6 @@ public class ImageService {
         }
       }
     }
-
-    // 등록된 소개 사진이 없는 경우, 기본 사진 등록
-    if (clubInformationImageBase64.isEmpty()) {
-      String baseUrl = imageBaseDirUrl + baseImageDirUrl + baseImageName;
-
-      // 클럽 정보 이미지 디렉토리 가져오기
-      File baseImageFile = new File(baseUrl);
-
-      // 파일들이 존재하는 경우
-      if (baseImageFile != null) {
-        try {
-          // 파일의 바이트 배열 읽어오기
-          byte[] bytes = Files.readAllBytes(baseImageFile.toPath());
-          // 바이트 배열을 Base64로 인코딩하여 리스트에 추가
-          String base64EncodedImage = Base64.getEncoder().encodeToString(bytes);
-          clubInformationImageBase64.add(base64EncodedImage);
-        } catch (IOException e) {
-          e.printStackTrace();
-        }
-      }
-    }
-
-    // Base64로 인코딩된 클럽 정보 이미지 리스트 반환
-    return clubInformationImageBase64;
   }
 
   /**
