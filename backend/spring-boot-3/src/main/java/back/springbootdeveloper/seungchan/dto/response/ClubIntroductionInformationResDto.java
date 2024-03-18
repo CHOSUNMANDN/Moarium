@@ -15,5 +15,5 @@ public class ClubIntroductionInformationResDto {
   private String clubName;
   private String clubIntroduction;
   private String clubLeaderName;
-  private List<byte[]> clubInformationImages;
+  private List<String> clubInformationImages;
 }

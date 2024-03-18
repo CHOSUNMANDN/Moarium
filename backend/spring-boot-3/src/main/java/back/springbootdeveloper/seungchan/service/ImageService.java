@@ -2,7 +2,9 @@ package back.springbootdeveloper.seungchan.service;
 
 import back.springbootdeveloper.seungchan.dto.response.ImageResDto;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -91,15 +93,37 @@ public class ImageService {
     return imageUrls;
   }
 
-  public List<byte[]> getClubInformationImages(final String clubName) {
+//  public List<byte[]> getClubInformationImages(final String clubName) {
+////    String clubInformationImageUrl =
+////        baseImageDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
 //    String clubInformationImageUrl =
-//        baseImageDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
-    String clubInformationImageUrl =
-        imageBaseDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
-    List<byte[]> clubInformationImagebytes = new ArrayList<>();
+//        imageBaseDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
+//    List<byte[]> clubInformationImagebytes = new ArrayList<>();
+//
+//    // 사진이 저장된 폴더의 객체에서 사진을 가져온다.
+//    File clubInformationDirectory = new File(clubInformationImageUrl);
+//    File[] imageFiles = clubInformationDirectory.listFiles();
+//
+//    if (imageFiles != null) {
+//      for (File imageFile : imageFiles) {
+//        if (imageFile.isFile() && imageFile.getName().startsWith(clubName)) {
+//          try {
+//            clubInformationImagebytes.add(FileCopyUtils.copyToByteArray(imageFile));
+//
+//          } catch (IOException e) {
+//            e.printStackTrace();
+//          }
+//        }
+//      }
+//    }
+//
+//    return clubInformationImagebytes;
+//  }
 
-    // 사진이 저장된 폴더의 객체에서 사진을 가져온다.
-    List<String> imageUrls = new ArrayList<>();
+  public List<String> getClubInformationImagesAsBase64(final String clubName) {
+    String clubInformationImageUrl = imageBaseDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
+    List<String> clubInformationImageBase64 = new ArrayList<>();
+
     File clubInformationDirectory = new File(clubInformationImageUrl);
     File[] imageFiles = clubInformationDirectory.listFiles();
 
@@ -107,8 +131,9 @@ public class ImageService {
       for (File imageFile : imageFiles) {
         if (imageFile.isFile() && imageFile.getName().startsWith(clubName)) {
           try {
-            clubInformationImagebytes.add(FileCopyUtils.copyToByteArray(imageFile));
-
+            byte[] bytes = Files.readAllBytes(imageFile.toPath());
+            String base64EncodedImage = Base64.getEncoder().encodeToString(bytes);
+            clubInformationImageBase64.add(base64EncodedImage);
           } catch (IOException e) {
             e.printStackTrace();
           }
@@ -116,7 +141,7 @@ public class ImageService {
       }
     }
 
-    return clubInformationImagebytes;
+    return clubInformationImageBase64;
   }
 
   /**

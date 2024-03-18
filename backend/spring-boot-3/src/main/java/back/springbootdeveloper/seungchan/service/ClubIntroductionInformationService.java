@@ -30,7 +30,8 @@ public class ClubIntroductionInformationService {
         CLUB_GRADE.LEADER.getId());
     Member leaderMember = memberRepository.findById(leaderClubMember.getMemberId()).orElseThrow();
 
-    List<byte[]> clubInformationImages = imageService.getClubInformationImages(club.getClubName());
+    List<String> clubInformationImages = imageService.getClubInformationImagesAsBase64(
+        club.getClubName());
 
     return ClubIntroductionInformationResDto.builder()
         .clubName(club.getClubName())
