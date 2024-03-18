@@ -35,7 +35,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "회원이 스터디 팀에 등록하는 컨트롤러", description = "회원의 팀 등록 관련 관리 클래스")
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/clubs/{club_id}/apply")
 public class ClubApplyController {
 

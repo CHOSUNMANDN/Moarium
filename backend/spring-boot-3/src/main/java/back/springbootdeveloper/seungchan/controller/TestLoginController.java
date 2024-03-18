@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 @Tag(name = "Test을 위한 로그인 컨트롤로", description = "Test을 위한 로그인 컨트롤로")
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequiredArgsConstructor
 public class TestLoginController {
 

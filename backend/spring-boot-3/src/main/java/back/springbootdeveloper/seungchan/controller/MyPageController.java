@@ -23,7 +23,6 @@ import java.util.List;
 
 @Tag(name = "마이페이지", description = "마이페이지 관련 API")
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("clubs/personal-info/{club_member_id}")
 @RequiredArgsConstructor
 public class MyPageController {

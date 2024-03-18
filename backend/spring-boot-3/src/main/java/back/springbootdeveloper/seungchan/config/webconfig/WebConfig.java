@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -49,5 +50,22 @@ public class WebConfig implements WebMvcConfigurer {
     // 대신에 이미지 디렉토리의 절대 경로를 그대로 사용하면 됩니다.
     registry.addResourceHandler("/static/images/**")
         .addResourceLocations(imageBaseUrl);
+  }
+
+  /**
+   * CORS(Cross-Origin Resource Sharing) 설정을 추가하는 메서드입니다.
+   *
+   * @param registry CorsRegistry 객체
+   *                 <p>
+   *                 CorsRegistry: CORS 설정을 등록하는 데 사용되는 클래스입니다. CORS 설정은 특정 엔드포인트에 대한 CORS 제어를 지정하는
+   *                 데 사용됩니다.
+   */
+  @Override
+  public void addCorsMappings(CorsRegistry registry) {
+    registry
+        .addMapping("/**") // 모든 엔드포인트에 대해 CORS를 적용합니다.
+        .allowedHeaders("*") // 모든 헤더를 허용합니다.
+        .allowedOrigins("*") // 모든 출처를 허용합니다.
+        .allowedMethods("*"); // 모든 HTTP 메소드를 허용합니다.
   }
 }
