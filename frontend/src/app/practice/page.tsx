@@ -1,16 +1,23 @@
 'use client';
 import axios from 'axios';
 import { SetStateAction, ChangeEvent, useState, useEffect } from 'react';
-import { axBase } from '@/apis/axiosinstance';
+import { axAuth, axBase } from '@/apis/axiosinstance';
 
 interface ClubRegistrationReqDto {
   clubName: string;
   clubIntroduction: string;
   // 다른 필드들도 필요에 따라 추가
 }
-
+interface ClubIntroductionInformationResDto {
+  clubName: string;
+  clubIntroduction: string;
+  clubLeaderName: string;
+  clubInformationImages: string[]; // 이미지를 base64 문자열로 표현
+}
 export default function Home() {
   const [formData, setFormData] = useState<FormData>(new FormData());
+  const [clubInfo, setClubInfo] = useState<ClubIntroductionInformationResDto>();
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     // 토큰이 있을시 메인페이지 이동
@@ -62,6 +69,23 @@ export default function Home() {
       .catch(err => {});
   };
 
+  useEffect(() => {
+    axBase()({
+      method: 'get',
+      url: '/clubs/informations/1',
+    })
+      .then(res => {
+        const data = res.data.result;
+        setClubInfo(data);
+        setLoading(false); // 데이터를 성공적으로 받아온 후 로딩 상태를 false로 변경
+        console.log(data.clubInformationImages);
+      })
+      .catch(err => {
+        console.log(err);
+        setLoading(false); // 에러가 발생하더라도 로딩 상태를 false로 변경
+      });
+  }, []);
+
   const pushButton_2 = () => {
     axBase()({
       method: 'post',
@@ -92,6 +116,20 @@ export default function Home() {
           <button onClick={pushButton_2}>사진없이 보내기</button>
         </div>
       </form>
+      <div>
+        {loading ? (
+          <p>Loading...</p> // 로딩 중에는 로딩 메시지를 표시
+        ) : (
+          clubInfo && (
+            <div>
+              <h2>{clubInfo.clubName}</h2>
+              <p>{clubInfo.clubIntroduction}</p>
+              <p>Club Leader: {clubInfo.clubLeaderName}</p>
+              <div>{clubInfo.clubInformationImages && clubInfo.clubInformationImages.map((image, index) => <img key={index} src={'data:image/png;base64,' + image} alt={`Image ${index}`} />)}</div>
+            </div>
+          )
+        )}
+      </div>
     </>
   );
 }
