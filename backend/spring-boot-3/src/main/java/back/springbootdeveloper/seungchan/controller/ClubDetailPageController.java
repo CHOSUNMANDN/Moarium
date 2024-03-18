@@ -16,6 +16,7 @@ import back.springbootdeveloper.seungchan.service.*;
 import back.springbootdeveloper.seungchan.util.BaseResponseBodyUtiil;
 import back.springbootdeveloper.seungchan.util.BaseResultDTO;
 import back.springbootdeveloper.seungchan.util.DayUtil;
+import back.springbootdeveloper.seungchan.util.MyValidation;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
@@ -108,13 +109,8 @@ public class ClubDetailPageController {
     Integer vacationToken = giveVacationTokenReqDto.getVacationToken();
     Member targetMember = memberService.findByClubMemberId(clubMemberId);
 
-    // 로그인 대상 대표 검증 하는 검증 메서드
-    Boolean isLeaderClub = clubGradeService.isMemberStatus(clubId, memberLeaderId,
-        CLUB_GRADE.LEADER);
-    if (!isLeaderClub) {
-      return BaseResponseBodyUtiil.BaseResponseBodyFailure(
-          ResponseMessage.BAD_NOT_LEADER_CLUB.get());
-    }
+    // 클럽의 리더 검증
+    MyValidation.isLeaderMember(tokenService, request, clubId);
 
     // 요청한 휴가 갯수에 따른 휴가 갯수 업데이트
     Boolean updateSuccess = vacationTokenService.updateVacationToken(clubMemberId, vacationToken);
@@ -137,13 +133,8 @@ public class ClubDetailPageController {
     Long memberLeaderId = tokenService.getMemberIdFromToken(request);
     Member targetMember = memberService.findByClubMemberId(clubMemberId);
 
-    // 로그인 대상 대표 검증 하는 검증 메서드
-    Boolean isLeaderClub = clubGradeService.isMemberStatus(clubId, memberLeaderId,
-        CLUB_GRADE.LEADER);
-    if (!isLeaderClub) {
-      return BaseResponseBodyUtiil.BaseResponseBodyFailure(
-          ResponseMessage.BAD_NOT_LEADER_CLUB.get());
-    }
+    // 클럽의 리더 검증
+    MyValidation.isLeaderMember(tokenService, request, clubId);
 
     // 대상이 대표확인
     Boolean isTargetLeaderClub = clubGradeService.isMemberStatus(clubMemberId, CLUB_GRADE.LEADER);
@@ -177,13 +168,8 @@ public class ClubDetailPageController {
           RESPONSE_MESSAGE_VALUE.ALREADY_DORMANT_MEMBER(targetMember.getFullName()));
     }
 
-    // 로그인 대상 대표 검증 하는 검증 메서드
-    Boolean isLeaderClub = clubGradeService.isMemberStatus(clubId, memberLeaderId,
-        CLUB_GRADE.LEADER);
-    if (!isLeaderClub) {
-      return BaseResponseBodyUtiil.BaseResponseBodyFailure(
-          ResponseMessage.BAD_NOT_LEADER_CLUB.get());
-    }
+    // 클럽의 리더 검증
+    MyValidation.isLeaderMember(tokenService, request, clubId);
 
     // 대상이 대표확인
     Boolean isTargetLeaderClub = clubGradeService.isMemberStatus(clubMemberId, CLUB_GRADE.LEADER);

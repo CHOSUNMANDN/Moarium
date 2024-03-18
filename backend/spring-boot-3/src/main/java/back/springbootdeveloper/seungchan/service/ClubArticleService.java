@@ -1,5 +1,6 @@
 package back.springbootdeveloper.seungchan.service;
 
+import back.springbootdeveloper.seungchan.constant.PAGE;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_CLASSIFICATION;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_ARTICLE_SUGGESTION_CHECK;
 import back.springbootdeveloper.seungchan.constant.judgement.AUTHOR_JUDGMENT;
@@ -10,6 +11,10 @@ import back.springbootdeveloper.seungchan.entity.*;
 import back.springbootdeveloper.seungchan.filter.exception.judgment.EntityNotFoundException;
 import back.springbootdeveloper.seungchan.repository.*;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -110,22 +115,30 @@ public class ClubArticleService {
   /**
    * 주어진 클럽 ID, 게시글 ID, 회원 ID를 기반으로 클럽 게시글의 상세 정보를 가져옵니다.
    *
-   * @param clubId    클럽 ID
-   * @param articleId 게시글 ID
-   * @param memberId  회원 ID
+   * @param clubId     클럽 ID
+   * @param articleId  게시글 ID
+   * @param memberId   회원 ID
+   * @param pageNumber
    * @return 클럽 게시글의 상세 정보를 담은 ClubArticleDetailResDto 객체
    * @throws EntityNotFoundException 엔티티를 찾을 수 없을 때 발생하는 예외
    */
   public ClubArticleDetailResDto getClubArticleDetailResDto(Long clubId, Long articleId,
-      Long memberId) {
+      Long memberId, final Integer pageNumber) {
     // 게시글 및 회원 정보 조회
     ClubArticle clubArticle = clubArticleRepository.findById(articleId)
         .orElseThrow(EntityNotFoundException::new);
     ClubMember clubMember = clubMemberRepository.findByClubIdAndMemberId(clubId, memberId)
         .orElseThrow(EntityNotFoundException::new);
+    Pageable pageable = PageRequest.of(PAGE.BASE_PAGE_INDEX.getValue(), PAGE.PAGE_SIZE.getValue());
+    pageable = getNextPageable(pageNumber, pageable);
+
+    // page count을 얻기 위한 연산
+    List<ClubArticleComment> comments = clubArticle.getClubArticleComments();
+    Integer commandPageCount = comments.size() / PAGE.PAGE_SIZE.getValue() + 1;
 
     // 게시글 댓글 정보 조회
-    List<ClubArticleComment> clubArticleComments = clubArticle.getClubArticleComments();
+    Page<ClubArticleComment> clubArticleComments = clubArticleCommentRepository.findAllByClubArticle_ClubArticleId(
+        articleId, pageable);
     List<ClubArticleCommentInformation> clubArticleCommentInformations = getClubArticleCommentInformations(
         memberId, clubArticleComments);
     // 게시글 작성자 여부 확인
@@ -142,6 +155,7 @@ public class ClubArticleService {
         .clubArticleAnswerSuggestion(clubArticle.getSuggestionAnswer())
         .clubArticleAnswerCheck(clubArticle.getAnswerCheck().getCheck())
         .clubArticleClassification(clubArticle.getClassification().getSort())
+        .commandPageCount(String.valueOf(commandPageCount))
         .clubArticleCommentInformations(clubArticleCommentInformations)
         .build();
   }
@@ -166,32 +180,35 @@ public class ClubArticleService {
   }
 
   /**
-   * 주어진 클럽 ID, 회원 ID 및 게시글 분류를 기반으로 해당 클럽 회원의 간단한 정보를 가져옵니다.
+   * 주어진 클럽 ID, 게시물 분류 및 페이지 번호에 해당하는 클럽 게시물의 간단한 정보를 가져옵니다.
    *
    * @param clubId         클럽 ID
-   * @param memberId       회원 ID
-   * @param classification 게시글 분류
-   * @return 해당 클럽 회원의 간단한 정보를 담은 ClubMemberSimpleInformationResDto 객체
+   * @param classification 게시물 분류
+   * @param pageNumber     페이지 번호
+   * @return 클럽 게시물의 간단한 정보를 담은 ClubArticleSimpleInformationResDto 객체
+   * @throws EntityNotFoundException 게시물 작성자 혹은 클럽 멤버를 찾을 수 없는 경우
    */
   public ClubArticleSimpleInformationResDto getClubMemberSimpleInformationResDto(Long clubId,
-      Long memberId, CLUB_ARTICLE_CLASSIFICATION classification) {
+      CLUB_ARTICLE_CLASSIFICATION classification, Integer pageNumber) {
     List<ClubArticleSimpleInformation> clubArticleSimpleInformations = new ArrayList<>();
-    List<ClubMember> clubMembers = clubMemberRepository.findAllByClubId(clubId);
+    Pageable pageable = PageRequest.of(PAGE.BASE_PAGE_INDEX.getValue(), PAGE.PAGE_SIZE.getValue(),
+        Sort.by(Sort.Order.desc("clubArticleId")));
+    pageable = getNextPageable(pageNumber, pageable);
 
-    // 각 클럽 회원에 대해 반복하여 클럽 게시글 조회
-    for (ClubMember clubMember : clubMembers) {
-      // 해당 클럽 회원이 작성한 특정 분류의 클럽 게시글 조회
-      List<ClubArticle> clubArticles = clubArticleRepository.findAllByClubMemberIdAndClassification(
-          clubMember.getClubMemberId(), classification);
+    Page<ClubArticle> clubArticlePage = clubArticleRepository.findAllByClubIdAndClassification(
+        clubId,
+        classification, pageable);
+
+    // 각 게시글에 대해 간단한 정보 생성하여 리스트에 추가
+    for (ClubArticle clubArticle : clubArticlePage) {
+      ClubMember clubMember = clubMemberRepository.findById(clubArticle.getClubMemberId())
+          .orElseThrow(EntityNotFoundException::new);
       Member authorMember = memberRepository.findById(clubMember.getMemberId())
           .orElseThrow(EntityNotFoundException::new);
 
-      // 각 게시글에 대해 간단한 정보 생성하여 리스트에 추가
-      for (ClubArticle clubArticle : clubArticles) {
-        clubArticleSimpleInformations.add(
-            createClubArticleSimpleInformation(authorMember, clubArticle)
-        );
-      }
+      clubArticleSimpleInformations.add(
+          createClubArticleSimpleInformation(authorMember, clubArticle)
+      );
     }
 
     // ClubMemberSimpleInformationResDto 객체 생성 및 반환
@@ -287,6 +304,26 @@ public class ClubArticleService {
     return updateClubArticleLikeCount != clubArticleLikeCount;
   }
 
+  /**
+   * 다음 페이지의 Pageable 객체를 반환합니다.
+   *
+   * @param pageNumber 다음 페이지 번호
+   * @param pageable   현재 페이지 정보를 나타내는 Pageable 객체
+   * @return 다음 페이지의 Pageable 객체
+   */
+  private Pageable getNextPageable(final Integer pageNumber, Pageable pageable) {
+    // 페이지 번호가 0부터 시작하는 것으로 가정하여 0을 나타내는 상수를 설정합니다.
+    final Integer ZERO_INDEX = 1;
+
+    // 주어진 페이지 번호에 따라 Pageable 객체를 조정합니다.
+    for (int i = 0; i < pageNumber - ZERO_INDEX; i++) {
+      pageable = pageable.next();
+    }
+
+    // 다음 페이지의 Pageable 객체를 반환합니다.
+    return pageable;
+  }
+
 
   /**
    * 주어진 회원 ID와 클럽 게시글 댓글 목록을 받아서 해당 회원이 댓글 작성자인지 여부를 확인하고, 필요한 정보로 변환하여
@@ -297,7 +334,7 @@ public class ClubArticleService {
    * @return ClubArticleCommentInformation 객체의 리스트
    */
   private List<ClubArticleCommentInformation> getClubArticleCommentInformations(Long memberId,
-      List<ClubArticleComment> clubArticleComments) {
+      Page<ClubArticleComment> clubArticleComments) {
     List<ClubArticleCommentInformation> clubArticleCommentInformations = new ArrayList<>();
 
     for (ClubArticleComment clubArticleComment : clubArticleComments) {
