@@ -93,45 +93,33 @@ public class ImageService {
     return imageUrls;
   }
 
-//  public List<byte[]> getClubInformationImages(final String clubName) {
-////    String clubInformationImageUrl =
-////        baseImageDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
-//    String clubInformationImageUrl =
-//        imageBaseDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
-//    List<byte[]> clubInformationImagebytes = new ArrayList<>();
-//
-//    // 사진이 저장된 폴더의 객체에서 사진을 가져온다.
-//    File clubInformationDirectory = new File(clubInformationImageUrl);
-//    File[] imageFiles = clubInformationDirectory.listFiles();
-//
-//    if (imageFiles != null) {
-//      for (File imageFile : imageFiles) {
-//        if (imageFile.isFile() && imageFile.getName().startsWith(clubName)) {
-//          try {
-//            clubInformationImagebytes.add(FileCopyUtils.copyToByteArray(imageFile));
-//
-//          } catch (IOException e) {
-//            e.printStackTrace();
-//          }
-//        }
-//      }
-//    }
-//
-//    return clubInformationImagebytes;
-//  }
-
+  /**
+   * 클럽 정보 이미지를 Base64 형식으로 변환하여 반환합니다. 이미지 파일명이 클럽 이름으로 시작하는 파일들을 지정된 디렉토리에서 찾습니다.
+   *
+   * @param clubName 클럽 이름
+   * @return Base64로 인코딩된 클럽 정보 이미지 리스트
+   */
   public List<String> getClubInformationImagesAsBase64(final String clubName) {
+    // 클럽 정보 이미지 디렉토리 경로 설정
     String clubInformationImageUrl = imageBaseDirUrl + clubImageBaseDirUrl + clubInformationDirUrl;
+    // Base64로 인코딩된 클럽 정보 이미지를 저장할 리스트 초기화
     List<String> clubInformationImageBase64 = new ArrayList<>();
 
+    // 클럽 정보 이미지 디렉토리 가져오기
     File clubInformationDirectory = new File(clubInformationImageUrl);
+    // 디렉토리 내의 파일들 가져오기
     File[] imageFiles = clubInformationDirectory.listFiles();
 
+    // 파일들이 존재하는 경우
     if (imageFiles != null) {
+      // 각 파일에 대하여
       for (File imageFile : imageFiles) {
+        // 파일이 실제 파일이고 파일명이 클럽 이름으로 시작하는 경우
         if (imageFile.isFile() && imageFile.getName().startsWith(clubName)) {
           try {
+            // 파일의 바이트 배열 읽어오기
             byte[] bytes = Files.readAllBytes(imageFile.toPath());
+            // 바이트 배열을 Base64로 인코딩하여 리스트에 추가
             String base64EncodedImage = Base64.getEncoder().encodeToString(bytes);
             clubInformationImageBase64.add(base64EncodedImage);
           } catch (IOException e) {
@@ -141,6 +129,7 @@ public class ImageService {
       }
     }
 
+    // Base64로 인코딩된 클럽 정보 이미지 리스트 반환
     return clubInformationImageBase64;
   }
 
