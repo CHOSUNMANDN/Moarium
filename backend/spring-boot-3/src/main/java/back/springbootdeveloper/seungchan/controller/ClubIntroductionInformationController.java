@@ -42,8 +42,7 @@ public class ClubIntroductionInformationController {
   private final ImageService imageService;
   private final ClubService clubService;
 
-  @Operation(summary = "동아리 지원서 작성 API")
-  @ResponseBody
+  @Operation(summary = "클럽 소개 조회 페이지 - 개인 회원이 클럽에 지원을 할때 처음 보는 페이지 조회")
   @GetMapping("")
   public BaseResultDTO<ClubIntroductionInformationResDto> applyMemberToClub(
       HttpServletRequest request,
@@ -52,6 +51,7 @@ public class ClubIntroductionInformationController {
     ClubIntroductionInformationResDto clubIntroductionInformationResDto =
         clubIntroductionInformationService.getClubIntroductionInformationResDto(
             clubId);
+
     return BaseResultDTO.ofSuccess(clubIntroductionInformationResDto);
   }
 }
