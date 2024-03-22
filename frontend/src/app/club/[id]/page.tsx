@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { userToken, myClubGrade, myClubMemberId } from '../../../states/index';
 import Graduater from '@/atoms/atom/graduater';
-import CurrentMember from '@/atoms/molecule/current-member';
+import CurrentMember from '@/atoms/molecule/CurrentMember';
 import { useRouter } from 'next/navigation';
 import LongThickButton from '../../../atoms/atom/LongThickButton';
 import AttendanceModal from '../../../atoms/molecule/AttendanceModal';

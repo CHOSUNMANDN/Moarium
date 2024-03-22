@@ -10,7 +10,7 @@ import Button from '../../atoms/atom/large-button';
 import AttendanceModal from '../../atoms/molecule/attendance-modal';
 import AllertModal from '../../atoms/atom/allert-modal';
 import Graduater from '@/atoms/atom/graduater';
-import CurrentMember from '@/atoms/molecule/current-member';
+import CurrentMember from '@/atoms/molecule/CurrentMember';
 import MemberInformationModal from '@/atoms/molecule/member-infromation-modal';
 import { hasNotToken } from '@/utils/validate/ExistenceChecker';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context';
