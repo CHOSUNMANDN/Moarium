@@ -7,9 +7,10 @@ type data = {
   userId: number;
   setIsMemberInfoOpen: (state: number) => void;
   setIsMemberToken: (state: string) => void;
+  isAttendanceCheckDate: { [key: string]: string } | undefined;
 };
 
-export default function CurrentMember({ name, token, week, userId, setIsMemberInfoOpen, setIsMemberToken }: data) {
+export default function CurrentMember({ name, token, week, userId, setIsMemberInfoOpen, setIsMemberToken, isAttendanceCheckDate }: data) {
   const daysOrder = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 
   const openMemberInfo = () => {
@@ -18,7 +19,8 @@ export default function CurrentMember({ name, token, week, userId, setIsMemberIn
     setIsMemberToken(token);
   };
 
-  const renderCheckBoxes = () => daysOrder.map((day, idx) => <CheckBox key={idx} day={day} type={week ? week[day] : 'UNDECIDED'} />);
+  const renderCheckBoxes = () =>
+    daysOrder.map((day, idx) => <CheckBox key={idx} day={day} type={week ? week[day] : 'UNDECIDED'} possible={isAttendanceCheckDate ? isAttendanceCheckDate[day + 'Check'] : null} />);
 
   return (
     <>

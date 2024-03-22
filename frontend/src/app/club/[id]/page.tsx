@@ -19,6 +19,7 @@ interface userDataPropsTypeZero {
   memberName: string;
   attendanceStatus: { [key: string]: string };
   vacationToken: string;
+  isAttendanceCheckDate: { [key: string]: string } | undefined;
 }
 
 export default function Club() {
@@ -33,7 +34,7 @@ export default function Club() {
   const [isTodayAttendance, setIsTodayAttendance] = useState(false);
   const [isMemberInfoOpen, setIsMemberInfoOpen] = useState(0);
   const [isMemberToken, setIsMemberToken] = useState('');
-  const [isAttendanceCheckDate, setIsAttendanceCheckDate] = useState();
+  const [isAttendanceCheckDate, setIsAttendanceCheckDate] = useState<{ [key: string]: string } | undefined>(undefined);
   const [isAttendancePossibleDate, setIsAttendancePossibleDate] = useState(false);
   const [isMyClubMemberId, setIsMyClubMemberId] = useRecoilState(myClubMemberId);
   const [isClubName, setIsClubName] = useState('');
@@ -153,6 +154,7 @@ export default function Club() {
                   userId={item.clubMemberId}
                   setIsMemberInfoOpen={setIsMemberInfoOpen}
                   setIsMemberToken={setIsMemberToken}
+                  isAttendanceCheckDate={isAttendanceCheckDate}
                 />
               ))}
           </article>
