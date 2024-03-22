@@ -25,7 +25,7 @@ export default function Club() {
   const router = useRouter();
   const [token, setToken] = useRecoilState(userToken);
   const [type, setType] = useState(0);
-  const [userList, setUserList] = useState([]);
+  const [userList, setUserList] = useState<userDataPropsTypeZero[]>([]);
   const [dormantUserList, setDormantUserList] = useState([]);
   const [isMyClubGrade, setIsMyClubGrade] = useRecoilState(myClubGrade);
   const [isAttendanceModalOpen, setIsAttendanceModalOpen] = useState(false);
@@ -33,6 +33,8 @@ export default function Club() {
   const [isTodayAttendance, setIsTodayAttendance] = useState(false);
   const [isMemberInfoOpen, setIsMemberInfoOpen] = useState(0);
   const [isMemberToken, setIsMemberToken] = useState('');
+  const [isAttendanceCheckDate, setIsAttendanceCheckDate] = useState();
+  const [isAttendancePossibleDate, setIsAttendancePossibleDate] = useState(false);
   const [isMyClubMemberId, setIsMyClubMemberId] = useRecoilState(myClubMemberId);
   const [isClubName, setIsClubName] = useState('');
   const pathName: string = usePathname();
@@ -49,13 +51,14 @@ export default function Club() {
     if (type === 0) {
       axAuth(token)({
         method: 'get',
-        url: '/clubs/informations/' + id + '/details',
+        url: `/clubs/informations/${id}/details`,
       })
         .then(res => {
           setUserList(res.data.result.clubMembers);
           setIsClubName(res.data.result.clubName);
           setIsMyClubGrade(res.data.result.myClubGrade);
           setIsMyClubMemberId(res.data.result.myClubMemberId);
+          setIsAttendanceCheckDate(res.data.result.clubMemberAttendanceCheckDate);
         })
         .catch(err => {
           console.log(err);
@@ -63,7 +66,7 @@ export default function Club() {
     } else {
       axAuth(token)({
         method: 'get',
-        url: '/clubs/informations/' + id + '/details/dormancys',
+        url: `/clubs/informations/${id}/details/dormancys`,
       })
         .then(res => {
           setDormantUserList(res.data.result.dormancyMembers);
@@ -72,8 +75,30 @@ export default function Club() {
           console.log(err);
         });
     }
-  }, [type, isAttendanceModalOpen]);
+  }, [type, isAttendanceModalOpen, isMemberInfoOpen]);
 
+  // 오늘 요일을 찾아서 출석이 되었는 지 확인한다.
+  useEffect(() => {
+    const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+    const today = new Date().getDay();
+    const todayDay = days[today];
+    const todayDayString = days[today] + 'Check';
+    if (userList && todayDay) {
+      const member = userList.find(member => member.clubMemberId === isMyClubMemberId);
+      if (member) {
+        const todayStatus = member.attendanceStatus[todayDay];
+        if (todayStatus === 'ATTENDANCE' || todayStatus === 'VACATION') {
+          setIsTodayAttendance(true);
+        }
+      }
+    }
+    // 오늘 출석이 가능한 지 확인한다. 만약 불가능하다면 출석완료 표시를 한다.
+    if (isAttendanceCheckDate && todayDayString) {
+      setIsAttendancePossibleDate(isAttendanceCheckDate[todayDayString] === 'POSSIBLE');
+    }
+  });
+
+  // 모달창이 열렸을 때 스크롤을 비활성화 하도록 한다.
   useEffect(() => {
     if (isAttendanceModalOpen || isMemberInfoOpen !== 0) {
       const originalStyle = window.getComputedStyle(document.body).overflow;
@@ -86,7 +111,7 @@ export default function Club() {
 
   return (
     <main>
-      {isAttendanceModalOpen ? <AttendanceModal setIsAttendanceModalOpen={setIsAttendanceModalOpen} setAllertModalStatus={setAllertModalStatus} /> : null}
+      {isAttendanceModalOpen ? <AttendanceModal clubId={id} clubMemberId={isMyClubMemberId} setIsAttendanceModalOpen={setIsAttendanceModalOpen} setAllertModalStatus={setAllertModalStatus} /> : null}
       {isMemberInfoOpen !== 0 ? (
         <MemberInformationModal clubId={id} clubMemberId={isMemberInfoOpen} vacationToken={isMemberToken} setIsMemberInfoOpen={setIsMemberInfoOpen} isMyClubGrade={isMyClubGrade} type={type} />
       ) : null}
@@ -143,7 +168,7 @@ export default function Club() {
       </section>
       {type === 0 ? (
         <div className="fixed inset-x-[0rem] bottom-[4rem] mx-auto w-max">
-          {isTodayAttendance ? (
+          {isTodayAttendance || !isAttendancePossibleDate ? (
             <LongThickButton text={'출석완료'} addClass="text-2xl bg-grey" />
           ) : (
             <div
@@ -152,7 +177,7 @@ export default function Club() {
                 window.scrollTo(0, 0);
               }}
             >
-              <LongThickButton text={'출석하기'} addClass="text-2xl mb-3" />
+              <LongThickButton text={'출석하기'} addClass="text-2xl" />
             </div>
           )}
         </div>

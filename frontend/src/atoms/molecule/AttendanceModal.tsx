@@ -5,16 +5,18 @@ import { userToken } from '../../states/index';
 import { useState } from 'react';
 
 interface AttendanceModalProps {
+  clubId: string | undefined;
+  clubMemberId: number;
   setIsAttendanceModalOpen: (isOpen: boolean) => void;
   setAllertModalStatus: (status: number) => void;
 }
 
-export default function AttendanceModal(props: AttendanceModalProps) {
+export default function AttendanceModal({ clubId, clubMemberId, setIsAttendanceModalOpen, setAllertModalStatus }: AttendanceModalProps) {
   const [token, setToken] = useRecoilState(userToken);
   const [attendanceNumber, setAttendanceNumber] = useState('');
 
   const handleModal = () => {
-    props.setIsAttendanceModalOpen(false);
+    setIsAttendanceModalOpen(false);
   };
 
   const inputNumber = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -24,23 +26,19 @@ export default function AttendanceModal(props: AttendanceModalProps) {
   const setAttendance = () => {
     axAuth(token)({
       method: 'post',
-      url: '/attendance/number',
+      url: `/clubs/informations/${clubId}/details/${clubMemberId}/attendance`,
       data: {
         numOfAttendance: attendanceNumber,
       },
     })
       .then(res => {
-        if (res.data.passAtNow === true) {
           handleModal();
-          props.setAllertModalStatus(3);
-        } else {
-          handleModal();
-          props.setAllertModalStatus(1);
-        }
+          setAllertModalStatus(3);
       })
       .catch(err => {
         handleModal();
-        props.setAllertModalStatus(2);
+        setAllertModalStatus(2);
+
       });
   };
   return (
