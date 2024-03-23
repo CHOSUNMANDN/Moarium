@@ -62,8 +62,8 @@ export default function MainCarousel() {
         <Slider {...settings} className="h-[25vh] mb-[5rem]">
           {clubInformations?.clubInformationImages.map((image, index) => (
             <div key={index}>
-              <img className="bg-cover w-[100%] aspect-[6/4]" src={'data:image/png;base64,' + image} alt={`Image ${index}`} />
-              <div className="absolute bottom-0 left-0 w-full h-1/6 gradient opacity-90"></div>
+              <img className="bg-cover w-[100%] aspect-[7/4]" src={'data:image/png;base64,' + image} alt={`Image ${index}`} />
+              <div className="absolute bottom-0 left-0 w-full h-1/6 gradient opacity-40"></div>
             </div>
           ))}
         </Slider>
