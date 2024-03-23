@@ -29,7 +29,6 @@ import org.springframework.web.multipart.MultipartFile;
 @Tag(name = "스터디 팀을 등록하는 컨트롤러", description = "팀 등록 관련 관리 클래스")
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/main/club/apply")
 public class ClubRegistrationController {
 

@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @Tag(name = "새로운 Access token 발급 API", description = "refresh token을 이용한 새로운 Access token 발급을 할수있다.")
 @RequiredArgsConstructor
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class TokenApiController {
 
   private final TokenService tokenService;

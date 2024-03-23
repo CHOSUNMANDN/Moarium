@@ -27,7 +27,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Tag(name = "Club Leader을 위한 Admin 컨트롤러", description = "팀의 대표의 클럽 환경 설정을 기능의 페이지 이다.")
 @RestController
-@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/clubs/informations/{club_id}/details/leader")
 @RequiredArgsConstructor
 public class AdminLeaderController {
