@@ -15,11 +15,12 @@ import org.hibernate.annotations.DynamicUpdate;
 @Builder
 @AllArgsConstructor
 public class TestEntity extends BaseEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "test_entity_id")
-    private Long test_entity_id;
 
-    @Enumerated(EnumType.STRING)
-    private TEST_ENUM testEnum;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "test_entity_id")
+  private Long test_entity_id;
+
+  @Enumerated(EnumType.STRING)
+  private TEST_ENUM testEnum;
 }

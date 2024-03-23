@@ -12,5 +12,6 @@ import java.util.List;
 @Data
 @Builder
 public class ClubMemberCommentsResDto {
-    private List<MyClubArticleComment> myClubArticleComments;
+
+  private List<MyClubArticleComment> myClubArticleComments;
 }

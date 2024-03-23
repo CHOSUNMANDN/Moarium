@@ -4,12 +4,12 @@ import lombok.Getter;
 
 @Getter
 public enum CLUB_ARTICLE_SUGGESTION_CHECK {
-    CONFIRMED("CONFIRMED"),
-    UNCONFIRMED("UNCONFIRMED");
+  CONFIRMED("CONFIRMED"),
+  UNCONFIRMED("UNCONFIRMED");
 
-    private String check;
+  private String check;
 
-    CLUB_ARTICLE_SUGGESTION_CHECK(String check) {
-        this.check = check;
-    }
+  CLUB_ARTICLE_SUGGESTION_CHECK(String check) {
+    this.check = check;
+  }
 }

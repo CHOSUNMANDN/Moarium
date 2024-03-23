@@ -4,12 +4,13 @@ import lombok.Getter;
 
 @Getter
 public enum AUTHOR_JUDGMENT {
-    AUTHOR("AUTHOR"),
-    NOT_AUTHOR("NOT_AUTHOR");
+  AUTHOR("AUTHOR"),
+  NOT_AUTHOR("NOT_AUTHOR");
 
-    private String judgment;
+  private String judgment;
 
-    AUTHOR_JUDGMENT(String judgment) {
-        this.judgment = judgment;
-    }
+  AUTHOR_JUDGMENT(String judgment) {
+    this.judgment = judgment;
+  }
 }
+ 

@@ -10,8 +10,9 @@ import java.time.ZonedDateTime;
 @AllArgsConstructor
 @Builder
 public class BaseResponseBody {
-    private final String message;
-    private final HttpStatus httpStatus;
-    private final Integer statusCode;
-    private final ZonedDateTime timestamp;
+
+  private final String message;
+  private final HttpStatus httpStatus;
+  private final Integer statusCode;
+  private final ZonedDateTime timestamp;
 }

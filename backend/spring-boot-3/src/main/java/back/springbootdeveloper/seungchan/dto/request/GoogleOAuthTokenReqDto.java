@@ -10,23 +10,24 @@ import org.springframework.stereotype.Component;
 @PropertySource("classpath:application-oauth.properties")
 public class GoogleOAuthTokenReqDto implements OAuthTokenReqDto<GoogleOAuthLoginReqDto> {
 
-    @Value("${google.redirect.uri}")
-    private String googleRedirectUrl;
+  @Value("${google.redirect.uri}")
+  private String googleRedirectUrl;
 
-    @Value("${google.client.id}")
-    private String googleClientId;
+  @Value("${google.client.id}")
+  private String googleClientId;
 
-    @Value("${google.secret}")
-    private String googleSecret;
-    @Override
-    public GoogleOAuthLoginReqDto makeOAuthTokenReqBody(String authCode) {
-        return GoogleOAuthLoginReqDto.builder()
-                .clientId(getGoogleClientId())
-                .clientSecret(getGoogleSecret())
-                .code(authCode)
-                .redirectUri(googleRedirectUrl)
-                .grantType("authorization_code")
-                .build();
-    }
+  @Value("${google.secret}")
+  private String googleSecret;
+
+  @Override
+  public GoogleOAuthLoginReqDto makeOAuthTokenReqBody(String authCode) {
+    return GoogleOAuthLoginReqDto.builder()
+        .clientId(getGoogleClientId())
+        .clientSecret(getGoogleSecret())
+        .code(authCode)
+        .redirectUri(googleRedirectUrl)
+        .grantType("authorization_code")
+        .build();
+  }
 
 }

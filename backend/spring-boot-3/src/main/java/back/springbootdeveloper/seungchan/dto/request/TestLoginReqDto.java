@@ -10,5 +10,6 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class TestLoginReqDto {
-    private Long memberId;
+
+  private Long memberId;
 }

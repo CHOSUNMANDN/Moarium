@@ -10,10 +10,11 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class ClubArticleCommentInformation {
-    private Long clubArticleCommentId;
-    private String isClubArticleCommentAuthor;
-    private String clubArticleCommentContent;
-    private String clubArticleCommentAuthorName;
-    private String clubArticleCommentDate;
-    private String clubArticleCommentLike;
+
+  private Long clubArticleCommentId;
+  private String isClubArticleCommentAuthor;
+  private String clubArticleCommentContent;
+  private String clubArticleCommentAuthorName;
+  private String clubArticleCommentDate;
+  private String clubArticleCommentLike;
 }

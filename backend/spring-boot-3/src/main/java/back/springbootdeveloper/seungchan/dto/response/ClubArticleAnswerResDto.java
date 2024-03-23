@@ -10,9 +10,10 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class ClubArticleAnswerResDto {
-    private String clubArticleTitle;
-    private String clubArticleContent;
-    private String clubArticleLikeNumber;
-    private String clubArticleCommentNumber;
-    private String clubArticleDate;
+
+  private String clubArticleTitle;
+  private String clubArticleContent;
+  private String clubArticleLikeNumber;
+  private String clubArticleCommentNumber;
+  private String clubArticleDate;
 }

@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface VacationTokenRepository extends JpaRepository<VacationToken, Long> {
-
+ 
 }

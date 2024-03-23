@@ -11,14 +11,14 @@ import lombok.NoArgsConstructor;
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class GoogleOAuthTokenInfoResDto {
 
-    private String azp;
-    private String aud;
-    private String sub;
-    private String exp;
-    private String scope;
-    private String expiresIn;
-    private String email;
-    private String emailVerified;
-    private String accessType;
+  private String azp;
+  private String aud;
+  private String sub;
+  private String exp;
+  private String scope;
+  private String expiresIn;
+  private String email;
+  private String emailVerified;
+  private String accessType;
 
 }

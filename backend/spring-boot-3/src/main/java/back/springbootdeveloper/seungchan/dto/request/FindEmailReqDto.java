@@ -13,13 +13,14 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class FindEmailReqDto {
-    @NotBlank(message = "{validation.name.notblank}")
-    private String name;
 
-    @Email(message = "{validation.email.invalid}")
-    @NotBlank(message = "{validation.email.notblank}")
-    private String authenticationEmail;
+  @NotBlank(message = "{validation.name.notblank}")
+  private String name;
 
-    @NotBlank(message = "{validation.phonenum.notblank}")
-    private String phoneNum;
+  @Email(message = "{validation.email.invalid}")
+  @NotBlank(message = "{validation.email.notblank}")
+  private String authenticationEmail;
+
+  @NotBlank(message = "{validation.phonenum.notblank}")
+  private String phoneNum;
 }

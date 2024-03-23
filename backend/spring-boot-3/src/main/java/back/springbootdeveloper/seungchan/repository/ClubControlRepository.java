@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ClubControlRepository extends JpaRepository<ClubControl, Long> {
+
 }

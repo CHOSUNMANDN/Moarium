@@ -10,16 +10,17 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class MyClubArticle {
-    private Long clubArticleId;
-    private String clubArticleTitle;
-    private String clubArticleDate;
-    private String clubArticleClassification;
 
-    @Builder
-    public MyClubArticle(ClubArticle clubArticle) {
-        this.clubArticleId = clubArticle.getClubArticleId();
-        this.clubArticleTitle = clubArticle.getTitle();
-        this.clubArticleDate = clubArticle.getClubArticleDate();
-        this.clubArticleClassification = clubArticle.getClassification().getSort();
-    }
+  private Long clubArticleId;
+  private String clubArticleTitle;
+  private String clubArticleDate;
+  private String clubArticleClassification;
+
+  @Builder
+  public MyClubArticle(ClubArticle clubArticle) {
+    this.clubArticleId = clubArticle.getClubArticleId();
+    this.clubArticleTitle = clubArticle.getTitle();
+    this.clubArticleDate = clubArticle.getClubArticleDate();
+    this.clubArticleClassification = clubArticle.getClassification().getSort();
+  }
 }

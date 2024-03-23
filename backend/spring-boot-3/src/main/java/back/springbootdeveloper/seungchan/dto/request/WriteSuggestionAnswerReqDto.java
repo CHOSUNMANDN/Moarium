@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class WriteSuggestionAnswerReqDto {
-    @NotBlank
-    private String clubSuggestionArticleAnswer;
+
+  @NotBlank
+  private String clubSuggestionArticleAnswer;
 }
