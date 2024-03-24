@@ -30,7 +30,7 @@ export default function Club() {
   const [dormantUserList, setDormantUserList] = useState([]);
   const [isMyClubGrade, setIsMyClubGrade] = useRecoilState(myClubGrade);
   const [isAttendanceModalOpen, setIsAttendanceModalOpen] = useState(false);
-  const [AllertModalstatus, setAllertModalStatus] = useState(0);
+  const [allertModalstatus, setAllertModalStatus] = useState(0);
   const [isTodayAttendance, setIsTodayAttendance] = useState(false);
   const [isMemberInfoOpen, setIsMemberInfoOpen] = useState(0);
   const [isMemberToken, setIsMemberToken] = useState('');
