@@ -12,5 +12,6 @@ import java.util.List;
 @Data
 @Builder
 public class DormancysMembersResDto {
-    private List<String> dormancyMembers;
+
+  private List<String> dormancyMembers;
 }

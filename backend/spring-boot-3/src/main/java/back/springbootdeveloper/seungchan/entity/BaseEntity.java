@@ -16,11 +16,12 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EntityListeners(AuditingEntityListener.class) // 추가
 public class BaseEntity {
-    @Column(name = "update_date", nullable = false)
-    @LastModifiedDate
-    private LocalDateTime updateDate;
 
-    @Column(name = "create_date", nullable = false)
-    @CreationTimestamp
-    private LocalDateTime createDate;
+  @Column(name = "update_date", nullable = false)
+  @LastModifiedDate
+  private LocalDateTime updateDate;
+
+  @Column(name = "create_date", nullable = false)
+  @CreationTimestamp
+  private LocalDateTime createDate;
 }

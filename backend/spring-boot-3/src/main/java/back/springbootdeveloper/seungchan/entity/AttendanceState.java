@@ -4,49 +4,67 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @NoArgsConstructor
 @Entity
 @Table(name = "attendance_state")
 public class AttendanceState {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "attendance_state_id")
-    private Long attendanceStateId;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "attendance_week_date_id")
-    private AttendanceWeekDate attendanceWeekDate;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "attendance_state_id")
+  private Long attendanceStateId;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "vacation_token_id")
-    private VacationToken vacationToken;
+  @OneToMany(fetch = FetchType.LAZY, mappedBy = "attendanceState", cascade = CascadeType.ALL)
+  private List<AttendanceWeekDate> attendanceWeekDates = new ArrayList<>();
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "attendance_check_time_id")
-    private AttendanceCheckTime attendanceCheckTime;
+  @OneToMany(fetch = FetchType.LAZY, mappedBy = "attendanceSate", cascade = CascadeType.ALL)
+  private List<VacationToken> vacationTokens = new ArrayList<>();
 
-    public void setAttendanceWeekDate(final AttendanceWeekDate attendanceWeekDate) {
-        this.attendanceWeekDate = attendanceWeekDate;
+  @OneToOne(cascade = CascadeType.ALL)
+  @JoinColumn(name = "attendance_check_time_id")
+  private AttendanceCheckTime attendanceCheckTime;
 
-        if (attendanceWeekDate.getAttendanceSate() != this) { // null 체크 추가
-            attendanceWeekDate.setAttendanceSate(this);
-        }
+  /**
+   * 출석 주차 날짜를 추가하는 메서드입니다. 동시에 이 출석 주차 날짜가 해당 출석 상태와 연결되어 있지 않은 경우에만 연결합니다.
+   *
+   * @param attendanceWeekDate 추가할 출석 주차 날짜
+   */
+  public void addAttendanceWeekDates(final AttendanceWeekDate attendanceWeekDate) {
+    this.attendanceWeekDates.add(attendanceWeekDate);
+
+    if (attendanceWeekDate.getAttendanceState() != this) { // null 체크 추가
+      attendanceWeekDate.setAttendanceState(this);
     }
+  }
 
-    public void setVacationToken(final VacationToken vacationToken) {
-        this.vacationToken = vacationToken;
+  /**
+   * 휴가 토큰을 추가하는 메서드입니다. 동시에 이 휴가 토큰이 해당 출석 상태와 연결되어 있지 않은 경우에만 연결합니다.
+   *
+   * @param vacationToken 추가할 휴가 토큰
+   */
+  public void addtVacationToken(final VacationToken vacationToken) {
+    this.vacationTokens.add(vacationToken);
 
-        if (vacationToken.getAttendanceSate() != this) { // null 체크 추가
-            vacationToken.setAttendanceSate(this);
-        }
+    if (vacationToken.getAttendanceSate() != this) { // null 체크 추가
+      vacationToken.setAttendanceSate(this);
     }
+  }
 
-    public void setAttendanceCheckTime(final AttendanceCheckTime attendanceCheckTime) {
-        this.attendanceCheckTime = attendanceCheckTime;
+  /**
+   * 출석 시간을 설정하는 메서드입니다. 동시에 이 출석 시간이 해당 출석 상태와 연결되어 있지 않은 경우에만 연결합니다.
+   *
+   * @param attendanceCheckTime 설정할 출석 시간
+   */
+  public void setAttendanceCheckTime(final AttendanceCheckTime attendanceCheckTime) {
+    this.attendanceCheckTime = attendanceCheckTime;
 
-        if (attendanceCheckTime.getAttendanceSate() != this) { // null 체크 추가
-            attendanceCheckTime.setAttendanceSate(this);
-        }
+    if (attendanceCheckTime.getAttendanceSate() != this) { // null 체크 추가
+      attendanceCheckTime.setAttendanceSate(this);
     }
+  }
+
 }

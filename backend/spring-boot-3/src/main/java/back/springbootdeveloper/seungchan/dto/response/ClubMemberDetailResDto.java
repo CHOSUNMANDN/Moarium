@@ -12,7 +12,10 @@ import java.util.List;
 @Data
 @Builder
 public class ClubMemberDetailResDto {
-    private String clubName;
-    private Long myClubMemberId;
-    private List<ClubMemberResponse> clubMembers;
+
+  private String clubName;
+  private Long myClubMemberId;
+  private String myClubGrade;
+  private ClubMemberAttendanceCheckDate clubMemberAttendanceCheckDate;
+  private List<ClubMemberResponse> clubMembers;
 }
