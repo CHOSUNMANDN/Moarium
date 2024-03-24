@@ -63,7 +63,7 @@ export default function CustomTextAreaForm({ title, userData, setUserData, custo
       </label>
       <span className="font-semibold absolute right-[1rem]">{textLength}자</span>
       <br />
-      <textarea name={`${title}`} className={`border border-grey rounded w-[100%] h-[12rem]`} maxLength={500} onChange={handleChange} placeholder={placeholder} />
+      <textarea name={`${title}`} className={`border border-grey rounded w-[100%] h-[5rem]`} maxLength={500} onChange={handleChange} placeholder={placeholder} />
     </div>
   );
 }
