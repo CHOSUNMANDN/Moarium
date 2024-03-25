@@ -86,7 +86,7 @@ services:
     # 테이블 이름 소문자로 맞춘다.
     volumes:
       - /var/mysql/scripts:/docker-entrypoint-initdb.d
-      - /var/mysql/data:/var/lib/mysql # Data 서버에 저장
+      - /var/mysql/data:/var/lib/mysql # Data는 /var/mysql에 저장됩니다.
     command: --default-authentication-plugin=caching_sha2_password
     networks:
       - moariumNet
