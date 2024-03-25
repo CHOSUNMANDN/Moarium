@@ -110,7 +110,7 @@ services:
     # 현재 nginx 폴더와 도커의 /etc/nginx/conf.d 와 마운트
     volumes:
       - /var/nginx/nginx.conf:/etc/nginx/conf.d
-      - /var/log/nginx:/var/log/nginx # Logging
+      - /var/log/nginx:/var/log/nginx # Logging도 남겨둡니다.
       # - /etc/letsencrypt:/etc/letsencrypt # https
     # depends_on은 설정 서비스 명이 nextjs, pring-boot-3 이 먼저 실행되고 nginx의 서비스가 먼저 실행된다.
     depends_on:
@@ -121,6 +121,7 @@ services:
       # To set the time zone to Seoul.
       TZ: "Asia/Seoul"
 
+# 모든 컨테이너는 도커 네트워크 내에 작동됩니다.
 networks:
   moariumNet:
     name: moarDev
