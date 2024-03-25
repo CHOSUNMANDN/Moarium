@@ -48,3 +48,11 @@ export function replaceRouterEachSuggestion(router: AppRouterInstance, id: numbe
 export function replaceRouterPassword(router: AppRouterInstance): void {
   router.replace(RouteUrl.ROUTE_UPDATE_PASSWORD);
 }
+
+/**
+ * 지원서 작성 페이지로 replace을 한다.
+ * @param router
+ */
+export function replaceRouterApplyClub(router: AppRouterInstance, id: undefined | string): void {
+  router.replace(RouteUrl.ROUTE_APPLY_CLUB + id);
+}

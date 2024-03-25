@@ -9,7 +9,9 @@ import { useRecoilState } from 'recoil';
 import { isNuriKing, userToken } from '@/states';
 import { usePathname } from 'next/navigation';
 import SmallButton from '../atom/thin-long-button';
+import { useRouter } from 'next/navigation';
 import ThinButton from '../atom/thin-button';
+import { replaceRouterApplyClub } from '@/utils/RouteHandling';
 interface clubInformationType {
   clubName: string;
   clubIntroduction: string;
@@ -19,6 +21,7 @@ interface clubInformationType {
 export default function MainCarousel() {
   const [clubInformations, setClubInformations] = useState<clubInformationType>();
   const [token, setToken] = useRecoilState(userToken);
+  const router = useRouter();
 
   const settings = {
     dots: true,
@@ -74,7 +77,9 @@ export default function MainCarousel() {
           <div className="h-[7rem]  text-center text-wrap pl-[1rem] pr-[1rem] mb-[2rem] overflow-y-auto">{clubInformations?.clubIntroduction}</div>
           <div className="font-bold mb-[2rem]">팀장 : {clubInformations?.clubLeaderName}</div>
           <div className="w-[10rem]">
-            <SmallButton text={'지원서 작성'} />
+            <a onClick={() => replaceRouterApplyClub(router, id)}>
+              <SmallButton text={'지원서 작성'} />
+            </a>
           </div>
         </div>
       </div>
