@@ -122,6 +122,7 @@ services:
       TZ: "Asia/Seoul"
 
 # 모든 컨테이너는 도커 네트워크 내에 작동됩니다.
+# 같은 네트워크 내 컨테이너끼리만 통신 가능합니다.
 networks:
   moariumNet:
     name: moarDev
