@@ -69,6 +69,7 @@ services:
       - 9999:8080 # Jenkins GUI
       - 50000:50000
     volumes:
+      # 설정값은 /var/jenkins에 저장됩니다.
       - /var/jenkins/config:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
 
