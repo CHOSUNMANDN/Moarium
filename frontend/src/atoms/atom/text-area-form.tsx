@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SmallCircle from './small-circle';
 
 type data = {
   title: string;
@@ -17,7 +18,7 @@ export default function TextAreaForm({ title, userData, setUserData, dataname }:
   return (
     <div className="w-[100%] mb-[0.5rem] relative">
       <label htmlFor={`${title}`} className="font-bold">
-        <span className="text-[#FF0A0A]">* </span>
+        <SmallCircle></SmallCircle>
         {title}
       </label>
       <span className="font-semibold absolute right-[1rem]">{textLength}자</span>
