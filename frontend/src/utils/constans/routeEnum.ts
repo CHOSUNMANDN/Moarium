@@ -10,4 +10,5 @@ export enum RouteUrl {
   ROUTE_FIND_PASSWORD = '/login/find/password',
   ROUTE_EACH_SUGGESTION = '/suggestion/',
   ROUTE_UPDATE_PASSWORD = '/mypage/update/password',
+  ROUTE_APPLY_CLUB = '/clubs/',
 }
