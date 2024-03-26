@@ -1,4 +1,5 @@
 import React, { ChangeEvent, useState } from 'react';
+import Slider from 'react-slick';
 
 type dataType = {
   title: string;
@@ -11,28 +12,34 @@ export default function UploadMultiImage(data: dataType & { userData: any; setUs
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const uploadFile = e.target.files;
-    if (uploadFile) {
-      data.setUserData((prevData: any) => ({ ...prevData, [data.dataname]: uploadFile }));
-    }
 
-    if (uploadFile) {
-      setPreviewImages([]);
+    if (uploadFile && uploadFile.length > 3) {
+      alert('사진은 3개 이하 등록 가능합니다.');
+      return;
+    } else {
+      if (uploadFile) {
+        data.setUserData((prevData: any) => ({ ...prevData, [data.dataname]: uploadFile }));
+      }
 
-      for (let i = 0; i < uploadFile.length; i++) {
-        const file = uploadFile[i];
-        const fReader = new FileReader();
-        fReader.readAsDataURL(file);
+      if (uploadFile) {
+        setPreviewImages([]);
 
-        fReader.onloadend = event => {
-          const lastModified = file.lastModified;
-          setPreviewImages(prevImages => [
-            ...prevImages,
-            {
-              id: lastModified,
-              src: event.target?.result,
-            },
-          ]);
-        };
+        for (let i = 0; i < uploadFile.length; i++) {
+          const file = uploadFile[i];
+          const fReader = new FileReader();
+          fReader.readAsDataURL(file);
+
+          fReader.onloadend = event => {
+            const lastModified = file.lastModified;
+            setPreviewImages(prevImages => [
+              ...prevImages,
+              {
+                id: lastModified,
+                src: event.target?.result,
+              },
+            ]);
+          };
+        }
       }
     }
   };
@@ -46,16 +53,18 @@ export default function UploadMultiImage(data: dataType & { userData: any; setUs
         <input type="file" id="profile-upload" accept="image/*" multiple onChange={handleImageChange} />
       </div>
 
-      <div className="form-group">
-        <label htmlFor="subject">사진 미리보기</label>
-        <div id="preview_img">
-          {previewImages.map(image => (
-            <div key={image.id} className="img_div relative">
-              <img src={image.src} className="img_div_img" />
-            </div>
-          ))}
+      {previewImages.length != 0 ? (
+        <div className="form-group">
+          <div className="h-[2rem] flex justify-center items-center">사진 미리보기</div>
+          <div className="flex justify-center">
+            {previewImages.map(image => (
+              <div key={image.id} className="flex justify-center items-center w-[100%] h-[7rem] ">
+                <img src={image.src} className="h-[6rem] w-[6rem]" />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      ) : null}
     </div>
   );
 }
