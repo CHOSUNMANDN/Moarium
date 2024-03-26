@@ -68,7 +68,6 @@ export default function Login() {
     if (userData.clubProfileImages) {
       formData.append('clubProfileImages', userData.clubProfileImages);
     }
-    console.log(formData.get('clubProfileImages'));
 
     if (userData.clubInformationImages) {
       for (let i = 0; i < userData.clubInformationImages.length; i++) {
@@ -89,12 +88,10 @@ export default function Login() {
         const message = res.data.message;
         setMessage(message);
         setHttpStatusMessage(res.data.httpStatus);
-        console.log(message);
       })
       .catch(err => {
         setModalOpen(true);
         const message = err.response.data.message;
-        console.log(message);
         setMessage(message);
         setHttpStatusMessage(err.response.data.httpStatus);
       });
@@ -110,7 +107,6 @@ export default function Login() {
     })
       .then(res => {
         const message = res.data.message;
-        console.log(res);
         setOverlapMessage(message);
         setOverlapHttpStatusMessage(res.data.httpStatus);
       })
@@ -132,15 +128,15 @@ export default function Login() {
   // 테이터 변경시 FormData에 저장
   useEffect(() => {
     setUserData(userData);
-    console.log(userData);
   }, [userData]);
 
   const validation = () => {
     if (userData.clubIntroduction.length < 100) {
       alert('팀 소개를 100자 이상 입력해주세요.');
-    }
-    if (userData.clubName.length >= 25) {
+    } else if (userData.clubName.length >= 25) {
       alert('팀 이름은 25글자 이하 입니다.');
+    } else if (userData.clubInformationImages.length > 3) {
+      alert('사진은 3장까지 등록 가능합니다.');
     } else {
       resgisterButton();
     }
@@ -184,13 +180,13 @@ export default function Login() {
             <div>
               <TextAreaForm title="팀 소개 (100자 이상)" placeholder={placeHolder} dataname={'clubIntroduction'} userData={userData} setUserData={setUserData} />
             </div>
-            <div className="border">
+            <div className="">
               <div>
                 <UploadSingleImage title={'팀 프로필 사진'} dataname={'clubProfileImages'} userData={userData} setUserData={setUserData} />
               </div>
               <div></div>
             </div>
-            <div className="border">
+            <div className="">
               <div>
                 <UploadMultiImage title={'팀 소개 사진'} dataname={'clubInformationImages'} userData={userData} setUserData={setUserData} />
               </div>
