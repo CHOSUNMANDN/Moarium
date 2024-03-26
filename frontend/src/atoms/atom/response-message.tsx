@@ -9,7 +9,7 @@ type dataType = {
 
 export default function ResponseMessage(data: dataType) {
   return (
-    <div className="h-[2.8rem] border text-sm text-wrap  overflow-y-auto">
+    <div className="h-[2.8rem]  text-sm text-wrap  overflow-y-auto">
       {data.type === HTTP_BAD_REQUEST ? (
         <>
           <div className="text-[#f67777]">{data.message}</div>
