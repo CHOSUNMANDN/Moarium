@@ -47,16 +47,18 @@ export default function UploadSingleImage(data: dataType & { userData: any; setU
           <input type="file" id="profile-upload" accept="image/*" onChange={handleImageChange} />
         </div>
       </div>
-      <div className="form-group">
-        <label htmlFor="subject">사진 미리보기</label>
-        <div id="preview_img">
-          {previewImages.map(image => (
-            <div key={image.id} className="img_div relative">
-              <img src={image.src} className="img_div_img" />
-            </div>
-          ))}
+      {previewImages.length != 0 ? (
+        <div className="form-group">
+          <div className="h-[2rem] flex justify-center items-center">사진 미리보기</div>
+          <div className="flex justify-center ">
+            {previewImages.map(image => (
+              <div key={image.id}>
+                <img src={image.src} className="h-[10rem] w-[10rem]" />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      ) : null}
     </div>
   );
 }
