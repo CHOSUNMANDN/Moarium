@@ -108,6 +108,29 @@ public class ClubService {
   }
 
   /**
+   * 로그인 멤버의 클럽 찾기 정보를 가져옵니다.
+   *
+   * @param loginMemberId 로그인 멤버의 ID
+   * @return 클럽 찾기 정보 리스트
+   */
+  public List<ClubFindInformation> getJoinClubFindInformations(final Long loginMemberId) {
+    List<ClubMember> joinClubMembers = clubMemberRepository.findAllByMemberId(loginMemberId);
+    List<ClubFindInformation> clubFindInformations = new ArrayList<>();
+
+    // loginMember의 참여한 클럽의 리스트
+    for (final ClubMember joinClubMember : joinClubMembers) {
+      // 클럽의 즐겨찾기 여부 가져오기
+      ClubMemberInformation clubMemberInformation = clubMemberInformationRepository.findById(
+          joinClubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
+      FAVORITE_CHECK favoriteCheck = clubMemberInformation.getFavoriteCheck();
+
+      addClubFindInformations(clubFindInformations, joinClubMember, favoriteCheck);
+    }
+
+    return clubFindInformations;
+  }
+
+  /**
    * 클럽 찾기 정보 리스트에 클럽 정보를 추가합니다.
    *
    * @param clubFindInformations 클럽 찾기 정보 리스트
