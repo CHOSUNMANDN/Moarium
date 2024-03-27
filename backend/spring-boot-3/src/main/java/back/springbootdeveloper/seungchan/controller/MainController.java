@@ -34,7 +34,7 @@ public class MainController {
   public BaseResultDTO<MainClubFindResDto> getMemberDetailsPage(HttpServletRequest request) {
     Long loginMemberId = tokenService.getMemberIdFromToken(request);
 
-    List<ClubFindInformation> clubFindInformations = clubService.getClubFindInformations(
+    List<ClubFindInformation> clubFindInformations = clubService.getClubFavoriteFindInformations(
         loginMemberId);
 
     return BaseResultDTO.ofSuccess(MainClubFindResDto.builder()

@@ -88,7 +88,7 @@ public class ClubService {
    * @param loginMemberId 현재 로그인한 회원의 ID
    * @return 현재 로그인한 회원이 참여한 클럽의 정보 목록
    */
-  public List<ClubFindInformation> getClubFindInformations(final Long loginMemberId) {
+  public List<ClubFindInformation> getClubFavoriteFindInformations(final Long loginMemberId) {
     List<ClubMember> joinClubMembers = clubMemberRepository.findAllByMemberId(loginMemberId);
     List<ClubFindInformation> clubFindInformations = new ArrayList<>();
 
