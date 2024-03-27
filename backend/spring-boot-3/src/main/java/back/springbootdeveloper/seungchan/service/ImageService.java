@@ -122,6 +122,12 @@ public class ImageService {
     return clubInformationImageBase64;
   }
 
+  /**
+   * 주어진 클럽 이름에 해당하는 프로필 이미지를 Base64로 인코딩하여 반환합니다.
+   *
+   * @param clubName 클럽 이름
+   * @return Base64로 인코딩된 클럽 프로필 이미지
+   */
   public String getClubProfileImagesAsBase64(final String clubName) {
     // Base64로 인코딩된 클럽 정보 이미지를 저장할 리스트 초기화
     String clubProfileImageBase64 = getProfileImageBase64(clubName);
@@ -131,6 +137,33 @@ public class ImageService {
       return getBaseImageBase64();
     }
     return clubProfileImageBase64;
+  }
+
+  /**
+   * 주어진 이미지 URL에 해당하는 이미지를 Base64로 인코딩하여 반환합니다.
+   *
+   * @param imageUrl 이미지 URL
+   * @return Base64로 인코딩된 이미지
+   */
+  public String getImagesAsBase64(final String imageUrl) {
+    // 클럽 정보 이미지 디렉토리 가져오기
+    File imageFile = new File(imageUrl);
+
+    // 파일들이 존재하는 경우
+    if (imageFile != null) {
+      try {
+        // 파일의 바이트 배열 읽어오기
+        byte[] bytes = Files.readAllBytes(imageFile.toPath());
+        // 바이트 배열을 Base64로 인코딩하여 리스트에 추가
+        return Base64.getEncoder().encodeToString(bytes);
+      } catch (IOException e) {
+        // 기본 베이스 이미지 리본
+        return getBaseImageBase64();
+      }
+    }
+
+    // 기본 베이스 이미지 리본
+    return getBaseImageBase64();
   }
 
   /**
@@ -164,6 +197,7 @@ public class ImageService {
    * @param clubName 클럽 이름
    * @return 클럽의 프로필 이미지를 Base64로 인코딩한 문자열
    */
+  // TODO: 3/28/24 image Url을 이용한다.
   private String getProfileImageBase64(final String clubName) {
     // 클럽 프로파일 이미지 디렉토리 경로 설정
     String clubProfileImageUrl = imageBaseDirUrl + clubImageBaseDirUrl + clubProfileDirUrl;
