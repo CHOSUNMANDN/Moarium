@@ -1,6 +1,5 @@
 package back.springbootdeveloper.seungchan.controller;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -106,7 +105,7 @@ class MainControllerTest {
                 .clubId(club.getClubId())
                 .clubProfileImage(clubProfileImage)
                 .clubName(club.getClubName())
-                .clubRepresentativeName(leaderMember.getFullName())
+                .clubLeaderName(leaderMember.getFullName())
                 .numberMember(String.valueOf(clubMemberIncludeClubs.size()))
                 .favoriteCheck(favoriteCheck.getState())
                 .build()

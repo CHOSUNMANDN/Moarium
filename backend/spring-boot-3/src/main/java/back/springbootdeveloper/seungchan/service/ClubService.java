@@ -134,7 +134,7 @@ public class ClubService {
             .clubId(club.getClubId())
             .clubProfileImage(clubProfileImage)
             .clubName(club.getClubName())
-            .clubRepresentativeName(leaderMember.getFullName())
+            .clubLeaderName(leaderMember.getFullName())
             .numberMember(String.valueOf(clubMemberIncludeClubs.size()))
             .favoriteCheck(favoriteCheck.getState())
             .build()
