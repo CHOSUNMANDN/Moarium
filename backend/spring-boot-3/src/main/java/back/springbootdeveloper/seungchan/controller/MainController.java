@@ -26,7 +26,7 @@ public class MainController {
   private final TokenService tokenService;
   private final ClubService clubService;
 
-  @Operation(summary = "", description = "동아리 휴먼 회원들 제외한 모든 회원들 상세 조회 가능")
+  @Operation(summary = "메인 페이지 즐겨찾기 정보 조회", description = "메인 페이지의 즐겨 찾기 목록의 클럽 정보들의 조회")
   @GetMapping(value = "")
   public BaseResultDTO<MainClubFindResDto> getMemberDetailsPage(HttpServletRequest request) {
     Long loginMemberId = tokenService.getMemberIdFromToken(request);
