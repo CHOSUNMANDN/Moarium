@@ -9,6 +9,7 @@ import back.springbootdeveloper.seungchan.annotation.MoariumSpringBootTest;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import back.springbootdeveloper.seungchan.constant.entity.FAVORITE_CHECK;
 import back.springbootdeveloper.seungchan.dto.response.ClubFindInformation;
+import back.springbootdeveloper.seungchan.dto.response.SearchResult;
 import back.springbootdeveloper.seungchan.entity.Club;
 import back.springbootdeveloper.seungchan.entity.ClubMember;
 import back.springbootdeveloper.seungchan.entity.ClubMemberInformation;
@@ -131,6 +132,46 @@ class MainControllerTest {
           .andExpect(
               jsonPath("$.result.clubRepresentativeName").value(clubFindInformation.getClubId()))
           .andExpect(jsonPath("$.result.numberMember").value(clubFindInformation.getClubId()));
+    }
+  }
+
+  @Test
+  void 메인_페이지_동아리_검색_조회_테스트() throws Exception {
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/main/search";
+    final Long targetClubId = targetClubOneId;
+    final String search = "팀";
+
+    // 검증을 위한 데이터 준비
+    List<SearchResult> searchResults = new ArrayList<>();
+    List<Club> clubs = clubRepository.findAll();
+
+    for (final Club club : clubs) {
+      String clubName = club.getClubName();
+      if (clubName.contains(search) && !search.isEmpty()) {
+        searchResults.add(
+            SearchResult.builder()
+                .clubName(clubName)
+                .clubProfileImage("")
+                .build()
+        );
+      }
+    }
+
+    // when
+    ResultActions result = mockMvc.perform(get(url, targetClubId).param("search", search)
+        .accept(MediaType.APPLICATION_JSON)
+        .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(status().isOk());
+    for (int i = 0; i < searchResults.size(); i++) {
+      result
+          .andExpect(jsonPath("$.result.searchResults[" + i + "].clubName").value(
+              searchResults.get(i).getClubName()));
     }
   }
 }
