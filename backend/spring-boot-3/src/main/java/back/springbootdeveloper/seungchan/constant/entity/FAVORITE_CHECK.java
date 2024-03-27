@@ -1,5 +1,18 @@
 package back.springbootdeveloper.seungchan.constant.entity;
 
+import lombok.Getter;
+
+@Getter
 public enum FAVORITE_CHECK {
-  CHECK, UNCHECK
+  CHECK("CHECK"), UNCHECK("UN_CHECK");
+
+  private String state;
+
+  FAVORITE_CHECK(final String state) {
+    this.state = state;
+  }
+
+  public boolean is(final FAVORITE_CHECK favoriteCheck) {
+    return this.state.equals(favoriteCheck.getState());
+  }
 }
