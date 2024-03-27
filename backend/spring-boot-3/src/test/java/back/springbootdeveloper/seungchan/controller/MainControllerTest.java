@@ -60,5 +60,77 @@ class MainControllerTest {
     targetClubOneId = testCreateUtil.getONE_CLUB_ID();
   }
 
+  @Test
+  @Transactional
+  void 메인_페이지_나의_즐겨찾기_정보_조회() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/main";
+    final Long targetClubId = targetClubOneId;
+    final Member loginMember = testCreateUtil.get_entity_one_club_leader_member();
+    final Club targetClub = clubRepository.findById(targetClubId).get();
+    final ClubMember targetLeaderClubMember = clubMemberRepository.findLeaderByClubIdAndLeaderId(
+        targetClubId,
+        CLUB_GRADE.LEADER.getId());
 
+    // 검증을 위한 데이터 준비
+    List<ClubMember> joinClubMembers = clubMemberRepository.findAllByMemberId(
+        loginMember.getMemberId());
+    List<ClubFindInformation> clubFindInformations = new ArrayList<>();
+
+    // loginMember의 참여한 클럽의 리스트
+    for (final ClubMember joinClubMember : joinClubMembers) {
+      // 클럽의 즐겨찾기 여부 가져오기
+      ClubMemberInformation clubMemberInformation = clubMemberInformationRepository.findById(
+          joinClubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
+      FAVORITE_CHECK favoriteCheck = clubMemberInformation.getFavoriteCheck();
+
+      if (FAVORITE_CHECK.CHECK.is(favoriteCheck)) {
+        Club club = clubRepository.findById(joinClubMember.getClubId())
+            .orElseThrow(EntityNotFoundException::new);
+        ClubMember leaderClubMember = clubMemberRepository.findLeaderByClubIdAndLeaderId(
+            club.getClubId(),
+            CLUB_GRADE.LEADER.getId()); // 리더의 정보를 조회합니다.
+        Member leaderMember = memberRepository.findById(leaderClubMember.getMemberId())
+            .orElseThrow(EntityNotFoundException::new);
+        // 클럽의 프로필 이미지를 Base64 형식으로 가져옵니다.
+        String clubProfileImage = imageService.getClubProfileImagesAsBase64(club.getClubName());
+        List<ClubMember> clubMemberIncludeClubs = clubMemberRepository.findAllByClubId(
+            club.getClubId());
+
+        // 반환하는 리스트에 클럽의 관련 정보 add
+        clubFindInformations.add(
+            ClubFindInformation.builder()
+                .clubId(club.getClubId())
+                .clubProfileImage(clubProfileImage)
+                .clubName(club.getClubName())
+                .clubRepresentativeName(leaderMember.getFullName())
+                .numberMember(String.valueOf(clubMemberIncludeClubs.size()))
+                .favoriteCheck(favoriteCheck.getState())
+                .build()
+        );
+      }
+    }
+
+    // when
+    ResultActions result = mockMvc.perform(get(url, targetClubId)
+        .accept(MediaType.APPLICATION_JSON)
+        .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    // then
+    result
+        .andExpect(status().isOk());
+
+    for (ClubFindInformation clubFindInformation : clubFindInformations) {
+      result
+          .andExpect(jsonPath("$.result.clubId").value(clubFindInformation.getClubId()))
+          .andExpect(jsonPath("$.result.clubProfileImage").value(clubFindInformation.getClubId()))
+          .andExpect(jsonPath("$.result.clubName").value(clubFindInformation.getClubId()))
+          .andExpect(
+              jsonPath("$.result.clubRepresentativeName").value(clubFindInformation.getClubId()))
+          .andExpect(jsonPath("$.result.numberMember").value(clubFindInformation.getClubId()));
+    }
+  }
 }
