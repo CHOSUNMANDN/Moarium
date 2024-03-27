@@ -94,7 +94,6 @@ public class ClubService {
     List<ClubFindInformation> clubFindInformations = new ArrayList<>();
 
     // loginMember의 참여한 클럽의 리스트
-    // TODO: 3/27/24 클럽 멤버의 즐겨찾기 목록을 가져와야되는데 잘못했다.
     for (final ClubMember joinClubMember : joinClubMembers) {
       // 클럽의 즐겨찾기 여부 가져오기
       ClubMemberInformation clubMemberInformation = clubMemberInformationRepository.findById(
