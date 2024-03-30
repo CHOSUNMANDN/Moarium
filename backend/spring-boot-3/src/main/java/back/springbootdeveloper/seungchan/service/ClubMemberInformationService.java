@@ -13,6 +13,13 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional(readOnly = true)
 public class ClubMemberInformationService {
 
+  /**
+   * 클럽의 리더 클럽 멤버 정보를 생성합니다.
+   *
+   * @param saveClub 클럽 정보
+   * @param myMember 현재 멤버 정보
+   * @return 생성된 리더 클럽 멤버 정보
+   */
   public ClubMemberInformation makeLeaderClubMemberInformation(final Club saveClub,
       final Member myMember) {
     final String leaderClubMemberInformation = MESSAGE.LEADER_CLUB_MEMBER_INFORMATION(
