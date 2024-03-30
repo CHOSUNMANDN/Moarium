@@ -12,7 +12,6 @@ import back.springbootdeveloper.seungchan.repository.ClubMemberInformationReposi
 import back.springbootdeveloper.seungchan.repository.ClubMemberRepository;
 import back.springbootdeveloper.seungchan.repository.ClubRepository;
 import back.springbootdeveloper.seungchan.repository.MemberRepository;
-import java.awt.Image;
 import java.util.ArrayList;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -89,7 +88,7 @@ public class ClubService {
    * @param loginMemberId 현재 로그인한 회원의 ID
    * @return 현재 로그인한 회원이 참여한 클럽의 정보 목록
    */
-  public List<ClubFindInformation> getClubFindInformations(final Long loginMemberId) {
+  public List<ClubFindInformation> getClubFavoriteFindInformations(final Long loginMemberId) {
     List<ClubMember> joinClubMembers = clubMemberRepository.findAllByMemberId(loginMemberId);
     List<ClubFindInformation> clubFindInformations = new ArrayList<>();
 
@@ -101,32 +100,67 @@ public class ClubService {
       FAVORITE_CHECK favoriteCheck = clubMemberInformation.getFavoriteCheck();
 
       if (FAVORITE_CHECK.CHECK.is(favoriteCheck)) {
-        Club club = clubRepository.findById(joinClubMember.getClubId())
-            .orElseThrow(EntityNotFoundException::new);
-        ClubMember leaderClubMember = clubMemberRepository.findLeaderByClubIdAndLeaderId(
-            club.getClubId(),
-            CLUB_GRADE.LEADER.getId()); // 리더의 정보를 조회합니다.
-        Member leaderMember = memberRepository.findById(leaderClubMember.getMemberId())
-            .orElseThrow(EntityNotFoundException::new);
-        // 클럽의 프로필 이미지를 Base64 형식으로 가져옵니다.
-        String clubProfileImage = imageService.getClubProfileImagesAsBase64(club.getClubName());
-        List<ClubMember> clubMemberIncludeClubs = clubMemberRepository.findAllByClubId(
-            club.getClubId());
-
-        // 반환하는 리스트에 클럽의 관련 정보 add
-        clubFindInformations.add(
-            ClubFindInformation.builder()
-                .clubId(club.getClubId())
-                .clubProfileImage(clubProfileImage)
-                .clubName(club.getClubName())
-                .clubRepresentativeName(leaderMember.getFullName())
-                .numberMember(String.valueOf(clubMemberIncludeClubs.size()))
-                .favoriteCheck(favoriteCheck.getState())
-                .build()
-        );
+        addClubFindInformations(clubFindInformations, joinClubMember, favoriteCheck);
       }
     }
 
     return clubFindInformations;
+  }
+
+  /**
+   * 로그인 멤버의 클럽 찾기 정보를 가져옵니다.
+   *
+   * @param loginMemberId 로그인 멤버의 ID
+   * @return 클럽 찾기 정보 리스트
+   */
+  public List<ClubFindInformation> getJoinClubFindInformations(final Long loginMemberId) {
+    List<ClubMember> joinClubMembers = clubMemberRepository.findAllByMemberId(loginMemberId);
+    List<ClubFindInformation> clubFindInformations = new ArrayList<>();
+
+    // loginMember의 참여한 클럽의 리스트
+    for (final ClubMember joinClubMember : joinClubMembers) {
+      // 클럽의 즐겨찾기 여부 가져오기
+      ClubMemberInformation clubMemberInformation = clubMemberInformationRepository.findById(
+          joinClubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
+      FAVORITE_CHECK favoriteCheck = clubMemberInformation.getFavoriteCheck();
+
+      addClubFindInformations(clubFindInformations, joinClubMember, favoriteCheck);
+    }
+
+    return clubFindInformations;
+  }
+
+  /**
+   * 클럽 찾기 정보 리스트에 클럽 정보를 추가합니다.
+   *
+   * @param clubFindInformations 클럽 찾기 정보 리스트
+   * @param joinClubMember       가입한 클럽 멤버
+   * @param favoriteCheck        즐겨찾기 여부
+   */
+  private void addClubFindInformations(final List<ClubFindInformation> clubFindInformations,
+      final ClubMember joinClubMember, final FAVORITE_CHECK favoriteCheck) {
+    Club club = clubRepository.findById(joinClubMember.getClubId())
+        .orElseThrow(EntityNotFoundException::new);
+    ClubMember leaderClubMember = clubMemberRepository.findLeaderByClubIdAndLeaderId(
+        club.getClubId(),
+        CLUB_GRADE.LEADER.getId()); // 리더의 정보를 조회합니다.
+    Member leaderMember = memberRepository.findById(leaderClubMember.getMemberId())
+        .orElseThrow(EntityNotFoundException::new);
+    // 클럽의 프로필 이미지를 Base64 형식으로 가져옵니다.
+    String clubProfileImage = imageService.getClubProfileImagesAsBase64(club.getClubName());
+    List<ClubMember> clubMemberIncludeClubs = clubMemberRepository.findAllByClubId(
+        club.getClubId());
+
+    // 반환하는 리스트에 클럽의 관련 정보 add
+    clubFindInformations.add(
+        ClubFindInformation.builder()
+            .clubId(club.getClubId())
+            .clubProfileImage(clubProfileImage)
+            .clubName(club.getClubName())
+            .clubLeaderName(leaderMember.getFullName())
+            .numberMember(String.valueOf(clubMemberIncludeClubs.size()))
+            .favoriteCheck(favoriteCheck.getState())
+            .build()
+    );
   }
 }

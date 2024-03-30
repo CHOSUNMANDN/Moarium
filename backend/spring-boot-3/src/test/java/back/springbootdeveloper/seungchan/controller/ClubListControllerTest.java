@@ -1,6 +1,9 @@
 package back.springbootdeveloper.seungchan.controller;
 
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -8,7 +11,6 @@ import back.springbootdeveloper.seungchan.annotation.MoariumSpringBootTest;
 import back.springbootdeveloper.seungchan.constant.entity.CLUB_GRADE;
 import back.springbootdeveloper.seungchan.constant.entity.FAVORITE_CHECK;
 import back.springbootdeveloper.seungchan.dto.response.ClubFindInformation;
-import back.springbootdeveloper.seungchan.dto.response.SearchResult;
 import back.springbootdeveloper.seungchan.entity.Club;
 import back.springbootdeveloper.seungchan.entity.ClubMember;
 import back.springbootdeveloper.seungchan.entity.ClubMemberInformation;
@@ -32,7 +34,7 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.transaction.annotation.Transactional;
 
 @MoariumSpringBootTest
-class MainControllerTest {
+class ClubListControllerTest {
 
   @Autowired
   protected ObjectMapper objectMapper;
@@ -60,14 +62,13 @@ class MainControllerTest {
     targetClubOneId = testCreateUtil.getONE_CLUB_ID();
   }
 
-  // TODO: 3/28/24 테스트 확인
   @Test
   @Transactional
-  void 메인_페이지_나의_즐겨찾기_정보_조회() throws Exception {
+  void 클럽_리스트의_간략한_동아리_정보_목록_조회() throws Exception {
     // given
     // 유저 로그인
     final String token = testCreateUtil.create_token_one_club_leader_member();
-    final String url = "/main";
+    final String url = "/clubs/informations";
     final Long targetClubId = targetClubOneId;
     final Member loginMember = testCreateUtil.get_entity_one_club_leader_member();
     final Club targetClub = clubRepository.findById(targetClubId).get();
@@ -86,32 +87,29 @@ class MainControllerTest {
       ClubMemberInformation clubMemberInformation = clubMemberInformationRepository.findById(
           joinClubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
       FAVORITE_CHECK favoriteCheck = clubMemberInformation.getFavoriteCheck();
+      Club club = clubRepository.findById(joinClubMember.getClubId())
+          .orElseThrow(EntityNotFoundException::new);
+      ClubMember leaderClubMember = clubMemberRepository.findLeaderByClubIdAndLeaderId(
+          club.getClubId(),
+          CLUB_GRADE.LEADER.getId()); // 리더의 정보를 조회합니다.
+      Member leaderMember = memberRepository.findById(leaderClubMember.getMemberId())
+          .orElseThrow(EntityNotFoundException::new);
+      // 클럽의 프로필 이미지를 Base64 형식으로 가져옵니다.
+      String clubProfileImage = imageService.getClubProfileImagesAsBase64(club.getClubName());
+      List<ClubMember> clubMemberIncludeClubs = clubMemberRepository.findAllByClubId(
+          club.getClubId());
 
-      if (FAVORITE_CHECK.CHECK.is(favoriteCheck)) {
-        Club club = clubRepository.findById(joinClubMember.getClubId())
-            .orElseThrow(EntityNotFoundException::new);
-        ClubMember leaderClubMember = clubMemberRepository.findLeaderByClubIdAndLeaderId(
-            club.getClubId(),
-            CLUB_GRADE.LEADER.getId()); // 리더의 정보를 조회합니다.
-        Member leaderMember = memberRepository.findById(leaderClubMember.getMemberId())
-            .orElseThrow(EntityNotFoundException::new);
-        // 클럽의 프로필 이미지를 Base64 형식으로 가져옵니다.
-        String clubProfileImage = imageService.getClubProfileImagesAsBase64(club.getClubName());
-        List<ClubMember> clubMemberIncludeClubs = clubMemberRepository.findAllByClubId(
-            club.getClubId());
-
-        // 반환하는 리스트에 클럽의 관련 정보 add
-        clubFindInformations.add(
-            ClubFindInformation.builder()
-                .clubId(club.getClubId())
-                .clubProfileImage(clubProfileImage)
-                .clubName(club.getClubName())
-                .clubLeaderName(leaderMember.getFullName())
-                .numberMember(String.valueOf(clubMemberIncludeClubs.size()))
-                .favoriteCheck(favoriteCheck.getState())
-                .build()
-        );
-      }
+      // 반환하는 리스트에 클럽의 관련 정보 add
+      clubFindInformations.add(
+          ClubFindInformation.builder()
+              .clubId(club.getClubId())
+              .clubProfileImage(clubProfileImage)
+              .clubName(club.getClubName())
+              .clubLeaderName(leaderMember.getFullName())
+              .numberMember(String.valueOf(clubMemberIncludeClubs.size()))
+              .favoriteCheck(favoriteCheck.getState())
+              .build()
+      );
     }
 
     // when
@@ -124,56 +122,60 @@ class MainControllerTest {
     result
         .andExpect(status().isOk());
 
-    for (ClubFindInformation clubFindInformation : clubFindInformations) {
+    for (int i = 0; i < clubFindInformations.size(); i++) {
       result
-          .andExpect(jsonPath("$.result.clubId").value(clubFindInformation.getClubId()))
-          .andExpect(jsonPath("$.result.clubProfileImage").value(
-              clubFindInformation.getClubProfileImage()))
-          .andExpect(jsonPath("$.result.clubName").value(clubFindInformation.getClubName()))
+          .andExpect(jsonPath("$.result.clubFindInformations[" + i + "].clubId").value(
+              clubFindInformations.get(i).getClubId()))
+          .andExpect(jsonPath("$.result.clubFindInformations[" + i + "].clubProfileImage").value(
+              clubFindInformations.get(i).getClubProfileImage()))
+          .andExpect(jsonPath("$.result.clubFindInformations[" + i + "].clubName").value(
+              clubFindInformations.get(i).getClubName()))
           .andExpect(
-              jsonPath("$.result.clubLeaderName").value(clubFindInformation.getClubLeaderName()))
+              jsonPath("$.result.clubFindInformations[" + i + "].clubLeaderName").value(
+                  clubFindInformations.get(i).getClubLeaderName()))
           .andExpect(
-              jsonPath("$.result.numberMember").value(clubFindInformation.getNumberMember()));
+              jsonPath("$.result.clubFindInformations[" + i + "].numberMember").value(
+                  clubFindInformations.get(i).getNumberMember()));
     }
   }
 
   @Test
-  void 메인_페이지_동아리_검색_조회_테스트() throws Exception {
+  void 동아리_즐겨찾기_설정_API() throws Exception {
+    // given
     // 유저 로그인
     final String token = testCreateUtil.create_token_one_club_leader_member();
-    final String url = "/main/search";
+    final String url = "/clubs/{club_id}/favorites/check";
     final Long targetClubId = targetClubOneId;
-    final String search = "팀";
+    final Member loginMember = testCreateUtil.get_entity_one_club_leader_member();
+    final Club targetClub = clubRepository.findById(targetClubId).get();
 
     // 검증을 위한 데이터 준비
-    List<SearchResult> searchResults = new ArrayList<>();
-    List<Club> clubs = clubRepository.findAll();
-
-    for (final Club club : clubs) {
-      String clubName = club.getClubName();
-      if (clubName.contains(search) && !search.isEmpty()) {
-        searchResults.add(
-            SearchResult.builder()
-                .clubName(clubName)
-                .clubProfileImage("")
-                .build()
-        );
-      }
-    }
+    ClubMember targetClubMember = clubMemberRepository.findByClubIdAndMemberId(targetClubId,
+        loginMember.getMemberId()).orElseThrow(EntityNotFoundException::new);
+    ClubMemberInformation targetClubMemberInformation = clubMemberInformationRepository.findById(
+        targetClubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
+    FAVORITE_CHECK beforeCheck = targetClubMemberInformation.getFavoriteCheck();
 
     // when
-    ResultActions result = mockMvc.perform(get(url, targetClubId).param("search", search)
+    ResultActions result = mockMvc.perform(post(url, targetClubId)
         .accept(MediaType.APPLICATION_JSON)
         .header("authorization", "Bearer " + token) // token header에 담기
     );
 
+    ClubMemberInformation resultClubMemberInformation = clubMemberInformationRepository.findById(
+        targetClubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
+    FAVORITE_CHECK afterCheck = resultClubMemberInformation.getFavoriteCheck();
+
     // then
-    result
-        .andExpect(status().isOk());
-    for (int i = 0; i < searchResults.size(); i++) {
+    if (beforeCheck.is(FAVORITE_CHECK.CHECK)) {
+      assertThat(afterCheck).isEqualTo(FAVORITE_CHECK.UNCHECK);
       result
-          .andExpect(jsonPath("$.result.searchResults[" + i + "].clubName").value(
-              searchResults.get(i).getClubName()));
+          .andExpect(jsonPath("$.result.favoriteCheck").value(FAVORITE_CHECK.UNCHECK.getState()));
+    }
+    if (beforeCheck.is(FAVORITE_CHECK.UNCHECK)) {
+      assertThat(afterCheck).isEqualTo(FAVORITE_CHECK.CHECK);
+      result
+          .andExpect(jsonPath("$.result.favoriteCheck").value(FAVORITE_CHECK.CHECK.getState()));
     }
   }
 }
