@@ -60,6 +60,7 @@ class MainControllerTest {
     targetClubOneId = testCreateUtil.getONE_CLUB_ID();
   }
 
+  // TODO: 3/28/24 테스트 확인
   @Test
   @Transactional
   void 메인_페이지_나의_즐겨찾기_정보_조회() throws Exception {
@@ -126,11 +127,13 @@ class MainControllerTest {
     for (ClubFindInformation clubFindInformation : clubFindInformations) {
       result
           .andExpect(jsonPath("$.result.clubId").value(clubFindInformation.getClubId()))
-          .andExpect(jsonPath("$.result.clubProfileImage").value(clubFindInformation.getClubId()))
-          .andExpect(jsonPath("$.result.clubName").value(clubFindInformation.getClubId()))
+          .andExpect(jsonPath("$.result.clubProfileImage").value(
+              clubFindInformation.getClubProfileImage()))
+          .andExpect(jsonPath("$.result.clubName").value(clubFindInformation.getClubName()))
           .andExpect(
-              jsonPath("$.result.clubRepresentativeName").value(clubFindInformation.getClubId()))
-          .andExpect(jsonPath("$.result.numberMember").value(clubFindInformation.getClubId()));
+              jsonPath("$.result.clubLeaderName").value(clubFindInformation.getClubLeaderName()))
+          .andExpect(
+              jsonPath("$.result.numberMember").value(clubFindInformation.getNumberMember()));
     }
   }
 
