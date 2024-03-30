@@ -1,7 +1,9 @@
 package back.springbootdeveloper.seungchan.controller;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -134,6 +136,46 @@ class ClubListControllerTest {
           .andExpect(
               jsonPath("$.result.clubFindInformations[" + i + "].numberMember").value(
                   clubFindInformations.get(i).getNumberMember()));
+    }
+  }
+
+  @Test
+  void 동아리_즐겨찾기_설정_API() throws Exception {
+    // given
+    // 유저 로그인
+    final String token = testCreateUtil.create_token_one_club_leader_member();
+    final String url = "/clubs/{club_id}/favorites/check";
+    final Long targetClubId = targetClubOneId;
+    final Member loginMember = testCreateUtil.get_entity_one_club_leader_member();
+    final Club targetClub = clubRepository.findById(targetClubId).get();
+
+    // 검증을 위한 데이터 준비
+    ClubMember targetClubMember = clubMemberRepository.findByClubIdAndMemberId(targetClubId,
+        loginMember.getMemberId()).orElseThrow(EntityNotFoundException::new);
+    ClubMemberInformation targetClubMemberInformation = clubMemberInformationRepository.findById(
+        targetClubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
+    FAVORITE_CHECK beforeCheck = targetClubMemberInformation.getFavoriteCheck();
+
+    // when
+    ResultActions result = mockMvc.perform(post(url, targetClubId)
+        .accept(MediaType.APPLICATION_JSON)
+        .header("authorization", "Bearer " + token) // token header에 담기
+    );
+
+    ClubMemberInformation resultClubMemberInformation = clubMemberInformationRepository.findById(
+        targetClubMember.getClubMemberInformationId()).orElseThrow(EntityNotFoundException::new);
+    FAVORITE_CHECK afterCheck = resultClubMemberInformation.getFavoriteCheck();
+
+    // then
+    if (beforeCheck.is(FAVORITE_CHECK.CHECK)) {
+      assertThat(afterCheck).isEqualTo(FAVORITE_CHECK.UNCHECK);
+      result
+          .andExpect(jsonPath("$.result.favoriteCheck").value(FAVORITE_CHECK.UNCHECK.getState()));
+    }
+    if (beforeCheck.is(FAVORITE_CHECK.UNCHECK)) {
+      assertThat(afterCheck).isEqualTo(FAVORITE_CHECK.CHECK);
+      result
+          .andExpect(jsonPath("$.result.favoriteCheck").value(FAVORITE_CHECK.CHECK.getState()));
     }
   }
 }
