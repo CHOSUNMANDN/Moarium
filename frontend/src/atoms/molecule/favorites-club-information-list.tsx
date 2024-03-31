@@ -22,7 +22,7 @@ export default function FavoritesClubInformationList(props: FavoritesClubInforma
   const { data } = props;
 
   return (
-    <div className="flex flex-col h-[20rem]  items-center pt-[1rem] overflow-y-auto">
+    <div className="flex flex-col h-[16.8rem] items-center pt-[1rem] overflow-y-auto">
       {data &&
         data.map((item, index) => (
           <div key={index}>
