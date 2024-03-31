@@ -26,7 +26,7 @@ export default function FavoritesClubInformation(data: FavoritesClubInformationT
   };
 
   return (
-    <div className="flex w-[15rem] h-[4rem] items-center justify-evenly mb-[.4rem] border-[.1px] rounded">
+    <div className="flex w-[15rem] h-[4.5rem] items-center justify-evenly mb-[.8rem] border-[.1px] rounded">
       <div>
         <img className="h-[2.5rem] w-[2.5rem] rounded" src={'data:image/png;base64,' + data.clubProfileImage} alt={`${data.clubName} Image `} />
       </div>
