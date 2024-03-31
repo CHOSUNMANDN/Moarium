@@ -18,6 +18,7 @@ import { replaceRouterInitialize } from '@/utils/RouteHandling';
 import NavigationFooter from '@/atoms/molecule/navigation-footer';
 import FavoritesClubInformation from '@/atoms/molecule/favorites-club-information';
 import FavoritesClubInformationList from '@/atoms/molecule/favorites-club-information-list';
+import StudySearch from '@/atoms/molecule/study-search';
 
 interface ClubFavoriteInformationType {
   clubId: number;
@@ -77,6 +78,12 @@ export default function Main() {
       <section>
         <div>
           <FavoritesClubInformationList data={clubFavoriteInformations} />
+        </div>
+        <div className="flex flex-col justify-center  items-center ">
+          <StudySearch />
+        </div>
+        <div className="flex justify-center items-center h-[3rem] text-[0.8rem] font-bold c text-[#2db4ec] opacity-70	">
+          <div>팀 등록하기</div>
         </div>
       </section>
       <NavigationFooter isKing={isKing}></NavigationFooter>
