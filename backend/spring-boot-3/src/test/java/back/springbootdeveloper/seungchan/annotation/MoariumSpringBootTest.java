@@ -6,6 +6,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.lang.annotation.*;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * MoariumSpringBootTest 애노테이션은 테스트 클래스에 적용되는 사용자 정의 Spring Boot 테스트 애노테이션입니다. 이 애노테이션은 다음 애노테이션들을
@@ -21,6 +22,7 @@ import java.lang.annotation.*;
 @Inherited
 @Documented
 @Target(ElementType.TYPE)
+@Transactional
 @SpringBootTest
 @AutoConfigureMockMvc
 @ExtendWith(TestCustomExtension.class)

@@ -61,6 +61,13 @@ public class ClubRegistrationController {
           ResponseMessage.BAD_NOT_BLANK_CLUB_INTRODUCTION.get());
     }
 
+    // club name 중복 검사
+    Boolean isDuplicationClubName = clubService.isDuplicationClubName(clubName);
+    if (isDuplicationClubName) {
+      return BaseResponseBodyUtiil.BaseResponseBodyFailure(
+          ResponseMessage.BAD_DUPLICATION_CLUBNAME.get());
+    }
+
     Club saveClub = entityApplyService.makeClub(
         clubName.trim(), clubIntroduction, clubProfileImage, clubInformationImages
     ).orElseThrow(EntityNotFoundException::new);

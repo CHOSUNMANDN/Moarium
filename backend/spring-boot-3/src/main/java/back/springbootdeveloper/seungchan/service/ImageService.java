@@ -123,6 +123,50 @@ public class ImageService {
   }
 
   /**
+   * 주어진 클럽 이름에 해당하는 프로필 이미지를 Base64로 인코딩하여 반환합니다.
+   *
+   * @param clubName 클럽 이름
+   * @return Base64로 인코딩된 클럽 프로필 이미지
+   */
+  public String getClubProfileImagesAsBase64(final String clubName) {
+    // Base64로 인코딩된 클럽 정보 이미지를 저장할 리스트 초기화
+    String clubProfileImageBase64 = getProfileImageBase64(clubName);
+
+    // 등록된 소개 사진이 없는 경우, 기본 사진 등록
+    if (clubProfileImageBase64.isEmpty() || clubProfileImageBase64 != null) {
+      return getBaseImageBase64();
+    }
+    return clubProfileImageBase64;
+  }
+
+  /**
+   * 주어진 이미지 URL에 해당하는 이미지를 Base64로 인코딩하여 반환합니다.
+   *
+   * @param imageUrl 이미지 URL
+   * @return Base64로 인코딩된 이미지
+   */
+  public String getImagesAsBase64(final String imageUrl) {
+    // 클럽 정보 이미지 디렉토리 가져오기
+    File imageFile = new File(imageUrl);
+
+    // 파일들이 존재하는 경우
+    if (imageFile != null) {
+      try {
+        // 파일의 바이트 배열 읽어오기
+        byte[] bytes = Files.readAllBytes(imageFile.toPath());
+        // 바이트 배열을 Base64로 인코딩하여 리스트에 추가
+        return Base64.getEncoder().encodeToString(bytes);
+      } catch (IOException e) {
+        // 기본 베이스 이미지 리본
+        return getBaseImageBase64();
+      }
+    }
+
+    // 기본 베이스 이미지 리본
+    return getBaseImageBase64();
+  }
+
+  /**
    * String 리스트에 기본 이미지를 추가합니다.
    *
    * @param ImageBase64s 이미지 리스트
@@ -145,6 +189,67 @@ public class ImageService {
         e.printStackTrace();
       }
     }
+  }
+
+  /**
+   * 클럽의 프로필 이미지를 Base64 형식으로 반환합니다.
+   *
+   * @param clubName 클럽 이름
+   * @return 클럽의 프로필 이미지를 Base64로 인코딩한 문자열
+   */
+  // TODO: 3/28/24 image Url을 이용한다.
+  private String getProfileImageBase64(final String clubName) {
+    // 클럽 프로파일 이미지 디렉토리 경로 설정
+    String clubProfileImageUrl = imageBaseDirUrl + clubImageBaseDirUrl + clubProfileDirUrl;
+
+    // 클럽 프로필 이미지 디렉토리 가져오기
+    File clubProfileDirectory = new File(clubProfileImageUrl);
+    // 디렉토리 내의 파일들 가져오기
+    File[] imageFiles = clubProfileDirectory.listFiles();
+
+    // 파일들이 존재하는 경우
+    if (imageFiles != null) {
+      // 각 파일에 대하여
+      for (File imageFile : imageFiles) {
+        // 파일이 실제 파일이고 파일명이 클럽 이름으로 시작하는 경우
+        if (imageFile.isFile() && imageFile.getName().startsWith(clubName)) {
+          try {
+            // 파일의 바이트 배열 읽어오기
+            byte[] bytes = Files.readAllBytes(imageFile.toPath());
+            // 바이트 배열을 Base64로 인코딩하여 문자열 리톤
+            return Base64.getEncoder().encodeToString(bytes);
+          } catch (IOException e) {
+            e.printStackTrace();
+          }
+        }
+      }
+    }
+
+    return "";
+  }
+
+  /**
+   * 기본 이미지의 Base64의 String 인코딩 반환하기
+   */
+  private String getBaseImageBase64() {
+    String baseUrl = imageBaseDirUrl + baseImageDirUrl + baseImageName;
+
+    // 클럽 정보 이미지 디렉토리 가져오기
+    File baseImageFile = new File(baseUrl);
+
+    // 파일들이 존재하는 경우
+    if (baseImageFile != null) {
+      try {
+        // 파일의 바이트 배열 읽어오기
+        byte[] bytes = Files.readAllBytes(baseImageFile.toPath());
+        // 바이트 배열을 Base64로 인코딩하여 리스트에 추가
+        return Base64.getEncoder().encodeToString(bytes);
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+    }
+
+    return "";
   }
 
   /**
