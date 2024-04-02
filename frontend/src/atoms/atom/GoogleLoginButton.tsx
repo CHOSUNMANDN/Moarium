@@ -32,7 +32,6 @@ export default function GoogleLoginButton() {
         console.log('로그인 성공 ㄴㅇㅅ');
         const data = res.data.result;
         setLoginResult(data);
-        console.log(data);
 
         if (loginResult.memberStatus == MEMBER) {
           replaceRouterMain(router);
