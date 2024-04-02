@@ -47,7 +47,7 @@ export default function Main() {
       .catch(err => {
         console.log(err);
       });
-  }, [clubFavoriteInformations]);
+  }, []);
 
   useEffect(() => {
     // 토큰이 없을시 초기화면으로 이동
@@ -55,20 +55,6 @@ export default function Main() {
       replaceRouterInitialize(router);
     }
   }, []);
-
-  useEffect(() => {
-    axAuth(token)({
-      method: 'get',
-      url: '/main',
-    })
-      .then(res => {
-        const clubFindInformations = res.data.result.clubFindInformations;
-        setClubFavoriteInformations(clubFindInformations);
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }, [clubFavoriteInformations]);
 
   return (
     <main>
