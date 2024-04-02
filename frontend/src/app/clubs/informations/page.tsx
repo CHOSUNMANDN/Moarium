@@ -28,7 +28,6 @@ export default function Login() {
   const [clubFavoriteInformations, setClubFavoriteInformations] = useState<ClubFavoriteInformationType[]>([]);
   const [isKing, setIsKing] = useRecoilState(isNuriKing);
 
-  // TODO: 무한 로딩 이유?
   useEffect(() => {
     axAuth(token)({
       method: 'get',
