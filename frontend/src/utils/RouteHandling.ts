@@ -56,3 +56,11 @@ export function replaceRouterPassword(router: AppRouterInstance): void {
 export function replaceRouterApplyClub(router: AppRouterInstance, id: undefined | string): void {
   router.replace(RouteUrl.ROUTE_APPLY_CLUB + id);
 }
+
+/**
+ * 초기 페이지 이동
+ * @param router
+ */
+export function replaceRouterFirstLogin(router: AppRouterInstance): void {
+  router.replace(RouteUrl.ROUTE_APPLY_CLUB);
+}
