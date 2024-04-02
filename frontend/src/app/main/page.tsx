@@ -63,7 +63,7 @@ export default function Main() {
       </header>
       <section>
         <div>
-          <FavoritesClubInformationList data={clubFavoriteInformations} />
+          <FavoritesClubInformationList data={clubFavoriteInformations} subTitle={`즐겨찾기를 통해\n이곳에 동아리를\n등록할 수 있습니다.`} />
         </div>
         <div className="flex flex-col justify-center  items-center ">
           <StudySearch />
