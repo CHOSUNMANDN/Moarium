@@ -47,7 +47,7 @@ export default function Main() {
       .catch(err => {
         console.log(err);
       });
-  }, [clubFavoriteInformations]);
+  }, []);
 
   useEffect(() => {
     // 토큰이 없을시 초기화면으로 이동
@@ -56,20 +56,6 @@ export default function Main() {
     }
   }, []);
 
-  useEffect(() => {
-    axAuth(token)({
-      method: 'get',
-      url: '/main',
-    })
-      .then(res => {
-        const clubFindInformations = res.data.result.clubFindInformations;
-        setClubFavoriteInformations(clubFindInformations);
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }, [clubFavoriteInformations]);
-
   return (
     <main>
       <header>
@@ -77,7 +63,7 @@ export default function Main() {
       </header>
       <section>
         <div>
-          <FavoritesClubInformationList data={clubFavoriteInformations} />
+          <FavoritesClubInformationList data={clubFavoriteInformations} subTitle={`즐겨찾기를 통해\n이곳에 동아리를\n등록할 수 있습니다.`} />
         </div>
         <div className="flex flex-col justify-center  items-center ">
           <StudySearch />
