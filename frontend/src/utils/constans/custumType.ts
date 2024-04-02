@@ -17,3 +17,13 @@ export const CHECK = 'CHECK';
  * 체크버튼에 체크를 안 할시
  */
 export const UN_CHECK = 'UN_CHECK';
+
+/**
+ * 기존 로그인시 최초 로그인
+ */
+export const MEMBER = 'MEMBER';
+
+/**
+ * 최초 로그인시 최초 로그인
+ */
+export const NON_MEMBER = 'NON_MEMBER';
