@@ -11,6 +11,7 @@ import { axBase } from '@/apis/axiosinstance';
 import { useRouter } from 'next/navigation';
 import Input from '../../../atoms/atom/input-form-value';
 import SmallButton from '@/atoms/atom/thin-long-button';
+import MiddleButton from '@/atoms/atom/middle-button';
 
 interface LoginFirstType {
   name: string;
@@ -63,13 +64,19 @@ export default function Home() {
       },
     })
       .then(res => {
-        // setToken(res.data.result.accessToken);
+        setToken(res.data.result.accessToken);
         console.log(res.data.result);
       })
       .catch(err => {
         console.log(err);
       });
   };
+
+  useEffect(() => {
+    // 토큰이 있을시 메인페이지 이동
+    console.log(userData);
+  }, [userData]);
+
   // const [certificationData, setCertificationData] = useState<CertificationDataType>({
 
   return (
@@ -78,26 +85,37 @@ export default function Home() {
         <Header isVisible={true} />
       </header>
       <main>
-        <article className="px-[7.5%]">
+        <article className="px-[7.5%] h-[35rem]">
           <Input title={'이름'} userData={userData} setUserData={setUserData} dataname="name" value={userData.name} />
-          <div>
+          <div className="flex justify-center items-center">
             <Input title={'닉네임'} userData={userData} setUserData={setUserData} dataname="nickName" value={userData.nickName} />
-            <SmallButton text={'중복 확인'} />
+            <div className="w-[8rem] ml-[0.3rem]">
+              <div className="h-[1rem]"></div>
+              <SmallButton text={'중복 확인'} />
+            </div>
           </div>
-          <div>
+          <div className="flex justify-center items-center">
             <Input title={'이메일'} userData={certificationData} setUserData={setUserData} dataname="email" value={certificationData.email} />
-            <SmallButton text={'이메일 확인'} />
+            <div className="w-[8rem] ml-[0.3rem]">
+              <div className="h-[1rem]"></div>
+              <SmallButton text={'이메일 확인'} />
+            </div>
           </div>
-          <div>
+          <div className="flex justify-center items-center">
             <Input title={'이메일 인증'} userData={userData} setUserData={setUserData} dataname="email" value={certificationData.email} />
-            <SmallButton text={'인증'} />
+            <div className="w-[8rem] ml-[0.3rem]">
+              <div className="h-[1rem]"></div>
+              <SmallButton text={'인증'} />
+            </div>
           </div>
           <Input title={'전공'} userData={userData} setUserData={setUserData} dataname="major" value={userData.major} />
           <Input title={'학번'} userData={userData} setUserData={setUserData} dataname="studentId" value={userData.studentId} />
         </article>
-        <button className="bg-auto bg-no-repeat w-[179px] h-[40px]" onClick={login}>
-          테스트 로그인 버튼
-        </button>
+        <div className="flex justify-center items-center">
+          <div onClick={login}>
+            <MiddleButton text={'작성 완료'}></MiddleButton>
+          </div>
+        </div>
       </main>
     </>
   );
