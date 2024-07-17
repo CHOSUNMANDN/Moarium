@@ -14,7 +14,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class LoginFirstReqDto {
 
-  private final Integer FIRST_INDEX = 0;
   @NotBlank(message = "{validation.name.notblank}")
   private String name;
   @NotBlank(message = "{validation.nickName.notblank}")
