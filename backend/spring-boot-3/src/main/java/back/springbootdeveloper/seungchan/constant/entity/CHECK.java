@@ -11,4 +11,8 @@ public enum CHECK {
   CHECK(final String state) {
     this.state = state;
   }
+
+  public Boolean is(String target) {
+    return this.state.equals(target);
+  }
 }

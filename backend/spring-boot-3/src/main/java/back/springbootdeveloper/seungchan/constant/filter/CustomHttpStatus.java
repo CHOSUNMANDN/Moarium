@@ -10,7 +10,9 @@ public enum CustomHttpStatus {
   PASSWORD_MISS_MATCHES(-486, "Password Miss Matches"),
   ENTITY_NOT_FOUND(-487, "Not Found Entity"),
   INVALID_SELECTION_CLASSIFICATION(-488, "Bad Selection Classification"),
-  INVALID_NOT_LEADER_MEMBER(-489, "Bad Not Leader Of Club");
+  INVALID_NOT_LEADER_MEMBER(-489, "Bad Not Leader Of Club"),
+  INVALID_NOT_AUTHENTICATION_EMAIL(-490, "Not Authentication Email"),
+  INVALID_NOT_NICK_NAME_EMAIL(-490, "Not Authentication Nick Name");
   private final int value;
 
 

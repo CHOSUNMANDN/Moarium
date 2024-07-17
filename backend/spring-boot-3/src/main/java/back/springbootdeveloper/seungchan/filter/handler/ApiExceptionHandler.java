@@ -225,4 +225,19 @@ public class ApiExceptionHandler {
 
     return new ResponseEntity<>(apiException, httpStatus);
   }
+
+  @ExceptionHandler(value = {NotAuthenticationEmailException.class}) // add
+  public ResponseEntity<Object> NotAuthenticationEmailException(
+      NotAuthenticationEmailException e) { // add
+    HttpStatus httpStatus = HttpStatus.BAD_REQUEST;
+    CustomHttpStatus customHttpStatus = CustomHttpStatus.INVALID_NOT_AUTHENTICATION_EMAIL; // add
+    ApiException apiException = new ApiException(
+        ExceptionMessage.NOT_LEADER_OF_CLUB.get(), // add
+        httpStatus,
+        customHttpStatus.value(),
+        ZonedDateTime.now(ZoneId.of("Z"))
+    );
+
+    return new ResponseEntity<>(apiException, httpStatus);
+  }
 }
