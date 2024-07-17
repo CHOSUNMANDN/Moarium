@@ -1,5 +1,6 @@
 package back.springbootdeveloper.seungchan.entity;
 
+import back.springbootdeveloper.seungchan.dto.request.LoginFirstReqDto;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -45,7 +46,7 @@ public class Member extends BaseEntity {
 
   @Builder
   public Member(String firstName, String lastName, String nickName, String email, String major,
-      String studentId) {
+                String studentId) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.nickName = nickName;
@@ -57,6 +58,19 @@ public class Member extends BaseEntity {
   @Builder
   public Member(String email) {
     this.email = email;
+  }
+
+  @Builder
+  public Member(LoginFirstReqDto request) {
+    Integer FIRST_INDEX = 0;
+    StringBuilder sb = new StringBuilder(request.getName().trim());
+
+    this.firstName = String.valueOf(sb.charAt(FIRST_INDEX));
+    this.lastName = sb.substring(FIRST_INDEX + 1).trim();
+    this.nickName = request.getNickName().trim();
+    this.email = request.getEmail().trim();
+    this.major = request.getMajor().trim();
+    this.studentId = request.getStudentId().trim();
   }
 
   @PrePersist

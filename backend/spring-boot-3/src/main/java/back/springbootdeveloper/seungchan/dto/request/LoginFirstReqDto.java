@@ -28,18 +28,4 @@ public class LoginFirstReqDto {
   private String studentId;
   private String authenticationEmail;
   private String authenticationNickName;
-
-  public Member getMemberEntity() {
-    StringBuilder sb = new StringBuilder(name.trim());
-
-    return Member.builder()
-        .firstName(String.valueOf(sb.charAt(FIRST_INDEX)))
-        .lastName(sb.substring(FIRST_INDEX + 1).trim())
-        .nickName(nickName.trim())
-        .email(email.trim())
-        .major(major.trim())
-        .studentId(studentId.trim())
-        .build();
-  }
-
 }

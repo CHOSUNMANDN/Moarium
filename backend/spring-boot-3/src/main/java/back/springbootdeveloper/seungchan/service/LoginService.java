@@ -26,14 +26,14 @@ public class LoginService {
     try {
       // Google Login 요청
       GoogleOAuthProfile profile = oAuthLoginApiClientService.requestOAuthLogin(
-          request.getAuthCode());
+        request.getAuthCode());
       loginEmail = profile.getEmail();
 
       // Email 정보를 얻은 후 확인
       Member member = memberService.findByEmail(loginEmail);
       // Check refresh token exist
       String existedRefreshToken = refreshTokenService.findByMemberId(member.getMemberId())
-          .getRefreshToken();
+        .getRefreshToken();
       boolean isValidRefreshToken = tokenService.isValidToken(existedRefreshToken);
 
       // FefreshToken 검증
@@ -56,7 +56,7 @@ public class LoginService {
    * @return 등록된 회원 정보
    */
   public Member firstLoginGoogle(LoginFirstReqDto loginFirstReqDto) {
-    Member member = loginFirstReqDto.getMemberEntity();
+    Member member = new Member(loginFirstReqDto);
 
     return memberRepository.save(member);
   }
