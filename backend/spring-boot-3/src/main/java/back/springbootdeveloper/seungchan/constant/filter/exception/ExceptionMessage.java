@@ -13,7 +13,9 @@ public enum ExceptionMessage {
 
   EXTERNAL_SERVICE_BAD_REQUEST("외부 API 요청에 문제가 생겼습니다."),
   EXTERNAL_SERVICE_UNAVAILABLE("외부 API server에 문제가 생겼습니다."),
-  NOT_LEADER_OF_CLUB("이 기능은 팀의 대표만 사용할 수 있습니다.");
+  NOT_LEADER_OF_CLUB("이 기능은 팀의 대표만 사용할 수 있습니다."),
+  INVALID_NOT_AUTHENTICATION_Email("이메일 인증 후 시도해주세요."),
+  INVALID_NOT_AUTHENTICATION_NICK_NAME("닉네임 중복 인증 후 시도해주세요.");
 
   private final String message;
 
