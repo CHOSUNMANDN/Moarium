@@ -26,6 +26,8 @@ public class LoginFirstReqDto {
   private String major;
   @NotBlank(message = "{validation.studentId.notblank}")
   private String studentId;
+  private String authenticationEmail;
+  private String authenticationNickName;
 
   public Member getMemberEntity() {
     StringBuilder sb = new StringBuilder(name.trim());

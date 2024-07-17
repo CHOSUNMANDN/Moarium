@@ -1,21 +1,20 @@
 package back.springbootdeveloper.seungchan.controller;
 
 import back.springbootdeveloper.seungchan.constant.dto.response.ResponseMessage;
+import back.springbootdeveloper.seungchan.constant.entity.CHECK;
 import back.springbootdeveloper.seungchan.dto.request.LoginFirstReqDto;
 import back.springbootdeveloper.seungchan.dto.request.LoginReqDto;
-import back.springbootdeveloper.seungchan.dto.response.BaseResponseBody;
-import back.springbootdeveloper.seungchan.dto.response.ImageResDto;
 import back.springbootdeveloper.seungchan.dto.response.LoginResDto;
 import back.springbootdeveloper.seungchan.entity.Member;
+import back.springbootdeveloper.seungchan.filter.exception.judgment.NotAuthenticationEmailException;
+import back.springbootdeveloper.seungchan.filter.exception.judgment.NotAuthenticationNickNameException;
 import back.springbootdeveloper.seungchan.service.LoginService;
 import back.springbootdeveloper.seungchan.service.TokenService;
-import back.springbootdeveloper.seungchan.util.BaseResponseBodyUtiil;
 import back.springbootdeveloper.seungchan.util.BaseResultDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @Tag(name = "로그인, 신입 가입 신청 관련 API", description = "로그인, 신입의 가입 신청 관리한다.")
@@ -45,7 +44,17 @@ public class OAuthLoginController {
   @ResponseBody
   @PostMapping("/google/first")
   public BaseResultDTO<LoginResDto> firstGoogleLogin(@RequestBody @Valid LoginFirstReqDto request) {
-    // Get Access Token
+    String authenticationEmail = request.getAuthenticationEmail();
+    String authenticationNickName = request.getAuthenticationNickName();
+    if (CHECK.UNCHECK.is(authenticationEmail)) {
+      throw new NotAuthenticationEmailException();
+    }
+
+    if (CHECK.UNCHECK.is(authenticationNickName)) {
+      throw new NotAuthenticationNickNameException();
+    }
+
+    // save sign up Member
     Member member = loginService.firstLoginGoogle(request);
 
     // Response Format 맞추기
